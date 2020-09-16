@@ -1,0 +1,82 @@
+.price-filter {
+    height: 7px;
+    background-color: #f1f2f3;
+    margin: 80px 12px 0;
+    position: relative;
+    // background: url(../img/icons/Scale.svg) no-repeat left;
+    // height: 67px;
+
+    &::before,
+    &::after {
+        content: "";
+        background-color: #f1f2f3;
+        width: 22px;
+        height: 7px;
+        position: absolute;
+        top: 0;
+    }
+    &::before {
+        left: -11px;
+    }
+    &::after {
+        right: -22px;
+    }
+
+    .noUi-base,
+    .noUi-connects {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        height: 7px;
+    }
+
+    .noUi-connects {
+        overflow: hidden;
+        z-index: 0;
+
+        .noUi-connect {
+            background-color: $blackPrimary;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .noUi-origin, .noUi-connect {
+        will-change: transform;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        transform-origin: 0 0;
+        transform-style: flat;
+        width: 10%;
+        height: 10%;
+    }
+
+    .noUi-handle {
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        border: 1px solid $blackSecondary;
+        background-color: #fff;
+        position: relative;
+        top: -12.5px;
+        right: -10.5px;
+    }
+
+    .noUi-tooltip {
+        position: absolute;
+        bottom: -27px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 16px;
+        line-height: 22px;
+        color: $blackPrimary;
+
+        &::before {
+            content: '$';
+            position: absolute;
+            right: -8px;
+        }
+    }
+}

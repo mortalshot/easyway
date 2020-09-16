@@ -1,4 +1,9 @@
 @@include('old/script.min.js')
+
+// libs 
+@@include('libs/nouislider.js')
+@@include('libs/wNumb.js')
+
 // components
 @@include('components/webp.js')
 @@include('components/menu.js')

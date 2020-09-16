@@ -15,6 +15,9 @@ html {
         line-height: $lineHeight;
         background: $bgWhite;
         overflow-x: hidden;
+        &.lock {
+            overflow: hidden;
+        }
     }
 }
 
@@ -22,16 +25,16 @@ html {
     max-width: $screen-container;
     margin-right: auto;
     margin-left: auto;
-    padding-left: $screen-container-padding;
-    padding-right: $screen-container-padding;
+    padding-left: 16px;
+    padding-right: 16px;
 	
 	@media (max-width: $screen-xl) {
 		max-width: 100%;
 	}
 	
-	@media (max-width: $screen-xs) {
-		padding-left: 16px;
-		padding-right: 16px;
+	@media (min-width: $screen-md) {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
     
     //@media (max-width: $screen-xl) {
