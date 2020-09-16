@@ -1,0 +1,12 @@
+.header-action {
+	display: flex;
+	align-items: center;
+	
+	&_item {
+		margin-left: 32px;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.download-app {
+	display: flex;
+	align-items: center;
+	
+	&_title {
+		margin-right: 16px;
+		color: $blackSecondary;
+		font-family: $fontSecond;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}

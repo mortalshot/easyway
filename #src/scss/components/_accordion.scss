@@ -1,17 +1,18 @@
 .accordion {
     // .accordion__title
     &__title {
-        padding: 20px;
-        border-top: 1px solid #313131;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 32px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+        color: $blackSecondary;
+        margin-bottom: 24px;
         position: relative;
         cursor: pointer;
 
-        @media screen and (max-width: 1440px) {
-            font-size: calc(14px + 6 * ((100vw - 320px) / (1440 - 320)));
-            line-height: calc(32 / 20);
+        @media screen and (max-width: $size-layout-desktop + "px") {
+            font-size: calc(16px + 2 * ((100vw - 320px) / (#{$size-layout-desktop} - 320)));
+            line-height: calc(24 / 18);
         }
 
         @media screen and (max-width: 450px) {
@@ -22,8 +23,8 @@
         &::after {
             content: "";
             width: 9px;
-            height: 1px;
-            background-color: #fff;
+            height: 2px;
+            background-color: $blackSecondary;
             position: absolute;
             top: 50%;
             transform: translate(0, -50%);
@@ -31,21 +32,21 @@
         }
 
         &::before {
-            transform: translate(0, -50%) rotate(-45deg);
-            right: 0;
+            transform: translate(0, -50%) rotate(-40deg);
+            right: 3px;
         }
 
         &::after {
-            transform: translate(0, -50%) rotate(45deg);
-            right: 6px;
+            transform: translate(0, -50%) rotate(40deg);
+            right: 9px;
         }
 
         &.active {
             &::before {
-                transform: translate(0, -50%) rotate(45deg);
+                transform: translate(0, -50%) rotate(40deg);
             }
             &::after {
-                transform: translate(0, -50%) rotate(-45deg);
+                transform: translate(0, -50%) rotate(-40deg);
             }
         }
     }
@@ -53,8 +54,7 @@
     // .accordion__text
     &__text {
         display: none;
-        padding: 0px 20px 20px;
-        display: none;
+        padding: 10px 0;
 
         @media screen and (max-width: 450px) {
             padding: 0px 30px 20px 0;

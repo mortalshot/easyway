@@ -1,0 +1,38 @@
+.header-work {
+	display: flex;
+	align-items: center;
+	
+	&_description {
+		margin-right: 14px;
+		color: $blackSecondary;
+		font-size: 12px;
+		line-height: 22px;
+	}
+	
+	&_phone {
+		display: flex;
+		align-items: center;
+		
+		&:hover {
+			text-decoration: none;
+			
+			.header-work_phone__title {
+				color: $greenPrimary;
+			}
+		}
+		
+		&__title {
+			display: block;
+			margin-right: 12px;
+			color: $blackSecondary;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 22px;
+			transition: .3s;
+		}
+		
+		&__icon {
+			display: block;
+		}
+	}
+}

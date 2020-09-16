@@ -1,0 +1,36 @@
+.pagination {
+
+	&_inner {
+		display: flex;
+		align-items: center;
+	}
+	
+	&_prev {
+		margin-right: 16px;
+	}
+	
+	&_next {
+		margin-left: 16px;
+	}
+	
+	&_item {
+		margin: 0 10px;
+		color: $graySecondary;
+		font-family: $fontSecond;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 26px;
+		cursor: pointer;
+		transition: .3s;
+		
+		&:hover {
+			color: $greenPrimary;
+			text-decoration: none;
+		}
+		
+		&.is-active {
+			color: $blackPrimary;
+			cursor: default;
+		}
+	}
+}

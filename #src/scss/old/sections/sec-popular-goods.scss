@@ -1,0 +1,44 @@
+.sec-popular-goods {
+	padding: 40px 0;
+	
+	&_title {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	
+	&_link-more {
+		display: none;
+	}
+	
+	@media (max-width: $screen-xs) {
+		
+		&_head {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 4px;
+			border-bottom: 1px solid $grayLight;
+		}
+		
+		&_title {
+			margin-bottom: 0;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+		
+		&_link-more {
+			display: inline-block;
+			color: $blackPrimary;
+			font-family: $fontSecond;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 18px;
+			text-decoration: underline;
+			
+			&:hover {
+				color: $greenPrimary;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+// === Variables ==
+
+// === Font ===
+$fontSize: 16px;
+$fontColor: #1D1F22;
+$fontWeight: 400;
+$font: 'Futura PT', Helvetica, Arial, sans-serif;
+$fontSecond: 'Raleway', $font;
+$lineHeight: 140%;
+
+// === Color ===
+$bgWhite: #fff;
+$bgGray: #F1F2F3;
+
+$blue: #0468DB;
+$blackPrimary: #1D1F22;
+$blackSecondary: #43464E;
+$grayPrimary: #72757E;
+$graySecondary: #8D8F9A;
+$grayLight: #F1F2F3;
+$grayDark: #E0E0E1;
+$beige: #EDCBB9;
+$turquoise: #ABD9D8;
+$greenPrimary: #5ECE7B;
+$greenSecondary: #9EE2B0;
+$redPrimary: #D12727;
+
+// === Responsive breakpoints ===
+$screen-container: 1300px;
+$screen-container-padding: 30px;
+$screen-xs: 575px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1170px;
+$screen-xl: 1299px;
+
+// === Sizes ===
+$size-container: 1272px;
+$size-layout-desktop: 1440;

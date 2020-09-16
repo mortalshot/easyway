@@ -1,0 +1,42 @@
+.product-description {
+	
+	&_txt {
+		margin-bottom: 25px;
+		color: $blackSecondary;
+		font-size: 16px;
+		line-height: 22px;
+	}
+	
+	&_item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 16px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+		&__title {
+			margin-right: 5px;
+			color: $blackSecondary;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
+		&__value {
+			color: $blackPrimary;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 24px;
+			
+			a {
+				font-weight: 700;
+				text-decoration: underline;
+				
+				&:hover {
+					color: $greenPrimary;
+				}
+			}
+		}
+	}
+}

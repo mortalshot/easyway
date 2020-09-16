@@ -1,0 +1,26 @@
+.site {
+
+    &_wrap {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+	
+	&_header {
+		overflow-x: hidden;
+	}
+    
+    &_main {
+        padding: 24px 0;
+    }
+
+    &_footer {
+        margin-top: auto;
+    }
+	
+	@media (max-width: $screen-xs) {
+		&_main {
+			padding: 0 0 24px;
+		}
+	}
+}

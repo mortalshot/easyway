@@ -1,0 +1,48 @@
+.breadcrumbs {
+	margin-bottom: 24px;
+	
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+	
+	&__link {
+		position: relative;
+		display: inline-block;
+		margin-right: 20px;
+		padding-right: 20px;
+		color: $grayPrimary;
+		font-family: $fontSecond;
+		font-size: 14px;
+		line-height: 20px;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 50%;
+			width: 1px;
+			height: 14px;
+			background-color: $grayPrimary;
+			transform: translate(0px, -39%);
+		}
+		
+		&:hover {
+			color: $blackPrimary;
+		}
+		
+		&.is-active {
+			margin-right: 0;
+			padding-right: 0;
+			color: $blackPrimary;
+			
+			&:after {
+				display: none;
+			}
+		}
+	}
+	
+	@media (max-width: $screen-xs) {
+		display: none;
+	}
+}

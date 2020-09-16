@@ -1,0 +1,47 @@
+.product-rating {
+	
+	&_inner {
+		display: flex;
+		align-items: center;
+		margin-bottom: 7px;
+		margin-left: -1px;
+	}
+	
+	&_star {
+		display: flex;
+		align-items: center;
+		
+		.icon-star {
+			margin: 0 1px;
+			
+			&.is-active {
+				background: url("../img/icons/star-dark.svg") center no-repeat;
+			}
+		}
+	}
+	
+	&_value {
+		margin-left: 7px;
+		color: $blackSecondary;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	
+	&_reviews {
+		text-align: right;
+	}
+	
+	@media (max-width: $screen-sm) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	@media (max-width: $screen-xs) {
+		
+		&_reviews {
+			text-align: left;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.product-options {
+	
+	&_group {
+		margin-bottom: 32px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+		&__title {
+			margin-bottom: 16px;
+		}
+		
+		&__item {
+			margin-bottom: 16px;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

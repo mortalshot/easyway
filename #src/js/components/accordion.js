@@ -8,4 +8,14 @@ $(document).ready(function () {
 
         $(this).toggleClass('active').next().slideToggle(300);
     });
+
+    $('.sorting__orderby').mousedown(function (event) {
+        $('.sorting__orderby-wrapper span').toggleClass('active');
+    });
+    $(".sorting__orderby").change(function () {
+        $('.sorting__orderby-wrapper span').removeClass('active');
+    });
+    $('.sorting__orderby').focusout(function () {
+        $('.sorting__orderby-wrapper span').removeClass('active');
+    });
 });

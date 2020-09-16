@@ -1,0 +1,126 @@
+.selector {
+	position: relative;
+	
+	&_title {
+		margin-bottom: 4px;
+		font-family: $fontSecond;
+	}
+	
+	&_block {
+		display: block;
+		position: relative;
+		flex: 1 0 100%;
+	}
+	
+	&.show-list {
+		
+		.selector_drop {
+			visibility: visible;
+			opacity: 1;
+			z-index: 10;
+		}
+		
+		.selector_val {
+			border-bottom-color: $greenPrimary;
+			
+			&:after {
+				background: url("../img/icons/arrow-dropdown-green.svg") center no-repeat;
+			}
+		}
+		
+		.selector_label {
+			transform: translateY(0);
+		}
+		
+	}
+	
+	&.no-empty {
+		
+		.selector_label {
+			transform: translateY(0);
+		}
+	}
+	
+	&_hidden {
+		display: none;
+	}
+	
+	&_label {
+		color: $blackPrimary;
+		transform: translateY(100%);
+		transition: .3s;
+	}
+	
+	&_val {
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		height: 26px;
+		padding-right: 30px;
+		font-family: $fontSecond;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		border-bottom: 1px solid $blackSecondary;
+		transition: .3s;
+		cursor: pointer;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 26px;
+			height: 26px;
+			margin: auto;
+			background: url("../img/icons/arrow-dropdown.svg") center no-repeat;
+			transition: .3s;
+		}
+	}
+	
+	&_drop {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: -10;
+		width: 100%;
+		background-color: #fff;
+		box-shadow: 0 4px 11px rgba(29, 31, 34, 0.1);
+		overflow: hidden;
+	}
+	
+	&_search {
+
+	}
+	
+	&_list {
+		position: relative;
+		min-width: 180px;
+		min-height: 24px;
+		max-height: 550px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		background-color: #fff;
+		overflow-y: auto;
+		overflow-x: hidden;
+		
+		li {
+			position: relative;
+			color: $grayPrimary;
+			padding: 8px;
+			white-space: normal;
+			border-bottom: 1px solid $grayLight;
+			transition: .3s;
+			cursor: pointer;
+			
+			&:hover {
+				color: $blackPrimary;
+				background-color: $grayLight;
+			}
+		}
+	}
+}

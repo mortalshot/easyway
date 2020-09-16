@@ -1,0 +1,33 @@
+.sec-subscribe {
+	
+	&_inner {
+		padding: 48px 0;
+		border-top: 1px solid $grayLight;
+		border-bottom: 1px solid $grayLight;
+	}
+	
+	&_title {
+		margin-bottom: 16px;
+		text-align: center;
+	}
+	
+	&_subtitle {
+		max-width: 428px;
+		margin: 0 auto 40px;
+		text-align: center;
+	}
+	
+	&_form {
+		max-width: 318px;
+		margin: 0 auto 12px;
+	}
+	
+	&_description {
+		margin: 0 auto;
+		max-width: 428px;
+		color: $blackSecondary;
+		font-size: 12px;
+		line-height: 14px;
+		text-align: center;
+	}
+}

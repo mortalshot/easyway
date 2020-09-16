@@ -1,0 +1,12 @@
+.site_footer {
+	padding: 56px 0 72px;
+	
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	@media (max-width: $screen-xl) {
+		display: none;
+	}
+}

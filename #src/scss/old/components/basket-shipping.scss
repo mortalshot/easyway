@@ -1,0 +1,38 @@
+.basket-shipping {
+	
+	&_head {
+		display: flex;
+		align-items: center;
+		margin-bottom: 8px;
+	}
+	
+	&_icon {
+		margin-right: 8px;
+	}
+	
+	&_title {
+		color: #000;
+		font-size: 14px;
+		line-height: 22px;
+		
+		b {
+			font-weight: 700;
+		}
+	}
+	
+	&_line {
+		position: relative;
+		height: 8px;
+		width: 100%;
+		background-color: $grayLight;
+		
+		&__current {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			height: 8px;
+			background-color: $graySecondary;
+		}
+	}
+}

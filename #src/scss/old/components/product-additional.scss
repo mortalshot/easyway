@@ -1,0 +1,23 @@
+.product-additional {
+	
+	&_item {
+		margin-bottom: 40px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+		&__title {
+			margin-bottom: 8px;
+			font-weight: 500;
+			color: $blackSecondary;
+		}
+		
+		&__descripion {
+			color: $blackSecondary;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}

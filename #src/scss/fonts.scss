@@ -1,3 +1,10 @@
-@include font("Cormorant Garamond", "CormorantGaramond-Bold", "700", "normal");
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@include font("Futura PT", "FuturaPT-Book", "400", "normal");
+@include font("Futura PT", "FuturaPT-BookObl", "400", "italic");
+@include font("Futura PT", "FuturaPT-BoldObl", "700", "italic");
+@include font("Futura PT", "FuturaPT-DemiObl", "600", "italic");
+@include font("Futura PT", "FuturaPT-LightObl", "300", "italic");
+@include font("Futura PT", "FuturaPT-Heavy", "900", "normal");
+@include font("Futura PT", "FuturaPT-HeavyObl", "900", "italic");
+@include font("Futura PT", "FuturaPT-Light", "300", "normal");
+@include font("Futura PT", "FuturaPT-Medium", "500", "normal");
+@include font("Futura PT", "FuturaPT-MediumObl", "500", "italic");
