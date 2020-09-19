@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(11, 11, 11, 0.8);
+    background: rgba(114, 117, 126, 0.7);
     top: 0;
     left: 0;
     opacity: 0;
@@ -11,7 +11,7 @@
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
-    transition: 0.8s ease all 0s;
+    transition: 0.3s ease all 0s;
 
     &.open {
         opacity: 1;
@@ -85,6 +85,17 @@
     }
 
     &--filter {
+        z-index: 51;
+        &.open {
+            .popup__content {
+                transform: perspective(0) translate(0, 0) rotateX(0deg);
+                
+                @media screen and (max-width: 767px) {
+                    overflow-x: hidden;
+                }
+            }
+        }
+
         .close-popup {
             width: 52px;
             height: 52px;
@@ -96,6 +107,19 @@
             right: 0;
             top: 32px;
             transform: translate(50%, 0px);
+
+            @media screen and (max-width: 767px) {
+                width: 26px;
+                height: 26px;
+                top: 18px;
+                right: 16px;
+                transform: translate(0, 0px);                                            
+
+                svg {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
         }
 
         .popup__body{
@@ -104,15 +128,27 @@
         }
 
         .popup__content {
+            transform: translate(-500px, 0);
             background: #fff;
             max-width: 366px;
             padding: 33px 56px;
+            min-height: 100vh;
+
+            @media screen and (max-width: 767px) {
+                padding: 0 16px 38px;
+                max-width: 375px;
+            }
+            @media screen and (max-width: 575px) {
+                max-width: 100%;
+            }
         }
 
-        &.open {
-            .popup__content {
-                transform: perspective(0) translate(0, 0) rotateX(0deg);
-                opacity: 1;
+        .title-h6--767 {
+            padding: 20px 16px;
+            margin: 0 -16px;
+            background-color: $grayLight;
+            @media screen and (min-width: 768px) {
+                display: none;
             }
         }
     }

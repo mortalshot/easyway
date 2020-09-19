@@ -15,13 +15,17 @@ let select = function () {
     }
 
     function selectChoose() {
-        mediaQuery = window.matchMedia('(min-width: 768px)');
 
+        let text = this.innerText,
+            select = this.closest('.custom-select'),
+            currentText = select.querySelector('.custom-select__trigger span');
+        currentText.innerText = text;
+
+        mediaQuery = window.matchMedia('(max-width: 767px)');
         if (mediaQuery.matches) {
-            let text = this.innerText,
-                select = this.closest('.custom-select'),
-                currentText = select.querySelector('.custom-select__trigger span');
-            currentText.innerText = text;
+            if (select.closest('.custom-select-wrapper').classList.contains('sorting__custom-select-wrapper')) {
+                currentText.innerText = "Сортировать по";
+            }
         }
 
         let options = this.closest('.custom-options');
@@ -33,7 +37,6 @@ let select = function () {
         }
 
         this.classList.add("selected");
-
     }
 
     mediaQuery = window.matchMedia('(max-width: 767px)');

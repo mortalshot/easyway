@@ -3,6 +3,24 @@
 	&_field {
 		position: relative;
 		width: 100%;
+
+		.input_label {
+			@media screen and (max-width: 1055px) {
+				width: 240px;
+				margin-left: auto;
+			}
+			@media screen and (max-width: 767px) {
+				width: 32px;
+			}
+		}
+
+		.input_field {
+			@media screen and (max-width: 767px) {
+				width: 0;
+				border: none;
+				padding: 0;
+			}
+		}
 	}
 	
 	&_block {

@@ -4,6 +4,23 @@
 	
 	&_item {
 		margin-left: 32px;
+
+		@media screen and (max-width: 991px) {
+			margin-left: 16px;
+		}
+		@media screen and (max-width: 575px) {
+			display: none;
+			margin: 0;
+
+			&.basket-btn {
+				display: block;
+			}
+
+			i {
+				width: 30px;
+				height: 30px;
+			}
+		}
 		
 		&:first-child {
 			margin-left: 0;

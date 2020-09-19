@@ -1,8 +1,7 @@
 @@include('old/script.min.js')
 
 // libs 
-@@include('libs/nouislider.js')
-@@include('libs/wNumb.js')
+@@include('libs/dynamic-adapt.js')
 
 // components
 @@include('components/webp.js')
@@ -11,4 +10,5 @@
 @@include('components/accordion.js')
 @@include('components/popup.js')
 @@include('components/custom-select.js')
+@@include('components/header-fixed.js')
 

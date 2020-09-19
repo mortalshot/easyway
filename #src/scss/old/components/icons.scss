@@ -70,6 +70,14 @@
 	background: url("../img/icons/account.svg") center no-repeat;
 }
 
+.icon-log-in {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/LogIn.svg") center no-repeat;
+}
+
 .icon-plus {
 	display: inline-block;
 	vertical-align: middle;
@@ -92,6 +100,14 @@
 	width: 32px;
 	height: 32px;
 	background: url("../img/icons/loop.svg") center no-repeat;
+}
+
+.icon-location {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/location.svg") center no-repeat;
 }
 
 .icon-account-big {
@@ -245,4 +261,12 @@
 	width: 26px;
 	height: 26px;
 	background: url("../img/icons/arrow-dropdown-green.svg") center no-repeat;
+}
+
+.icon-gift-card {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background: url("../img/icons/GiftCard.svg") center no-repeat;
 }
