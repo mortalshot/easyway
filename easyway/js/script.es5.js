@@ -3915,9 +3915,10 @@ $('.slider_popular-goods').slick({
 }); // Ширина точек слайдера каталога
 
 $(function () {
+  var sectionNumber = document.querySelectorAll('.sec-popular-goods').length;
   var slidesNumber = $('.slider_item').length;
   var slidesClonedNumber = $('.slider_item.slick-cloned').length;
-  var dotsWidth = 100 / (slidesNumber - slidesClonedNumber);
+  var dotsWidth = 100 / (slidesNumber - slidesClonedNumber) * sectionNumber;
   $('.slider_popular-goods .slick-dots li').width(dotsWidth + '%');
 });
 $('.banner-slider').slick({
