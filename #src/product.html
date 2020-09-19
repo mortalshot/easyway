@@ -1,923 +1,518 @@
-@@include('_header.html')
+@@include('html-components/_header.html')
 
-    <!-- Main content -->
-    <main class="site-main">
+<!-- Main content -->
+<main class="site-main">
 
-        <!-- Product -->
-        <section class="sec-product">
-            <div class="product-item">
-                <div class="product-item_inner">
-                    <div class="product-item_left">
-                        <div class="product-item_gallery product-gallery">
-                            <div class="product-gallery_list" id="product-gallery">
-                                <div class="product-gallery_item">
-                                    <img src="img/products/product.jpg" alt="product">
-                                    <div class="product-item_discount">
-                                        -50%
-                                    </div>
-                                </div>
-                                <div class="product-gallery_item">
-                                    <img src="img/products/product2.jpg" alt="product">
-                                </div>
-                                <div class="product-gallery_item">
-                                    <img src="img/products/product3.jpg" alt="product">
-                                </div>
-                                <div class="product-gallery_item">
-                                    <img src="img/products/product4.jpg" alt="product">
-                                </div>
-                                <div class="product-gallery_item big-photo">
-                                    <img src="img/products/product7.jpg" alt="product">
-                                </div>
-                                <div class="product-gallery_item">
-                                    <img src="img/products/product5.jpg" alt="product">
-                                </div>
-                                <div class="product-gallery_item">
-                                    <img src="img/products/product6.jpg" alt="product">
+    <!-- Product -->
+    <section class="sec-product">
+        <div class="product-item">
+            <div class="product-item_inner">
+                <div class="product-item_left">
+                    <div class="product-item_gallery product-gallery">
+                        <div class="product-gallery_list" id="product-gallery">
+                            <div class="product-gallery_item">
+                                <img src="img/products/product.jpg" alt="product">
+                                <div class="product-item_discount">
+                                    -50%
                                 </div>
                             </div>
-                        </div>
-                        <div class="product-item_discount visible-mobile">
-                            -50%
+                            <div class="product-gallery_item">
+                                <img src="img/products/product2.jpg" alt="product">
+                            </div>
+                            <div class="product-gallery_item">
+                                <img src="img/products/product3.jpg" alt="product">
+                            </div>
+                            <div class="product-gallery_item">
+                                <img src="img/products/product4.jpg" alt="product">
+                            </div>
+                            <div class="product-gallery_item big-photo">
+                                <img src="img/products/product7.jpg" alt="product">
+                            </div>
+                            <div class="product-gallery_item">
+                                <img src="img/products/product5.jpg" alt="product">
+                            </div>
+                            <div class="product-gallery_item">
+                                <img src="img/products/product6.jpg" alt="product">
+                            </div>
                         </div>
                     </div>
-                    <div class="product-item_right">
-                        <div class="product-item_breadcrumbs breadcrumbs">
-                            <div class="breadcrumbs__list">
-                                <a href="#" class="breadcrumbs__link">
-                                    Главная
-                                </a>
-                                <a href="#" class="breadcrumbs__link">
-                                    Категори
-                                </a>
-                                <span class="breadcrumbs__link is-active">
-                                   Название продукта
-                                </span>
+                    <div class="product-item_discount visible-mobile">
+                        -50%
+                    </div>
+                </div>
+                <div class="product-item_right">
+                    <div class="product-item_breadcrumbs breadcrumbs">
+                        <div class="breadcrumbs__list">
+                            <a href="#" class="breadcrumbs__link">
+                                Главная
+                            </a>
+                            <a href="#" class="breadcrumbs__link">
+                                Категори
+                            </a>
+                            <span class="breadcrumbs__link is-active">
+                                Название продукта
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-item_info">
+                        <div class="product-item_head">
+                            <div class="product-item_head__left">
+                                <div class="product-item_title">
+                                    Кашемировый Свитер
+                                </div>
+                                <div class="product-item_price">
+                                    <div class="product-item_price__old">$ 50.00</div>
+                                    <div class="product-item_price__current">
+                                        $ 50.00
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item_head__right">
+                                <div class="product-item_rating product-rating">
+                                    <div class="product-rating_inner">
+                                        <div class="product-rating_star">
+                                            <i class="icon-star is-active"></i>
+                                            <i class="icon-star is-active"></i>
+                                            <i class="icon-star is-active"></i>
+                                            <i class="icon-star is-active"></i>
+                                            <i class="icon-star"></i>
+                                        </div>
+                                        <div class="product-rating_value">
+                                            (8)
+                                        </div>
+                                    </div>
+                                    <div class="product-rating_reviews">
+                                        <a href="#" class="btn-txt">Читать отзывы</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="product-item_info">
-                            <div class="product-item_head">
-                                <div class="product-item_head__left">
-                                    <div class="product-item_title">
-                                        Кашемировый Свитер
-                                    </div>
-                                    <div class="product-item_price">
-                                        <div class="product-item_price__old">$ 50.00</div>
-                                        <div class="product-item_price__current">
-                                            $ 50.00
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-item_head__right">
-                                    <div class="product-item_rating product-rating">
-                                        <div class="product-rating_inner">
-                                            <div class="product-rating_star">
-                                                <i class="icon-star is-active"></i>
-                                                <i class="icon-star is-active"></i>
-                                                <i class="icon-star is-active"></i>
-                                                <i class="icon-star is-active"></i>
-                                                <i class="icon-star"></i>
-                                            </div>
-                                            <div class="product-rating_value">
-                                                (8)
-                                            </div>
-                                        </div>
-                                        <div class="product-rating_reviews">
-                                            <a href="#" class="btn-txt">Читать отзывы</a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="product-item_size product-size">
+                            <div class="product-size_title title-h4">
+                                Размер:
                             </div>
-                            <div class="product-item_size product-size">
-                                <div class="product-size_title title-h4">
-                                    Размер:
-                                </div>
-                                <div class="product-size_list">
-                                    <button class="product-size_item">
-                                        XS
-                                    </button>
-                                    <button class="product-size_item is-active">
-                                        S
-                                    </button>
-                                    <button class="product-size_item">
-                                        M
-                                    </button>
-                                    <button class="product-size_item is-disabled" disabled>
-                                        L
-                                    </button>
-                                    <button class="product-size_item is-disabled" disabled>
-                                        XL
-                                    </button>
-                                </div>
-                                <a role="button" class="product-size_link-table btn-txt table-size-link">
-                                    Таблица размеров
-                                </a>
-                            </div>
-                            <div class="product-item_color product-color">
-                                <div class="product-color_title title-h4">
-                                    Цвет:
-                                </div>
-                                <div class="product-color_list">
-                                    <a role="button" class="product-color_item is-active">
-                                                <span class="product-color_item__value"
-                                                      style="background-color: #EDCBB9"></span>
-                                    </a>
-                                    <a role="button" class="product-color_item">
-                                                <span class="product-color_item__value"
-                                                      style="background-color: #ABD9D8"></span>
-                                    </a>
-                                    <a role="button" class="product-color_item">
-                                                <span class="product-color_item__value"
-                                                      style="background-color: #EDCBB9"></span>
-                                    </a>
-                                    <a role="button" class="product-color_item">
-                                                <span class="product-color_item__value"
-                                                      style="background-color: #ABD9D8"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="product-item_action">
-                                <div class="product-item_count product-count">
-                                    <button class="product-count_sub"></button>
-                                    <label class="product-count_label">
-                                        <input type="number" class="product-count_field" value="1">
-                                    </label>
-                                    <button class="product-count_add"></button>
-                                </div>
-                                <button class="product-item_action__btn btn-dark basket-btn">
-                                    В КОРЗИНУ
+                            <div class="product-size_list">
+                                <button class="product-size_item">
+                                    XS
                                 </button>
-                                <a role="button" class="product-item_action__favorite">
-                                    <i class="icon-favourite-big"></i>
+                                <button class="product-size_item is-active">
+                                    S
+                                </button>
+                                <button class="product-size_item">
+                                    M
+                                </button>
+                                <button class="product-size_item is-disabled" disabled>
+                                    L
+                                </button>
+                                <button class="product-size_item is-disabled" disabled>
+                                    XL
+                                </button>
+                            </div>
+                            <a role="button" class="product-size_link-table btn-txt table-size-link">
+                                Таблица размеров
+                            </a>
+                        </div>
+                        <div class="product-item_color product-color">
+                            <div class="product-color_title title-h4">
+                                Цвет:
+                            </div>
+                            <div class="product-color_list">
+                                <a role="button" class="product-color_item is-active">
+                                    <span class="product-color_item__value" style="background-color: #EDCBB9"></span>
+                                </a>
+                                <a role="button" class="product-color_item">
+                                    <span class="product-color_item__value" style="background-color: #ABD9D8"></span>
+                                </a>
+                                <a role="button" class="product-color_item">
+                                    <span class="product-color_item__value" style="background-color: #EDCBB9"></span>
+                                </a>
+                                <a role="button" class="product-color_item">
+                                    <span class="product-color_item__value" style="background-color: #ABD9D8"></span>
                                 </a>
                             </div>
-                            <div class="product-item_description">
-                                <div class="product-item_shipping">
-                                    <div class="product-item_shipping__icon">
-                                        <i class="icon-shipping"></i>
-                                    </div>
-                                    <div class="product-item_shipping__title">Бесплатная доставка и возвраты
-                                    </div>
+                        </div>
+                        <div class="product-item_action">
+                            <div class="product-item_count product-count">
+                                <button class="product-count_sub"></button>
+                                <label class="product-count_label">
+                                    <input type="number" class="product-count_field" value="1">
+                                </label>
+                                <button class="product-count_add"></button>
+                            </div>
+                            <button class="product-item_action__btn btn-dark basket-btn">
+                                В КОРЗИНУ
+                            </button>
+                            <a role="button" class="product-item_action__favorite">
+                                <i class="icon-favourite-big"></i>
+                            </a>
+                        </div>
+                        <div class="product-item_description">
+                            <div class="product-item_shipping">
+                                <div class="product-item_shipping__icon">
+                                    <i class="icon-shipping"></i>
                                 </div>
-                                <div class="product-item_return">
-                                    <div class="product-item_return__icon">
-                                        <i class="icon-return"></i>
-                                    </div>
-                                    <div class="product-item_return__title">
-                                        Бесплатный возврат
-                                    </div>
+                                <div class="product-item_shipping__title">Бесплатная доставка и возвраты
+                                </div>
+                            </div>
+                            <div class="product-item_return">
+                                <div class="product-item_return__icon">
+                                    <i class="icon-return"></i>
+                                </div>
+                                <div class="product-item_return__title">
+                                    Бесплатный возврат
                                 </div>
                             </div>
                         </div>
-                        <div class="product-item_more-info">
-                            <div class="product-tab">
-                                <div class="product-tab_links">
-                                    <a role="button" class="product-tab_link is-active"
-                                       data-tab="description-product">
-                                        Описание
-                                    </a>
-                                    <a role="button" class="product-tab_link" data-tab="reviews-product">
-                                        28 Отзывов
-                                    </a>
-                                    <a role="button" class="product-tab_link" data-tab="additional-product">
-                                        Информация
-                                    </a>
+                    </div>
+                    <div class="product-item_more-info">
+                        <div class="product-tab">
+                            <div class="product-tab_links">
+                                <a role="button" class="product-tab_link is-active" data-tab="description-product">
+                                    Описание
+                                </a>
+                                <a role="button" class="product-tab_link" data-tab="reviews-product">
+                                    28 Отзывов
+                                </a>
+                                <a role="button" class="product-tab_link" data-tab="additional-product">
+                                    Информация
+                                </a>
+                            </div>
+                            <div class="product-tab_content">
+                                <div class="product-tab_block">
+                                    <div class="product-tab_block__title">
+                                        <a role="button" class="product-tab_link is-active"
+                                            data-tab="description-product">
+                                            Описание
+                                        </a>
+                                    </div>
+                                    <div class="product-tab_item is-active" id="description-product">
+                                        <div class="product-description">
+                                            <div class="product-description_txt">
+                                                Футболка Karissa с V-образным вырезом имеет полуприлегающую
+                                                форму, подходящую для любой фигуры.
+                                                Вы можете уверенно ходить в спортзал,
+                                                пока он облегает изгибы и скрывает общие «проблемные» зоны.
+                                                Найдите потрясающие женские коктейльные платья
+                                                и вечерние платья.
+                                            </div>
+                                            <div class="product-description_info">
+                                                <div class="product-description_item">
+                                                    <div class="product-description_item__title">
+                                                        Артикул:
+                                                    </div>
+                                                    <div class="product-description_item__value">
+                                                        57392347
+                                                    </div>
+                                                </div>
+                                                <div class="product-description_item">
+                                                    <div class="product-description_item__title">
+                                                        Материал:
+                                                    </div>
+                                                    <div class="product-description_item__value">
+                                                        Хлопок
+                                                    </div>
+                                                </div>
+                                                <div class="product-description_item">
+                                                    <div class="product-description_item__title">
+                                                        Категория:
+                                                    </div>
+                                                    <div class="product-description_item__value">
+                                                        <a href="#">Штаны</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product-description_item">
+                                                    <div class="product-description_item__title">
+                                                        Страна:
+                                                    </div>
+                                                    <div class="product-description_item__value">
+                                                        Польша
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product-tab_content">
-                                    <div class="product-tab_block">
-                                        <div class="product-tab_block__title">
-                                            <a role="button" class="product-tab_link is-active"
-                                               data-tab="description-product">
-                                                Описание
-                                            </a>
-                                        </div>
-                                        <div class="product-tab_item is-active" id="description-product">
-                                            <div class="product-description">
-                                                <div class="product-description_txt">
-                                                    Футболка Karissa с V-образным вырезом имеет полуприлегающую
-                                                    форму, подходящую для любой фигуры.
-                                                    Вы можете уверенно ходить в спортзал,
-                                                    пока он облегает изгибы и скрывает общие «проблемные» зоны.
-                                                    Найдите потрясающие женские коктейльные платья
-                                                    и вечерние платья.
+                                <div class="product-tab_block">
+                                    <div class="product-tab_block__title">
+                                        <a role="button" class="product-tab_link" data-tab="reviews-product">
+                                            28 отзывов
+                                        </a>
+                                    </div>
+                                    <div class="product-tab_item" id="reviews-product">
+                                        <div class="product-reviews">
+                                            <div class="product-reviews_list">
+                                                <div class="product-reviews_item">
+                                                    <div class="product-reviews_item__head">
+                                                        <div class="product-reviews_item__name">Jane D.Smith
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-reviews_item__star product-rating">
+                                                        <div class="product-rating_inner">
+                                                            <div class="product-rating_star">
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star"></i>
+                                                            </div>
+                                                            <div class="product-rating_value">
+                                                                (8)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-reviews_item__date">
+                                                        Апрель 2020
+                                                    </div>
+                                                    <div class="product-reviews_item__description">
+                                                        Мне очень нравится эта майка и встроенная поддержка,
+                                                        зеленый цвет прекрасен! Я носил его как случайно,
+                                                        так и на тренировку. Он более укороченный,
+                                                        чем я думала, поэтому ношу его с низами
+                                                        с завышенной талией...
+                                                        <a href="#" class="btn-txt">Читать полностью</a>
+                                                    </div>
                                                 </div>
-                                                <div class="product-description_info">
-                                                    <div class="product-description_item">
-                                                        <div class="product-description_item__title">
-                                                            Артикул:
-                                                        </div>
-                                                        <div class="product-description_item__value">
-                                                            57392347
+                                                <div class="product-reviews_item">
+                                                    <div class="product-reviews_item__head">
+                                                        <div class="product-reviews_item__name">Jane D.Smith
                                                         </div>
                                                     </div>
-                                                    <div class="product-description_item">
-                                                        <div class="product-description_item__title">
-                                                            Материал:
-                                                        </div>
-                                                        <div class="product-description_item__value">
-                                                            Хлопок
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-description_item">
-                                                        <div class="product-description_item__title">
-                                                            Категория:
-                                                        </div>
-                                                        <div class="product-description_item__value">
-                                                            <a href="#">Штаны</a>
+                                                    <div class="product-reviews_item__star product-rating">
+                                                        <div class="product-rating_inner">
+                                                            <div class="product-rating_star">
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star"></i>
+                                                            </div>
+                                                            <div class="product-rating_value">
+                                                                (8)
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="product-description_item">
-                                                        <div class="product-description_item__title">
-                                                            Страна:
-                                                        </div>
-                                                        <div class="product-description_item__value">
-                                                            Польша
-                                                        </div>
+                                                    <div class="product-reviews_item__date">
+                                                        Апрель 2020
+                                                    </div>
+                                                    <div class="product-reviews_item__description">
+                                                        Мне очень нравится эта майка и встроенная поддержка,
+                                                        зеленый цвет прекрасен! Я носил его как случайно,
+                                                        так и на тренировку. Он более укороченный,
+                                                        чем я думала, поэтому ношу его с низами
+                                                        с завышенной талией...
+                                                        <a href="#" class="btn-txt">Читать полностью</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-tab_block">
-                                        <div class="product-tab_block__title">
-                                            <a role="button" class="product-tab_link"
-                                               data-tab="reviews-product">
-                                                28 отзывов
-                                            </a>
-                                        </div>
-                                        <div class="product-tab_item" id="reviews-product">
-                                            <div class="product-reviews">
-                                                <div class="product-reviews_list">
-                                                    <div class="product-reviews_item">
-                                                        <div class="product-reviews_item__head">
-                                                            <div class="product-reviews_item__name">Jane D.Smith
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-reviews_item__star product-rating">
-                                                            <div class="product-rating_inner">
-                                                                <div class="product-rating_star">
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star"></i>
-                                                                </div>
-                                                                <div class="product-rating_value">
-                                                                    (8)
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-reviews_item__date">
-                                                            Апрель 2020
-                                                        </div>
-                                                        <div class="product-reviews_item__description">
-                                                            Мне очень нравится эта майка и встроенная поддержка,
-                                                            зеленый цвет прекрасен! Я носил его как случайно,
-                                                            так и на тренировку. Он более укороченный,
-                                                            чем я думала, поэтому ношу его с низами
-                                                            с завышенной талией...
-                                                            <a href="#" class="btn-txt">Читать полностью</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-reviews_item">
-                                                        <div class="product-reviews_item__head">
-                                                            <div class="product-reviews_item__name">Jane D.Smith
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-reviews_item__star product-rating">
-                                                            <div class="product-rating_inner">
-                                                                <div class="product-rating_star">
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star"></i>
-                                                                </div>
-                                                                <div class="product-rating_value">
-                                                                    (8)
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-reviews_item__date">
-                                                            Апрель 2020
-                                                        </div>
-                                                        <div class="product-reviews_item__description">
-                                                            Мне очень нравится эта майка и встроенная поддержка,
-                                                            зеленый цвет прекрасен! Я носил его как случайно,
-                                                            так и на тренировку. Он более укороченный,
-                                                            чем я думала, поэтому ношу его с низами
-                                                            с завышенной талией...
-                                                            <a href="#" class="btn-txt">Читать полностью</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-reviews_pagination pagination">
-                                                    <div class="pagination_inner">
-                                                        <a href="#" class="pagination_prev">
-                                                            <i class="arrow-pagination-left"></i>
-                                                        </a>
-                                                        <span class="pagination_item is-active">1</span>
-                                                        <a href="#" class="pagination_item">2</a>
-                                                        <a href="#" class="pagination_item">3</a>
-                                                        <a href="#" class="pagination_item">4</a>
-                                                        <a href="#" class="pagination_next">
-                                                            <i class="arrow-pagination-right"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-tab_block">
-                                        <div class="product-tab_block__title">
-                                            <a role="button" class="product-tab_link"
-                                               data-tab="additional-product">
-                                                Информация
-                                            </a>
-                                        </div>
-                                        <div class="product-tab_item" id="additional-product">
-                                            <div class="product-additional">
-                                                <div class="product-additional_item">
-                                                    <div class="product-additional_item__title">
-                                                        Brand
-                                                    </div>
-                                                    <div class="product-additional_item__description">
-                                                        Brand name is the perfect pairing of quality and design.
-                                                        This label creates major everyday vibes with its
-                                                        collection of modern brooches, silver and gold
-                                                        jewellery,
-                                                        or clips it back with hair accessories in geo styles.
-                                                    </div>
-                                                </div>
-                                                <div class="product-additional_item">
-                                                    <div class="product-additional_item__title">
-                                                        Take care of me!
-                                                    </div>
-                                                    <div class="product-additional_item__description">
-                                                        Just here for the care instructions? <br/>
-                                                        Yeah, we thought so...
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-tab_block">
-                                        <div class="product-tab_block__title">
-                                            <a role="button" class="product-tab_link"
-                                               data-tab="product-combines">
-                                                Сочетается с
-                                            </a>
-                                        </div>
-                                        <div class="product-tab_item" id="product-combines">
-                                            <div class="product-combine">
-                                                <div class="product-combine_block">
-                                                    <a href="#" class="product-combine_img">
-                                                        <img src="img/products/combine.jpg" alt="combine">
+                                            <div class="product-reviews_pagination pagination">
+                                                <div class="pagination_inner">
+                                                    <a href="#" class="pagination_prev">
+                                                        <i class="arrow-pagination-left"></i>
                                                     </a>
-                                                    <div class="product-combine_info">
-                                                        <a href="#" class="product-combine_name">Платье-рубашка Vila в полоску</a>
-                                                        <div class="product-combine_rating product-rating">
-                                                            <div class="product-rating_inner">
-                                                                <div class="product-rating_star">
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star is-active"></i>
-                                                                    <i class="icon-star"></i>
-                                                                </div>
-                                                                <div class="product-rating_value">
-                                                                    (8)
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-combine_color product-color product-color--small">
-                                                            <div class="product-color_list">
-                                                                <a role="button" class="product-color_item is-active">
-                                                        <span class="product-color_item__value"
-                                                              style="background-color: #EDCBB9"></span>
-                                                                </a>
-                                                                <a role="button" class="product-color_item">
-                                                        <span class="product-color_item__value"
-                                                              style="background-color: #ABD9D8"></span>
-                                                                </a>
-                                                                <a role="button" class="product-color_item">
-                                                        <span class="product-color_item__value"
-                                                              style="background-color: #EDCBB9"></span>
-                                                                </a>
-                                                                <a role="button" class="product-color_item">
-                                                        <span class="product-color_item__value"
-                                                              style="background-color: #ABD9D8"></span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-combine_price">
-                                                            <div class="product-combine_price__current">
-                                                                $ 50.00
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="product-combine_arrow">
-                                                        <i class="arrow-combine"></i>
+                                                    <span class="pagination_item is-active">1</span>
+                                                    <a href="#" class="pagination_item">2</a>
+                                                    <a href="#" class="pagination_item">3</a>
+                                                    <a href="#" class="pagination_item">4</a>
+                                                    <a href="#" class="pagination_next">
+                                                        <i class="arrow-pagination-right"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="product-item_combine product-combine">
-                            <div class="product-combine_title title-h4">
-                                Сочетается с
-                            </div>
-                            <div class="product-combine_block">
-                                <a href="#" class="product-combine_img">
-                                    <img src="img/products/combine.jpg" alt="combine">
-                                </a>
-                                <div class="product-combine_info">
-                                    <a href="#" class="product-combine_name">Платье-рубашка Vila в полоску</a>
-                                    <div class="product-combine_rating product-rating">
-                                        <div class="product-rating_inner">
-                                            <div class="product-rating_star">
-                                                <i class="icon-star is-active"></i>
-                                                <i class="icon-star is-active"></i>
-                                                <i class="icon-star is-active"></i>
-                                                <i class="icon-star is-active"></i>
-                                                <i class="icon-star"></i>
-                                            </div>
-                                            <div class="product-rating_value">
-                                                (8)
-                                            </div>
-                                        </div>
+                                <div class="product-tab_block">
+                                    <div class="product-tab_block__title">
+                                        <a role="button" class="product-tab_link" data-tab="additional-product">
+                                            Информация
+                                        </a>
                                     </div>
-                                    <div class="product-combine_color product-color product-color--small">
-                                        <div class="product-color_list">
-                                            <a role="button" class="product-color_item is-active">
-                                                        <span class="product-color_item__value"
-                                                              style="background-color: #EDCBB9"></span>
-                                            </a>
-                                            <a role="button" class="product-color_item">
-                                                        <span class="product-color_item__value"
-                                                              style="background-color: #ABD9D8"></span>
-                                            </a>
-                                            <a role="button" class="product-color_item">
-                                                        <span class="product-color_item__value"
-                                                              style="background-color: #EDCBB9"></span>
-                                            </a>
-                                            <a role="button" class="product-color_item">
-                                                        <span class="product-color_item__value"
-                                                              style="background-color: #ABD9D8"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="product-combine_price">
-                                        <div class="product-combine_price__current">
-                                            $ 50.00
+                                    <div class="product-tab_item" id="additional-product">
+                                        <div class="product-additional">
+                                            <div class="product-additional_item">
+                                                <div class="product-additional_item__title">
+                                                    Brand
+                                                </div>
+                                                <div class="product-additional_item__description">
+                                                    Brand name is the perfect pairing of quality and design.
+                                                    This label creates major everyday vibes with its
+                                                    collection of modern brooches, silver and gold
+                                                    jewellery,
+                                                    or clips it back with hair accessories in geo styles.
+                                                </div>
+                                            </div>
+                                            <div class="product-additional_item">
+                                                <div class="product-additional_item__title">
+                                                    Take care of me!
+                                                </div>
+                                                <div class="product-additional_item__description">
+                                                    Just here for the care instructions? <br />
+                                                    Yeah, we thought so...
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class="product-combine_arrow">
-                                    <i class="arrow-combine"></i>
-                                </a>
+                                <div class="product-tab_block">
+                                    <div class="product-tab_block__title">
+                                        <a role="button" class="product-tab_link" data-tab="product-combines">
+                                            Сочетается с
+                                        </a>
+                                    </div>
+                                    <div class="product-tab_item" id="product-combines">
+                                        <div class="product-combine">
+                                            <div class="product-combine_block">
+                                                <a href="#" class="product-combine_img">
+                                                    <img src="img/products/combine.jpg" alt="combine">
+                                                </a>
+                                                <div class="product-combine_info">
+                                                    <a href="#" class="product-combine_name">Платье-рубашка Vila в
+                                                        полоску</a>
+                                                    <div class="product-combine_rating product-rating">
+                                                        <div class="product-rating_inner">
+                                                            <div class="product-rating_star">
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star is-active"></i>
+                                                                <i class="icon-star"></i>
+                                                            </div>
+                                                            <div class="product-rating_value">
+                                                                (8)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="product-combine_color product-color product-color--small">
+                                                        <div class="product-color_list">
+                                                            <a role="button" class="product-color_item is-active">
+                                                                <span class="product-color_item__value"
+                                                                    style="background-color: #EDCBB9"></span>
+                                                            </a>
+                                                            <a role="button" class="product-color_item">
+                                                                <span class="product-color_item__value"
+                                                                    style="background-color: #ABD9D8"></span>
+                                                            </a>
+                                                            <a role="button" class="product-color_item">
+                                                                <span class="product-color_item__value"
+                                                                    style="background-color: #EDCBB9"></span>
+                                                            </a>
+                                                            <a role="button" class="product-color_item">
+                                                                <span class="product-color_item__value"
+                                                                    style="background-color: #ABD9D8"></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-combine_price">
+                                                        <div class="product-combine_price__current">
+                                                            $ 50.00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="product-combine_arrow">
+                                                    <i class="arrow-combine"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- /Product -->
-
-        <!-- Popular Goods -->
-        <section class="sec-popular-goods">
-            <div class="container">
-                <div class="sec-popular-goods_head">
-                    <div class="sec-popular-goods_title title-h3">
-                        Популярыне товары
-                    </div>
-                    <a href="#" class="sec-popular-goods_link-more">
-                        Смотреть все
-                    </a>
-                </div>
-                <div class="sec-popular-goods_inner">
-                    <div class="slider">
-                        <div class="slider_popular-goods" id="popular-goods-slider">
-                            <div class="slider_item">
-                                <div class="product-card">
-                                    <div class="product-card_head">
-                                        <a role="button" class="product-card_wishlist">
-                                            <i class="icon-wishlist"></i>
-                                        </a>
-                                        <a href="#" class="product-card_img">
-                                            <img src="img/products/product-card.jpg" alt="product-card">
-                                        </a>
-                                        <div class="product-card_action">
-                                            <a role="button" class="product-card_order">
-                                                + Добавить в корзину
-                                            </a>
-                                            <div class="product-card_size">
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xs
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    s
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    m
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    l
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xl
-                                                </a>
-                                            </div>
+                    <div class="product-item_combine product-combine">
+                        <div class="product-combine_title title-h4">
+                            Сочетается с
+                        </div>
+                        <div class="product-combine_block">
+                            <a href="#" class="product-combine_img">
+                                <img src="img/products/combine.jpg" alt="combine">
+                            </a>
+                            <div class="product-combine_info">
+                                <a href="#" class="product-combine_name">Платье-рубашка Vila в полоску</a>
+                                <div class="product-combine_rating product-rating">
+                                    <div class="product-rating_inner">
+                                        <div class="product-rating_star">
+                                            <i class="icon-star is-active"></i>
+                                            <i class="icon-star is-active"></i>
+                                            <i class="icon-star is-active"></i>
+                                            <i class="icon-star is-active"></i>
+                                            <i class="icon-star"></i>
                                         </div>
-                                    </div>
-                                    <div class="product-card_info">
-                                        <div class="product-card_color product-color product-color--small">
-                                            <div class="product-color_list">
-                                                <a role="button" class="product-color_item is-active">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="product-card_title title-h5">
-                                            Платье-рубашка Vila в полоску
-                                        </a>
-                                        <div class="product-card_price">
-                                            <div class="product-card_price__current">
-                                                $ 50.00
-                                            </div>
-                                        </div>
-                                        <div class="product-card_rating product-rating">
-                                            <div class="product-rating_inner">
-                                                <div class="product-rating_star">
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star"></i>
-                                                </div>
-                                                <div class="product-rating_value">
-                                                    (8)
-                                                </div>
-                                            </div>
+                                        <div class="product-rating_value">
+                                            (8)
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="slider_item">
-                                <div class="product-card">
-                                    <div class="product-card_head">
-                                        <a role="button" class="product-card_wishlist">
-                                            <i class="icon-wishlist"></i>
+                                <div class="product-combine_color product-color product-color--small">
+                                    <div class="product-color_list">
+                                        <a role="button" class="product-color_item is-active">
+                                            <span class="product-color_item__value"
+                                                style="background-color: #EDCBB9"></span>
                                         </a>
-                                        <a href="#" class="product-card_img">
-                                            <img src="img/products/product-card2.jpg" alt="product-card">
+                                        <a role="button" class="product-color_item">
+                                            <span class="product-color_item__value"
+                                                style="background-color: #ABD9D8"></span>
                                         </a>
-                                        <div class="product-card_action">
-                                            <a role="button" class="product-card_order">
-                                                + Добавить в корзину
-                                            </a>
-                                            <div class="product-card_size">
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xs
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    s
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    m
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    l
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xl
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <a role="button" class="product-color_item">
+                                            <span class="product-color_item__value"
+                                                style="background-color: #EDCBB9"></span>
+                                        </a>
+                                        <a role="button" class="product-color_item">
+                                            <span class="product-color_item__value"
+                                                style="background-color: #ABD9D8"></span>
+                                        </a>
                                     </div>
-                                    <div class="product-card_info">
-                                        <div class="product-card_color product-color product-color--small">
-                                            <div class="product-color_list">
-                                                <a role="button" class="product-color_item is-active">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="product-card_title title-h5">
-                                            Платье-рубашка Vila в полоску
-                                        </a>
-                                        <div class="product-card_price">
-                                            $ 50.00
-                                        </div>
-                                        <div class="product-card_rating product-rating">
-                                            <div class="product-rating_inner">
-                                                <div class="product-rating_star">
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star"></i>
-                                                </div>
-                                                <div class="product-rating_value">
-                                                    (8)
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="product-combine_price">
+                                    <div class="product-combine_price__current">
+                                        $ 50.00
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider_item">
-                                <div class="product-card">
-                                    <div class="product-card_head">
-                                        <a role="button" class="product-card_wishlist">
-                                            <i class="icon-wishlist"></i>
-                                        </a>
-                                        <a href="#" class="product-card_img">
-                                            <img src="img/products/product-card3.jpg" alt="product-card">
-                                        </a>
-                                        <div class="product-card_action">
-                                            <a role="button" class="product-card_order">
-                                                + Добавить в корзину
-                                            </a>
-                                            <div class="product-card_size">
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xs
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    s
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    m
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    l
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xl
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card_info">
-                                        <div class="product-card_color product-color product-color--small">
-                                            <div class="product-color_list">
-                                                <a role="button" class="product-color_item is-active">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="product-card_title title-h5">
-                                            Платье-рубашка Vila в полоску
-                                        </a>
-                                        <div class="product-card_price">
-                                            $ 50.00
-                                        </div>
-                                        <div class="product-card_rating product-rating">
-                                            <div class="product-rating_inner">
-                                                <div class="product-rating_star">
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star"></i>
-                                                </div>
-                                                <div class="product-rating_value">
-                                                    (8)
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider_item">
-                                <div class="product-card">
-                                    <div class="product-card_head">
-                                        <a role="button" class="product-card_wishlist">
-                                            <i class="icon-wishlist"></i>
-                                        </a>
-                                        <a href="#" class="product-card_img">
-                                            <img src="img/products/product-card4.jpg" alt="product-card">
-                                        </a>
-                                        <div class="product-card_action">
-                                            <a role="button" class="product-card_order">
-                                                + Добавить в корзину
-                                            </a>
-                                            <div class="product-card_size">
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xs
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    s
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    m
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    l
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xl
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card_info">
-                                        <div class="product-card_color product-color product-color--small">
-                                            <div class="product-color_list">
-                                                <a role="button" class="product-color_item is-active">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="product-card_title title-h5">
-                                            Платье-рубашка Vila в полоску
-                                        </a>
-                                        <div class="product-card_price">
-                                            $ 50.00
-                                        </div>
-                                        <div class="product-card_rating product-rating">
-                                            <div class="product-rating_inner">
-                                                <div class="product-rating_star">
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star"></i>
-                                                </div>
-                                                <div class="product-rating_value">
-                                                    (8)
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider_item">
-                                <div class="product-card">
-                                    <div class="product-card_head">
-                                        <a role="button" class="product-card_wishlist">
-                                            <i class="icon-wishlist"></i>
-                                        </a>
-                                        <a href="#" class="product-card_img">
-                                            <img src="img/products/product-card.jpg" alt="product-card">
-                                        </a>
-                                        <div class="product-card_action">
-                                            <a role="button" class="product-card_order">
-                                                + Добавить в корзину
-                                            </a>
-                                            <div class="product-card_size">
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xs
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    s
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    m
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    l
-                                                </a>
-                                                <a role="button" class="product-card_size__item basket-btn">
-                                                    xl
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card_info">
-                                        <div class="product-card_color product-color product-color--small">
-                                            <div class="product-color_list">
-                                                <a role="button" class="product-color_item is-active">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #EDCBB9"></span>
-                                                </a>
-                                                <a role="button" class="product-color_item">
-                                                    <span class="product-color_item__value"
-                                                          style="background-color: #ABD9D8"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="product-card_title title-h5">
-                                            Платье-рубашка Vila в полоску
-                                        </a>
-                                        <div class="product-card_price">
-                                            $ 50.00
-                                        </div>
-                                        <div class="product-card_rating product-rating">
-                                            <div class="product-rating_inner">
-                                                <div class="product-rating_star">
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star is-active"></i>
-                                                    <i class="icon-star"></i>
-                                                </div>
-                                                <div class="product-rating_value">
-                                                    (8)
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="#" class="product-combine_arrow">
+                                <i class="arrow-combine"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- /Popular Goods -->
+        </div>
+    </section>
+    <!-- /Product -->
 
-        <!-- Subscribe -->
-        <section class="sec-subscribe">
-            <div class="container">
-                <div class="sec-subscribe_inner">
-                    <h2 class="sec-subscribe_title title-h3">
-                        Подписка
-                    </h2>
-                    <div class="sec-subscribe_subtitle title-h6">
-                        Подпишитесь на нашу рассылку, чтобы быть в курсе последних коллекций и специальных предложений
+    @@include('html-components/_popular-goods.html', {
+		"class": "",
+	})
+
+    <!-- Subscribe -->
+    <section class="sec-subscribe">
+        <div class="container">
+            <div class="sec-subscribe_inner">
+                <h2 class="sec-subscribe_title title-h3">
+                    Подписка
+                </h2>
+                <div class="sec-subscribe_subtitle title-h6">
+                    Подпишитесь на нашу рассылку, чтобы быть в курсе последних коллекций и специальных предложений
+                </div>
+                <form action="#" class="sec-subscribe_form">
+                    <div class="input">
+                        <label class="input_label">
+                            <input type="text" class="input_field" placeholder="Введите email">
+                            <button class="input_btn" type="submit">
+                                <i class="icon-message"></i>
+                            </button>
+                        </label>
                     </div>
-                    <form action="#" class="sec-subscribe_form">
-                        <div class="input">
-                            <label class="input_label">
-                                <input type="text" class="input_field" placeholder="Введите email">
-                                <button class="input_btn" type="submit">
-                                    <i class="icon-message"></i>
-                                </button>
-                            </label>
-                        </div>
-                    </form>
-                    <div class="sec-subscribe_description">
-                        Нажимая на кнопку, я даю согласие на обработку персональных данных
-                    </div>
+                </form>
+                <div class="sec-subscribe_description">
+                    Нажимая на кнопку, я даю согласие на обработку персональных данных
                 </div>
             </div>
-        </section>
-        <!-- /Subscribe -->
+        </div>
+    </section>
+    <!-- /Subscribe -->
 
-    </main>
-    <!-- /Main content -->
+</main>
+<!-- /Main content -->
 
-@@include('_footer.html')
+@@include('html-components/_footer.html')

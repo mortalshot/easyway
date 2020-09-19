@@ -1,0 +1,78 @@
+.slider_popular-goods {
+	.slick-arrow {
+		width: 70px;
+		height: 40px;
+		border: none;
+		font-size: 0;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, 20%);
+		display: flex;
+		align-items: center;
+		transition: 0.3s ease all 0s;
+		padding: 0 10px;
+		cursor: pointer;
+		&:hover {
+			background: $blackPrimary;
+		}
+	}
+	.slick-prev {
+		left: -70px;
+
+		&:hover {
+			i {
+				transform: rotate(180deg);
+				background: url("../img/icons/arrow-slider-hover.svg") center no-repeat;
+			}
+		}
+	}
+	.slick-next {
+		transform: translate(0, 20%);
+		right: -70px;
+		justify-content: flex-end;
+
+		&:hover {
+			i {
+				transform: rotate(0);
+				background: url("../img/icons/arrow-slider-hover.svg") center no-repeat;
+			}
+		}
+	}
+
+	.slick-dots {
+		padding: 13px 0 8px;
+		display: flex;
+
+		li {
+			list-style-type: none;
+			button {
+				font-size: 0;
+				background: $grayLight;
+				border: none;
+				height: 2px;
+				width: 100%;
+				transition: 0.3s ease all 0s;
+			}
+
+			&.slick-active {
+				button {
+					background: $blackPrimary;
+				}
+			}
+		}
+	}
+}
+
+.slider {
+	@media screen and (max-width: 768px) {
+		padding: 0;
+	}
+}
+
+.slider_item {
+	.product-card {
+		@media screen and (max-width: 1299px) {
+			margin: 0 auto;
+		}
+	}
+}

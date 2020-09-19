@@ -1,0 +1,119 @@
+.banner-square {
+	// .banner-square__row
+	&__row {
+		margin: -20px -26px;
+
+		@media screen and (max-width: 1200px) {
+			margin: -10px;
+		}
+		@media screen and (max-width: 991px) {
+			margin: 0 -5px;
+		}
+		@media screen and (max-width: 600px) {
+			display: block;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex: 1 1 auto;
+
+		@media screen and (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	// .banner-square__item
+	&__item {
+		margin: 40px 20px;
+		padding: 104px 50px 48px;
+		flex: 1;
+		display: flex;
+		align-items: flex-end;
+		min-height: 310px;
+
+		@media screen and (max-width: 1200px) {
+			margin: 20px 10px;
+		}
+		@media screen and (max-width: 991px) {
+			margin: 10px 5px;
+			padding: 104px 20px 48px;
+			min-height: inherit;
+		}
+		@media screen and (max-width: 600px) {
+			flex: 1 1 100%;
+			max-width: 343px;
+			height: 310px;
+			margin: 0 auto 16px;
+			padding: 32px 24px;
+		}
+	}
+
+	// .banner-square__item--first
+	&__item--first {
+		flex: 0 0 37.3%;
+	}
+
+	// .banner-square__title-h2
+	&__title-h2 {
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 33px;
+		margin-bottom: 37px;
+		text-transform: inherit;
+		letter-spacing: -0.9px;
+
+		@media screen and (max-width: 1440px) {
+			font-size: calc(24px + 8 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+			line-height: calc(33 / 32);
+		}
+		@media screen and (max-width: 600px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .banner-square__btn
+	&__btn {
+		width: 168px;
+		font-weight: 500;
+	}
+
+	// .banner-square__item--second
+	&__item--second {
+		flex: 1;
+
+		.title-h2 {
+			margin-bottom: 30px;
+		}
+	}
+
+	// .banner-square__item--third
+	&__item--third {
+		padding: 104px 35px 48px;
+	}
+
+	// .banner-square__item--fourth
+	&__item--fourth {
+		padding: 104px 35px 48px;
+		
+		.title-h2 {
+			@media screen and (min-width: 601px) {
+				margin-bottom: 31px;
+			}
+		}
+	}
+
+	&__item--third,
+	&__item--fourth {
+		@media screen and (min-width: 768px) {
+			max-width: 343px;
+		}
+	}
+
+	// .banner-square__column
+	&__column {
+		@media screen and (max-width: 767px) {
+			flex: 0 0 50%;
+		}
+	}
+}

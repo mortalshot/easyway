@@ -45,12 +45,16 @@ let select = function () {
     function handleTabletChange(e) {
         if (e.matches) {
             let trigger = document.querySelector('.sorting__custom-select-wrapper .custom-select__trigger span');
-            trigger.innerHTML = "Сортировать по";
+            if (trigger) {
+                trigger.innerHTML = "Сортировать по";
+            }
         }
     }
     if (mediaQuery.matches) {
         let trigger = document.querySelector('.sorting__custom-select-wrapper .custom-select__trigger span');
-        trigger.innerHTML = "Сортировать по";
+        if (trigger) {
+            trigger.innerHTML = "Сортировать по";
+        }
     }
 };
 

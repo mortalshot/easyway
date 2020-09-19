@@ -1,0 +1,89 @@
+.banner-slider {
+	&__item {
+		@media screen and (min-width: 1441px) {
+			background-size: cover !important;
+		}
+		@media screen and (max-width: 1440px) {
+			background-position: right top !important;
+		}
+		@media screen and (max-width: 1200px) {
+			background-position: 80% 0% !important;
+		}
+		@media screen and (max-width: 991px) {
+			background-position: 70% 0% !important;
+			background-size: cover !important;
+		}
+		@media screen and (max-width: 575px) {
+			background-position: 75% 0% !important;
+		}
+		@media screen and (max-width: 450px) {
+			background-position: 79% 0% !important;
+		}
+	}
+	
+	// .banner__content
+	&__content {
+		max-width: 456px;
+		padding: 21.5vh 0;
+
+		@media screen and (max-width: 575px) {
+			padding: 37.3vh 0 0;
+			max-width: 200px;
+		}
+		@media screen and (max-width: 450px) {
+			max-width: 185px;
+		}
+	}
+
+	// .banner__title-h6
+	&__title-h6 {
+		margin-bottom: 26px;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: $grayPrimary;
+		letter-spacing: 1px;
+		
+		@media screen and (max-width: 575px) {
+			margin-bottom: 21px;
+		}
+	}
+
+	// .banner__title-h1
+	&__title-h1 {
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 1.1;
+		margin-bottom: 46px;
+		letter-spacing: -1px;
+
+		@media screen and (max-width: 1440px) {
+			font-size: calc(24px + 12 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+			line-height: calc(40 / 36);
+		}
+		@media screen and (max-width: 575px) {
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: 450px) {
+			line-height: 29px;
+		}
+	}
+
+	// .banner__button
+	&__button {
+		padding-bottom: 8px;
+
+		@media screen and (max-width: 575px) {
+			padding-bottom: 32px;
+		}
+	}
+
+	// .banner__btn
+	&__btn {
+		font-weight: 500;
+		width: 168px;
+
+		@media screen and (max-width: 450px) {
+			width: 162px;
+		}
+	}
+}

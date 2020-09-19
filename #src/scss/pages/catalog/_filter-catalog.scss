@@ -1,0 +1,140 @@
+
+.filter-catalog {
+	&__item {
+		@media screen and (min-width: 768px) {
+			margin-bottom: 25px;
+		}
+
+		.title-h6 {
+			margin-bottom: 33px;
+
+			@media screen and (max-width: 767px) {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 22px;
+				letter-spacing: 0;
+				margin: 0 -16px 0;
+				padding: 20px 30px 17px 16px;
+				border-bottom: 1px solid $grayLight;
+
+				&::before {
+					right: 24px;
+				}
+				&::after {
+					right: 30px;
+				}
+			}
+		}
+
+		.product-color_list {
+			margin-bottom: 13px;
+
+			@media screen and (max-width: 767px) {
+				margin: 0 -24px 0;
+				padding: 20px 30px 17px 16px;
+			}
+		}
+
+		.btn-txt {
+			letter-spacing: 1.3px;
+		}
+
+		.product-color_item {
+			margin: 0px 16px 0px 0px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.accordion__text {
+			@media screen and (max-width: 767px) {
+				padding: 0 0px 0 8px;
+			}
+			@media screen and (max-width: 450px) {
+				padding: 0 0px 0 8px;
+			}
+		}
+
+		.input-wrapper {
+			margin-bottom: 8px;
+
+			@media screen and (max-width: 767px) {
+				margin: 0 -24px 0;
+				padding: 20px 32px 10px 24px;
+				border-bottom: 1px solid $grayLight;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.input-wrapper--check input[type="checkbox"]:checked + label:before {
+			@media screen and (max-width: 767px) {
+				background: #fff url(../img/icons/Pressed.svg) no-repeat center;
+			}
+		}
+
+		.input-wrapper__label {
+			padding-left: 32px;
+
+			@media screen and (max-width: 767px) {
+				padding: 0px 32px 0px 0px;
+				width: 100%;
+				font-size: 14px;
+				line-height: 22px;
+
+				&::before {
+					border: 0;
+					right: 0;
+					left: auto;
+				}
+			}
+		}
+
+		&--color {
+			@media screen and (min-width: 768px) {
+				margin-bottom: 34px;
+			}
+			@media screen and (max-width: 767px) {
+				border-bottom: 1px solid $grayLight;
+				margin: 0 -16px;
+				padding: 0 16px 0;
+			}
+
+			.title-h6 {
+				margin-bottom: 24px;
+				@media screen and (max-width: 767px) {
+					border-bottom: none;
+				}
+			}
+
+			.btn-txt {
+				@media screen and (max-width: 767px) {
+					display: inline-block;
+					margin-bottom: 17px;
+				}
+			}
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		margin-bottom: 16px;
+
+		@media screen and (max-width: 767px) {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 1;
+			letter-spacing: 0.3px;
+
+			&:first-child {
+				margin-top: 42px;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

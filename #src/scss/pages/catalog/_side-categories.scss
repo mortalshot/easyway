@@ -1,0 +1,97 @@
+
+.side-categories {
+	flex: 0 0 180px;
+	padding: 23px 16px 23px 13px;
+	border-top: 1px solid $bgGray;
+	border-right: 1px solid $bgGray;
+
+	@media screen and (max-width: 767px) {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: #fff;
+		padding: 100px 15px 20px;
+		transition: 0.3s ease all 0s;
+		z-index: 4;
+
+		&.active {
+			top: 0;
+		}
+	}
+
+	&__title {
+		padding: 0 16px 23px 9px;
+		border-bottom: 1px solid $bgGray;
+		margin: 0 -16px 0 -13px;
+		letter-spacing: 0.8px;
+
+		@media screen and (min-width: 768px) {
+			pointer-events: none;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 20px 16px 17px;
+			margin: 0 -16px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 22px;
+			letter-spacing: 0;
+
+			&::before {
+				width: 32px;
+				height: 32px;
+				background: transparent url(../img/icons/chevron.svg) no-repeat;
+				transform: translate(-13px, -50%) rotate(0deg);
+			}
+			&::after {
+				display: none;
+			}
+
+			&.active {
+				&::before {
+					transform: translate(-13px, -50%) rotate(90deg);
+				}
+			}
+		}
+		@media screen and (max-width: 575px) {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 22px;
+		}
+		@media screen and (max-width: 450px) {
+			padding: 20px 16px 17px;
+		}
+	}
+
+	// .categories__accordion
+	&__accordion {
+		@media screen and (min-width: 768px) {
+			padding-top: 40px;
+		}
+	}
+
+	&__accordion-title {
+		@media screen and (max-width: 767px) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__text {
+		@media screen and (max-width: 450px) {
+			padding: 0;
+		}
+	}
+}
+
+.link-list {
+	padding: 0;
+	margin-bottom: 21px;
+
+	// .link-list__item
+	&__item {
+		list-style-type: none;
+		margin-bottom: 10px;
+	}
+}

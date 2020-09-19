@@ -1,17 +1,18 @@
 .sec-popular-goods {
 	padding: 40px 0;
-	
+
 	&_title {
 		margin-bottom: 40px;
 		text-align: center;
+		font-weight: 600;
+		letter-spacing: -0.7px;
 	}
-	
+
 	&_link-more {
 		display: none;
 	}
-	
+
 	@media (max-width: $screen-xs) {
-		
 		&_head {
 			display: flex;
 			justify-content: space-between;
@@ -19,14 +20,14 @@
 			padding-bottom: 4px;
 			border-bottom: 1px solid $grayLight;
 		}
-		
+
 		&_title {
 			margin-bottom: 0;
 			font-size: 18px;
 			font-weight: 700;
 			line-height: 24px;
 		}
-		
+
 		&_link-more {
 			display: inline-block;
 			color: $blackPrimary;
@@ -35,9 +36,37 @@
 			font-size: 14px;
 			line-height: 18px;
 			text-decoration: underline;
-			
+
 			&:hover {
 				color: $greenPrimary;
+			}
+		}
+	}
+
+	&--home {
+		padding-top: 63px;
+
+		@media screen and (max-width: 575px) {
+			padding: 33px 0px 0px 0px;
+
+			.sec-popular-goods_head {
+				border-bottom: none;
+			}
+
+			.sec-popular-goods_link-more {
+				display: none;
+			}
+
+			.title-h3 {
+				font-weight: 500;
+				border: none;
+				margin-bottom: 0;
+				letter-spacing: 0.1px;
+			}
+		}
+		@media screen and (max-width: 450px) {
+			.product-card .product-card_img {
+				padding-bottom: 137%;
 			}
 		}
 	}

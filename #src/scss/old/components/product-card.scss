@@ -118,11 +118,14 @@
 	}
 
 	&_title {
-		display: inline-block;
 		margin-bottom: 8px;
 		color: $blackSecondary;
 		font-size: 16px;
 		line-height: 24px;
+		display: block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 
 		&:hover {
 			color: $greenPrimary;
@@ -166,7 +169,7 @@
 	}
 
 	@media (max-width: $screen-xs) {
-		padding: 7px;
+		padding: 0 7px;
 
 		&_action {
 			left: 2px;

@@ -1,0 +1,122 @@
+.custom-select-wrapper {
+	position: relative;
+	user-select: none;
+	width: 100%;
+}
+.custom-select {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	&__trigger {
+		color: $blackPrimary;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+
+		span {
+			margin-right: 11px;
+		}
+
+		@media screen and (max-width: $screen-sm) {
+			text-transform: none;
+		}
+	}
+
+	&__custom-options {
+		position: absolute;
+		display: block;
+		min-width: 160px;
+		top: -50%;
+		right: 0;
+		transform: translate(6px, -100%);
+		background: #fefefe;
+		box-shadow: 0px 4px 11px rgba(29, 31, 34, 0.1);
+		transition: all 0.5s;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		z-index: 2;
+	}
+
+	&.open {
+		.custom-options {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
+		}
+	}
+}
+.custom-options {
+	&__option {
+		position: relative;
+		display: block;
+		width: 100%;
+		background: #fefefe;
+		color: $grayPrimary;
+		font-size: 16px;
+		font-weight: 400;
+		white-space: nowrap;
+		cursor: pointer;
+		transition: all 0.5s;
+		border-bottom: 1px solid $grayLight;
+		padding: 7px 8px;
+		&:hover {
+			cursor: pointer;
+			background-color: $bgGray;
+		}
+		&:last-child {
+			border-bottom-color: transparent;
+		}
+
+		@media screen and (max-width: $screen-sm) {
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+
+		&.selected {
+			color: $blackPrimary;
+			background-color: $bgGray;
+		}
+	}
+}
+.arrow {
+	position: relative;
+	height: 15px;
+	width: 15px;
+
+	&::before,
+	&::after {
+		content: "";
+		width: 9px;
+		height: 2px;
+		background-color: $blackSecondary;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		transition: 0.3s ease all 0s;
+	}
+
+	&::before {
+		transform: translate(0, -50%) rotate(-40deg);
+		right: 3px;
+	}
+
+	&::after {
+		transform: translate(0, -50%) rotate(40deg);
+		right: 9px;
+	}
+}
+.open {
+	.arrow {
+		&::before {
+			transform: translate(0, -50%) rotate(40deg);
+		}
+		&::after {
+			transform: translate(0, -50%) rotate(-40deg);
+		}
+	}
+}

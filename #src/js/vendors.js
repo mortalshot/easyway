@@ -2,6 +2,7 @@
 
 // libs 
 @@include('libs/dynamic-adapt.js')
+@@include('libs/slick.min.js')
 
 // components
 @@include('components/webp.js')
@@ -11,4 +12,5 @@
 @@include('components/popup.js')
 @@include('components/custom-select.js')
 @@include('components/header-fixed.js')
+@@include('components/slider.js')
 
