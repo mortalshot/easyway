@@ -44,10 +44,10 @@
 	}
 
 	&--home {
-		padding-top: 63px;
+		padding: 63px 0px 27px 0px;
 
 		@media screen and (max-width: 575px) {
-			padding: 33px 0px 0px 0px;
+			padding: 24px 0px 0 0px;
 
 			.sec-popular-goods_head {
 				border-bottom: none;
