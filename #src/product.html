@@ -481,36 +481,10 @@
     <!-- /Product -->
 
     @@include('html-components/_popular-goods.html', {
-		"class": "",
-	})
+    "class": "",
+    })
 
-    <!-- Subscribe -->
-    <section class="sec-subscribe">
-        <div class="container">
-            <div class="sec-subscribe_inner">
-                <h2 class="sec-subscribe_title title-h3">
-                    Подписка
-                </h2>
-                <div class="sec-subscribe_subtitle title-h6">
-                    Подпишитесь на нашу рассылку, чтобы быть в курсе последних коллекций и специальных предложений
-                </div>
-                <form action="#" class="sec-subscribe_form">
-                    <div class="input">
-                        <label class="input_label">
-                            <input type="text" class="input_field" placeholder="Введите email">
-                            <button class="input_btn" type="submit">
-                                <i class="icon-message"></i>
-                            </button>
-                        </label>
-                    </div>
-                </form>
-                <div class="sec-subscribe_description">
-                    Нажимая на кнопку, я даю согласие на обработку персональных данных
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /Subscribe -->
+    @@include('html-components/_sec-subscribe.html')
 
 </main>
 <!-- /Main content -->

@@ -1,33 +1,57 @@
 .sec-subscribe {
-	
 	&_inner {
 		padding: 48px 0;
-		border-top: 1px solid $grayLight;
-		border-bottom: 1px solid $grayLight;
+
+		@media screen and (min-width: 576px) {
+			border-top: 1px solid $grayLight;
+			border-bottom: 1px solid $grayLight;
+		}
 	}
-	
+
 	&_title {
+		font-weight: 600;
+		letter-spacing: -0.7px;
 		margin-bottom: 16px;
 		text-align: center;
+
+		@media screen and (max-width: 575px) {
+			margin-bottom: 21px;
+		}
 	}
-	
+
 	&_subtitle {
 		max-width: 428px;
-		margin: 0 auto 40px;
+		margin: 0 auto 35px;
 		text-align: center;
 	}
-	
+
 	&_form {
 		max-width: 318px;
 		margin: 0 auto 12px;
+
+		@media screen and (max-width: 575px) {
+			max-width: inherit;
+		}
 	}
-	
+
 	&_description {
 		margin: 0 auto;
 		max-width: 428px;
 		color: $blackSecondary;
-		font-size: 12px;
+		font-size: 10px;
 		line-height: 14px;
 		text-align: center;
+	}
+
+	.input_field {
+		@media screen and (max-width: 575px) {
+			padding-left: 8px;
+		}
+	}
+
+	.input_btn {
+		@media screen and (max-width: 575px) {
+			right: 5px;
+		}
 	}
 }
