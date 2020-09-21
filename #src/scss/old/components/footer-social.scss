@@ -1,19 +1,23 @@
 .footer-social {
-	
 	&_title {
 		margin-bottom: 16px;
 		color: $blackSecondary;
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 16px;
 		line-height: 24px;
+		letter-spacing: -0.5px;
 	}
-	
+
 	&_list {
 		display: flex;
 		align-items: center;
 		margin: 0 -7px;
+
+		@media screen and (max-width: 575px) {
+			justify-content: space-around;
+		}
 	}
-	
+
 	&_item {
 		margin: 0 7px;
 	}

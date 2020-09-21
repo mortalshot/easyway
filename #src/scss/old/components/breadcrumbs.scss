@@ -1,11 +1,16 @@
 .breadcrumbs {
 	margin-bottom: 24px;
-	
+
 	&__list {
 		display: flex;
 		align-items: center;
+		position: relative;
+
+		@media screen and (max-width: 575px) {
+			justify-content: center;
+		}
 	}
-	
+
 	&__link {
 		position: relative;
 		display: inline-block;
@@ -15,9 +20,9 @@
 		font-family: $fontSecond;
 		font-size: 14px;
 		line-height: 20px;
-		
+
 		&:after {
-			content: '';
+			content: "";
 			position: absolute;
 			right: 0;
 			top: 50%;
@@ -26,16 +31,48 @@
 			background-color: $grayPrimary;
 			transform: translate(0px, -39%);
 		}
-		
+
 		&:hover {
 			color: $blackPrimary;
 		}
-		
+
+		&--back {
+			@media screen and (max-width: 575px) {
+				font-size: 0;
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+				left: -12px;
+				padding: 0;
+				margin: 0;
+				line-height: 0;
+
+				&::after {
+					display: none;
+				}
+				&::before {
+					content: "";
+					display: block;
+					width: 32px;
+					height: 32px;
+					transform: rotate(-180deg);
+					background: url(../img/icons/chevron.svg) no-repeat center;
+				}
+			}
+		}
+
 		&.is-active {
 			margin-right: 0;
 			padding-right: 0;
 			color: $blackPrimary;
-			
+
+			@media screen and (max-width: 575px) {
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 32px;
+				text-align: center;
+			}
+
 			&:after {
 				display: none;
 			}

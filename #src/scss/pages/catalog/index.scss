@@ -1,9 +1,4 @@
-.page-categories {
-	&__breadcrumbs {
-		margin-top: 25px;
-	}
-}
-
+@import "page-categories";
 @import "side-categories";
 @import "catalog";
 @import "custom-select";

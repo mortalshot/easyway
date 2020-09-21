@@ -1,6 +1,6 @@
 .banner-with-cta {
-    margin-top: 64px;
-    
+	margin-top: 64px;
+
 	@media screen and (max-width: 1200px) {
 		background-position: 30% center !important;
 	}
@@ -11,10 +11,11 @@
 	&__row {
 		align-items: center;
 		margin: 0 -20px;
-
+		@media screen and (max-width: 991px) {
+			margin: 0 -15px;
+		}
 		@media screen and (max-width: 767px) {
 			min-height: 474px;
-			margin: 0 -15px;
 		}
 		@media screen and (max-width: 575px) {
 			align-items: flex-end;
@@ -30,7 +31,7 @@
 		flex: 0 0 50%;
 		padding: 0 20px;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 991px) {
 			padding: 0 15px;
 		}
 	}
@@ -60,8 +61,8 @@
 		color: $grayPrimary;
 		margin-bottom: 19px;
 		text-transform: uppercase;
-        letter-spacing: 1px;
-        
+		letter-spacing: 1px;
+
 		@media screen and (max-width: 575px) {
 			margin-bottom: 15px;
 		}

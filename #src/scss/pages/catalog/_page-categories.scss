@@ -1,0 +1,9 @@
+.page-categories {
+	&__breadcrumbs {
+        margin: 25px 0;
+        
+        @media screen and (max-width: 575px) {
+            margin: 16px 0;
+        }
+	}
+}

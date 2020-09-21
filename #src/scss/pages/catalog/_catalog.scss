@@ -14,6 +14,9 @@
 			text-transform: uppercase;
 			padding: 27px 3px 28px 45px;
 		}
+		@media screen and (max-width: 575px) {
+			padding: 14px 0;
+		}
 	}
 
 	&__top-wrapper {

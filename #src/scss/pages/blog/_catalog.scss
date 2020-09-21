@@ -1,0 +1,12 @@
+.catalog {
+	// .catalog__articles
+	&__articles {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -12px;
+
+		@media screen and (max-width: 767px) {
+			margin: 0 -7.5px;
+		}
+	}
+}

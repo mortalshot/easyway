@@ -17,7 +17,12 @@
 		cursor: pointer;
 
 		span {
-			margin-right: 11px;
+			margin: 0px 11px 0px 6px;
+
+			@media screen and (min-width: 768px) {
+				font-weight: 600;
+				letter-spacing: 0.7px;
+			}
 		}
 
 		@media screen and (max-width: $screen-sm) {

@@ -2777,39 +2777,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   function customAdapt() {//const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   }
 })();
-/*
-let block = document.querySelector('.click');
-block.addEventListener("click", function (e) {
-	alert('Все ок ;)');
-});
-*/
-
-/*
-//Объявляем переменные
-const parent_original = document.querySelector('.content__blocks_city');
-const parent = document.querySelector('.content__column_river');
-const item = document.querySelector('.content__block_item');
-//Слушаем изменение размера экрана
-window.addEventListener('resize', move);
-//Функция
-function move(){
-	const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	if (viewport_width <= 992) {
-		if (!item.classList.contains('done')) {
-			parent.insertBefore(item, parent.children[2]);
-			item.classList.add('done');
-		}
-	} else {
-		if (item.classList.contains('done')) {
-			parent_original.insertBefore(item, parent_original.children[2]);
-			item.classList.remove('done');
-		}
-	}
-}
-//Вызываем функцию
-move();
-*/
-
 
 !function (i) {
   "use strict";
@@ -3676,6 +3643,117 @@ $(document).ready(function () {
     $('.sorting__orderby-wrapper span').removeClass('active');
   });
 });
+$(document).ready(function () {
+  var showMore = document.querySelector('.show-more__label');
+  var catalogItem = document.querySelectorAll('.filter-catalog__item .title-h6');
+  mediaQueryMdMin = window.matchMedia('(min-width: 768px)');
+  mediaQuerySmMax = window.matchMedia('(max-width: 575px)'); // mediaQueryMdMin
+
+  mediaQueryMdMin.addListener(handleTabletChange);
+
+  function handleTabletChange(e) {
+    if (e.matches) {
+      if ($('#sideCategoriesMobileAccordion')) {
+        $('#sideCategoriesMobileAccordion').removeClass('accordion');
+        $('#sideCategoriesMobileAccordion .side-categories__item').removeClass('accordion__item');
+        $('#sideCategoriesMobileAccordion .side-categories__title').removeClass('accordion__title');
+        $('#sideCategoriesMobileAccordion .side-categories__text').removeClass('accordion__text');
+        $('#sideCategoriesMobileAccordion .side-categories__text').css({
+          display: "block"
+        });
+      }
+
+      if (showMore) {
+        showMore.innerHTML = "Показывать на странице";
+      }
+
+      if (catalogItem) {
+        for (var index = 0; index < catalogItem.length; index++) {
+          var catalogItems = catalogItem[index];
+          catalogItems.classList.remove('accordion__title');
+        }
+      }
+
+      if ($('.filter-catalog .accordion__text')) {
+        $('.filter-catalog .accordion__text').css({
+          display: "block"
+        });
+      }
+    } else {
+      if ($('#sideCategoriesMobileAccordion')) {
+        $('#sideCategoriesMobileAccordion').addClass('accordion');
+        $('#sideCategoriesMobileAccordion .side-categories__item').addClass('accordion__item');
+        $('#sideCategoriesMobileAccordion .side-categories__title').addClass('accordion__title');
+        $('#sideCategoriesMobileAccordion .side-categories__text').addClass('accordion__text');
+      }
+
+      if (showMore) {
+        showMore.innerHTML = "Отображать товаров";
+      }
+
+      if (catalogItem) {
+        for (var _index3 = 0; _index3 < catalogItem.length; _index3++) {
+          var _catalogItems = catalogItem[_index3];
+
+          _catalogItems.classList.add('accordion__title');
+        }
+      }
+    }
+  }
+
+  if (mediaQueryMdMin.matches) {
+    if ($('#sideCategoriesMobileAccordion')) {
+      $('#sideCategoriesMobileAccordion').removeClass('accordion');
+      $('#sideCategoriesMobileAccordion .side-categories__item').removeClass('accordion__item');
+      $('#sideCategoriesMobileAccordion .side-categories__title').removeClass('accordion__title');
+      $('#sideCategoriesMobileAccordion .side-categories__text').removeClass('accordion__text');
+      $('#sideCategoriesMobileAccordion .filter-catalog .accordion__text').css({
+        display: "block"
+      });
+    }
+
+    if (catalogItem) {
+      for (var index = 0; index < catalogItem.length; index++) {
+        var catalogItems = catalogItem[index];
+        catalogItems.classList.remove('accordion__title');
+      }
+    }
+  } else {
+    if (showMore) {
+      showMore.innerHTML = "Отображать товаров";
+    }
+  } // mediaQuerySmMax
+
+
+  mediaQuerySmMax.addListener(handleTabletChangeSmMax);
+
+  function handleTabletChangeSmMax(e) {
+    if (e.matches) {
+      if ($('.site_footer__block')) {
+        $('.site_footer__block').removeClass('accordion');
+        $('.site_footer__block .site_footer__text').removeClass('accordion__text');
+        $('.site_footer__block .site_footer__text').css({
+          display: "block"
+        });
+      }
+    } else {
+      if ($('.site_footer__block')) {
+        $('.site_footer__block').addClass('accordion');
+        $('.site_footer__block .site_footer__text').addClass('accordion__text');
+      }
+    }
+  }
+
+  if (mediaQuerySmMax.matches) {} else {
+    if ($('.site_footer__block')) {
+      $('.site_footer__block').removeClass('accordion');
+      $('.site_footer__block .site_footer__text').removeClass('accordion__text');
+      $('.site_footer__block .site_footer__text').css({
+        display: "block"
+      });
+    }
+  }
+});
 var popupLinks = document.querySelectorAll('.popup-link');
 var body = document.querySelector('body');
 var lockPadding = document.querySelectorAll(".lock-padding");
@@ -3701,16 +3779,16 @@ if (popupLinks.length > 0) {
 var popupCloseIcon = document.querySelectorAll('.close-popup');
 
 if (popupCloseIcon.length > 0) {
-  var _loop2 = function _loop2(_index3) {
-    var el = popupCloseIcon[_index3];
+  var _loop2 = function _loop2(_index4) {
+    var el = popupCloseIcon[_index4];
     el.addEventListener('click', function (e) {
       popupClose(el.closest('.popup'));
       e.preventDefault();
     });
   };
 
-  for (var _index3 = 0; _index3 < popupCloseIcon.length; _index3++) {
-    _loop2(_index3);
+  for (var _index4 = 0; _index4 < popupCloseIcon.length; _index4++) {
+    _loop2(_index4);
   }
 }
 
@@ -3749,8 +3827,8 @@ function bodyLock() {
   var lockPaddingValue = window.innerWidth - document.querySelector('.site-main').offsetWidth + 'px'; //!обратить внимание на контейнер
 
   if (lockPadding.length > 0) {
-    for (var _index4 = 0; _index4 < lockPadding.length; _index4++) {
-      var el = lockPadding[_index4];
+    for (var _index5 = 0; _index5 < lockPadding.length; _index5++) {
+      var el = lockPadding[_index5];
       el.style.paddingRight = lockPaddingValue;
     }
   }
@@ -3766,8 +3844,8 @@ function bodyLock() {
 function bodyUnLock() {
   setTimeout(function () {
     if (lockPadding.length > 0) {
-      for (var _index5 = 0; _index5 < lockPadding.length; _index5++) {
-        var el = lockPadding[_index5];
+      for (var _index6 = 0; _index6 < lockPadding.length; _index6++) {
+        var el = lockPadding[_index6];
         el.style.paddingRight = '0px';
       }
     }
@@ -3842,8 +3920,8 @@ var select = function select() {
     var options = this.closest('.custom-options');
     var option = options.querySelectorAll('.custom-options__option');
 
-    for (var _index6 = 0; _index6 < option.length; _index6++) {
-      var element = option[_index6];
+    for (var _index7 = 0; _index7 < option.length; _index7++) {
+      var element = option[_index7];
       element.classList.remove('selected');
     }
 
@@ -3928,81 +4006,4 @@ $('.banner-slider').slick({
 });
 $(document).ready(function () {
   $('#sideCategories-accordion .accordion__title:first').click();
-  var showMore = document.querySelector('.show-more__label');
-  var catalogItem = document.querySelectorAll('.filter-catalog__item .title-h6');
-  mediaQuery = window.matchMedia('(min-width: 768px)');
-  mediaQuery.addListener(handleTabletChange);
-
-  function handleTabletChange(e) {
-    if (e.matches) {
-      if ($('#sideCategoriesMobileAccordion')) {
-        $('#sideCategoriesMobileAccordion').removeClass('accordion');
-        $('#sideCategoriesMobileAccordion .side-categories__item').removeClass('accordion__item');
-        $('#sideCategoriesMobileAccordion .side-categories__title').removeClass('accordion__title');
-        $('#sideCategoriesMobileAccordion .side-categories__text').removeClass('accordion__text');
-        $('#sideCategoriesMobileAccordion .side-categories__text').css({
-          display: "block"
-        });
-      }
-
-      if (showMore) {
-        showMore.innerHTML = "Показывать на странице";
-      }
-
-      if (catalogItem) {
-        for (var _index7 = 0; _index7 < catalogItem.length; _index7++) {
-          var catalogItems = catalogItem[_index7];
-          catalogItems.classList.remove('accordion__title');
-        }
-      }
-
-      if ($('.filter-catalog .accordion__text')) {
-        $('.filter-catalog .accordion__text').css({
-          display: "block"
-        });
-      }
-    } else {
-      if ($('#sideCategoriesMobileAccordion')) {
-        $('#sideCategoriesMobileAccordion').addClass('accordion');
-        $('#sideCategoriesMobileAccordion .side-categories__item').addClass('accordion__item');
-        $('#sideCategoriesMobileAccordion .side-categories__title').addClass('accordion__title');
-        $('#sideCategoriesMobileAccordion .side-categories__text').addClass('accordion__text');
-      }
-
-      if (showMore) {
-        showMore.innerHTML = "Отображать товаров";
-      }
-
-      if (catalogItem) {
-        for (var _index8 = 0; _index8 < catalogItem.length; _index8++) {
-          var _catalogItems = catalogItem[_index8];
-
-          _catalogItems.classList.add('accordion__title');
-        }
-      }
-    }
-  }
-
-  if (mediaQuery.matches) {
-    if ($('#sideCategoriesMobileAccordion')) {
-      $('#sideCategoriesMobileAccordion').removeClass('accordion');
-      $('#sideCategoriesMobileAccordion .side-categories__item').removeClass('accordion__item');
-      $('#sideCategoriesMobileAccordion .side-categories__title').removeClass('accordion__title');
-      $('#sideCategoriesMobileAccordion .side-categories__text').removeClass('accordion__text');
-      $('#sideCategoriesMobileAccordion .filter-catalog .accordion__text').css({
-        display: "block"
-      });
-    }
-
-    if (catalogItem) {
-      for (var _index9 = 0; _index9 < catalogItem.length; _index9++) {
-        var catalogItems = catalogItem[_index9];
-        catalogItems.classList.remove('accordion__title');
-      }
-    }
-  } else {
-    if (showMore) {
-      showMore.innerHTML = "Отображать товаров";
-    }
-  }
 });
