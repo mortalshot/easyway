@@ -7,6 +7,14 @@
     // .article__wrapper
     &__wrapper {
         margin-left: 48px;
+        flex: 1;
+
+        @media screen and (max-width: 767px) {
+            margin-left: 15px;
+        }
+        @media screen and (max-width: 575px) {
+            margin-left: 0;
+        }
     }
 
     &__tabs-label {
@@ -15,6 +23,10 @@
         line-height: 24px;
         letter-spacing: -0.5px;
         margin-bottom: 16px;
+        
+        @media screen and (max-width: 767px) {
+            margin-bottom: 13px;
+        }
     }
 
     &__tabs-triggers {
@@ -40,7 +52,7 @@
 
             &--active {
                 color: $blackPrimary;
-                
+
                 &::after {
                     width: 112%;
                     height: 2px;

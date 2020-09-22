@@ -1,17 +1,32 @@
 .comment-form {
     margin-bottom: 100px;
 
+    @media screen and (max-width: 991px) {
+        margin-bottom: 70px;
+    }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 52px;
+    }
+
     .input-wrapper {
         position: relative;
         display: flex;
         height: 192px;
         border: 1px solid $blackSecondary;
+
+        @media screen and (max-width: 767px) {
+            height: 176px;
+        }
     }
 
     .input-wrapper__textarea {
         width: 100%;
         border: none;
         height: 112px;
+
+        @media screen and (max-width: 767px) {
+            height: 96px;
+        }
     }
 
     &__btn {
@@ -21,5 +36,10 @@
         width: 168px;
         font-weight: 500;
         letter-spacing: 0.5px;
+
+        @media screen and (max-width: 767px) {
+            bottom: 11px;
+            right: 11px;
+        }
     }
 }

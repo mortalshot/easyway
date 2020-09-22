@@ -1,0 +1,19 @@
+.comment-rating {
+	display: flex;
+	// .comment-rating__like
+	&__like {
+		display: flex;
+		align-items: center;
+	}
+
+	// .comment-rating__dislike
+	&__dislike {
+		display: flex;
+		align-items: center;
+		margin-right: 11px;
+	}
+
+	i {
+		margin-right: 5px;
+	}
+}

@@ -1,6 +1,10 @@
 .article-page-content {
 	margin: 49px auto 0;
 
+	@media screen and (max-width: 767px) {
+		margin-top: 24px;
+	}
+
 	p {
 		margin: 15px 0;
 		font-weight: 400;
@@ -15,10 +19,41 @@
 		line-height: 32px;
 		letter-spacing: -0.7px;
 		max-width: 540px;
+
+		@media screen and (max-width: $size-layout-desktop + 'px') {
+			font-size: calc(18px + 6 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+			line-height: calc(32 / 24);
+		}
+		@media screen and (max-width: 575px) {
+			letter-spacing: -0.5px;
+		}
 	}
 
 	img {
 		display: block;
 		margin: 24px 0;
+		max-width: 100%;
+		height: auto;
+
+		@media screen and (max-width: 425px) {
+			width: 100%;
+			max-width: inherit;
+		}
+	}
+
+	&__row-image {
+		flex: 0 0 267px;
+	}
+
+	br {
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	&__row {
+		@media screen and (max-width: 575px) {
+			display: block;
+		}
 	}
 }

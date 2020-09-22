@@ -7,12 +7,18 @@
 	border-bottom: 1px solid $grayLight;
 	margin: 56px 0;
 
+	@media screen and (max-width: 767px) {
+		margin: 30px 0 40px;
+		padding: 16px 0;
+	}
+
 	// .taxonomy-article__label
 	&__label {
 		display: inline-block;
 		color: $graySecondary;
 		background-color: $grayLight;
 		padding: 3px 12px;
+		text-transform: uppercase;
 	}
 
 	// .taxonomy-article__social

@@ -3,11 +3,22 @@
 	text-align: center;
 	margin-bottom: 28px;
 
+	@media screen and (max-width: 767px) {
+		margin-bottom: 0;
+	}
+
 	// .thumbnail-main__wrapper
 	&__wrapper {
 		max-width: 540px;
 		margin: 0 auto;
 		padding: 217px 0 232px;
+
+		@media screen and (max-width: 767px) {
+			padding: 152px 0 162px;
+		}
+		@media screen and (max-width: 575px) {
+			padding: 108px 0;
+		}
 	}
 
 	// .thumbnail-main__date
