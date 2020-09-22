@@ -65,4 +65,17 @@
 		font-size: 18px;
 		line-height: 23px;
 	}
+
+	&_wrapper {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+
+	&_attribute {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
