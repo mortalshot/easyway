@@ -1,94 +1,110 @@
-
 .help-tabs {
-	display: flex;
-	align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
 
-	&__triggers {
-		flex-direction: column;
-		align-items: flex-start;
-		flex: 0 0 30.2%;
-		background-color: $grayLight;
-		padding: 40px;
+    &__triggers {
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 0 0 30.2%;
+        background-color: $grayLight;
+        padding: 40px;
 
-		@media screen and (max-width: 767px) {
-			padding: 25px 30px;
-		}
-		@media screen and (max-width: 575px) {
-			padding: 0;
-			flex: 0;
-		}
+        @media screen and (max-width: 767px) {
+            padding: 25px 30px;
+        }
+        @media screen and (max-width: 575px) {
+            padding: 0;
+            flex: 0;
+        }
     }
-    
-	&__desktop {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
 
-		@media screen and (max-width: 575px) {
-			display: none;
-		}
-	}
+    &__desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-	.title-h3 {
-		@media screen and (max-width: 767px) {
-			font-weight: 600;
-			font-size: 24px;
-			line-height: 32px;
-			padding: 20px 16px 17px;
-		}
-		@media screen and (max-width: 575px) {
-			display: none;
-		}
-	}
+        @media screen and (max-width: 575px) {
+            display: none;
+        }
+    }
 
-	// .help-tabs__item
-	&__item {
-		font-size: 18px;
-		line-height: 26px;
-		color: $blackSecondary;
-		margin-bottom: 16px;
+    .title-h3 {
+        @media screen and (max-width: 767px) {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            padding: 20px 16px 17px;
+        }
+        @media screen and (max-width: 575px) {
+            display: none;
+        }
+    }
 
-		@media screen and (max-width: 575px) {
-			justify-content: space-between;
-			padding: 20px 0;
-			margin: 0;
-			border-bottom: 1px solid $grayLight;
+    // .help-tabs__item
+    &__item {
+        font-size: 18px;
+        line-height: 26px;
+        color: $blackSecondary;
+        margin-bottom: 16px;
 
-			&.tabs-triggers__item--active {
-				i {
-					transform: rotate(90deg);
-					transition: 0.3s ease all 0s;
-				}
-			}
-		}
-	}
+        @media screen and (max-width: 575px) {
+            justify-content: space-between;
+            padding: 13px 0 15px;
+            margin: 0;
+            border-bottom: 1px solid $grayLight;
 
-	&__content {
-		margin-left: 96px;
-		@media screen and (max-width: 1200px) {
-			margin-left: 48px;
-		}
-		@media screen and (max-width: 991px) {
-			margin-left: 30px;
-		}
-		@media screen and (max-width: 767px) {
-			margin-left: 15px;
-		}
-		@media screen and (max-width: 575px) {
-			margin: 0;
-		}
-	}
+            &.tabs-triggers__item--active {
+                i {
+                    transform: rotate(90deg);
+                    transition: 0.3s ease all 0s;
+                }
+            }
+        }
+    }
 
-	// .help-tabs__wrapper
-	&__wrapper {
-		margin-bottom: 40px;
-	}
+    &__content {
+        margin-left: 96px;
+        @media screen and (max-width: 1200px) {
+            margin-left: 48px;
+        }
+        @media screen and (max-width: 991px) {
+            margin-left: 30px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-left: 15px;
+        }
+        @media screen and (max-width: 575px) {
+            margin: 0;
+            padding: 20px 0px 42px 0px;
+        }
+    }
 
-	// .help-tabs__title
-	&__title {
-		font-size: 24px;
-		line-height: 32px;
-		margin-bottom: 24px;
-		letter-spacing: -0.5px;
-	}
+    // .help-tabs__wrapper
+    &__wrapper {
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0 0 0 27px;
+        }
+    }
+
+    // .help-tabs__title
+    &__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+        letter-spacing: -0.5px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.9px;
+            margin-bottom: 16px;
+        }
+    }
 }
