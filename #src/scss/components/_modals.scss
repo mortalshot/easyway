@@ -152,4 +152,62 @@
             }
         }
     }
+
+    &--help {
+        &.open {
+            .popup__content {
+                transform: perspective(0) translate(0, 0) rotateX(0deg);
+            }
+        }
+
+        .popup__close-wrapper {
+            margin: 0 -16px;
+            display: flex;
+            align-items: center;
+
+            i {
+                transform: rotate(180deg);
+            }
+        }
+
+        .close-popup {
+            z-index: 56;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 56px;
+            position: initial;
+            border-bottom: 1px solid $grayLight;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+        }
+
+        .popup__body{
+            padding: 40px 0 0;
+            justify-content: flex-start;
+        }
+
+        .popup__content {
+            transform: translate(-500px, 0);
+            background: #fff;
+            max-width: 100%;
+            padding: 33px 56px;
+            min-height: 100vh;
+
+            @media screen and (max-width: 767px) {
+                padding: 0 16px 38px;
+                max-width: 375px;
+            }
+            @media screen and (max-width: 575px) {
+                max-width: 100%;
+            }
+        }
+
+        .tabs-triggers__item--active {
+            box-shadow: none;
+        }
+    }
 }

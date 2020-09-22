@@ -1,0 +1,36 @@
+.help-page {
+	&__breadcrumbs {
+		@media screen and (max-width: 575px) {
+			display: none;
+		}
+	}
+	
+	&__menu-mobile {
+		
+		@media screen and (min-width: 576px) {
+			display: none;
+		}
+
+		margin: 0 -16px;
+		border-bottom: 1px solid $grayLight;
+		
+		a {
+			padding: 16px 0;
+			position: relative;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 24px;
+			color: $blackPrimary;
+			background-color: #fff;
+			display: inline-flex;
+			align-items: center;
+		}
+
+		i.icon-chevron-fff {
+			width: 40px;
+			height: 40px;
+			background-color: $blackPrimary;
+			margin-right: 16px;
+		}
+	}
+}
