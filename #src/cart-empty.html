@@ -1,0 +1,28 @@
+@@include('html-components/_header.html')
+
+<main class="site-main cart-page">
+	<div class="container">
+		<div class="cart-page__breadcrumbs page-categories__breadcrumbs breadcrumbs">
+			<div class="breadcrumbs__list">
+				<a href="/" class="breadcrumbs__link breadcrumbs__link--back">
+					Главная
+				</a>
+				<span class="breadcrumbs__link is-active">
+					Корзина
+				</span>
+			</div>
+		</div>
+		<section class="cart-empty">
+			<div class="cart-empty__container">
+				<div class="cart-empty__img">
+					<img src="img/icons/basket-empty.svg" alt="">
+				</div>
+				<h1 class="cart-empty__title">Ваша корзина пустая</h1>
+				<div class="cart-empty__description">Вы еще не добавили ни один товар в корзину</div>
+				<a href="/catalog.html" class="cart-empty__btn btn-dark">Продолжить покупки</a>
+			</div>
+		</section>
+	</div>
+</main>
+
+@@include('html-components/_footer.html')
