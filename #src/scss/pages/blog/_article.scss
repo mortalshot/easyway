@@ -1,17 +1,17 @@
 .article {
 	flex: 0 0 33%;
-	padding: 0 12px 72px;
+	padding: 36px 12px;
 
 	@media screen and (max-width: 991px) {
 		flex: 0 0 50%;
-		padding-bottom: 50px;
+		padding: 25px 12px;
 	}
 	@media screen and (max-width: 767px) {
-		padding: 0px 7.5px 50px;
+		padding: 25px 7.5px;
 	}
 	@media screen and (max-width: 450px) {
 		flex: 0 0 100%;
-		padding: 24px 7.5px 0;
+		padding: 12px 7.5px;
 	}
 
 	// .article__img

@@ -1,0 +1,29 @@
+.taxonomy-article {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	border-top: 1px solid $grayLight;
+	border-bottom: 1px solid $grayLight;
+	margin: 56px 0;
+
+	// .taxonomy-article__label
+	&__label {
+		display: inline-block;
+		color: $graySecondary;
+		background-color: $grayLight;
+		padding: 3px 12px;
+	}
+
+	// .taxonomy-article__social
+	&__social {
+		display: flex;
+		align-items: center;
+	}
+
+	// .taxonomy-article__social-label
+	&__social-label {
+		color: $blackSecondary;
+		margin-right: 8px;
+	}
+}

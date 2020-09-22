@@ -3,10 +3,13 @@
 	&__articles {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -12px;
+		margin: -36px -12px 0;
 
-		@media screen and (max-width: 767px) {
-			margin: 0 -7.5px;
+		@media screen and (max-width: 991px) {
+			margin: -25px -7.5px 0;
+		}
+		@media screen and (max-width: 450px) {
+			margin: -12px -7.5px 0;
 		}
 	}
 }

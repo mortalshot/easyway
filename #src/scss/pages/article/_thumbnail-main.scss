@@ -1,0 +1,32 @@
+.thumbnail-main {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 28px;
+
+	// .thumbnail-main__wrapper
+	&__wrapper {
+		max-width: 540px;
+		margin: 0 auto;
+		padding: 217px 0 232px;
+	}
+
+	// .thumbnail-main__date
+	&__date {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 8px;
+	}
+
+	// .thumbnail-main__title
+	&__title {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 40px;
+
+		@media screen and (max-width: $size-layout-desktop + 'px') {
+			font-size: calc(24px + 12 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+			line-height: calc(40 / 36);
+		}
+	}
+}

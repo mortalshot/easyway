@@ -1,0 +1,25 @@
+.comment-form {
+    margin-bottom: 100px;
+
+    .input-wrapper {
+        position: relative;
+        display: flex;
+        height: 192px;
+        border: 1px solid $blackSecondary;
+    }
+
+    .input-wrapper__textarea {
+        width: 100%;
+        border: none;
+        height: 112px;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        width: 168px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+}

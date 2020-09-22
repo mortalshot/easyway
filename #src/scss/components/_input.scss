@@ -3,38 +3,17 @@
 
     &__text {
         width: 100%;
-        max-width: 264px;
+        font-family: $font;
+        font-weight: 400;
         font-size: 16px;
         line-height: 22px;
-        color: #fff;
-        background: transparent;
+        color: $blackSecondary;
         border-radius: 0;
-        padding: 15px 10px;
-        border: none;
-        border-bottom: 1px solid #615D5D;
-
-        @media screen and (max-width: 1440px) {
-            font-size: calc(12px + 4 * ((100vw - 320px) / (1440 - 320)));
-            line-height: calc(22 / 16);
-        }
-
-        @media screen and (max-width: 575px) {
-            padding: 12px 9px;
-        }
         
         &::placeholder {
-            font-weight: 400;
-            color: #fff;
+            color: $blackSecondary;
             opacity: 1;
             transition: 0.5s ease all 0s;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
-
-            @media screen and (max-width: 1440px) {
-                font-size: calc(12px + 6 * ((100vw - 320px) / (1440 - 320)));
-                line-height: calc(22 / 18);
-            }
         }
 
         &:focus {
@@ -46,10 +25,9 @@
     }
 
     &__textarea {
-        max-width: 558px;
-        height: 52px;
-        resize: vertical;
         overflow: hidden;
+        resize: none;
+        padding: 15px;
     }
 
     input[type="radio"] {
