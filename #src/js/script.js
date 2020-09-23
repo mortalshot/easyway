@@ -13,4 +13,5 @@ $(document).ready(function () {
     $('.help-page__menu-mobile a').click(function () {
         $('.help-page__menu-mobile a').toggleClass('active');
     });
+    
 }); 
