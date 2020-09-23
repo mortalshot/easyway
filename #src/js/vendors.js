@@ -14,4 +14,6 @@
 @@include('components/custom-select.js')
 @@include('components/header-fixed.js')
 @@include('components/slider.js')
+@@include('components/lk.js')
+@@include('components/checkout-step.js')
 

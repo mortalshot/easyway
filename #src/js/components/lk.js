@@ -19,9 +19,30 @@ $(document).ready(function () {
         }
     });
 
+
+    $('.lk-wrapper__content-tab').click(function(e){
+        e.preventDefault();
+        var href = $(this).attr('href');
+        if(href !== '#'){
+            $(this).siblings().removeClass('lk-wrapper__content-tab--active');
+            $(this).addClass('lk-wrapper__content-tab--active');
+
+
+            $('.signin-wrapper__auth-box').removeClass('signin-wrapper__auth-box--active');
+            $(href).addClass('signin-wrapper__auth-box--active');
+        }
+    });
+
+
+
     $('.lk-wrapper__add-address').click(function(){
         var clone = $('.lk-wrapper__form-address:first').clone();
         clone.find('input').val('');
         $(this).before(clone);
     });
+
+    $('.lk-reviews-item__remove').click(function(e){
+        e.preventDefault();
+        var review = $(this).closest('.lk-reviews-item').fadeOut(400, function() { $(this).remove(); });
+    })
 });

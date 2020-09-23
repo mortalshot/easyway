@@ -1,0 +1,66 @@
+@@include('html-components/_header.html')
+
+<div class="lk-wrapper container">
+	
+	@@include('html-components/_lk-sidebar.html')
+
+	<div class="lk-wrapper__content">
+		<div class="lk-wrapper__content-nav">
+			<a href="#" class="lk-wrapper__content-tab lk-wrapper__content-tab--active">История заказов</a>
+		</div>
+
+		<div class="lk-wrapper__content-box lk-wrapper__content-box--active">
+			<p class="lk-wrapper__content-notation">Проверяйте детали и статус ваших заказов в интернет-магазине. Вы также можете отменить свой заказ или запрос возвращение.</p>
+			<div class="lk-table">
+				<table>
+			  <thead>
+			    <tr>
+			      <th scope="col">Номер</th>
+			      <th scope="col">Дата оплаты</th>
+			      <th scope="col">Способ оплаты</th>
+			      <th scope="col">Стоимость</th>
+			      <th scope="col">Статус</th>
+			      <th scope="col"><a href="#">Скачать все</a></th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td data-label="Номер">#35765</td>
+			      <td data-label="Дата оплаты">4 авг, 2020</td>
+			      <td data-label="Способ оплаты">PayPal</td>
+			      <td data-label="Стоимость">$12.00</td>
+			      <td data-label="Статус"><span class="lk-order-history__status lk-order-history__status--panding">В ожидании</span></td>
+			      <td data-label='Ссылка'><a href="lk-order-history-details.html">Подробнее</a></td>
+			    </tr>
+			    <tr>
+			      <td data-label="Номер">#35765</td>
+			      <td data-label="Дата оплаты">4 авг, 2020</td>
+			      <td data-label="Способ оплаты">PayPal</td>
+			      <td data-label="Стоимость">$12.00</td>
+			      <td data-label="Статус"><span class="lk-order-history__status lk-order-history__status--return">Возврат</span></td>
+			      <td data-label='Ссылка'><a href="lk-order-history-details.html">Подробнее</a></td>
+			    </tr>
+			    <tr>
+			      <td data-label="Номер">#35765</td>
+			      <td data-label="Дата оплаты">4 авг, 2020</td>
+			      <td data-label="Способ оплаты">PayPal</td>
+			      <td data-label="Стоимость">$12.00</td>
+			      <td data-label="Статус"><span class="lk-order-history__status lk-order-history__status--delivered">Доставлен</span></td>
+			      <td data-label='Ссылка'><a href="lk-order-history-details.html">Подробнее</a></td>
+			    </tr>
+			    <tr>
+			      <td data-label="Номер">#35765</td>
+			      <td data-label="Дата оплаты">4 авг, 2020</td>
+			      <td data-label="Способ оплаты">PayPal</td>
+			      <td data-label="Стоимость">$12.00</td>
+			      <td data-label="Статус"><span class="lk-order-history__status lk-order-history__status--panding">В ожидании</span></td>
+			      <td data-label='Ссылка'><a href="lk-order-history-details.html">Подробнее</a></td>
+			    </tr>
+			  </tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+@@include('html-components/_footer.html')

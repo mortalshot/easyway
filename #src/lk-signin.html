@@ -1,0 +1,122 @@
+@@include('html-components/_header.html')
+
+<div class="signin-wrapper container">
+	<div class="signin-wrapper__nav">
+		<div class="lk-wrapper__content-nav">
+			<a href="#signin" class="lk-wrapper__content-tab lk-wrapper__content-tab--active">Войти</a>
+			<a href="#signup" class="lk-wrapper__content-tab">Зарегистрироваться</a>
+		</div>
+	</div>
+
+	<div class="signin-wrapper__offer-container">
+		<p class="signin-wrapper__offer-notation">Воспользуйтесь привилегиями с помощью бесплатной учетной записи</p>
+
+		<div class="signin-wrapper__offer-box">
+			<div class="signin-wrapper__offer">
+				<div class="signin-wrapper__offer-icon">
+					<img src="img/icons/clock.svg" alt="">
+				</div>
+				<div class="signin-wrapper__offer-text">Быстрое оформление заказов</div>
+			</div>
+			<div class="signin-wrapper__offer">
+				<div class="signin-wrapper__offer-icon">
+					<img src="img/icons/man.svg" alt="">
+				</div>
+				<div class="signin-wrapper__offer-text">Участие в программе вознаграждений</div>
+			</div>
+			<div class="signin-wrapper__offer">
+				<div class="signin-wrapper__offer-icon">
+					<img src="img/icons/money.svg" alt="">
+				</div>
+				<div class="signin-wrapper__offer-text">Начисление скидок с каждой новой покупкой</div>
+			</div>
+			<div class="signin-wrapper__offer">
+				<div class="signin-wrapper__offer-icon">
+					<img src="img/icons/heart.svg" alt="">
+				</div>
+				<div class="signin-wrapper__offer-text">Управление избранным товарами</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="signin-wrapper__auth">
+		<div class="signin-wrapper__auth-box signin-wrapper__auth-box--active" id="signin">
+			<form action="" class="signin-form auth-form">
+				<div class="auth-form__title">Войти</div>
+
+				<div class="input-group">      
+					<input type="text" class="input-group__field" required="">
+					<label class="input-group__title">Email</label>
+				</div>
+
+				<div class="input-group">      
+					<input type="password" class="input-group__field" required="">
+					<label class="input-group__title">Пароль</label>
+					<button type="button" class="change-view-password-js input_btn"><i class="icon-eye"></i></button>
+				</div>
+				<p class="input-group__notation"><a href="#">Забыли пароль?</a></p>
+
+				<input type="submit" class="auth-form__submit btn-dark" value="Войти">
+			</form>
+
+			<div class="auth-social">
+				<div class="auth-social__title">Войти с помощью</div>
+				<div class="auth-social__links">
+					<a href="#"><i class="icon-facebook"></i></a>
+					<a href="#"><i class="icon-google-plus"></i></a>
+					<a href="#"><i class="icon-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="signin-wrapper__auth-box" id="signup">
+			<form action="" class="signup-form auth-form">
+				<div class="auth-form__title">Зарегистрироваться</div>
+				<div class="input-group">      
+					<input type="text" class="input-group__field" required="">
+					<label class="input-group__title">Имя</label>
+				</div>
+				<div class="input-group">      
+					<input type="text" class="input-group__field" required="">
+					<label class="input-group__title">Email</label>
+				</div>
+				<div class="input-group">      
+					<input type="password" class="input-group__field" required="">
+					<label class="input-group__title">Старый пароль</label>
+				</div>
+				<div class="input-group">      
+					<input type="password" class="input-group__field" required="">
+					<label class="input-group__title">Новый пароль</label>
+					<button type="button" class="change-view-password-js input_btn"><i class="icon-eye"></i></button>
+				</div>
+
+				<div class="input-group">      
+					<input type="password" class="input-group__field" required="">
+					<label class="input-group__title">Подтвердите пароль</label>
+					<button type="button" class="change-view-password-js input_btn"><i class="icon-eye"></i></button>
+				</div>
+
+				<p class="auth-form__notation">При регистрации вы соглашаетесь с нашими <a href="#">Условиями пользования</a>, а также с <a href="#">Политикой Конфиденциальности</a> и Cookie</p>
+
+				<label class="checkbox-group checkbox-group--subscribe">
+					<input type="checkbox" class="checkbox-group__field">
+					<div class="checkbox-group__text">Я хочу получать сообщения о новых коллекция, акциях и распродажах</div>
+				</label>
+
+				<input type="submit" class="auth-form__submit btn-dark" value="Зарегистрироваться">
+			</form>
+
+			<div class="auth-social">
+				<div class="auth-social__title">Зарегистрироваться с помощью</div>
+				<div class="auth-social__links">
+					<a href="#"><i class="icon-facebook"></i></a>
+					<a href="#"><i class="icon-google-plus"></i></a>
+					<a href="#"><i class="icon-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+@@include('html-components/_footer.html')
