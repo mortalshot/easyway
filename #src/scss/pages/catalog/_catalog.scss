@@ -133,7 +133,8 @@
 
 			@media screen and (max-width: 767px) {
 				flex: 1 1 auto;
-				font-weight: 500;
+				font-weight: 600;
+				letter-spacing: 0.3px;
 				font-size: 16px;
 				line-height: 22px;
 				color: $blackSecondary;
@@ -146,9 +147,10 @@
 				font-size: 16px;
 				line-height: 22px;
 				position: relative;
+				
 				.arrow {
 					transform: rotate(90deg);
-					right: 8px;
+					right: -1px;
 					top: 3px;
 				}
 			}

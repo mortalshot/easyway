@@ -15,6 +15,9 @@
 		&:hover {
 			background: $blackPrimary;
 		}
+		&:focus {
+			outline: none;
+		}
 	}
 	.slick-prev {
 		left: -70px;
