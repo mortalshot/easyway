@@ -1,0 +1,29 @@
+.checkout {
+	&__row {
+		align-items: flex-start;
+	}
+
+	// .checkout__content
+	&__content {
+		margin-right: 84px;
+		flex: 1 1 auto;
+	}
+
+	// .checkout__sign-in
+	&__sign-in {
+		padding: 24px 0;
+		text-align: center;
+		border-top: 1px solid $grayLight;
+		border-bottom: 1px solid $grayLight;
+		color: #000;
+
+		a {
+			color: $blue;
+			text-decoration: underline;
+		}
+	}
+
+    &__summary {
+		flex: 0 0 452px;
+	}
+}

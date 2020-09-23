@@ -33,8 +33,14 @@ $(document).ready(function () {
         $('input:radio[name="payment"]').change(function () {
             let checkoutStepID = $(this).closest('.step-checkout').attr("id");
             $('#' + checkoutStepID + ' ' + '.radio-group__checked').not($(this).next()).slideUp(300);
-
-            $(this).next('.radio-group__checked').slideDown(300);
+            $(this).parent().children('.radio-group__checked').slideDown(300);
         })
     }
+
+    $('.radio-group__field').click(function (e) {
+        let checkoutStepID = $(this).closest('.step-checkout').attr("id");
+        $('#' + checkoutStepID + ' ' + '.radio-group').removeClass('_active');
+
+        $(this).parent().addClass('_active');
+    })
 });

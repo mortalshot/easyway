@@ -22,7 +22,7 @@
 					<div id="checkoutStep-1" class="checkout__step step-checkout">
 						<div class="row">
 							<div class="step-checkout__title step-checkout__title--row">Ваш населенный пункт:</div>
-							<div class="step-checkout__input">
+							<div class="step-checkout__input mb-0 p-0">
 								<div class="input-group">
 									<input id="settlement-input" type="text" class="input-group__field" required="">
 									<label class="input-group__title">Название населенного пункта</label>
@@ -33,32 +33,34 @@
 
 					<div id="checkoutStep-2" class="checkout__step step-checkout">
 						<div class="step-checkout__title">Способ доставки</div>
-						<label class="radio-group">
-							<input type="radio" class="radio-group__field" name="delivery">
-							<div class="radio-group__text">
-								<div class="radio-group__title">Курьер Онлайн (без примерки)</div>
-								<div class="radio-group__subtitle">Oриентировочная дата доставки: 23 августа</div>
-							</div>
-							<div class="step-checkout__radio-price">Бесплатно</div>
-						</label>
+						<div class="step-checkout__radio-wrapper">
+							<label class="radio-group">
+								<input type="radio" class="radio-group__field" name="delivery">
+								<div class="radio-group__text">
+									<div class="radio-group__title">Курьер Онлайн (без примерки)</div>
+									<div class="radio-group__subtitle">Oриентировочная дата доставки: 23 августа</div>
+								</div>
+								<div class="step-checkout__radio-price">Бесплатно</div>
+							</label>
 
-						<label class="radio-group">
-							<input type="radio" class="radio-group__field" name="delivery">
-							<div class="radio-group__text">
-								<div class="radio-group__title">Курьер Онлайн (без примерки)</div>
-								<div class="radio-group__subtitle">Oриентировочная дата доставки: 23 августа</div>
-							</div>
-							<div class="step-checkout__radio-price">$ 9.90</div>
-						</label>
+							<label class="radio-group">
+								<input type="radio" class="radio-group__field" name="delivery">
+								<div class="radio-group__text">
+									<div class="radio-group__title">Курьер Онлайн (без примерки)</div>
+									<div class="radio-group__subtitle">Oриентировочная дата доставки: 23 августа</div>
+								</div>
+								<div class="step-checkout__radio-price">$ 9.90</div>
+							</label>
 
-						<label class="radio-group">
-							<input type="radio" class="radio-group__field" name="delivery">
-							<div class="radio-group__text">
-								<div class="radio-group__title">Курьер Онлайн (без примерки)</div>
-								<div class="radio-group__subtitle">Oриентировочная дата доставки: 23 августа</div>
-							</div>
-							<div class="step-checkout__radio-price">$ 9.90</div>
-						</label>
+							<label class="radio-group">
+								<input type="radio" class="radio-group__field" name="delivery">
+								<div class="radio-group__text">
+									<div class="radio-group__title">Самовывоз PickPoint (без примерки)</div>
+									<div class="radio-group__subtitle">Oриентировочная дата доставки: 23 августа</div>
+								</div>
+								<div class="step-checkout__radio-price">$ 9.90</div>
+							</label>
+						</div>
 					</div>
 
 					<div id="checkoutStep-3" class="checkout__step step-checkout">
@@ -72,7 +74,8 @@
 							</div>
 							<div class="step-checkout__input">
 								<div class="input-group">
-									<input id="step-checkout-surname" type="text" class="input-group__field" required="">
+									<input id="step-checkout-surname" type="text" class="input-group__field"
+										required="">
 									<label class="input-group__title">Фамилия*</label>
 								</div>
 							</div>
@@ -94,43 +97,50 @@
 					<div id="checkoutStep-4" class="checkout__step step-checkout">
 						<div class="step-checkout__title">Адрес доставки</div>
 						<div class="step-checkout__input-row row">
-							<div class="step-checkout__input">
-								<div class="input-group">
-									<input id="step-checkout-street" type="text" class="input-group__field" required="">
-									<label class="input-group__title">Улица*</label>
+							<div class="row step-checkout__input-row m-0 w-100">
+								<div class="step-checkout__input">
+									<div class="input-group">
+										<input id="step-checkout-street" type="text" class="input-group__field"
+											required="">
+										<label class="input-group__title">Улица*</label>
+									</div>
+								</div>
+								<div class="step-checkout__input">
+									<div class="input-group">
+										<input id="step-checkout-house" type="text" class="input-group__field"
+											required="">
+										<label class="input-group__title">Дом*</label>
+									</div>
 								</div>
 							</div>
-							<div class="step-checkout__input">
-								<div class="input-group">
-									<input id="step-checkout-house" type="text" class="input-group__field" required="">
-									<label class="input-group__title">Дом*</label>
+							<div class="step-checkout__input-row step-checkout__input-row--three row w-100 m-0">
+								<div class="step-checkout__input">
+									<div class="input-group">
+										<input id="step-checkout-corps" type="text" class="input-group__field"
+											required="">
+										<label class="input-group__title">Корпус*</label>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="step-checkout__input-row row step-checkout__input-row--three">
-							<div class="step-checkout__input">
-								<div class="input-group">
-									<input id="step-checkout-corps" type="text" class="input-group__field" required="">
-									<label class="input-group__title">Корпус*</label>
+								<div class="step-checkout__input">
+									<div class="input-group">
+										<input id="step-checkout-building" type="text" class="input-group__field"
+											required="">
+										<label class="input-group__title">Строение*</label>
+									</div>
 								</div>
-							</div>
-							<div class="step-checkout__input">
-								<div class="input-group">
-									<input id="step-checkout-building" type="text" class="input-group__field" required="">
-									<label class="input-group__title">Строение*</label>
-								</div>
-							</div>
-							<div class="step-checkout__input">
-								<div class="input-group">
-									<input id="step-checkout-flat" type="text" class="input-group__field" required="">
-									<label class="input-group__title">Квартира*</label>
+								<div class="step-checkout__input">
+									<div class="input-group">
+										<input id="step-checkout-flat" type="text" class="input-group__field"
+											required="">
+										<label class="input-group__title">Квартира*</label>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<div id="checkoutStep-5" class="checkout__step step-checkout">
-						<div class="step-checkout__title">Способ доставки</div>
+						<div class="step-checkout__title">Способ оплаты</div>
 						<label class="radio-group">
 							<input id="paymentCreditCard" type="radio" class="radio-group__field" name="payment">
 							<div class="radio-group__text">
@@ -157,6 +167,7 @@
 											<input type="text" class="input-group__field" required="">
 											<label class="input-group__title">ММ/ГГ</label>
 										</div>
+										<span>Срок действия карты</span>
 									</div>
 									<div class="step-checkout__input">
 										<div class="input-group">
@@ -165,7 +176,7 @@
 										</div>
 									</div>
 								</div>
-								<a href="" class="btn-dark btn-xl">Оформить заказ</a>
+								<a href="" class="btn-dark btn-lg step-checkout__btn">Оформить заказ</a>
 							</div>
 						</label>
 
@@ -176,7 +187,7 @@
 								<div class="radio-group__subtitle">Может взиматься комиссиия</div>
 							</div>
 							<div class="radio-group__checked">
-								<a href="" class="btn-dark btn-xl">Оформить заказ</a>
+								<a href="" class="btn-dark btn-lg step-checkout__btn">Оформить заказ</a>
 							</div>
 						</label>
 					</div>
