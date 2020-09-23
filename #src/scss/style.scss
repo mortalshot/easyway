@@ -30,3 +30,88 @@
 @import "pages/help/index";
 @import "pages/about/index";
 
+.not-found {
+	padding: 40px 0 87px;
+
+	@media screen and (max-width: 767px) {
+		padding-bottom: 37px;
+	}
+
+	// .not-found__container
+	&__container {
+		max-width: 484px;
+		margin: 0 auto;
+		text-align: center;
+		color: $blackSecondary;
+	}
+
+	// .not-found__img
+	&__img {
+		max-width: 412px;
+		margin: 0 auto 21px;
+		position: relative;
+
+		@media screen and (max-width: 991px) {
+			max-width: 290px;
+		}
+		@media screen and (max-width: 767px) {
+			max-width: 230px;
+			margin-bottom: 68px;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+
+	// .not-found__title
+	&__title {
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 35px;
+		margin-bottom: 22px;
+		letter-spacing: -0.9px;
+
+		@media screen and (max-width: 767px) {
+			font-size: calc(24px + 8 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+			line-height: calc(35 / 32);
+			letter-spacing: -0.5px;
+			margin-bottom: 18px;
+		}
+	}
+
+	// .not-found__description
+	&__description {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 32px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		max-width: 399px;
+		margin: 0px auto 13px;
+
+		&--back {
+			display: inline-block;
+			color: $blue;
+			text-decoration: underline;
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+	.btn-dark {
+		@media screen and (max-width: 767px) {
+			font-weight: 500;
+			height: 65px;
+			letter-spacing: 0.5px;
+		}
+	}
+}
