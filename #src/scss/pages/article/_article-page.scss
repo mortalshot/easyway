@@ -52,6 +52,7 @@
 
             &--active {
                 color: $blackPrimary;
+                box-shadow: none;
 
                 &::after {
                     width: 112%;

@@ -5563,6 +5563,8 @@ a {
 
 .article-page__tabs-triggers .tabs-triggers__item--active {
   color: #1D1F22;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .article-page__tabs-triggers .tabs-triggers__item--active::after {
