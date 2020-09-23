@@ -1,0 +1,69 @@
+@@include('html-components/_header.html')
+
+<div class="lk-wrapper container">
+	
+	@@include('html-components/_lk-sidebar.html')
+
+	<div class="lk-wrapper__content">
+		<div class="lk-wrapper__content-nav">
+			<a href="#" class="lk-wrapper__content-tab lk-wrapper__content-tab--active">Доставка</a>
+		</div>
+
+		<div class="lk-wrapper__content-box lk-wrapper__content-box--active">
+			<p class="lk-wrapper__content-notation">Не стесняйтесь редактировать любые свои данные ниже, чтобы ваша учетная запись всегда была актуальной</p>
+
+			<form action="#" class="lk-wrapper__form">
+				<div class="lk-wrapper__form-address">
+					<div class="lk-wrapper__form-row">
+						<label class="radio-group">
+							<input type="radio" class="radio-group__field" name="address">
+							<div class="radio-group__text">Установить как постоянный адрес</div>
+						</label>
+					</div>
+					<div class="lk-wrapper__form-col-2">
+						<div class="input-group">
+							<input type="text" class="input-group__field" required="">
+							<label class="input-group__title">Страна</label>
+						</div>
+						<div class="input-group">      
+							<input type="text" class="input-group__field" required="">
+							<label class="input-group__title">Город</label>
+						</div>
+					</div>
+
+					<div class="lk-wrapper__form-col-2">
+						<div class="input-group">      
+							<input type="text" class="input-group__field" required="">
+							<label class="input-group__title">Улица</label>
+						</div>
+
+						<div class="input-group">      
+							<input type="text" class="input-group__field" required="">
+							<label class="input-group__title">Дом</label>
+						</div>
+					</div>
+
+					<div class="lk-wrapper__form-col-3">
+						<div class="input-group">      
+							<input type="text" class="input-group__field" required="">
+							<label class="input-group__title">Корпус</label>
+						</div>
+						<div class="input-group">      
+							<input type="text" class="input-group__field" required="">
+							<label class="input-group__title">Строение</label>
+						</div>
+						<div class="input-group">      
+							<input type="text" class="input-group__field" required="">
+							<label class="input-group__title">Квартира</label>
+						</div>
+					</div>
+				</div>
+				
+
+				<input type="button" class="lk-wrapper__add-address btn-dark" value="добавить новый адрес">
+			</form>
+		</div>
+	</div>
+</div>
+
+@@include('html-components/_footer.html')

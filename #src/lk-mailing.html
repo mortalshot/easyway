@@ -1,0 +1,41 @@
+@@include('html-components/_header.html')
+
+<div class="lk-wrapper container">
+	
+	@@include('html-components/_lk-sidebar.html')
+
+	<div class="lk-wrapper__content">
+		<div class="lk-wrapper__content-nav">
+			<a href="#" class="lk-wrapper__content-tab lk-wrapper__content-tab--active">Рассылка</a>
+		</div>
+
+		<div class="lk-wrapper__content-box lk-wrapper__content-box--active">
+			<p class="lk-wrapper__content-notation">Настройте свой информационный бюллетень, и мы будем отправлять вам информацию о новых продуктах и тенденциях из выбранных вами разделов каждую неделю.</p>
+
+			<form action="#" class="lk-wrapper__form">
+				<p class="lk-wrapper__content-notation">Выберите наиболее интересную категорию:</p>
+
+				<div class="lk-wrapper__form-checkbox">
+					<label class="checkbox-group">
+						<input type="checkbox" class="checkbox-group__field">
+						<div class="checkbox-group__text">Женское</div>
+					</label>
+					<label class="checkbox-group">
+						<input type="checkbox" class="checkbox-group__field">
+						<div class="checkbox-group__text">Мужское</div>
+					</label>
+					<label class="checkbox-group">
+						<input type="checkbox" class="checkbox-group__field">
+						<div class="checkbox-group__text">Детское</div>
+					</label>
+				</div>
+				
+				<input type="submit" class="lk-wrapper__form-submit btn-dark" value="Сохранить изменения">
+				
+				<p class="lk-wrapper__form-notation lk-wrapper__form-notation">В Brand name мы придаем большое значение вопросам конфиденциальности и обязуемся защищать личные данные наших пользователей. Узнайте больше о том, как мы заботимся и используем ваши личные данные, в <a href="#">Политике конфиденциальности.</a></p>
+			</form>
+		</div>
+	</div>
+</div>
+
+@@include('html-components/_footer.html')

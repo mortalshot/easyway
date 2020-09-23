@@ -1,0 +1,80 @@
+@@include('html-components/_header.html')
+
+<div class="lk-wrapper container">
+
+	@@include('html-components/_lk-sidebar.html')
+
+	<div class="lk-wrapper__content">
+		<div class="lk-wrapper__content-nav">
+			<a href="#personal-data" class="lk-wrapper__content-tab lk-wrapper__content-tab--active">Персональные данные</a>
+			<a href="#change-password" class="lk-wrapper__content-tab">Сменить пароль</a>
+		</div>
+
+		<div class="lk-wrapper__content-box lk-wrapper__content-box--active" id="personal-data">
+			<p class="lk-wrapper__content-notation">Не стесняйтесь редактировать любые свои данные ниже, чтобы ваша учетная запись всегда была актуальной</p>
+
+			<form action="#" class="lk-wrapper__form">
+				<div class="lk-wrapper__form-col-2">
+					<div class="input-group">      
+						<input type="text" class="input-group__field" required="">
+						<label class="input-group__title">Имя</label>
+					</div>
+					<div class="input-group">      
+						<input type="text" class="input-group__field" required="">
+						<label class="input-group__title">Фамилия</label>
+					</div>
+				</div>
+
+				<div class="lk-wrapper__form-col-2">
+					<div class="input-group">      
+						<input type="text" class="input-group__field" required="">
+						<label class="input-group__title">Email</label>
+					</div>
+					<div class="input-group">      
+						<input type="text" class="input-group__field" required="">
+						<label class="input-group__title">Телефон</label>
+					</div>
+				</div>
+
+				<input type="submit" class="lk-wrapper__form-submit btn-dark" value="Сохранить данные">
+				
+				<p class="lk-wrapper__form-notation lk-wrapper__form-notation">В Brand name мы придаем большое значение вопросам конфиденциальности и обязуемся защищать личные данные наших пользователей. Узнайте больше о том, как мы заботимся и используем ваши личные данные, в <a href="#">Политике конфиденциальности.</a></p>
+			</form>
+		</div>
+
+		<div class="lk-wrapper__content-box" id="change-password">
+			<p class="lk-wrapper__content-notation">Если вы хотите изменить пароль для доступа к своей учетной записи, введите следующую информацию: Ваш текущий адрес электронной почты: example@email.com</p>
+
+			<form action="#" class="lk-wrapper__form">
+				<div class="lk-wrapper__form-col-2">
+					<div class="input-group">      
+						<input type="password" class="input-group__field" required="">
+						<label class="input-group__title">Старый пароль</label>
+					</div>
+				</div>
+
+				<div class="lk-wrapper__form-col-2">
+					<div class="input-group">      
+						<input type="password" class="input-group__field" required="">
+						<label class="input-group__title">Новый пароль</label>
+						<button type="button" class="change-view-password-js input_btn"><i class="icon-eye"></i></button>
+					</div>
+
+					<div class="input-group">      
+						<input type="password" class="input-group__field" required="">
+						<label class="input-group__title">Подтвердите пароль</label>
+						<button type="button" class="change-view-password-js input_btn"><i class="icon-eye"></i></button>
+					</div>
+
+					
+				</div>
+
+				<input type="submit" class="lk-wrapper__form-submit btn-dark" value="Сохранить данные">
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+@@include('html-components/_footer.html')
