@@ -6096,6 +6096,125 @@ a {
   letter-spacing: -0.5px;
 }
 
+.about__top {
+  text-align: center;
+  color: #43464E;
+  padding: 53px 0 47px;
+  border-top: 1px solid #F1F2F3;
+  border-bottom: 1px solid #F1F2F3;
+}
+
+.about__top-container {
+  max-width: 628px;
+  margin: 0 auto;
+}
+
+.about__title-h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: -0.9px;
+  color: #43464E;
+  margin-bottom: 29px;
+  text-transform: none;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__row {
+  margin: 40px 0;
+}
+
+.about__image {
+  position: relative;
+  padding-bottom: 90%;
+}
+
+.about__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__content {
+  margin-left: 40px;
+}
+
+.about__wrapper {
+  padding-bottom: 24px;
+}
+
+.about__title-h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
+}
+
+.about p {
+  margin-bottom: 16px;
+}
+
+.about__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 24px -9px 0;
+}
+
+.about__attribute {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 15px 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__label {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.about__text-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 249px;
+}
+
+.about__attribute-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.about__attribute-text span {
+  font-weight: 600;
+  letter-spacing: -1.1px;
+}
+
 @media screen and (min-width: 576px) {
   .site_header--mobile {
     display: none;
@@ -6174,6 +6293,16 @@ a {
   .blog-categories .catalog__top {
     padding: 27px 2px 28px 25px;
     margin: 0;
+  }
+
+  .about__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 47.3%;
+            flex: 0 0 47.3%;
+  }
+
+  .about__wrapper {
+    border-bottom: 1px solid #F1F2F3;
   }
 }
 
@@ -6255,6 +6384,16 @@ a {
 
   .cart__basket .basket-product_title {
     font-size: calc(16px + 8 * ((100vw - 375px) / (1440 - 375)));
+    line-height: calc(32 / 24);
+  }
+
+  .about__title-h2 {
+    font-size: calc(18px + 14 * ((100vw - 375px) / (1440 - 375)));
+    line-height: calc(35 / 32);
+  }
+
+  .about__title-h3 {
+    font-size: calc(18px + 6 * ((100vw - 375px) / (1440 - 375)));
     line-height: calc(32 / 24);
   }
 }
@@ -6445,6 +6584,26 @@ a {
 
   .help-tabs__content {
     margin-left: 30px;
+  }
+
+  .about__top {
+    padding: 30px 0;
+  }
+
+  .about__row {
+    margin: 30px 0;
+  }
+
+  .about__content {
+    margin-left: 15px;
+  }
+
+  .about__wrapper {
+    padding-bottom: 8px;
+  }
+
+  .about__contacts {
+    margin-top: 8px;
   }
 }
 
@@ -7018,6 +7177,26 @@ a {
   .help-tabs__content {
     margin-left: 15px;
   }
+
+  .about__top {
+    padding: 25px 0 27px;
+  }
+
+  .about__row {
+    margin: 25px 0 20px;
+  }
+
+  .about__image {
+    margin-top: 24px;
+  }
+
+  .about__content {
+    margin-left: 0;
+  }
+
+  .about__contacts {
+    margin-top: 24px;
+  }
 }
 
 @media screen and (max-width: 710px) {
@@ -7564,6 +7743,35 @@ a {
     letter-spacing: -0.9px;
     margin-bottom: 16px;
   }
+
+  .about__title-h2 {
+    letter-spacing: -0.5px;
+    margin-bottom: 18px;
+  }
+
+  .about__image {
+    padding-bottom: 110%;
+  }
+
+  .about__title-h3 {
+    letter-spacing: -0.4px;
+  }
+
+  .about__attribute {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
+  .about__text-wrapper {
+    max-width: inherit;
+  }
+
+  .about__text-wrapper .footer-social_list {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
 }
 
 @media (max-width: 575px) {
@@ -7980,6 +8188,14 @@ a {
 
   .article__img {
     padding-bottom: 58.4%;
+  }
+
+  .about__top-container {
+    max-width: 318px;
+  }
+
+  .about__image {
+    padding-bottom: 133.5%;
   }
 }
 
