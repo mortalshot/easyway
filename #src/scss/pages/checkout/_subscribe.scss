@@ -1,0 +1,44 @@
+
+.subscribe {
+	padding-top: 40px;
+
+	@media screen and (max-width: 991px) {
+		padding-top: 22px;
+	}
+
+	@media screen and (max-width: 575px) {
+		padding-top: 31px;
+	}
+
+	// .subscribe__title
+	&__title {
+		color: $blackPrimary;
+		margin-bottom: 16px;
+	}
+
+	// .subscribe__subtitle
+	&__subtitle {
+		margin-bottom: 35px;
+
+		@media screen and (max-width: 575px) {
+			margin-bottom: 19px;
+		}
+	}
+
+	&__form {
+		.input_field {
+			background: transparent;
+		}
+	}
+
+	&__policy {
+		margin-top: 12px;
+		font-size: 10px;
+		line-height: 14px;
+
+		@media screen and (max-width: 991px) {
+			// padding-bottom: 12px;
+			padding-bottom: 32px;
+		}
+	}
+}
