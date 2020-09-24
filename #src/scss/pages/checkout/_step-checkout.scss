@@ -2,6 +2,29 @@
 	padding: 48px 0 46px;
 	border-bottom: 1px solid $grayLight;
 
+	@media screen and (max-width: 767px) {
+		padding: 24px 0;
+	}
+
+	&__first-row {
+		align-items: center;
+
+		@media screen and (max-width: 850px) {
+			display: block;
+		}
+
+		.step-checkout__title {
+			margin-bottom: 0;
+
+			@media screen and (max-width: 850px) {
+				margin-bottom: 32px;
+			}
+			@media screen and (max-width: 767px) {
+				margin-bottom: 16px;
+			}
+		}
+	}
+
 	&__input-row {
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -26,6 +49,11 @@
 		padding: 0 24px;
 		margin-bottom: 32px;
 
+		@media screen and (max-width: 575px) {
+			flex: 1 1 100%;
+			margin-bottom: 28px;
+		}
+
 		&.mb-0 {
 			margin-bottom: 0 !important;
 		}
@@ -49,8 +77,20 @@
 		letter-spacing: -0.7px;
 		margin-bottom: 32px;
 		flex: 1 1 auto;
+		padding-right: 15px;
 
-		&--row {
+		@media screen and (max-width: $size-layout-desktop + "px") {
+			font-size: calc(18px + 4 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+			line-height: calc(32 / 24);
+		}
+		@media screen and (min-width: 992px) {
+			white-space: nowrap;
+		}
+		@media screen and (max-width: 767px) {
+			margin-bottom: 16px;
+		}
+
+		&.mb-0 {
 			margin-bottom: 0;
 		}
 	}
@@ -60,6 +100,7 @@
 			padding: 5px;
 			color: $blackPrimary;
 		}
+
 		&__title {
 			left: 5px;
 		}
@@ -67,6 +108,10 @@
 
 	&__radio-wrapper {
 		margin: -16px 0px -13px 0px;
+
+		@media screen and (max-width: 575px) {
+			margin: 0;
+		}
 	}
 
 	.radio-group {
@@ -76,8 +121,19 @@
 		padding: 16px 8px 16px 16px;
 		margin: 0 0 3px;
 		transition: 0.3s ease all 0s;
+
+		@media screen and (max-width: 767px) {
+			padding: 12px 0 12px 0;
+		}
+		@media screen and (max-width: 575px) {
+			margin: 0 -16px 0 -16px;
+			padding: 12px 16px;
+		}
+
 		&:last-child {
-			margin: 0;
+			@media screen and (min-width: 576px) {
+				margin: 0;
+			}
 		}
 
 		&._active {
@@ -88,16 +144,30 @@
 			font-size: 16px;
 			line-height: 22px;
 			margin-bottom: 0;
+
+			@media screen and (max-width: $size-layout-desktop + "px") {
+				font-size: calc(14px + 2 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+				line-height: calc(22 / 16);
+			}
 		}
 
 		&__subtitle {
 			font-size: 14px;
 			line-height: 22px;
 			color: $grayPrimary;
+
+			@media screen and (max-width: $size-layout-desktop + "px") {
+				font-size: calc(12px + 2 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+				line-height: calc(22 / 14);
+			}
 		}
 
 		&__text {
 			padding: 0 0 0 47px;
+
+			@media screen and (max-width: 991px) {
+				padding-left: 33px;
+			}
 
 			&::before {
 				top: 0;
@@ -116,6 +186,14 @@
 		font-size: 18px;
 		line-height: 23px;
 		letter-spacing: -0.9px;
+
+		@media screen and (max-width: $size-layout-desktop + "px") {
+			font-size: calc(14px + 4 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+			line-height: calc(23 / 18);
+		}
+		@media screen and (max-width: 767px) {
+			letter-spacing: -0.5px;
+		}
 	}
 
 	.radio-group__checked {
@@ -125,6 +203,8 @@
 	}
 
 	&__btn {
+		width: 100%;
+		max-width: 410px;
 		margin: 27px 0px 14px 0px;
 	}
 }

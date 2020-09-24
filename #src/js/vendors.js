@@ -16,4 +16,5 @@
 @@include('components/slider.js')
 @@include('components/lk.js')
 @@include('components/checkout-step.js')
+@@include('components/promocode.js') // !delete on release!!
 

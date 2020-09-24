@@ -1,0 +1,164 @@
+.summary-cart {
+	&__top-row {
+		justify-content: space-between;
+		align-items: baseline;
+		border-bottom: 1px solid #fff;
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+
+		.summary-cart__title {
+			margin-bottom: 29px;
+		}
+	}
+
+	// .summary-cart__promocode
+	&__promocode {
+		padding-top: 24px;
+		border-top: 1px solid #fff;
+
+		@media screen and (max-width: 767px) {
+			padding-top: 10px;
+		}
+	}
+
+	&__btn-txt {
+		display: inline-flex;
+	}
+
+	&__products-wrapper {
+		margin-bottom: 14px;
+		padding-top: 7px;
+	}
+
+	&__products {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		.slick-dots {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			display: block;
+			height: 93%;
+			margin: 0;
+			padding: 0;
+			transform: translate(-60%, -50%);
+
+			li {
+				font-size: 0;
+				width: 4px;
+				border-radius: 100px;
+				transition: 0.3s ease all 0s;
+
+				&.slick-active {
+					background-color: $graySecondary;
+
+					button {
+						background-color: $graySecondary;
+					}
+				}
+
+				button {
+					background-color: #fff;
+					border: none;
+					display: block;
+					width: 100%;
+					height: 100%;
+					padding: 0;
+					border-radius: 100px;
+					transition: 0.3s ease all 0s;
+
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+
+	&__product {
+		&:focus {
+			outline: none;
+		}
+
+		.basket-product {
+			background-color: transparent;
+			box-shadow: none;
+			padding: 10px 10px 10px 0;
+		}
+
+		.basket-product_img {
+			position: relative;
+			flex: 0 0 89px;
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.basket-product_info {
+			padding: 0;
+		}
+
+		.basket-product_title {
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 22px;
+			letter-spacing: -1px;
+			margin-bottom: 19px;
+		}
+
+		.basket-product_attribute-label {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 22px;
+			color: $blackSecondary;
+		}
+
+		.basket-product_text {
+			font-weight: 500;
+			color: $blackPrimary;
+			padding-left: 8px;
+		}
+
+		.basket-product_attribute--price {
+			margin-top: 19px;
+
+			.basket-product_text {
+				font-size: 18px;
+				padding-left: 18px;
+			}
+		}
+	}
+
+	// .summary-cart__promocode-title
+	&__promocode-title {
+		margin-bottom: 16px;
+	}
+
+	&__promocode-text {
+		margin-top: 4px;
+		display: none;
+
+		&._green {
+			color: $greenPrimary;
+		}
+
+		&._red {
+			color: $redPrimary;
+		}
+	}
+
+	.input-group__field {
+		background-color: transparent;
+		border-bottom-width: 2px;
+	}
+}

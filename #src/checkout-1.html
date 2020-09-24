@@ -8,20 +8,23 @@
 					Главная
 				</a>
 				<span class="breadcrumbs__link is-active">
-					Личный кабинет
+					Оформление заказа
 				</span>
 			</div>
 		</div>
 		<section class="checkout">
+			<div class="checkout__sign-in checkout__sign-in--mobile">
+				<a href="">Войдите</a>, если уже имеете аккаунт или продолжите без регистрации
+			</div>
 			<div class="checkout__row row">
 				<form action="" class="checkout__content">
-					<div class="checkout__sign-in">
+					<div class="checkout__sign-in checkout__sign-in--desktop">
 						<a href="">Войдите</a>, если уже имеете аккаунт или продолжите без регистрации
 					</div>
 
 					<div id="checkoutStep-1" class="checkout__step step-checkout">
-						<div class="row">
-							<div class="step-checkout__title step-checkout__title--row">Ваш населенный пункт:</div>
+						<div class="row step-checkout__first-row">
+							<div class="step-checkout__title">Ваш населенный пункт:</div>
 							<div class="step-checkout__input mb-0 p-0">
 								<div class="input-group">
 									<input id="settlement-input" type="text" class="input-group__field" required="">
@@ -176,7 +179,7 @@
 										</div>
 									</div>
 								</div>
-								<a href="" class="btn-dark btn-lg step-checkout__btn">Оформить заказ</a>
+								<a href="" class="btn-dark step-checkout__btn">Оформить заказ</a>
 							</div>
 						</label>
 
@@ -187,7 +190,7 @@
 								<div class="radio-group__subtitle">Может взиматься комиссиия</div>
 							</div>
 							<div class="radio-group__checked">
-								<a href="" class="btn-dark btn-lg step-checkout__btn">Оформить заказ</a>
+								<a href="" class="btn-dark step-checkout__btn">Оформить заказ</a>
 							</div>
 						</label>
 					</div>
@@ -195,7 +198,175 @@
 
 				<form action="" class="checkout__summary cart__summary summary-cart">
 					<div class="summary-cart__wrapper">
-						<div class="summary-cart__title">Итого</div>
+						<div class="summary-cart__top-row row">
+							<div class="summary-cart__title">Ваш заказ</div>
+							<a href="#" class="btn-txt summary-cart__btn-txt">Изменить</a>
+						</div>
+						<div class="summary-cart__products-wrapper">
+							<div class="summary-cart__products">
+								<div class="summary-cart__product">
+									<div class="basket_item basket-product">
+										<div class="basket-product_img">
+											<img src="img/products/product5.jpg" alt="product">
+										</div>
+										<div class="basket-product_info">
+											<div class="basket-product_title">Пляжная сумка-шоппер</div>
+
+											<div class="basket-product_attributes">
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Размер: </div>
+														<div class="basket-product_text">XS</div>
+													</div>
+												</div>
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Цвет: </div>
+														<div class="basket-product_text">Коричневый</div>
+													</div>
+												</div>
+
+												<div class="basket-product_attribute basket-product_attribute--price">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">1 шт. </div>
+														<div class="basket-product_text">$ 50.00</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="summary-cart__product">
+									<div class="basket_item basket-product">
+										<div class="basket-product_img">
+											<img src="img/products/product5.jpg" alt="product">
+										</div>
+										<div class="basket-product_info">
+											<div class="basket-product_title">Пляжная сумка-шоппер</div>
+
+											<div class="basket-product_attributes">
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Размер: </div>
+														<div class="basket-product_text">XS</div>
+													</div>
+												</div>
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Цвет: </div>
+														<div class="basket-product_text">Коричневый</div>
+													</div>
+												</div>
+
+												<div class="basket-product_attribute basket-product_attribute--price">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">1 шт. </div>
+														<div class="basket-product_text">$ 50.00</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="summary-cart__product">
+									<div class="basket_item basket-product">
+										<div class="basket-product_img">
+											<img src="img/products/product5.jpg" alt="product">
+										</div>
+										<div class="basket-product_info">
+											<div class="basket-product_title">Пляжная сумка-шоппер</div>
+
+											<div class="basket-product_attributes">
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Размер: </div>
+														<div class="basket-product_text">XS</div>
+													</div>
+												</div>
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Цвет: </div>
+														<div class="basket-product_text">Коричневый</div>
+													</div>
+												</div>
+
+												<div class="basket-product_attribute basket-product_attribute--price">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">1 шт. </div>
+														<div class="basket-product_text">$ 50.00</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="summary-cart__product">
+									<div class="basket_item basket-product">
+										<div class="basket-product_img">
+											<img src="img/products/product5.jpg" alt="product">
+										</div>
+										<div class="basket-product_info">
+											<div class="basket-product_title">Пляжная сумка-шоппер</div>
+
+											<div class="basket-product_attributes">
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Размер: </div>
+														<div class="basket-product_text">XS</div>
+													</div>
+												</div>
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Цвет: </div>
+														<div class="basket-product_text">Коричневый</div>
+													</div>
+												</div>
+
+												<div class="basket-product_attribute basket-product_attribute--price">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">1 шт. </div>
+														<div class="basket-product_text">$ 50.00</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="summary-cart__product">
+									<div class="basket_item basket-product">
+										<div class="basket-product_img">
+											<img src="img/products/product5.jpg" alt="product">
+										</div>
+										<div class="basket-product_info">
+											<div class="basket-product_title">Пляжная сумка-шоппер</div>
+
+											<div class="basket-product_attributes">
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Размер: </div>
+														<div class="basket-product_text">XS</div>
+													</div>
+												</div>
+												<div class="basket-product_attribute">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">Цвет: </div>
+														<div class="basket-product_text">Коричневый</div>
+													</div>
+												</div>
+
+												<div class="basket-product_attribute basket-product_attribute--price">
+													<div class="custom-select-wrapper custom-select-wrapper--bottom">
+														<div class="basket-product_attribute-label">1 шт. </div>
+														<div class="basket-product_text">$ 50.00</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 						<div class="summary-cart__content">
 							<div class="summary-cart__item">
 								<div class="summary-cart__label">Товаров</div>
@@ -214,17 +385,16 @@
 							<div class="summary-cart__label">Итоговая цена</div>
 							<div class="summary-cart__result">$150.00</div>
 						</div>
-					</div>
-					<button action="submit" class="summary-cart__btn btn-dark">Оформить заказ</button>
-					<div class="summary-cart__information">
-						<div class="summary-cart__text">Полезная информация:</div>
-						<ul>
-							<li class="summary-cart__text">Есть вопросы? звоните <a href="tel:88002504040">8 (800) 250
-									40-40</a></li>
-							<li class="summary-cart__text">Доставка заграницу? <a href="">Выберите валюту и место
-									доставки</a></li>
-							<li class="summary-cart__text"><a href="">Способы доставки</a></li>
-						</ul>
+						<div class="summary-cart__promocode">
+							<div class="summary-cart__title summary-cart__promocode-title">Есть промокод?</div>
+							<div class="input-group">
+								<input id="promocode" type="text" class="input-group__field" required="">
+								<label class="input-group__title">Промокод</label>
+								<div class="summary-cart__promocode-text">
+									Промо
+								</div>
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>
