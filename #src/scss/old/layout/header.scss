@@ -170,6 +170,7 @@
 		@media screen and (min-width: 576px) {
 			display: none;
 		}
+
 		position: fixed;
 		width: 100%;
 		top: 0;
@@ -215,6 +216,10 @@
 
 			&.active {
 				top: 0;
+
+				.site_header--mobile__links {
+					display: block;
+				}
 			}
 		}
 
@@ -272,6 +277,7 @@
 
 		&__links {
 			margin: 0 -16px;
+			display: none;
 		}
 
 		&__link {

@@ -793,6 +793,10 @@ a {
   top: 0;
 }
 
+.site_header--mobile .side-categories__wrapper.active .site_header--mobile__links {
+  display: block;
+}
+
 .site_header--mobile .site_header__categories-title {
   font-weight: 600;
   font-size: 24px;
@@ -849,6 +853,7 @@ a {
 
 .site_header--mobile__links {
   margin: 0 -16px;
+  display: none;
 }
 
 .site_header--mobile__link {
