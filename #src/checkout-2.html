@@ -15,14 +15,16 @@
 			<div class="checkout-success__top success-checkout"
 				style="background: url(img/checkout/2.png) no-repeat center/cover;">
 				<div class="success-checkout__content">
-					<div class="success-checkout__title">Поздравляем! Вы успешно оформили заказ</div>
-					<div class="success-checkout__text">
-						<div class="success-checkout__text-label">Ваш номер заказа:</div>
-						<div class="success-checkout__text-result">1092157844</div>
-					</div>
-					<div class="success-checkout__text">
-						<div class="success-checkout__text-label">Предполагаемая дата доставки:</div>
-						<div class="success-checkout__text-result">21 авг., 2020</div>
+					<div class="success-checkout__wrapper">
+						<div class="success-checkout__title">Поздравляем! Вы успешно оформили заказ</div>
+						<div class="success-checkout__text">
+							<div class="success-checkout__text-label">Ваш номер заказа:</div>
+							<div class="success-checkout__text-result">1092157844</div>
+						</div>
+						<div class="success-checkout__text">
+							<div class="success-checkout__text-label">Предполагаемая дата доставки:</div>
+							<div class="success-checkout__text-result">21 авг., 2020</div>
+						</div>
 					</div>
 				</div>
 
@@ -323,31 +325,79 @@
 							</div>
 						</div>
 					</div>
+					<div class="summary-cart__content-wrapper">
+						<div class="summary-cart__content">
+							<div class="summary-cart__item">
+								<div class="summary-cart__label">Цена</div>
+								<div class="summary-cart__result">$150.00</div>
+							</div>
+							<div class="summary-cart__item">
+								<div class="summary-cart__label">Доставка</div>
+								<div class="summary-cart__result">Бесплатно</div>
+							</div>
+						</div>
+						<div class="summary-cart__item summary-cart__final">
+							<div class="summary-cart__label">Итоговая цена</div>
+							<div class="summary-cart__result">$150.00</div>
+						</div>
+					</div>
+					<div class="signin-wrapper__offer-container">
+						<p class="signin-wrapper__offer-notation">Воспользуйтесь привилегиями с помощью бесплатной
+							учетной записи</p>
+						<div class="signin-wrapper__list">
+							<div class="signin-wrapper__item">
+								<div class="signin-wrapper__offer-icon">
+									<img src="img/icons/clock.svg" alt="">
+								</div>
+								<div class="signin-wrapper__offer-text">Быстрое оформление заказов</div>
+							</div>
+							<div class="signin-wrapper__item">
+								<div class="signin-wrapper__offer-icon">
+									<img src="img/icons/money.svg" alt="">
+								</div>
+								<div class="signin-wrapper__offer-text">Начисление скидок с каждой новой покупкой</div>
+							</div>
+							<div class="signin-wrapper__item">
+								<div class="signin-wrapper__offer-icon">
+									<img src="img/icons/man.svg" alt="">
+								</div>
+								<div class="signin-wrapper__offer-text">Участие в программе вознаграждений</div>
+							</div>
+							<div class="signin-wrapper__item">
+								<div class="signin-wrapper__offer-icon">
+									<img src="img/icons/heart.svg" alt="">
+								</div>
+								<div class="signin-wrapper__offer-text">Управление избранным товарами</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="summary-success checkout__summary summary-cart">
 					<div class="summary-cart__wrapper">
 						<div class="summary-success__title summary-cart__title">Информация о заказе</div>
-						<div class="summary-success__section">
-							<div class="summary-success__section-title">Доставка</div>
-							<div class="summary-success__text-wrapper">
-								<div class="summary-success__text">Sviatlana Havaka</div>
-								<div class="summary-success__text">Zielinskiego 30 – 41, 53-345</div>
-								<div class="summary-success__text">Wroclaw, Poland</div>
+						<div class="summary-success__wrapper" data-da="success-checkout__content, last, 991">
+							<div class="summary-success__section">
+								<div class="summary-success__section-title">Доставка</div>
+								<div class="summary-success__text-wrapper">
+									<div class="summary-success__text">Sviatlana Havaka</div>
+									<div class="summary-success__text">Zielinskiego 30 – 41, 53-345</div>
+									<div class="summary-success__text">Wroclaw, Poland</div>
+								</div>
+								<div class="summary-success__text-wrapper">
+									<div class="summary-success__text">sviatlana.example@gmail.com</div>
+									<div class="summary-success__text">(00) 468 900 300</div>
+								</div>
+								<div class="summary-success__text-wrapper">
+									<div class="summary-success__text"><strong>Paczkomat Inpost</strong></div>
+									<div class="summary-success__text">Zielinskiego 30 – 41, 53-345</div>
+									<div class="summary-success__text">Wroclaw, Poland</div>
+								</div>
 							</div>
-							<div class="summary-success__text-wrapper">
-								<div class="summary-success__text">sviatlana.example@gmail.com</div>
-								<div class="summary-success__text">(00) 468 900 300</div>
+							<div class="summary-success__section">
+								<div class="summary-success__section-title">Оплата</div>
+								<div class="summary-success__text">Банковская карта</div>
 							</div>
-							<div class="summary-success__text-wrapper">
-								<div class="summary-success__text"><strong>Paczkomat Inpost</strong></div>
-								<div class="summary-success__text">Zielinskiego 30 – 41, 53-345</div>
-								<div class="summary-success__text">Wroclaw, Poland</div>
-							</div>
-						</div>
-						<div class="summary-success__section">
-							<div class="summary-success__section-title">Оплата</div>
-							<div class="summary-success__text">Банковская карта</div>
 						</div>
 
 						<div class="summary-success__subscribe subscribe">
@@ -357,7 +407,7 @@
 								предложений
 							</div>
 
-							<form action="#" class="sec-subscribe_form">
+							<form action="#" class="subscribe__form">
 								<div class="input">
 									<label class="input_label">
 										<input type="text" class="input_field" placeholder="Введите email">
@@ -367,7 +417,7 @@
 									</label>
 								</div>
 							</form>
-							<div class="sec-subscribe_description">
+							<div class="subscribe__policy">
 								Нажимая на кнопку, я даю согласие на обработку персональных данных
 							</div>
 						</div>
