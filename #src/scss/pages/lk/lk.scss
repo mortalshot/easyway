@@ -1,40 +1,148 @@
+.site_header--mobile__link{
+	display: none;
+}
 .lk{
 	&-wrapper{
 		margin-top: 40px;
 		display: flex;
 		width: 100%;
+		margin-bottom: 40px;
+		@media screen and (max-width: 950px){
+			flex-direction: column;
+			margin-top: 20px;
+			// padding-top: 60px;
+		}
+		@media screen and (max-width: 575px){
+			margin-top: 40px;
+		}
+		&__mb-navigation{
+			display: none;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			border-bottom: 1px solid $grayLight;
+			@media screen and (max-width: 950px){
+				display: flex;
+			}
+			&-btn{
+				display: inline-flex;
+				align-items: center;
+				font-weight: 600;
+				margin-left: -16px;
+				.icon-chevron-fff{
+					width: 40px;
+				    height: 40px;
+				    background-color: #1d1f22;
+				    margin-right: 16px;
+				}
+			}
+		}
 		&__link{
 			width: 280px;
 		}
 		&__sidebar{
 			background-color: $bgGray;
 			padding: 40px;
+			padding-bottom: 60px;
 			box-sizing: border-box;
 			width: 30%;
-			@media screen and (max-width: 1080px){
-				display: none;
+			position: relative;
+			max-height: 820px;
+			&-exit{
+				position: absolute;
+				left: 40px;
+				bottom: 40px;
+				font-size: 14px;
+				color: $blue;
+				text-decoration: underline;
+				&:hover{
+					text-decoration: none;
+				}
+				@media screen and (max-width: 950px){
+					position: initial;
+					text-align: center;
+					display: block;
+				}
+			}
+			@media screen and (max-width: 950px){
+				position: fixed;
+				left: 0;
+				top: 40px;
+				width: 100%;
+				height: calc(100% - 40px);
+				overflow: auto;
+				z-index: 50;
+				padding: 16px;
+				padding-bottom: 40px;
+				background-color: #fff;
+				transform: translateX(-100%);
+				visibility: hidden;
+				transition: $tr;
+				&--active{
+					visibility: visible;
+					transform: translateX(0%);
+				}
 			}
 			&-title{
 				font-size: 24px;
 				font-weight: 600;
 				line-height: $lineHeight;
 				margin-bottom: 40px;
+				position: relative;
+				.icon-chevron{
+					display: none;
+					@media screen and (max-width: 950px){
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: 0;
+						margin-top: -22px;
+						transform: rotate(180deg);
+					}
+				}
+				@media screen and (max-width: 950px){
+					text-align: center;
+					padding-bottom: 16px;
+					margin-bottom: 16px;
+					border-bottom: 1px solid $grayLight;
+				}
 			}
 			&-subtile{
 				font-weight: 600;
 				font-size: 20px;
 				line-height: $lineHeight;
 				margin-bottom: 16px;
+				@media screen and (max-width: 950px){
+					border-bottom: 1px solid $grayLight;
+					font-size: 18px;
+					padding-bottom: 16px;
+				}
 			}
 			&-nav{
 				margin-bottom: 64px;
+				@media screen and (max-width: 950px){
+					margin-bottom: 40px;
+				}
 				a{
 					display: block;
 					line-height: $lineHeight;
 					font-size: 18px;
 					margin-bottom: 16px;
+					@media screen and (max-width: 950px){
+						border-bottom: 1px solid $grayLight;
+						padding-bottom: 16px;
+						margin-bottom: 16px;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					}
 					&:hover{
 						text-decoration: underline;
+					}
+					.icon-chevron{
+						display: none;
+						@media screen and (max-width: 950px){
+							display: block;
+						}
 					}
 				}
 				&--active{
@@ -46,15 +154,32 @@
 			width: 70%;
 			padding-left: 101px;
 			box-sizing: border-box;
-			@media screen and (max-width: 1080px){
+			@media screen and (max-width: 950px){
 				padding-left: 0;
 				width: 100%;
+			}
+			&-title{
+				font-size: 24px;
+				text-align: center;
+				margin-bottom: 40px;
+				margin-top: 16px;
+				font-weight: 600;
+				&--tabs{
+					margin-bottom: 24px;
+				}
 			}
 			&-nav{
 				height: 40px;
 				box-sizing: border-box;
 				border-bottom: 2px solid $grayLight;
 				margin-bottom: 41px;
+				@media screen and (max-width: 950px){
+					margin-top: 24px;
+					text-align: center;
+				}
+				@media screen and (max-width: 370px){
+					height: 36px;
+				}
 			}
 			&-notation{
 				margin-bottom: 32px;
@@ -75,6 +200,20 @@
 				position: relative;
 				font-weight: 450;
 				margin-right: 64px;
+				&:last-child{
+					margin-right: 0;
+				}
+				@media screen and (max-width: 950px){
+					margin-right: 0;
+					padding-left: 14px;
+					padding-right: 14px;
+				}
+				@media screen and (max-width: 400px){
+					font-size: 17px;
+				}
+				@media screen and (max-width: 370px){
+					font-size: 14px;
+				}
 				&:hover{
 					color: $blackPrimary;
 					text-decoration: none;
@@ -316,7 +455,7 @@
 				}
 			}
 			&-2{
-				width: 30%;
+				width: 26%;
 				padding-right: 10px;
 				box-sizing: border-box;
 				@media screen and (max-width: 675px){
@@ -327,7 +466,7 @@
 				}
 			}
 			&-3{
-				width: 14%;
+				width: 18%;
 				padding-right: 10px;
 				box-sizing: border-box;
 			}
@@ -443,6 +582,9 @@
 			line-height: 1em;
 			&:nth-child(6){
 				text-align: center;
+				@media screen and (max-width: 600px) {
+					text-align: right;
+				}
 			}
 		}
 		table td{
@@ -525,6 +667,7 @@
     border:none;
     border-bottom:1px solid $blackSecondary;
     box-sizing: border-box;
+    border-radius: 0;
     &:focus{ outline:none; }
   }
   /* LABEL ======================================= */
@@ -674,7 +817,7 @@
 		width: 100%;
 		max-width: 903px;
 		@media screen and (max-width: 570px){
-			padding-top: 125px;
+			padding-top: 35px;
 		}
 		&__nav{
 			display: none;
@@ -743,6 +886,7 @@
 		&__auth{
 			display: flex;
 			justify-content: space-between;
+			margin-bottom: 40px;
 			&-box{
 				width: 320px;
 				@media screen and (max-width: 720px){
