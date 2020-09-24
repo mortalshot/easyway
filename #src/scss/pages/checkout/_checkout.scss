@@ -12,6 +12,10 @@
 	&__content {
 		width: 100%;
 		flex: 0 1 689px;
+
+		@media screen and (max-width: 767px) {
+			flex: auto;
+		}
 	}
 
 	// .checkout__sign-in
