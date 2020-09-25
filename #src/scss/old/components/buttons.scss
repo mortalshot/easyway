@@ -46,6 +46,7 @@
 		&:hover {
 			box-shadow: 4px 12px 24px rgba(119, 121, 122, 0.25);
 			background: $blackPrimary radial-gradient(circle, transparent 1%, $blackSecondary 1%) center/15000%;
+			text-decoration: none;
 		}
 		
 		&:focus,

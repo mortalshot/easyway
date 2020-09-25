@@ -26,8 +26,11 @@
 		letter-spacing: -0.5px;
 		margin-bottom: 37px;
 
+		@media screen and (max-width: 991px) {
+			margin-bottom: 26px;
+		}
 		@media screen and (max-width: 767px) {
-			margin-bottom: 22px;
+			margin-bottom: 10px;
 		}
 		@media screen and (max-width: 575px) {
 			margin-bottom: 38px;
@@ -38,6 +41,10 @@
 	&__content {
 		padding-bottom: 18px;
 		border-bottom: 1px solid #fff;
+
+		@media screen and (max-width: 991px) {
+			padding-bottom: 16px;
+		}
 	}
 
 	// .summary-cart__item
@@ -45,9 +52,12 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 24px;
-		
+
+		@media screen and (max-width: 991px) {
+			margin-bottom: 12px;
+		}
 		@media screen and (max-width: 767px) {
-			margin-bottom: 15px;
+			margin-bottom: 5px;
 		}
 		@media screen and (max-width: 575px) {
 			margin-bottom: 24px;
@@ -74,6 +84,12 @@
 	&__final {
 		padding: 24px 0 16px;
 
+		@media screen and (max-width: 991px) {
+			padding: 24px 0 26px;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 15px 0 15px;
+		}
 		@media screen and (max-width: 575px) {
 			margin: 0;
 		}
@@ -93,7 +109,10 @@
 	// .summary-cart__btn
 	&__btn {
 		width: 100%;
-		margin-bottom: 27px;
+		margin-bottom: 33px;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 27px;
+		}
 	}
 
 	// .summary-cart__information
@@ -127,5 +146,9 @@
 	// .summary-cart__text
 	&__text {
 		margin-bottom: 8px;
+
+		@media screen and (max-width: 991px) {
+			margin-bottom: 0px;
+		}
 	}
 }
