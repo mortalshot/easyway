@@ -8231,14 +8231,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1299px) {
-  .catalog__products {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 @media screen and (min-width: 1441px) {
   .banner-slider__item {
     background-size: cover !important;
