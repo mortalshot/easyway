@@ -15,15 +15,20 @@
 
 	// .summary-cart__promocode
 	&__promocode {
-		padding-top: 24px;
+		padding-top: 28px;
 		border-top: 1px solid #fff;
 
+		@media screen and (max-width: 991px) {
+			padding-top: 23px;
+		}
 		@media screen and (max-width: 767px) {
 			padding-top: 10px;
 		}
 	}
 
 	&__btn-txt {
+		font-size: 16px;
+		line-height: 22px;
 		display: inline-flex;
 	}
 
@@ -140,8 +145,33 @@
 	}
 
 	// .summary-cart__promocode-title
-	&__promocode-title {
+	&__promocode-title.summary-cart__title {
 		margin-bottom: 16px;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+
+		@media screen and (max-width: 1440px) {
+			font-size: 24px;
+			letter-spacing: -0.6px;
+			line-height: 32px;
+		}
+		@media screen and (max-width: 991px) {
+			margin-bottom: 12px;
+		}
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	&__promocode-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: none;
+		cursor: pointer;
+		
+
 	}
 
 	&__promocode-text {

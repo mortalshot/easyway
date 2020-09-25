@@ -1,4 +1,13 @@
 .checkout {
+	padding-bottom: 112px;
+	
+	@media screen and (min-width: 576px) {
+		padding-top: 40px;
+	}
+	@media screen and (max-width: 767px) {
+		padding-bottom: 52px;
+	}
+
 	&__row {
 		align-items: flex-start;
 		justify-content: space-between;
@@ -26,7 +35,7 @@
 		border-bottom: 1px solid $grayLight;
 		color: #000;
 
-		@media screen and (max-width: $size-layout-desktop + 'px') {
+		@media screen and (max-width: $size-layout-desktop + "px") {
 			font-size: calc(14px + 2 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
 			line-height: calc(24 / 16);
 		}
@@ -37,6 +46,11 @@
 		a {
 			color: $blue;
 			text-decoration: underline;
+			transition: 0.3s ease all 0s;
+
+			&:hover {
+				color: $blackPrimary;
+			}
 		}
 
 		&--desktop {
@@ -57,6 +71,10 @@
 		flex: 0 1 452px;
 		padding: 31px 26px 56px;
 
+		@media screen and (min-width: 768px) {
+			position: sticky;
+			top: 0;
+		}
 		@media screen and (max-width: 1200px) {
 			flex: 0 1 350px;
 		}
@@ -81,6 +99,9 @@
 			padding-bottom: 0;
 			border-bottom: 0;
 
+			@media screen and (max-width: 991px) {
+				padding-top: 16px;
+			}
 			@media screen and (max-width: 767px) {
 				display: none;
 			}
@@ -97,6 +118,10 @@
 
 		.summary-cart__item {
 			margin-bottom: 8px;
+
+			@media screen and (max-width: 991px) {
+				margin-bottom: 0;
+			}
 		}
 
 		.summary-cart__title {
@@ -121,6 +146,9 @@
 		.summary-cart__final {
 			padding-top: 16px;
 
+			@media screen and (max-width: 991px) {
+				padding: 12px 0px 14px 0px;
+			}
 			@media screen and (max-width: 767px) {
 				padding: 0;
 				margin-bottom: 15px;
@@ -133,6 +161,9 @@
 
 				@media screen and (max-width: $size-layout-desktop + "px") {
 					font-size: calc(16px + 4 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+				}
+				@media screen and (max-width: 991px) {
+					letter-spacing: 0.9px;
 				}
 			}
 

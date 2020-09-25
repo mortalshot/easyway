@@ -1,0 +1,43 @@
+.checkout__header {
+    @media screen and (min-width: 576px) {
+        .site_header__top,
+        .site_header__nav,
+        .site_header__right {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 576px) {
+        .site_header__phone,
+        .site_header__back {
+            display: inline-flex;
+
+        }
+
+        .site_header__phone {
+            font-size: 16px;
+            line-height: 22px;
+            color: $blackSecondary;
+        }
+
+        .site_header__logo {
+            margin: 0;
+        }
+
+        .site_header__left {
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .nav-fixed .checkout__header .site_header__bottom {
+        position: inherit;
+    }
+}
+
+.site_header__phone,
+.site_header__back {
+    display: none;
+}

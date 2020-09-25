@@ -1,16 +1,9 @@
-@@include('html-components/_header.html')
+@@include('html-components/_header.html', {
+	"class": "checkout__header"
+})
 
 <main class="site-main checkout-success">
 	<div class="container">
-		<div class="checkout-success__breadcrumbs page-categories__breadcrumbs breadcrumbs">
-			<div class="breadcrumbs__list">
-				<a href="/" class="breadcrumbs__link breadcrumbs__link--back">
-					<span class="breadcrumbs__link is-active btn-txt">
-						Назад
-					</span>
-				</a>
-			</div>
-		</div>
 		<section class="checkout-success">
 			<div class="checkout-success__top success-checkout"
 				style="background: url(img/checkout/2.png) no-repeat center/cover;">
@@ -268,18 +261,17 @@
 							</div>
 
 							<form action="#" class="subscribe__form">
-								<div class="input">
-									<label class="input_label">
-										<input type="text" class="input_field" placeholder="Введите email">
-										<button class="input_btn" type="submit">
-											<i class="icon-message"></i>
-										</button>
-									</label>
+								<div class="input-group">
+									<input id="promocode" type="text" class="input-group__field" required="">
+									<label class="input-group__title">Введите email </label>
+									<button class="input_btn" type="submit">
+										<i class="icon-message"></i>
+									</button>
+									<div class="subscribe__policy">
+										Нажимая на кнопку, я даю согласие на обработку персональных данных
+									</div>
 								</div>
 							</form>
-							<div class="subscribe__policy">
-								Нажимая на кнопку, я даю согласие на обработку персональных данных
-							</div>
 						</div>
 					</div>
 				</div>
@@ -288,4 +280,6 @@
 	</div>
 </main>
 
-@@include('html-components/_footer.html')
+@@include('html-components/_footer.html', {
+"class": "d-none"
+})

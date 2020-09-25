@@ -1,17 +1,9 @@
-@@include('html-components/_header.html')
+@@include('html-components/_header.html', {
+	"class": "checkout__header"
+})
 
 <main class="site-main">
 	<div class="container">
-		<div class="checkout__breadcrumbs page-categories__breadcrumbs breadcrumbs">
-			<div class="breadcrumbs__list">
-				<a href="/" class="breadcrumbs__link breadcrumbs__link--back">
-					Главная
-				</a>
-				<span class="breadcrumbs__link is-active">
-					Оформление заказа
-				</span>
-			</div>
-		</div>
 		<section class="checkout">
 			<div class="checkout__sign-in checkout__sign-in--mobile">
 				<a href="">Войдите</a>, если уже имеете аккаунт или продолжите без регистрации
@@ -387,13 +379,14 @@
 						</div>
 						<div class="summary-cart__promocode">
 							<div class="summary-cart__title summary-cart__promocode-title">Есть промокод?</div>
-							<div class="input-group">
-								<input id="promocode" type="text" class="input-group__field" required="">
-								<label class="input-group__title">Промокод</label>
-								<div class="summary-cart__promocode-text">
-									Промо
+							<form action="">
+								<div class="input-group">
+									<input id="promocode" type="text" class="input-group__field" required="">
+									<label class="input-group__title">Промокод</label>
+									<button class="summary-cart__promocode-btn">Применить</button>
+									<div class="summary-cart__promocode-text"> Промо </div>
 								</div>
-							</div>
+							</form>
 						</div>
 					</div>
 				</form>
@@ -402,4 +395,6 @@
 	</div>
 </main>
 
-@@include('html-components/_footer.html')
+@@include('html-components/_footer.html', {
+"class": "d-none"
+})

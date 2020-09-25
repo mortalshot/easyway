@@ -881,6 +881,10 @@ a {
   padding: 56px 0 72px;
 }
 
+.site_footer.d-none {
+  display: none;
+}
+
 .site_footer__container {
   max-width: 1140px;
 }
@@ -1661,6 +1665,11 @@ a {
 
 .header-action_item:first-child {
   margin-left: 0;
+}
+
+.site_header__phone,
+.site_header__back {
+  display: none;
 }
 
 .footer-social_title {
@@ -7185,6 +7194,10 @@ a {
   margin-right: 0;
 }
 
+.checkout {
+  padding-bottom: 112px;
+}
+
 .checkout__row {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -7212,6 +7225,13 @@ a {
 .checkout__sign-in a {
   color: #0468DB;
   text-decoration: underline;
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
+}
+
+.checkout__sign-in a:hover {
+  color: #1D1F22;
 }
 
 .checkout__sign-in--mobile {
@@ -7427,20 +7447,8 @@ a {
   margin: 27px 0px 14px 0px;
 }
 
-#checkoutStep-2 {
-  display: none;
-}
-
-#checkoutStep-3 {
-  display: none;
-}
-
-#checkoutStep-4 {
-  display: none;
-}
-
 #checkoutStep-5 {
-  display: none;
+  border: none;
 }
 
 #checkoutStep-5 .radio-group._active {
@@ -7462,11 +7470,13 @@ a {
 }
 
 .summary-cart__promocode {
-  padding-top: 24px;
+  padding-top: 28px;
   border-top: 1px solid #fff;
 }
 
 .summary-cart__btn-txt {
+  font-size: 16px;
+  line-height: 22px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -7597,8 +7607,19 @@ a {
   padding-left: 18px;
 }
 
-.summary-cart__promocode-title {
+.summary-cart__promocode-title.summary-cart__title {
   margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+
+.summary-cart__promocode-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  cursor: pointer;
 }
 
 .summary-cart__promocode-text {
@@ -7617,6 +7638,10 @@ a {
 .summary-cart .input-group__field {
   background-color: transparent;
   border-bottom-width: 2px;
+}
+
+.checkout-success.site-main {
+  padding-bottom: 112px;
 }
 
 .checkout-success__breadcrumbs .breadcrumbs__link.is-active {
@@ -7878,6 +7903,11 @@ a {
   background: transparent;
 }
 
+.subscribe__form .input_btn {
+  top: -28px;
+  right: -2px;
+}
+
 .subscribe__policy {
   margin-top: 12px;
   font-size: 10px;
@@ -7974,6 +8004,42 @@ a {
     display: none;
   }
 
+  .checkout__header .site_header__top,
+  .checkout__header .site_header__nav,
+  .checkout__header .site_header__right {
+    display: none;
+  }
+
+  .checkout__header .site_header__phone,
+  .checkout__header .site_header__back {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
+  .checkout__header .site_header__phone {
+    font-size: 16px;
+    line-height: 22px;
+    color: #43464E;
+  }
+
+  .checkout__header .site_header__logo {
+    margin: 0;
+  }
+
+  .checkout__header .site_header__left {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .nav-fixed .checkout__header .site_header__bottom {
+    position: inherit;
+  }
+
   .footer-nav_title.accordion__title {
     display: none;
   }
@@ -7993,8 +8059,16 @@ a {
     display: none;
   }
 
+  .checkout {
+    padding-top: 40px;
+  }
+
   .step-checkout .radio-group:last-child {
     margin: 0;
+  }
+
+  .checkout-success.site-main {
+    padding-top: 40px;
   }
 
   .product-table--mobile {
@@ -8073,6 +8147,12 @@ a {
 
   .about__wrapper {
     border-bottom: 1px solid #F1F2F3;
+  }
+
+  .checkout__summary {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 
   .checkout-success .signin-wrapper__offer-text {
@@ -8248,6 +8328,12 @@ a {
   .step-checkout__radio-price {
     font-size: calc(14px + 4 * ((100vw - 375px) / (1440 - 375)));
     line-height: calc(23 / 18);
+  }
+
+  .summary-cart__promocode-title.summary-cart__title {
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    line-height: 32px;
   }
 
   .success-checkout__title {
@@ -8489,8 +8575,32 @@ a {
     padding: 10px 15px 20px;
   }
 
+  .checkout__summary .summary-cart__content {
+    padding-top: 16px;
+  }
+
+  .checkout__summary .summary-cart__item {
+    margin-bottom: 0;
+  }
+
+  .checkout__summary .summary-cart__final {
+    padding: 12px 0px 14px 0px;
+  }
+
+  .checkout__summary .summary-cart__final .summary-cart__label {
+    letter-spacing: 0.9px;
+  }
+
   .step-checkout .radio-group__text {
     padding-left: 33px;
+  }
+
+  .summary-cart__promocode {
+    padding-top: 23px;
+  }
+
+  .summary-cart__promocode-title.summary-cart__title {
+    margin-bottom: 12px;
   }
 
   .checkout-success__breadcrumbs {
@@ -9378,6 +9488,10 @@ a {
     letter-spacing: 0.5px;
   }
 
+  .checkout {
+    padding-bottom: 52px;
+  }
+
   .checkout__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -9445,6 +9559,14 @@ a {
 
   .summary-cart__promocode {
     padding-top: 10px;
+  }
+
+  .summary-cart__promocode-title.summary-cart__title {
+    display: none;
+  }
+
+  .checkout-success.site-main {
+    padding-bottom: 52px;
   }
 
   .checkout-success .summary-cart__final {
