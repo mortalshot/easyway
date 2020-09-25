@@ -64,6 +64,18 @@
 			}
 		}
 	}
+
+	.slick-list {
+		@media screen and (min-width: 991px) {
+			margin: -10px 0;
+			padding: 10px 0;
+		}
+		.product-card_action {
+			@media screen and (min-width: 992px) {
+				height: 40px;
+			}
+		}
+	}
 }
 
 .slider {
