@@ -10345,6 +10345,19 @@ a {
     margin: 0;
   }
 
+  .summary-cart__btn-wrapper {
+    background: #F1F2F3;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0px;
+    padding: 20px 0;
+    margin-top: -20px;
+  }
+
+  .summary-cart__btn {
+    margin-bottom: 0;
+  }
+
   .help-page__breadcrumbs {
     display: none;
   }
