@@ -748,7 +748,7 @@ a {
 
 .site_header--mobile .site_header__body {
   position: relative;
-  height: 40px;
+  height: 48px;
 }
 
 .site_header--mobile .site_header__wrapper {
@@ -806,6 +806,9 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
 }
 
 .site_header--mobile .accordion__title::before {
@@ -820,6 +823,10 @@ a {
       -ms-transform: translate(0, -50%) rotate(0);
           transform: translate(0, -50%) rotate(0);
   right: 16px;
+}
+
+.site_header--mobile .accordion__title.active {
+  background-color: #F1F2F3;
 }
 
 .site_header--mobile .accordion__title.active::after {
@@ -837,11 +844,23 @@ a {
 }
 
 .site_header--mobile .link-list__item {
-  margin: 15px 0;
+  padding: 18px 24px 19px;
+  margin: 0 -24px;
+  border-bottom: 1px solid #F1F2F3;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.site_header--mobile .link-list__item:last-child {
+  border: none;
+}
+
+.site_header--mobile .accordion__item {
+  padding: 0 16px 0 !important;
 }
 
 .site_header--mobile .accordion__text {
-  padding: 0 16px;
+  padding: 0 24px !important;
   margin: 0 -16px;
 }
 
@@ -875,6 +894,18 @@ a {
   width: 24px;
   height: 24px;
   margin-right: 16px;
+}
+
+.site_header--mobile .side-categories__wrapper .accordion__item {
+  display: none;
+}
+
+.site_header--mobile .side-categories__wrapper.active {
+  overflow: auto;
+}
+
+.site_header--mobile .side-categories__wrapper.active .accordion__item {
+  display: block;
 }
 
 .site_footer {
@@ -1344,6 +1375,12 @@ a {
   max-width: 100%;
 }
 
+.logo_img--mobile {
+  -webkit-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1438,7 +1475,7 @@ a {
   top: 50%;
   width: 1px;
   height: 14px;
-  background-color: #72757E;
+  background-color: #A8ACB0;
   -webkit-transform: translate(0px, -39%);
       -ms-transform: translate(0px, -39%);
           transform: translate(0px, -39%);
@@ -1661,10 +1698,19 @@ a {
 
 .header-action_item {
   margin-left: 32px;
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
 }
 
 .header-action_item:first-child {
   margin-left: 0;
+}
+
+.header-action_item:hover {
+  -webkit-transform: translate(0, 3px);
+      -ms-transform: translate(0, 3px);
+          transform: translate(0, 3px);
 }
 
 .site_header__phone,
@@ -1693,6 +1739,20 @@ a {
 
 .footer-social_item {
   margin: 0 7px;
+}
+
+.footer-social_item svg,
+.footer-social_item rect,
+.footer-social_item path {
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
+}
+
+.footer-social_item:hover svg,
+.footer-social_item:hover rect,
+.footer-social_item:hover path {
+  fill: #43464E;
 }
 
 .footer-nav {
@@ -5161,6 +5221,10 @@ a {
   margin-bottom: 0;
 }
 
+.banner-slider__item:focus {
+  outline: none;
+}
+
 .banner-slider__content {
   max-width: 456px;
   padding: 21.5vh 0;
@@ -5187,7 +5251,6 @@ a {
 }
 
 .banner-slider__btn {
-  font-weight: 500;
   width: 168px;
 }
 
@@ -5321,7 +5384,6 @@ a {
 
 .banner-square__btn {
   width: 168px;
-  font-weight: 500;
 }
 
 .banner-square__item--second {
@@ -5392,7 +5454,6 @@ a {
 }
 
 .banner-with-cta__btn {
-  font-weight: 500;
   width: 168px;
 }
 
@@ -8017,6 +8078,10 @@ a {
     display: none;
   }
 
+  .logo_img--mobile {
+    display: none;
+  }
+
   .checkout__header .site_header__top,
   .checkout__header .site_header__nav,
   .checkout__header .site_header__right {
@@ -9889,7 +9954,7 @@ a {
 
 @media screen and (max-width: 575px) {
   .site-main {
-    margin-top: 40px;
+    margin-top: 48px;
   }
 
   .site_header__inner {
@@ -9912,6 +9977,7 @@ a {
     -webkit-transition: 0.3s ease all 0s;
     -o-transition: 0.3s ease all 0s;
     transition: 0.3s ease all 0s;
+    padding: 6px 10px;
   }
 
   .site_header__burger::before,
@@ -10002,6 +10068,10 @@ a {
 
   .site_footer .footer-social__wrapper {
     padding: 0 15px;
+  }
+
+  .logo_img--desktop {
+    display: none;
   }
 
   .nav-fixed .site_header__bottom {
@@ -10977,6 +11047,16 @@ a {
 @media screen and (max-width: 400px) {
   .lk-wrapper__content-tab {
     font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .summary-cart__information ul {
+    padding: 0 0 0 10px;
+  }
+
+  .summary-cart__information ul li::before {
+    left: -10px;
   }
 }
 

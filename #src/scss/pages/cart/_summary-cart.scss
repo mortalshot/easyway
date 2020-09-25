@@ -137,6 +137,10 @@
 			padding: 0 0 0 27px;
 			margin: 0;
 
+			@media screen and (max-width: 374px) {
+				padding: 0 0 0 10px;
+			}
+
 			li {
 				list-style-type: none;
 				position: relative;
@@ -152,6 +156,10 @@
 					left: -21px;
 					top: 50%;
 					transform: translate(0, -50%);
+
+					@media screen and (max-width: 374px) {
+						left: -10px;
+					}
 				}
 			}
 		}

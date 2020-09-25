@@ -5,4 +5,17 @@
 		display: block;
 		max-width: 100%;
 	}
+
+	&_img--desktop {
+		@media screen and (max-width: 575px) {
+			display: none;
+		}
+	}
+	&_img--mobile {
+		transform: scale(1.7);
+		
+		@media screen and (min-width: 576px) {
+			display: none;
+		}
+	}
 }

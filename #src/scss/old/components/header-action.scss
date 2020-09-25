@@ -4,6 +4,7 @@
 	
 	&_item {
 		margin-left: 32px;
+		transition: 0.3s ease all 0s;
 
 		@media screen and (max-width: 991px) {
 			margin-left: 16px;
@@ -24,6 +25,10 @@
 		
 		&:first-child {
 			margin-left: 0;
+		}
+
+		&:hover {
+			transform: translate(0, 3px);
 		}
 	}
 }

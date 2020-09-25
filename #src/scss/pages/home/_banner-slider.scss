@@ -19,6 +19,10 @@
 		@media screen and (max-width: 450px) {
 			background-position: 79% 0% !important;
 		}
+
+		&:focus {
+			outline: none;
+		}
 	}
 	
 	// .banner__content
@@ -79,7 +83,6 @@
 
 	// .banner__btn
 	&__btn {
-		font-weight: 500;
 		width: 168px;
 
 		@media screen and (max-width: 450px) {
