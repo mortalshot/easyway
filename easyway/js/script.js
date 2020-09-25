@@ -258,6 +258,7 @@ $(document).ready(function () {
             }
         }
     }
+
     if (mediaQueryMdMin.matches) {
         if ($('#sideCategoriesMobileAccordion')) {
             $('#sideCategoriesMobileAccordion').removeClass('accordion');
@@ -272,6 +273,9 @@ $(document).ready(function () {
                 const catalogItems = catalogItem[index];
                 catalogItems.classList.remove('accordion__title');
             }
+        }
+        if ($('.filter-catalog .accordion__text')) {
+            $('.filter-catalog .accordion__text').css({ display: "block" });
         }
     }
     else {

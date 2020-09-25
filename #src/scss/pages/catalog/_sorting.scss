@@ -1,0 +1,89 @@
+.sorting {
+	display: flex;
+	align-items: center;
+
+	// .sorting__label
+	&__label {
+		letter-spacing: 1px;
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	&__orderby-wrapper {
+		position: relative;
+		&::before {
+			content: "";
+			pointer-events: none;
+			display: block;
+			width: 24px;
+			height: 24px;
+			background: #fff;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+
+		span {
+			&::before,
+			&::after {
+				content: "";
+				width: 9px;
+				height: 2px;
+				background-color: $blackSecondary;
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+				transition: 0.3s ease all 0s;
+				pointer-events: none;
+			}
+
+			&::before {
+				transform: translate(0, -50%) rotate(-40deg);
+				right: 3px;
+			}
+
+			&::after {
+				transform: translate(0, -50%) rotate(40deg);
+				right: 9px;
+			}
+
+			&.active {
+				&::before {
+					transform: translate(0, -50%) rotate(40deg);
+				}
+				&::after {
+					transform: translate(0, -50%) rotate(-40deg);
+				}
+			}
+		}
+	}
+
+	&__orderby {
+		border: none;
+		font-family: "Futura PT";
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 22px;
+		text-transform: uppercase;
+		letter-spacing: 1.3px;
+		padding-right: 14px;
+		cursor: pointer;
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.custom-options {
+		transform: translate(6px, 10px);
+		top: 100%;
+
+		@media screen and (max-width: 575px) {
+			right: auto;
+			left: 0;
+			transform: translate(0, 10px);
+		}
+	}
+}

@@ -3676,6 +3676,12 @@ $(document).ready(function () {
         catalogItems.classList.remove('accordion__title');
       }
     }
+
+    if ($('.filter-catalog .accordion__text')) {
+      $('.filter-catalog .accordion__text').css({
+        display: "block"
+      });
+    }
   } else {
     if (showMore) {
       showMore.innerHTML = "Отображать товаров";

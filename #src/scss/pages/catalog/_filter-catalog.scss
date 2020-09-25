@@ -1,5 +1,7 @@
 
 .filter-catalog {
+	position: relative;
+
 	&__item {
 		@media screen and (min-width: 768px) {
 			margin-bottom: 25px;
@@ -7,6 +9,10 @@
 
 		.title-h6 {
 			margin-bottom: 33px;
+
+			@media screen and (min-width: 768px) {
+				pointer-events: none;
+			}
 
 			@media screen and (max-width: 767px) {
 				font-weight: 500;
@@ -115,6 +121,17 @@
 					margin-bottom: 17px;
 				}
 			}
+		}
+	}
+
+	&__buttons {
+		position: sticky;
+		bottom: 0;
+		background: #fff;
+		width: 100%;
+		
+		@media screen and (min-width: 768px) {
+			padding: 25px 0;
 		}
 	}
 
