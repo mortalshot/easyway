@@ -39,7 +39,7 @@ $(document).ready(function () {
             $(this).addClass('lk-wrapper__content-tab--active');
 
 
-            // $('.signin-wrapper__auth-box').removeClass('signin-wrapper__auth-box--active');
+            $('.signin-wrapper__auth-box').removeClass('signin-wrapper__auth-box--active');
             $('.lk-wrapper__content-box').removeClass('signin-wrapper__auth-box--active');
             $(href).addClass('signin-wrapper__auth-box--active');
         }

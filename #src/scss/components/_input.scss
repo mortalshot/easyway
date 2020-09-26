@@ -42,10 +42,15 @@
         padding-left: 36px;
         cursor: pointer;
         position: relative;
-        line-height: 24px;
-        font-size: calc(13px + 3 * ((100vw - 320px) / (1440 - 320)));
-        line-height: calc(24 / 16);
         user-select: none;
+        font-size: 16px;
+        line-height: 24px;
+        
+        @media screen and (max-width: $size-layout-desktop + 'px') {
+            font-size: calc(13px + 3 * ((100vw - 720px) / (#{$size-layout-desktop} - 720)));
+            line-height: calc(24 / 16);
+        }
+
         &::before {
             content: "";
             width: 24px;

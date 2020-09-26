@@ -1,13 +1,16 @@
 @@include('html-components/_header.html')
 
 <div class="lk-wrapper container">
-	
+
 	@@include('html-components/_lk-sidebar.html')
 
 	<div class="lk-wrapper__content">
 		<div class="lk-wrapper__content-title dsk-hidden">Заказ #35765</div>
 		<div class="lk-wrapper__content-nav mb-hidden">
-			<a href="#" class="lk-wrapper__content-tab lk-wrapper__content-tab--active">Заказ #35765</a>
+			<div class="lk-wrapper__content-tab-wrapper">
+				<a href="#" class="lk-wrapper__content-tab lk-wrapper__content-tab--active">Заказ #35765</a>
+				<span class="lk__order-success">Заказ был отправлен и получен</span>
+			</div>
 		</div>
 
 		<div class="lk-wrapper__content-box lk-wrapper__content-box--active">
@@ -44,12 +47,16 @@
 			<div class="lk-order-history__table">
 				<div class="lk-order-history__head">
 					<div class="lk-order-history__row">
-						<div class="lk-order-history__col-1">Товар<div class="dsk-hidden">Размер</div></div>
-						<div class="lk-order-history__col-2">Описание<div class="dsk-hidden">Кол-во</div></div>
+						<div class="lk-order-history__col-1">Товар<div class="dsk-hidden">Размер</div>
+						</div>
+						<div class="lk-order-history__col-2">Описание<div class="dsk-hidden">Кол-во</div>
+						</div>
 						<div class="lk-order-history__col-3 mb-hidden">Цвет</div>
 						<div class="lk-order-history__col-4 mb-hidden">Размер</div>
 						<div class="lk-order-history__col-5 mb-hidden">Кол-во</div>
-						<div class="lk-order-history__col-6"><div class="dsk-hidden">Цвет</div>Стоимость</div>
+						<div class="lk-order-history__col-6">
+							<div class="dsk-hidden">Цвет</div>Стоимость
+						</div>
 					</div>
 				</div>
 				<div class="lk-order-history__body">
@@ -90,7 +97,7 @@
 
 								MSD23-345-324
 							</div>
-							
+
 
 							<div class="dsk-hidden">1</div>
 						</div>
@@ -137,7 +144,8 @@
 						<span class="lk-order-history__item-value lk-order-history__item-value--bold">Бесплатно</span>
 					</div>
 					<div class="lk-order-history__item lk-order-history__item--total">
-						<span class="lk-order-history__item-title lk-order-history__item-title--bold">Итоговая цена</span>
+						<span class="lk-order-history__item-title lk-order-history__item-title--bold">Итоговая
+							цена</span>
 						<span class="lk-order-history__item-value"><b>$ 150.00</b></span>
 					</div>
 				</div>
@@ -148,7 +156,7 @@
 
 				<a href="#" class="btn-gray">Оформить возврат</a>
 			</div>
-			
+
 		</div>
 	</div>
 </div>

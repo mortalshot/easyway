@@ -131,7 +131,7 @@
             transform: translate(-500px, 0);
             background: #fff;
             max-width: 366px;
-            padding: 33px 56px;
+            padding: 33px 43px;
             min-height: 100vh;
 
             @media screen and (max-width: 767px) {
@@ -231,7 +231,7 @@
         .close-popup {
             top: 8px;
             right: 15px;
-            
+
             @media screen and (max-width: 767px) {
                 right: 14px;
             }

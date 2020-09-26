@@ -1,4 +1,12 @@
 .banner-square {
+	padding-top: 15px;
+	padding-bottom: 6px;
+
+	@media screen and (max-width: 575px) {
+		padding: 0;
+		margin-bottom: -8px;
+	}
+
 	// .banner-square__row
 	&__row {
 		margin: -20px -26px;
@@ -94,7 +102,7 @@
 	// .banner-square__item--fourth
 	&__item--fourth {
 		padding: 104px 35px 48px;
-		
+
 		.title-h2 {
 			@media screen and (min-width: 601px) {
 				margin-bottom: 31px;

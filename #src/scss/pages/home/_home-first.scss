@@ -1,0 +1,29 @@
+.home-first {
+    position: relative;
+    // .home-first__scroll
+    &__scroll {
+        position: absolute;
+        bottom: 26px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        animation: move 1.5s linear both infinite;
+
+        @media screen and (max-width: 575px) {
+            display: none;
+        }
+    }
+
+    @keyframes move {
+        0% {
+            transform: translate(-50%, 0);
+        }
+
+        50% {
+            transform: translate(-50%, 8px);
+        }
+
+        100% {
+            transform: translate(-50%, 0);
+        }
+    }
+}

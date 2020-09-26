@@ -16,6 +16,8 @@
 	}
 
 	.catalog__content {
+		padding-bottom: 0;
+		
 		@media screen and (max-width: 767px) {
 			padding-top: 24px;
 		}
@@ -39,6 +41,15 @@
 	.catalog__sorting {
 		@media screen and (max-width: 575px) {
 			flex: inherit;
+		}
+	}
+
+	.custom-select-wrapper--right {
+		.custom-options {
+			@media screen and (max-width: 575px) {
+				left: auto;
+				right: 0;
+			}
 		}
 	}
 }

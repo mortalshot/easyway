@@ -25,7 +25,7 @@ $(document).ready(function () {
             mediaQuery = window.matchMedia('(max-width: 767px)');
             if (mediaQuery.matches) {
                 if (select.closest('.custom-select-wrapper').classList.contains('sorting__custom-select-wrapper')) {
-                    currentText.innerText = "Сортировать по";
+                    currentText.innerText = "Сортировка";
                 }
             }
 
@@ -47,14 +47,14 @@ $(document).ready(function () {
             if (e.matches) {
                 let trigger = document.querySelector('.sorting__custom-select-wrapper .custom-select__trigger span');
                 if (trigger) {
-                    trigger.innerHTML = "Сортировать по";
+                    trigger.innerHTML = "Сортировка";
                 }
             }
         }
         if (mediaQuery.matches) {
             let trigger = document.querySelector('.sorting__custom-select-wrapper .custom-select__trigger span');
             if (trigger) {
-                trigger.innerHTML = "Сортировать по";
+                trigger.innerHTML = "Сортировка";
             }
         }
     };

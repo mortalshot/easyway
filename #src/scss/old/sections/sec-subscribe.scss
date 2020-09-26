@@ -54,4 +54,16 @@
 			right: 5px;
 		}
 	}
+
+	&.mt-5 {
+		@media screen and (min-width: 991px) {
+			margin-top: 50px;
+		}
+	}
+
+	&__success {
+		color: #00b733;
+		margin: 30px auto;
+		text-align: center;
+	}
 }

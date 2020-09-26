@@ -1,0 +1,109 @@
+// signin
+.signin{
+	&-wrapper{
+		padding-top: 64px;
+		width: 100%;
+        max-width: 903px;
+        
+		@media screen and (max-width: 570px){
+			padding-top: 35px;
+        }
+        
+		&__nav{
+            display: none;
+            
+			@media screen and (max-width: 720px){
+				display: block;
+            }
+            
+			.lk-wrapper__content-nav{
+                text-align: center;
+                
+				a{
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+        }
+        
+		&__offer{
+			@media screen and (max-width: 815px){
+				margin-bottom: 30px;
+            }
+            
+			&-container{
+				@media screen and (max-width: 720px){
+					display: none;
+				}
+            }
+            
+			&-notation{
+				font-weight: 600;
+				line-height: 1.5em;
+				margin-bottom: 24px;
+				text-align: center;
+            }
+            
+			&-box{
+				display: flex;
+				flex-wrap: wrap;
+                margin-bottom: 80px;
+                
+				.signin-wrapper__offer{
+					@media screen and (min-width: 815px){
+						width: calc(25% - 18px);
+						margin-right: 24px;
+						&:nth-child(4n){
+							margin-right: 0;
+						}
+					}
+					@media screen and (max-width: 815px){
+						width: calc(50% - 12px);
+						&:nth-child(2n){
+							margin-right: 0;
+						}
+					}
+				}
+            }
+            
+			display: flex;
+            align-items: center;
+            
+			&-icon{
+				flex-shrink: 0;
+				width: 24px;
+				height: 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 8px;
+            }
+            
+			&-text{
+				line-height: 1.37em;
+			}
+        }
+        
+		&__auth{
+			display: flex;
+			justify-content: space-between;
+            margin-bottom: 40px;
+            
+			&-box{
+                width: 320px;
+                
+				@media screen and (max-width: 720px){
+					display: none;
+                }
+                
+				&--active{
+					@media screen and (max-width: 720px){
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

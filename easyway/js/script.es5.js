@@ -3882,7 +3882,7 @@ $(document).ready(function () {
 
       if (mediaQuery.matches) {
         if (select.closest('.custom-select-wrapper').classList.contains('sorting__custom-select-wrapper')) {
-          currentText.innerText = "Сортировать по";
+          currentText.innerText = "Сортировка";
         }
       }
 
@@ -3905,7 +3905,7 @@ $(document).ready(function () {
         var trigger = document.querySelector('.sorting__custom-select-wrapper .custom-select__trigger span');
 
         if (trigger) {
-          trigger.innerHTML = "Сортировать по";
+          trigger.innerHTML = "Сортировка";
         }
       }
     }
@@ -3914,7 +3914,7 @@ $(document).ready(function () {
       var trigger = document.querySelector('.sorting__custom-select-wrapper .custom-select__trigger span');
 
       if (trigger) {
-        trigger.innerHTML = "Сортировать по";
+        trigger.innerHTML = "Сортировка";
       }
     }
   };
@@ -4042,8 +4042,8 @@ $(document).ready(function () {
 
     if (href !== '#') {
       $(this).siblings().removeClass('lk-wrapper__content-tab--active');
-      $(this).addClass('lk-wrapper__content-tab--active'); // $('.signin-wrapper__auth-box').removeClass('signin-wrapper__auth-box--active');
-
+      $(this).addClass('lk-wrapper__content-tab--active');
+      $('.signin-wrapper__auth-box').removeClass('signin-wrapper__auth-box--active');
       $('.lk-wrapper__content-box').removeClass('signin-wrapper__auth-box--active');
       $(href).addClass('signin-wrapper__auth-box--active');
     }

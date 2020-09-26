@@ -17,6 +17,18 @@
 			right: auto;
 		}
 	}
+
+	&--right {
+		.custom-select__custom-options {
+			left: auto;
+			right: 0;
+			
+			@media screen and (max-width: 575px) {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
 }
 
 .custom-select {
@@ -31,6 +43,10 @@
 		align-items: center;
 		justify-content: space-between;
 		cursor: pointer;
+		
+		@media screen and (max-width: $screen-sm) {
+			text-transform: none;
+		}
 
 		span {
 			margin: 0px 11px 0px 6px;
@@ -39,10 +55,9 @@
 				font-weight: 600;
 				letter-spacing: 0.7px;
 			}
-		}
-
-		@media screen and (max-width: $screen-sm) {
-			text-transform: none;
+			@media screen and (max-width: 767px) {
+				letter-spacing: 0;
+			}
 		}
 	}
 
