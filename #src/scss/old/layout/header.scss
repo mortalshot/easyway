@@ -49,7 +49,7 @@
 			height: 12px;
 			z-index: 3;
 			transition: 0.3s ease all 0s;
-			padding: 6px 10px;
+			padding: 7px 11px;
 
 			&::before,
 			&::after,
@@ -72,18 +72,18 @@
 			}
 
 			span {
-				top: 5px;
+				top: 6px;
 			}
 
 			&.active {
 				&::before {
 					transform: rotate(45deg);
-					top: 5px;
+					top: 6px;
 				}
 
 				&::after {
 					transform: rotate(-45deg);
-					bottom: 5px;
+					bottom: 6px;
 				}
 
 				span {

@@ -1,5 +1,4 @@
 .product-item {
-	
 	&_inner {
 		position: relative;
 		display: flex;
@@ -7,12 +6,12 @@
 		max-width: calc(50vw + 650px);
 		padding-right: 30px;
 	}
-	
+
 	&_left {
 		position: relative;
 		flex: 1 1 auto;
 	}
-	
+
 	&_right {
 		position: sticky;
 		top: 0;
@@ -24,22 +23,22 @@
 		padding-left: 30px;
 		padding-bottom: 2px;
 	}
-	
+
 	&_info {
-		margin-bottom: 50px;
+		margin-bottom: 55px;
 	}
-	
+
 	&_more-info {
-		margin-bottom: 56px;
+		margin-bottom: 46px;
 	}
-	
+
 	&_head {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		margin-bottom: 30px;
+		margin-bottom: 31px;
 	}
-	
+
 	&_title {
 		margin-bottom: 7px;
 		color: $blackSecondary;
@@ -48,11 +47,11 @@
 		font-size: 24px;
 		line-height: 32px;
 	}
-	
+
 	&_rating {
 		padding-top: 5px;
 	}
-	
+
 	&_price {
 		flex: 1 1 100%;
 		display: flex;
@@ -61,7 +60,7 @@
 		font-family: $fontSecond;
 		font-size: 18px;
 		line-height: 21px;
-		
+
 		&__old {
 			margin-right: 10px;
 			color: $redPrimary;
@@ -71,66 +70,75 @@
 			text-decoration: line-through;
 		}
 	}
-	
+
 	&_size {
-		margin-bottom: 34px;
+		margin-bottom: 23px;
 	}
-	
+
 	&_color {
-		margin-bottom: 56px;
+		margin-bottom: 50px;
 		min-height: 40px;
 	}
-	
+
 	&_action {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 24px;
-		
+
 		&__btn {
-			flex: 1 1 auto;
-			margin-left: 24px;
+			margin-left: 6px;
+			width: 262px;
 		}
-		
+
 		&__favorite {
-			margin-left: 10px;
+			transition: 0.3s ease all 0s;
+			&:hover {
+				transform: translate(0, 5px);
+			}
+
+			@media screen and (min-width: 992px) {
+				margin-right: 12px;
+			}
 		}
 	}
-	
+
 	&_description {
 		display: flex;
 		align-content: center;
+		font-size: 14px;
+		line-height: 18px;
 	}
-	
+
 	&_shipping {
 		display: flex;
-		align-content: flex-end;
+		align-items: center;
 		margin-right: 40px;
-		
+
 		&__icon {
 			margin-right: 8px;
 		}
-		
+
 		&__title {
 			display: flex;
 			align-items: flex-end;
 		}
 	}
-	
+
 	&_return {
 		display: flex;
-		align-content: flex-end;
-		
+		align-items: center;
+
 		&__icon {
 			margin-right: 8px;
 		}
-		
+
 		&__title {
 			display: flex;
 			align-items: flex-end;
 		}
 	}
-	
+
 	&_discount {
 		position: absolute;
 		top: 40px;
@@ -145,7 +153,7 @@
 		font-weight: 600;
 		line-height: 18px;
 		background-color: $redPrimary;
-		
+
 		&.visible-mobile {
 			display: none;
 		}
@@ -156,88 +164,67 @@
 		color: $blackSecondary;
 		font-weight: 500;
 	}
-	
+
 	&_group {
 		margin-bottom: 80px;
 	}
-	
+
 	&_options {
 		margin-bottom: 80px;
 	}
-	
-	@media (max-width: $screen-xl) {
-		
-		&_action {
-			
-			&__btn {
-				min-width: 300px;
-			}
-		}
-	}
-	
+
 	@media (max-width: $screen-md) {
-		
 		&_right {
 			flex: 2 0 440px;
 			max-width: 440px;
 		}
-		
-		&_action {
-			
-			&__btn {
-				min-width: 240px;
-			}
-		}
-		
+
 		&_description {
 			flex-direction: column;
 		}
-		
+
 		&_shipping {
 			margin: 0 0 10px 0;
 		}
 	}
-	
+
 	@media (max-width: $screen-sm) {
-		
 		&_right {
 			flex: 2 0 360px;
 			max-width: 360px;
 		}
-		
+
 		&_head {
 			flex-direction: column;
 		}
-		
+
 		&_price {
 			margin-bottom: 20px;
 		}
-		
+
 		&_action {
-			
 			&__btn {
 				max-width: 100%;
 				margin-left: 0;
 			}
-			
+
 			&__favorite {
 				display: none;
 			}
 		}
-		
+
 		&_count.product-count {
 			display: none;
 		}
 	}
-	
+
 	@media (max-width: $screen-xs) {
-		
 		&_inner {
 			flex-direction: column;
 			max-width: 100%;
 			padding-right: 0;
 		}
-		
+
 		&_right {
 			position: relative;
 			flex: 1 1 auto;
@@ -250,37 +237,36 @@
 		&_breadcrumbs {
 			display: none;
 		}
-		
+
 		&_info {
 			margin-bottom: 24px;
 		}
-		
+
 		&_more-info {
 			margin: 0 -16px;
 		}
-		
+
 		&_size {
 			margin-bottom: 20px;
 		}
-		
+
 		&_color {
 			margin-bottom: 40px;
 		}
-		
+
 		&_action {
 			margin-bottom: 0;
 		}
-		
+
 		&_description {
 			display: none;
 		}
-		
+
 		&_combine {
 			display: none;
 		}
-		
+
 		&_discount {
-			
 			&.visible-mobile {
 				display: inline-flex;
 			}

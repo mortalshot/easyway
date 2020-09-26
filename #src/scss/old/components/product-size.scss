@@ -1,16 +1,20 @@
 .product-size {
 	display: flex;
 	align-items: center;
-	
+
 	&_title {
 		margin-right: 19px;
+
+		@media screen and (max-width: 450px) {
+			display: none;
+		}
 	}
-	
+
 	&_list {
 		display: flex;
 		margin: 0 -8px;
 	}
-	
+
 	&_item {
 		position: relative;
 		display: flex;
@@ -28,78 +32,93 @@
 		border: 1px solid $grayDark;
 		border-radius: 0;
 		cursor: pointer;
-		
+
 		&:focus,
 		&:active {
 			outline: none;
 		}
-		
+
 		&:hover,
 		&.is-active {
 			border: 2px solid $blackSecondary;
 		}
-		
+
 		&.is-disabled {
 			cursor: default;
-			color: rgba($blackSecondary, .3);
+			color: rgba($blackSecondary, 0.3);
 			overflow: hidden;
-			
+
 			&:hover {
 				border: 1px solid $grayDark;
 			}
-			
+
 			&:before,
 			&:after {
-				content: '';
+				content: "";
 				position: absolute;
 				width: 50px;
 				height: 2px;
 				background-color: $grayDark;
 			}
-			
+
 			&:before {
 				top: 11px;
 				left: -13px;
 				transform: rotate(45deg);
 			}
-			
+
 			&:after {
 				top: 11px;
 				left: -12px;
 				transform: rotate(-45deg);
 			}
 		}
-	}
-	
-	&_link-table {
-		margin-left: auto;
-	}
-	
-	@media (max-width: $screen-sm) {
-		
-		&_link-table {
-			display: none;
-		}
-	}
-	
-	@media (max-width: $screen-xs) {
-		
-		&_item {
+
+		@media screen and (max-width: $screen-xs) {
 			width: 35px;
 			height: 35px;
-			
+			margin: 0 5px;
+
 			&.is-disabled {
-				
 				&:before {
 					top: 16px;
 					left: -8px;
 				}
-				
+
 				&:after {
 					top: 14px;
 					left: -7px;
 				}
 			}
+		}
+	}
+
+	&_link-table {
+		margin-left: auto;
+
+		@media screen and (max-width: 767px) {
+			font-size: 0;
+			line-height: 1;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 27px;
+			height: 27px;
+			border: 1px solid $grayDark;
+			margin-left: 16px;
+
+			&::after {
+				content: "";
+				display: block;
+				width: 20px;
+				height: 4px;
+				background: #fff url(../img/icons/points-table.svg) no-repeat center;
+			}
+		}
+		@media screen and (max-width: 575px) {
+			width: 35px;
+			height: 35px;
+			margin-left: 10px;
 		}
 	}
 }

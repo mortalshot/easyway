@@ -2,6 +2,7 @@
 	
 	&_links {
 		display: flex;
+		justify-content: space-between;
 		margin-bottom: 40px;
 		border-bottom: 2px solid $grayLight;
 	}
@@ -9,8 +10,7 @@
 	&_link {
 		position: relative;
 		display: inline-block;
-		margin-right: 25px;
-		padding-right: 30px;
+		padding-right: 25px;
 		padding-bottom: 10px;
 		color: $graySecondary;
 		font-family: $fontSecond;
@@ -24,7 +24,7 @@
 		}
 		
 		&:last-child {
-			margin-right: 0;
+			padding-right: 0;
 		}
 		
 		&:after {
@@ -99,7 +99,7 @@
 			}
 			
 			&.is-active {
-				border-bottom: 1px solid $grayLight;
+				// border-bottom: 1px solid $grayLight;
 				
 				&:after {
 					width: 32px;

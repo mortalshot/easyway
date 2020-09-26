@@ -18,7 +18,11 @@
 	}
 	
 	&_title {
-		margin-right: 24px;
+		margin-right: 38px;
+
+		@media screen and (max-width: 450px) {
+			display: none;
+		}
 	}
 	
 	&_mobile-title {
@@ -36,7 +40,7 @@
 		align-items: center;
 		width: 27px;
 		height: 27px;
-		margin: 0 10px;
+		margin: 0 8px;
 		transition: padding .1s;
 		
 		&:first-child {

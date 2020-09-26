@@ -37,6 +37,12 @@
 	// .comment__rating
 	&__rating {
 		padding-top: 5px;
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 
 	// .comment__content
@@ -76,5 +82,20 @@
 
 	&--parent {
 		padding: 0;
+	}
+
+	&__points {
+		.custom-select__trigger {
+			padding: 5px 0;
+		}
+
+		.custom-select__custom-options {
+			text-align: right;
+			min-width: inherit;
+		}
+		
+		.custom-options__option {
+			padding: 7px 20px;
+		}
 	}
 }

@@ -116,9 +116,12 @@
 			}
 
 			.btn-txt {
+				letter-spacing: 0;
+				
 				@media screen and (max-width: 767px) {
 					display: inline-block;
 					margin-bottom: 17px;
+					margin-left: -7px;
 				}
 			}
 		}

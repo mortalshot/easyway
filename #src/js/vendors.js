@@ -8,6 +8,7 @@
 @@include('components/webp.js')
 @@include('components/menu.js')
 @@include('components/tabs.js')
+@@include('components/tabs-click.js')
 @@include('components/accordion.js')
 @@include('components/media.js')
 @@include('components/popup.js')

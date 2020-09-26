@@ -51,11 +51,12 @@
 	&__item {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 24px;
+		// margin-bottom: 24px;
+		margin-bottom: 10px;
 
-		@media screen and (max-width: 991px) {
-			margin-bottom: 12px;
-		}
+		// @media screen and (max-width: 991px) {
+		// 	margin-bottom: 12px;
+		// }
 		@media screen and (max-width: 767px) {
 			margin-bottom: 5px;
 		}

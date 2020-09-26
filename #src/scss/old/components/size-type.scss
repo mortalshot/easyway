@@ -1,18 +1,26 @@
 .size-type {
-	
 	&_block {
 		margin-bottom: 40px;
 		
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 20px;
+		}
 	}
 	
 	&_title {
 		margin-bottom: 18px;
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 24px;
 		line-height: 32px;
+		letter-spacing: -0.5px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 10px;
+		}
 	}
 	
 	&_table {
@@ -23,13 +31,19 @@
 			
 			.size-type_table__cell {
 				font-weight: 500;
+				color: #000;
+
+				@media screen and (max-width: $size-layout-desktop + 'px') {
+					font-size: calc(14px + 2 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+					line-height: calc(22 / 16);
+				}
 			}
 		}
 		
 		&__row {
 			display: flex;
 			flex-wrap: nowrap;
-			height: 40px;
+			height: 39px;
 			border-bottom: 1px solid $grayLight;
 			
 			&:last-child {
@@ -37,8 +51,8 @@
 			}
 			
 			.ru-size {
-				flex: 1 1 135px;
-				max-width: 135px;
+				flex: 1 1 137px;
+				max-width: 137px;
 			}
 			
 			.international-size {
@@ -74,6 +88,87 @@
 			&:last-child {
 				border-right: none;
 			}
+		}
+	}
+
+	&--desktop{
+		@media screen and (max-width: 575px) {
+			display: none;
+		}
+	}
+	&--mobile{
+		@media screen and (min-width: 576px) {
+			display: none;
+		}
+
+		.tabs-triggers {
+			width: 100%;
+			justify-content: space-between;
+			border-bottom: 2px solid $grayLight;
+		}
+
+		.tabs-triggers__item {
+			font-size: 16px;
+			line-height: 26px;
+			font-weight: 500;
+			color: $graySecondary;
+			padding: 10px;
+			position: relative;
+			flex: 0 0 50%;
+			text-align: center;
+			&:hover {
+				text-decoration: none;
+			}
+
+			&::after {
+				content: '';
+				display: block;
+				height: 2px;
+				background-color: $blackPrimary;
+				position: absolute;
+				bottom: -2px;
+				width: 0;
+				opacity: 0;
+			}
+
+			&--active {
+				color: $blackPrimary;
+				box-shadow: none;
+
+				&::after {
+					opacity: 1;
+					width: 100%;
+				}
+			}
+		}
+
+		.tabs-content {
+			margin-top: 23px;
+		}
+
+		&__item-wrapper {
+			border: 1px solid $grayLight;
+			padding: 16px 24px;
+		}
+
+		&__item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 500;
+			margin-bottom: 8px;
+			color: #000;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&__text {
+			font-weight: 400;
+			color: $blackPrimary;
 		}
 	}
 }

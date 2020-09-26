@@ -41,5 +41,10 @@
             bottom: 11px;
             right: 11px;
         }
+        @media screen and (max-width: 450px) {
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
     }
 }

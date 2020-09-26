@@ -190,7 +190,7 @@
             right: 0;
             top: 0;
             bottom: 0;
-            
+
             &:hover {
                 text-decoration: none;
             }
@@ -224,6 +224,49 @@
 
         .tabs-triggers__item--active {
             box-shadow: none;
+        }
+    }
+
+    &--size-table {
+        .close-popup {
+            top: 8px;
+            right: 15px;
+            
+            @media screen and (max-width: 767px) {
+                right: 14px;
+            }
+
+            svg {
+                width: 8px;
+                path {
+                    fill: $blackSecondary;
+                }
+            }
+        }
+
+        .popup__content {
+            background: #fff;
+            padding: 37px 78px 64px;
+            max-width: 925px;
+
+            @media screen and (max-width: 991px) {
+                padding: 37px 40px 45px;
+            }
+            @media screen and (max-width: 767px) {
+                padding: 37px 16px 45px;
+            }
+            @media screen and (max-width: 575px) {
+                padding: 37px 23px 23px;
+            }
+        }
+
+        .popup__body {
+            @media screen and (max-width: 575px) {
+                padding-top: 50px;
+            }
+            @media screen and (max-width: 450px) {
+                padding: 50px 16px 16px;
+            }
         }
     }
 }

@@ -1,11 +1,8 @@
 .checkout {
-	padding-bottom: 112px;
+	padding-bottom: 0;
 	
 	@media screen and (min-width: 576px) {
 		padding-top: 40px;
-	}
-	@media screen and (max-width: 767px) {
-		padding-bottom: 52px;
 	}
 
 	&__row {

@@ -5,6 +5,10 @@
 		align-items: center;
 		margin-bottom: 7px;
 		margin-left: -1px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 0px;
+		}
 	}
 	
 	&_star {
@@ -12,7 +16,7 @@
 		align-items: center;
 		
 		.icon-star {
-			margin: 0 1px;
+			margin: 0 0.5px;
 			
 			&.is-active {
 				background: url("../img/icons/star-dark.svg") center no-repeat;

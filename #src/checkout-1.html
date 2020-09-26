@@ -1,5 +1,5 @@
 @@include('html-components/_header.html', {
-	"class": "checkout__header"
+"class": "checkout__header"
 })
 
 <main class="site-main">
@@ -92,43 +92,35 @@
 					<div id="checkoutStep-4" class="checkout__step step-checkout">
 						<div class="step-checkout__title">Адрес доставки</div>
 						<div class="step-checkout__input-row row">
-							<div class="row step-checkout__input-row m-0 w-100">
-								<div class="step-checkout__input">
-									<div class="input-group">
-										<input id="step-checkout-street" type="text" class="input-group__field"
-											required="">
-										<label class="input-group__title">Улица*</label>
-									</div>
-								</div>
-								<div class="step-checkout__input">
-									<div class="input-group">
-										<input id="step-checkout-house" type="text" class="input-group__field"
-											required="">
-										<label class="input-group__title">Дом*</label>
-									</div>
+							<div class="step-checkout__input step-checkout__input--street">
+								<div class="input-group">
+									<input id="step-checkout-street" type="text" class="input-group__field" required="">
+									<label class="input-group__title">Улица*</label>
 								</div>
 							</div>
-							<div class="step-checkout__input-row step-checkout__input-row--three row w-100 m-0">
-								<div class="step-checkout__input">
-									<div class="input-group">
-										<input id="step-checkout-corps" type="text" class="input-group__field"
-											required="">
-										<label class="input-group__title">Корпус*</label>
-									</div>
+							<div class="step-checkout__input step-checkout__input--house">
+								<div class="input-group">
+									<input id="step-checkout-house" type="text" class="input-group__field" required="">
+									<label class="input-group__title">Дом*</label>
 								</div>
-								<div class="step-checkout__input">
-									<div class="input-group">
-										<input id="step-checkout-building" type="text" class="input-group__field"
-											required="">
-										<label class="input-group__title">Строение*</label>
-									</div>
+							</div>
+							<div class="step-checkout__input step-checkout__input--corps">
+								<div class="input-group">
+									<input id="step-checkout-corps" type="text" class="input-group__field" required="">
+									<label class="input-group__title">Корпус*</label>
 								</div>
-								<div class="step-checkout__input">
-									<div class="input-group">
-										<input id="step-checkout-flat" type="text" class="input-group__field"
-											required="">
-										<label class="input-group__title">Квартира*</label>
-									</div>
+							</div>
+							<div class="step-checkout__input step-checkout__input--building">
+								<div class="input-group">
+									<input id="step-checkout-building" type="text" class="input-group__field"
+										required="">
+									<label class="input-group__title">Строение*</label>
+								</div>
+							</div>
+							<div class="step-checkout__input step-checkout__input--flat">
+								<div class="input-group">
+									<input id="step-checkout-flat" type="text" class="input-group__field" required="">
+									<label class="input-group__title">Квартира*</label>
 								</div>
 							</div>
 						</div>

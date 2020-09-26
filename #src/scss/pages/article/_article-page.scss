@@ -53,6 +53,7 @@
             &--active {
                 color: $blackPrimary;
                 box-shadow: none;
+                z-index: inherit;
 
                 &::after {
                     width: 112%;

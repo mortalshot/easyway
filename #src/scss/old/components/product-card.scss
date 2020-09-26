@@ -22,14 +22,32 @@
 	&_head {
 		position: relative;
 		margin-bottom: 20px;
+
+		&:hover {
+			.product-card__img--1 {
+				opacity: 0;
+			}
+
+			.product-card__img--2 {
+				opacity: 1;
+			}
+		}
 	}
 
 	&_wishlist {
 		position: absolute;
 		top: 15px;
-		right: 20px;
+		right: 19px;
 		cursor: pointer;
 		z-index: 1;
+		transition: 0.3s ease all 0s;
+		display: inline-block;
+		width: 23px;
+		height: 18px;
+
+		&:hover {
+			transform: translate(0, 3px);
+		}
 	}
 
 	&_img {
@@ -39,6 +57,19 @@
 			display: block;
 			width: 100%;
 			max-height: 288px;
+		}
+	}
+
+	&__img {
+		opacity: 0;
+		transition: 0.6s ease all 0s;
+
+		&--1 {
+			opacity: 1;
+		}
+
+		&--2 {
+			opacity: 0;
 		}
 	}
 
@@ -54,7 +85,7 @@
 		width: calc(100% - 8px);
 		height: 40px;
 		padding: 0;
-		background-color: #fff;
+		background-color: $blackPrimary;
 		border: none;
 		cursor: pointer;
 		transition: 0.3s;
@@ -84,6 +115,7 @@
 		line-height: 100%;
 		text-align: center;
 		text-transform: uppercase;
+		color: #fff;
 
 		&:hover {
 			color: $greenPrimary;
