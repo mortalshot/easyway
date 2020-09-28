@@ -179,8 +179,11 @@
 	}
 
 	&__summary-1 {
-		@media screen and (max-width: 575px) {
+		@media screen and (max-width: 767px) {
 			width: 100%;
+			margin: 0;
+		}
+		@media screen and (max-width: 575px) {
 			margin: 0;
 		}
 

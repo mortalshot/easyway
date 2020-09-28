@@ -10463,6 +10463,11 @@ a {
     margin-bottom: 15px;
   }
 
+  .checkout__summary-1 {
+    width: 100%;
+    margin: 0;
+  }
+
   .step-checkout {
     padding: 24px 0;
   }
@@ -11409,7 +11414,6 @@ a {
   }
 
   .checkout__summary-1 {
-    width: 100%;
     margin: 0;
   }
 
