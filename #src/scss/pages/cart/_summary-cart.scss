@@ -111,10 +111,13 @@
 	&__btn-wrapper {
 		@media screen and (max-width: 575px) {
 			background: $grayLight;
-			position: sticky;
-			bottom: 0px;
-			padding: 20px 0;
+			padding: 20px;
 			margin-top: -20px;
+			position: fixed;
+			bottom: 0px;
+			left: 0;
+			right: 0;
+			z-index: 1;
 		}
 	}
 
@@ -133,6 +136,7 @@
 	// .summary-cart__information
 	&__information {
 		color: $blackSecondary;
+		padding-bottom: 60px;
 
 		ul {
 			padding: 0 0 0 27px;

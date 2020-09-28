@@ -9,14 +9,7 @@
 
 	// .banner-square__row
 	&__row {
-		margin: -20px -26px;
 
-		@media screen and (max-width: 1200px) {
-			margin: -10px;
-		}
-		@media screen and (max-width: 991px) {
-			margin: 0 -5px;
-		}
 		@media screen and (max-width: 600px) {
 			display: block;
 		}
@@ -33,18 +26,15 @@
 
 	// .banner-square__item
 	&__item {
-		margin: 40px 20px;
+		margin: 1px;
 		padding: 104px 50px 48px;
 		flex: 1;
 		display: flex;
 		align-items: flex-end;
 		min-height: 310px;
 
-		@media screen and (max-width: 1200px) {
-			margin: 20px 10px;
-		}
+
 		@media screen and (max-width: 991px) {
-			margin: 10px 5px;
 			padding: 104px 20px 48px;
 			min-height: inherit;
 		}

@@ -17,6 +17,7 @@
 		line-height: 22px;
 		border: none;
 		border-bottom: 2px solid $blackSecondary;
+		border-radius: 0;
 		
 		&::placeholder {
 			color: $grayPrimary;

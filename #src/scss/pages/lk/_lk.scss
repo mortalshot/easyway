@@ -390,6 +390,17 @@
 				font-size: 12px;
 			}
 		}
+
+		&__tabs {
+			.lk-wrapper__content-tab {
+				font-size: 18px;
+				line-height: 1;
+
+				@media screen and (max-width: $size-layout-desktop + 'px') {
+					font-size: calc(15px + 3 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
+				}
+			}
+		}
 	}
 
 	&-reviews {
@@ -800,4 +811,9 @@
 	&__order-success {
 		color: $blue;
 	}
+}
+
+
+.mb-3 {
+	margin-bottom: 33px;
 }

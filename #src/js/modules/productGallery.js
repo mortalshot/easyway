@@ -46,7 +46,7 @@ export default class ProductGallery {
                 mouseDrag: true,
                 nav: true,
                 controls: false,
-                swipeAngle: false,
+                swipeAngle: 30,
                 speed: 400,
             });
         }

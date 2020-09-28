@@ -1,6 +1,6 @@
 .checkout {
 	padding-bottom: 0;
-	
+
 	@media screen and (min-width: 576px) {
 		padding-top: 40px;
 	}
@@ -175,6 +175,17 @@
 					font-size: calc(18px + 4 * ((100vw - 375px) / (#{$size-layout-desktop} - 375)));
 				}
 			}
+		}
+	}
+
+	&__summary-1 {
+		@media screen and (max-width: 575px) {
+			width: 100%;
+			margin: 0;
+		}
+
+		.basket-product {
+			min-height: inherit;
 		}
 	}
 }

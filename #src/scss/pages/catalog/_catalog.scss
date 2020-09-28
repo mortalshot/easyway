@@ -8,11 +8,10 @@
 		line-height: 22px;
 		letter-spacing: 1.3px;
 		padding: 27px 0px 28px 0px;
-		margin: 0 -16px;
 
 		@media screen and (min-width: $screen-sm) {
 			text-transform: uppercase;
-			padding: 27px 3px 28px 45px;
+			padding: 27px 3px 27px 30px;
 		}
 		@media screen and (max-width: 575px) {
 			padding: 14px 0;
@@ -28,9 +27,6 @@
 		justify-content: space-between;
 		align-items: center;
 
-		@media screen and (max-width: 767px) {
-			padding: 0 16px;
-		}
 		@media screen and (max-width: 575px) {
 			flex-direction: row-reverse;
 		}

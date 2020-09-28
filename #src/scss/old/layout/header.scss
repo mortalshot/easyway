@@ -119,7 +119,7 @@
 	}
 
 	&__logo {
-		margin: 0px 89px 0px 4px;
+		margin: 0 62px 0 4px;
 
 		@media screen and (max-width: 991px) {
 			margin-right: 45px;
@@ -210,7 +210,7 @@
 			width: 100%;
 			height: 100%;
 			background-color: #fff;
-			padding: 40px 16px 0;
+			padding: 48px 16px 0;
 			transition: 0.3s ease all 0s;
 
 			&.active {
@@ -226,7 +226,7 @@
 			font-weight: 600;
 			font-size: 24px;
 			line-height: 32px;
-			padding: 32px 16px;
+			padding: 24px 16px 31px;
 			letter-spacing: -0.7px;
 		}
 
@@ -322,10 +322,43 @@
 
 			&.active {
 				overflow: auto;
-				
+
 				.accordion__item {
 					display: block;
 				}
+
+				.site_header--mobile__link {
+					display: block;
+				}
+			}
+		}
+
+		.parent-accordion {
+			margin: 0 -16px;
+		}
+
+		.sub-accordion {
+			.accordion__item {
+				margin: 0 -24px !important;
+				padding: 0 24px;
+			}
+
+			.accordion__title {
+				border: 0;
+
+				&.active {
+					background-color: transparent;
+
+					& + .accordion__text {
+						border-bottom: 0;
+					}
+				}
+			}
+
+
+			.link-list__item {
+				border-bottom: 0;
+				padding: 7px 24px;
 			}
 		}
 	}

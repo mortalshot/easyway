@@ -649,10 +649,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         Or = e("./helpers/createStyleSheet.js"),
         Pr = e("./helpers/addCSSRule.js"),
         Br = e("./helpers/removeCSSRule.js"),
-        Nr = e("./helpers/getCssRulesLength.js"),
-        Rr = e("./helpers/toDegree.js"),
-        qr = e("./helpers/getTouchDirection.js"),
-        zr = e("./helpers/forEach.js"),
+        zr = e("./helpers/getCssRulesLength.js"),
+        Nr = e("./helpers/toDegree.js"),
+        Rr = e("./helpers/getTouchDirection.js"),
+        qr = e("./helpers/forEach.js"),
         Dr = e("./helpers/hasClass.js"),
         Ir = e("./helpers/addClass.js"),
         Fr = e("./helpers/removeClass.js"),
@@ -800,31 +800,31 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             P,
             p,
             B,
-            N = M.responsive,
-            R = M.nested,
-            q = "carousel" === M.mode;
+            z = M.responsive,
+            N = M.nested,
+            R = "carousel" === M.mode;
 
-        if (N) {
-          0 in N && (M = (0, wr.extend)(M, N[0]), delete N[0]);
+        if (z) {
+          0 in z && (M = (0, wr.extend)(M, z[0]), delete z[0]);
           var C = {};
 
-          for (var E in N) {
-            var j = "number" == typeof (j = N[E]) ? {
+          for (var E in z) {
+            var j = "number" == typeof (j = z[E]) ? {
               items: j
             } : j;
             C[E] = j;
           }
 
-          N = C, C = null;
+          z = C, C = null;
         }
 
-        q || !function e(t) {
+        R || !function e(t) {
           for (var n in t) {
-            q || ("slideBy" === n && (t[n] = "page"), "edgePadding" === n && (t[n] = !1), "autoHeight" === n && (t[n] = !1)), "responsive" === n && e(t[n]);
+            R || ("slideBy" === n && (t[n] = "page"), "edgePadding" === n && (t[n] = !1), "autoHeight" === n && (t[n] = !1)), "responsive" === n && e(t[n]);
           }
-        }(M), q || (M.axis = "horizontal", M.slideBy = "page", M.edgePadding = !1, O = M.animateIn, P = M.animateOut, p = M.animateDelay, B = M.animateNormal);
+        }(M), R || (M.axis = "horizontal", M.slideBy = "page", M.edgePadding = !1, O = M.animateIn, P = M.animateOut, p = M.animateDelay, B = M.animateNormal);
         var L,
-            z,
+            q,
             D = "horizontal" === M.axis,
             w = x.createElement("div"),
             I = x.createElement("div"),
@@ -835,7 +835,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             V = H.length,
             W = tn(),
             G = !1;
-        N && En(), q && (F.className += " tns-vpfix");
+        z && En(), R && (F.className += " tns-vpfix");
 
         var _,
             U,
@@ -881,10 +881,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             Oe = on("edgePadding"),
             Pe = on("gutter"),
             Be = rn(),
-            Ne = on("center"),
-            Re = xe ? 1 : Math.floor(on("items")),
-            qe = on("slideBy"),
-            ze = M.viewportMax || M.fixedWidthViewportWidth,
+            ze = on("center"),
+            Ne = xe ? 1 : Math.floor(on("items")),
+            Re = on("slideBy"),
+            qe = M.viewportMax || M.fixedWidthViewportWidth,
             De = on("arrowKeys"),
             Ie = on("speed"),
             Fe = M.rewind,
@@ -906,31 +906,31 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             rt = [],
             at = He ? (X = function () {
           {
-            if (xe || Te && !ze) return V - 1;
+            if (xe || Te && !qe) return V - 1;
             var e = Te ? "fixedWidth" : "items",
                 t = [];
-            if ((Te || M[e] < V) && t.push(M[e]), N) for (var n in N) {
-              var r = N[n][e];
+            if ((Te || M[e] < V) && t.push(M[e]), z) for (var n in z) {
+              var r = z[n][e];
               r && (Te || r < V) && t.push(r);
             }
-            return t.length || t.push(0), Math.ceil(Te ? ze / Math.min.apply(null, t) : Math.max.apply(null, t));
+            return t.length || t.push(0), Math.ceil(Te ? qe / Math.min.apply(null, t) : Math.max.apply(null, t));
           }
-        }(), Y = q ? Math.ceil((5 * X - V) / 2) : 4 * X - V, Y = Math.max(X, Y), an("edgePadding") ? Y + 1 : Y) : 0,
-            ot = q ? V + 2 * at : V + at,
+        }(), Y = R ? Math.ceil((5 * X - V) / 2) : 4 * X - V, Y = Math.max(X, Y), an("edgePadding") ? Y + 1 : Y) : 0,
+            ot = R ? V + 2 * at : V + at,
             it = !(!Te && !xe || He),
             st = Te ? Xn() : null,
-            lt = !q || !He,
+            lt = !R || !He,
             ut = D ? "left" : "top",
             ct = "",
             dt = "",
             ft = Te ? function () {
-          return Ne && !He ? V - 1 : Math.ceil(-st / (Te + Pe));
+          return ze && !He ? V - 1 : Math.ceil(-st / (Te + Pe));
         } : xe ? function () {
           for (var e = 0; e < ot; e++) {
             if (_[e] >= -st) return e;
           }
         } : function () {
-          return Ne && q && !He ? V - 1 : He || q ? Math.max(0, ot - Math.ceil(Re)) : ot - 1;
+          return ze && R && !He ? V - 1 : He || R ? Math.max(0, ot - Math.ceil(Ne)) : ot - 1;
         },
             vt = $t(on("startIndex")),
             ht = vt,
@@ -972,7 +972,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
             {
               var n, r;
-              (0, Hr.hasAttr)(t, "data-nav") && (n = ue = Number((0, Vr.getAttr)(t, "data-nav")), r = Te || xe ? n * V / se : n * Re, nr(Dt ? n : Math.min(Math.ceil(r), V - 1), e), ce === n && (Se && lr(), ue = -1));
+              (0, Hr.hasAttr)(t, "data-nav") && (n = ue = Number((0, Vr.getAttr)(t, "data-nav")), r = Te || xe ? n * V / se : n * Ne, nr(Dt ? n : Math.min(Math.ceil(r), V - 1), e), ce === n && (Se && lr(), ue = -1));
             }
           },
           keydown: function keydown(e) {
@@ -1004,20 +1004,20 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             0 <= t && rr(e, 0 === t ? -1 : 1);
           }
         },
-            Nt = {
+            zt = {
           touchstart: mr,
           touchmove: yr,
           touchend: gr,
           touchcancel: gr
         },
-            Rt = {
+            Nt = {
           mousedown: mr,
           mousemove: yr,
           mouseup: gr,
           mouseleave: gr
         },
-            qt = an("controls"),
-            zt = an("nav"),
+            Rt = an("controls"),
+            qt = an("nav"),
             Dt = !!xe || M.navAsThumbnails,
             It = an("autoplay"),
             Ft = an("touch"),
@@ -1037,21 +1037,21 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         },
             Qt = "force" === M.preventScrollOnTouch;
 
-        qt && (K = M.controlsContainer, J = M.controlsContainer ? M.controlsContainer.outerHTML : "", $ = M.prevButton, Z = M.nextButton, ee = M.prevButton ? M.prevButton.outerHTML : "", te = M.nextButton ? M.nextButton.outerHTML : ""), zt && (ae = M.navContainer, oe = M.navContainer ? M.navContainer.outerHTML : "", se = xe ? V : Sr(), le = 0, ue = -1, ce = en(), de = ce, fe = "tns-nav-active", ve = "Carousel Page ", he = " (Current Slide)"), It && (pe = "forward" === M.autoplayDirection ? 1 : -1, me = M.autoplayButton, ye = M.autoplayButton ? M.autoplayButton.outerHTML : "", ge = ["<span class='tns-visually-hidden'>", " animation</span>"]), (Ft || Ht) && (Le = {}, Ae = !(we = {}), Me = D ? function (e, t) {
+        Rt && (K = M.controlsContainer, J = M.controlsContainer ? M.controlsContainer.outerHTML : "", $ = M.prevButton, Z = M.nextButton, ee = M.prevButton ? M.prevButton.outerHTML : "", te = M.nextButton ? M.nextButton.outerHTML : ""), qt && (ae = M.navContainer, oe = M.navContainer ? M.navContainer.outerHTML : "", se = xe ? V : Sr(), le = 0, ue = -1, ce = en(), de = ce, fe = "tns-nav-active", ve = "Carousel Page ", he = " (Current Slide)"), It && (pe = "forward" === M.autoplayDirection ? 1 : -1, me = M.autoplayButton, ye = M.autoplayButton ? M.autoplayButton.outerHTML : "", ge = ["<span class='tns-visually-hidden'>", " animation</span>"]), (Ft || Ht) && (Le = {}, Ae = !(we = {}), Me = D ? function (e, t) {
           return e.x - t.x;
         } : function (e, t) {
           return e.y - t.y;
-        }), xe || Kt(wt || _t), i && (ut = i, ct = "translate", dt = s ? (ct += D ? "3d(" : "3d(0px, ", D ? ", 0px, 0px)" : ", 0px)") : (ct += D ? "X(" : "Y(", ")")), q && (F.className = F.className.replace("tns-vpfix", "")), function () {
+        }), xe || Kt(wt || _t), i && (ut = i, ct = "translate", dt = s ? (ct += D ? "3d(" : "3d(0px, ", D ? ", 0px, 0px)" : ", 0px)") : (ct += D ? "X(" : "Y(", ")")), R && (F.className = F.className.replace("tns-vpfix", "")), function () {
           an("gutter");
           w.className = "tns-outer", I.className = "tns-inner", w.id = Lt + "-ow", I.id = Lt + "-iw", "" === F.id && (F.id = Lt);
           jt += g || xe ? " tns-subpixel" : " tns-no-subpixel", jt += y ? " tns-calc" : " tns-no-calc", xe && (jt += " tns-autowidth");
-          jt += " tns-" + M.axis, F.className += jt, q ? ((L = x.createElement("div")).id = Lt + "-mw", L.className = "tns-ovh", w.appendChild(L), L.appendChild(I)) : w.appendChild(I);
+          jt += " tns-" + M.axis, F.className += jt, R ? ((L = x.createElement("div")).id = Lt + "-mw", L.className = "tns-ovh", w.appendChild(L), L.appendChild(I)) : w.appendChild(I);
           {
             Ve && ((L || I).className += " tns-ah");
           }
 
-          if (k.insertBefore(w, F), I.appendChild(F), (0, zr.forEach)(H, function (e, t) {
-            (0, Ir.addClass)(e, "tns-item"), e.id || (e.id = Lt + "-item" + t), !q && B && (0, Ir.addClass)(e, B), (0, Wr.setAttrs)(e, {
+          if (k.insertBefore(w, F), I.appendChild(F), (0, qr.forEach)(H, function (e, t) {
+            (0, Ir.addClass)(e, "tns-item"), e.id || (e.id = Lt + "-item" + t), !R && B && (0, Ir.addClass)(e, B), (0, Wr.setAttrs)(e, {
               "aria-hidden": "true",
               tabindex: "-1"
             });
@@ -1060,26 +1060,26 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
               var r,
                   a = n % V,
                   o = H[a].cloneNode(!0);
-              (0, Ir.addClass)(o, Wt), (0, Gr.removeAttrs)(o, "id"), t.insertBefore(o, t.firstChild), q && (r = H[V - 1 - a].cloneNode(!0), (0, Ir.addClass)(r, Wt), (0, Gr.removeAttrs)(r, "id"), e.appendChild(r));
+              (0, Ir.addClass)(o, Wt), (0, Gr.removeAttrs)(o, "id"), t.insertBefore(o, t.firstChild), R && (r = H[V - 1 - a].cloneNode(!0), (0, Ir.addClass)(r, Wt), (0, Gr.removeAttrs)(r, "id"), e.appendChild(r));
             }
 
             F.insertBefore(e, F.firstChild), F.appendChild(t), H = F.children;
           }
         }(), function () {
-          if (!q) for (var e = vt, t = vt + Math.min(V, Re); e < t; e++) {
+          if (!R) for (var e = vt, t = vt + Math.min(V, Ne); e < t; e++) {
             var n = H[e];
-            n.style.left = 100 * (e - vt) / Re + "%", (0, Ir.addClass)(n, O), (0, Fr.removeClass)(n, B);
+            n.style.left = 100 * (e - vt) / Ne + "%", (0, Ir.addClass)(n, O), (0, Fr.removeClass)(n, B);
           }
-          D && (g || xe ? ((0, Pr.addCSSRule)(et, "#" + Lt + " > .tns-item", "font-size:" + m.getComputedStyle(H[0]).fontSize + ";", (0, Nr.getCssRulesLength)(et)), (0, Pr.addCSSRule)(et, "#" + Lt, "font-size:0;", (0, Nr.getCssRulesLength)(et))) : q && (0, zr.forEach)(H, function (e, t) {
+          D && (g || xe ? ((0, Pr.addCSSRule)(et, "#" + Lt + " > .tns-item", "font-size:" + m.getComputedStyle(H[0]).fontSize + ";", (0, zr.getCssRulesLength)(et)), (0, Pr.addCSSRule)(et, "#" + Lt, "font-size:0;", (0, zr.getCssRulesLength)(et))) : R && (0, qr.forEach)(H, function (e, t) {
             var n;
             e.style.marginLeft = (n = t, y ? y + "(" + 100 * n + "% / " + ot + ")" : 100 * n / ot + "%");
           }));
           {
-            T ? (b && (o = L && M.autoHeight ? fn(M.speed) : "", (0, Pr.addCSSRule)(et, "#" + Lt + "-mw", o, (0, Nr.getCssRulesLength)(et))), o = sn(M.edgePadding, M.gutter, M.fixedWidth, M.speed, M.autoHeight), (0, Pr.addCSSRule)(et, "#" + Lt + "-iw", o, (0, Nr.getCssRulesLength)(et)), q && (o = D && !xe ? "width:" + ln(M.fixedWidth, M.gutter, M.items) + ";" : "", b && (o += fn(Ie)), (0, Pr.addCSSRule)(et, "#" + Lt, o, (0, Nr.getCssRulesLength)(et))), o = D && !xe ? un(M.fixedWidth, M.gutter, M.items) : "", M.gutter && (o += cn(M.gutter)), q || (b && (o += fn(Ie)), S && (o += vn(Ie)))) : (q && Ve && (L.style[b] = Ie / 1e3 + "s"), I.style.cssText = sn(Oe, Pe, Te, Ve), q && D && !xe && (F.style.width = ln(Te, Pe, Re)), o = D && !xe ? un(Te, Pe, Re) : "", Pe && (o += cn(Pe))), o && (0, Pr.addCSSRule)(et, "#" + Lt + " > .tns-item", o, (0, Nr.getCssRulesLength)(et));
+            T ? (b && (o = L && M.autoHeight ? fn(M.speed) : "", (0, Pr.addCSSRule)(et, "#" + Lt + "-mw", o, (0, zr.getCssRulesLength)(et))), o = sn(M.edgePadding, M.gutter, M.fixedWidth, M.speed, M.autoHeight), (0, Pr.addCSSRule)(et, "#" + Lt + "-iw", o, (0, zr.getCssRulesLength)(et)), R && (o = D && !xe ? "width:" + ln(M.fixedWidth, M.gutter, M.items) + ";" : "", b && (o += fn(Ie)), (0, Pr.addCSSRule)(et, "#" + Lt, o, (0, zr.getCssRulesLength)(et))), o = D && !xe ? un(M.fixedWidth, M.gutter, M.items) : "", M.gutter && (o += cn(M.gutter)), R || (b && (o += fn(Ie)), S && (o += vn(Ie)))) : (R && Ve && (L.style[b] = Ie / 1e3 + "s"), I.style.cssText = sn(Oe, Pe, Te, Ve), R && D && !xe && (F.style.width = ln(Te, Pe, Ne)), o = D && !xe ? un(Te, Pe, Ne) : "", Pe && (o += cn(Pe))), o && (0, Pr.addCSSRule)(et, "#" + Lt + " > .tns-item", o, (0, zr.getCssRulesLength)(et));
           }
-          if (N && T) for (var r in N) {
+          if (z && T) for (var r in z) {
             r = parseInt(r);
-            var a = N[r],
+            var a = z[r],
                 o = "",
                 i = "",
                 s = "",
@@ -1091,13 +1091,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
                 v = on("edgePadding", r),
                 h = on("autoHeight", r),
                 p = on("gutter", r);
-            b && L && on("autoHeight", r) && "speed" in a && (i = "#" + Lt + "-mw{" + fn(f) + "}"), ("edgePadding" in a || "gutter" in a) && (s = "#" + Lt + "-iw{" + sn(v, p, d, f, h) + "}"), q && D && !xe && ("fixedWidth" in a || "items" in a || Te && "gutter" in a) && (l = "width:" + ln(d, p, c) + ";"), b && "speed" in a && (l += fn(f)), l = l && "#" + Lt + "{" + l + "}", ("fixedWidth" in a || Te && "gutter" in a || !q && "items" in a) && (u += un(d, p, c)), "gutter" in a && (u += cn(p)), !q && "speed" in a && (b && (u += fn(f)), S && (u += vn(f))), (o = i + s + l + (u = u && "#" + Lt + " > .tns-item{" + u + "}")) && et.insertRule("@media (min-width: " + r / 16 + "em) {" + o + "}", et.cssRules.length);
+            b && L && on("autoHeight", r) && "speed" in a && (i = "#" + Lt + "-mw{" + fn(f) + "}"), ("edgePadding" in a || "gutter" in a) && (s = "#" + Lt + "-iw{" + sn(v, p, d, f, h) + "}"), R && D && !xe && ("fixedWidth" in a || "items" in a || Te && "gutter" in a) && (l = "width:" + ln(d, p, c) + ";"), b && "speed" in a && (l += fn(f)), l = l && "#" + Lt + "{" + l + "}", ("fixedWidth" in a || Te && "gutter" in a || !R && "items" in a) && (u += un(d, p, c)), "gutter" in a && (u += cn(p)), !R && "speed" in a && (b && (u += fn(f)), S && (u += vn(f))), (o = i + s + l + (u = u && "#" + Lt + " > .tns-item{" + u + "}")) && et.insertRule("@media (min-width: " + r / 16 + "em) {" + o + "}", et.cssRules.length);
           }
         }(), hn();
-        var Xt = He ? q ? function () {
+        var Xt = He ? R ? function () {
           var e = pt,
               t = mt;
-          e += qe, t -= qe, Oe ? (e += 1, --t) : Te && (Be + Pe) % (Te + Pe) && --t, at && (t < vt ? vt -= V : vt < e && (vt += V));
+          e += Re, t -= Re, Oe ? (e += 1, --t) : Te && (Be + Pe) % (Te + Pe) && --t, at && (t < vt ? vt -= V : vt < e && (vt += V));
         } : function () {
           if (mt < vt) for (; pt + V <= vt;) {
             vt -= V;
@@ -1107,7 +1107,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         } : function () {
           vt = Math.max(pt, Math.min(mt, vt));
         },
-            Yt = q ? function () {
+            Yt = R ? function () {
           Un(F, ""), b || !Ie ? (Jn(), Ie && (0, Yr.isVisible)(F) || tr()) : (0, na.jsTransform)(F, ut, ct, dt, Yn(), Ie, tr), D || br();
         } : function () {
           rt = [];
@@ -1126,7 +1126,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             Se && (lr(), Ee = !0);
           },
           isOn: G,
-          updateSliderHeight: zn,
+          updateSliderHeight: qn,
           refresh: hn,
           destroy: function destroy() {
             var e;
@@ -1134,7 +1134,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
               resize: bn
             }), De && (0, ea.removeEvents)(x, Bt), K && (0, ea.removeEvents)(K, xt), ae && (0, ea.removeEvents)(ae, Tt), (0, ea.removeEvents)(F, Ot), (0, ea.removeEvents)(F, Pt), me && (0, ea.removeEvents)(me, {
               click: ur
-            }), Ye && clearInterval(be), q && c && ((e = {})[c] = tr, (0, ea.removeEvents)(F, e)), Qe && (0, ea.removeEvents)(F, Nt), Xe && (0, ea.removeEvents)(F, Rt);
+            }), Ye && clearInterval(be), R && c && ((e = {})[c] = tr, (0, ea.removeEvents)(F, e)), Qe && (0, ea.removeEvents)(F, zt), Xe && (0, ea.removeEvents)(F, Nt);
             var o = [A, J, ee, te, oe, ye];
 
             for (var t in v.forEach(function (e, t) {
@@ -1142,7 +1142,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
                   r,
                   a = "container" === e ? w : M[e];
               "object" === ra(a) && a && (n = !!a.previousElementSibling && a.previousElementSibling, r = a.parentNode, a.outerHTML = o[t], M[e] = n ? n.nextElementSibling : r.firstElementChild);
-            }), v = O = P = p = B = D = w = I = F = k = A = H = V = z = W = xe = Te = Oe = Pe = Be = Re = qe = ze = De = Ie = Fe = He = Ve = et = tt = _ = rt = at = ot = it = st = lt = ut = ct = dt = ft = vt = ht = pt = mt = gt = bt = St = Ct = Et = jt = Lt = wt = kt = At = _t = Mt = xt = Tt = Ot = Pt = Bt = Nt = Rt = qt = zt = Dt = It = Ht = Vt = Gt = Ut = U = We = Ge = K = J = $ = Z = ne = re = Ue = ae = oe = ie = se = le = ue = ce = de = fe = ve = he = Ye = Ke = pe = Je = $e = me = ye = Ze = ge = be = Se = Ce = Ee = je = Le = we = ke = Ae = _e = Me = Qe = Xe = null, this) {
+            }), v = O = P = p = B = D = w = I = F = k = A = H = V = q = W = xe = Te = Oe = Pe = Be = Ne = Re = qe = De = Ie = Fe = He = Ve = et = tt = _ = rt = at = ot = it = st = lt = ut = ct = dt = ft = vt = ht = pt = mt = gt = bt = St = Ct = Et = jt = Lt = wt = kt = At = _t = Mt = xt = Tt = Ot = Pt = Bt = zt = Nt = Rt = qt = Dt = It = Ht = Vt = Gt = Ut = U = We = Ge = K = J = $ = Z = ne = re = Ue = ae = oe = ie = se = le = ue = ce = de = fe = ve = he = Ye = Ke = pe = Je = $e = me = ye = Ze = ge = be = Se = Ce = Ee = je = Le = we = ke = Ae = _e = Me = Qe = Xe = null, this) {
               "rebuild" !== t && (this[t] = null);
             }
 
@@ -1159,7 +1159,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       }
 
       function Jt() {
-        for (var e = q ? vt - at : vt; e < 0;) {
+        for (var e = R ? vt - at : vt; e < 0;) {
           e += V;
         }
 
@@ -1167,11 +1167,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       }
 
       function $t(e) {
-        return e = e ? Math.max(0, Math.min(He ? V - 1 : V - Re, e)) : 0, q ? e + at : e;
+        return e = e ? Math.max(0, Math.min(He ? V - 1 : V - Ne, e)) : 0, R ? e + at : e;
       }
 
       function Zt(e) {
-        for (null == e && (e = vt), q && (e -= at); e < 0;) {
+        for (null == e && (e = vt), R && (e -= at); e < 0;) {
           e += V;
         }
 
@@ -1180,8 +1180,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
       function en() {
         var e = Zt(),
-            t = Dt ? e : Te || xe ? Math.ceil((e + 1) * se / V - 1) : Math.floor(e / Re);
-        return !He && q && vt === mt && (t = se - 1), t;
+            t = Dt ? e : Te || xe ? Math.ceil((e + 1) * se / V - 1) : Math.floor(e / Ne);
+        return !He && R && vt === mt && (t = se - 1), t;
       }
 
       function tn() {
@@ -1206,8 +1206,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
       function an(e) {
         if (M[e]) return !0;
-        if (N) for (var t in N) {
-          if (N[t][e]) return !0;
+        if (z) for (var t in z) {
+          if (z[t][e]) return !0;
         }
         return !1;
       }
@@ -1215,17 +1215,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       function on(e, t) {
         if (null == t && (t = W), "items" === e && Te) return Math.floor((Be + Pe) / (Te + Pe)) || 1;
         var n = M[e];
-        if (N) for (var r in N) {
-          t >= parseInt(r) && e in N[r] && (n = N[r][e]);
+        if (z) for (var r in z) {
+          t >= parseInt(r) && e in z[r] && (n = z[r][e]);
         }
-        return "slideBy" === e && "page" === n && (n = on("items")), q || "slideBy" !== e && "items" !== e || (n = Math.floor(n)), n;
+        return "slideBy" === e && "page" === n && (n = on("items")), R || "slideBy" !== e && "items" !== e || (n = Math.floor(n)), n;
       }
 
       function sn(e, t, n, r, a) {
         var o,
             i,
             s = "";
-        return void 0 !== e ? (o = e, t && (o -= t), s = D ? "margin: 0 " + o + "px 0 " + e + "px;" : "margin: " + e + "px 0 " + o + "px 0;") : t && !n && (i = "-" + t + "px", s = "margin: 0 " + (D ? i + " 0 0" : "0 " + i + " 0") + ";"), !q && a && b && r && (s += fn(r)), s;
+        return void 0 !== e ? (o = e, t && (o -= t), s = D ? "margin: 0 " + o + "px 0 " + e + "px;" : "margin: " + e + "px 0 " + o + "px 0;") : t && !n && (i = "-" + t + "px", s = "margin: 0 " + (D ? i + " 0 0" : "0 " + i + " 0") + ";"), !R && a && b && r && (s += fn(r)), s;
       }
 
       function ln(e, t, n) {
@@ -1234,7 +1234,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
       function un(e, t, n) {
         var r, a;
-        return a = "width:" + (a = e ? e + t + "px" : (q || (n = Math.floor(n)), r = q ? ot : n, y ? y + "(100% / " + r + ")" : 100 / r + "%")), "inner" !== R ? a + ";" : a + " !important;";
+        return a = "width:" + (a = e ? e + t + "px" : (R || (n = Math.floor(n)), r = R ? ot : n, y ? y + "(100% / " + r + ")" : 100 / r + "%")), "inner" !== N ? a + ";" : a + " !important;";
       }
 
       function cn(e) {
@@ -1256,16 +1256,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
       function hn() {
         var e;
-        an("autoHeight") || xe || !D ? (e = F.querySelectorAll("img"), (0, zr.forEach)(e, function (e) {
+        an("autoHeight") || xe || !D ? (e = F.querySelectorAll("img"), (0, qr.forEach)(e, function (e) {
           var t = e.src;
           tt || (t && t.indexOf("data:image") < 0 ? ((e.src = "", Zr.addEvents)(e, Ut), (0, Ir.addClass)(e, "loading"), e.src = t) : Tn(e));
         }), (0, jr.raf)(function () {
-          Nn((0, Ur.arrayFromNodeList)(e), function () {
+          zn((0, Ur.arrayFromNodeList)(e), function () {
             U = !0;
           });
-        }), an("autoHeight") && (e = Pn(vt, Math.min(vt + Re - 1, ot - 1))), tt ? pn() : (0, jr.raf)(function () {
-          Nn((0, Ur.arrayFromNodeList)(e), pn);
-        })) : (q && Kn(), yn(), gn());
+        }), an("autoHeight") && (e = Pn(vt, Math.min(vt + Ne - 1, ot - 1))), tt ? pn() : (0, jr.raf)(function () {
+          zn((0, Ur.arrayFromNodeList)(e), pn);
+        })) : (R && Kn(), yn(), gn());
       }
 
       function pn() {
@@ -1280,7 +1280,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       }
 
       function mn() {
-        D && !xe || (Dn(), xe ? (st = Xn(), At && (_t = Cn()), mt = ft(), Kt(wt || _t)) : br()), q && Kn(), yn(), gn();
+        D && !xe || (Dn(), xe ? (st = Xn(), At && (_t = Cn()), mt = ft(), Kt(wt || _t)) : br()), R && Kn(), yn(), gn();
       }
 
       function yn() {
@@ -1290,11 +1290,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
           "data-action": e
         }) : M.autoplayButtonOutput && (w.insertAdjacentHTML(nn(M.autoplayPosition), '<button type="button" data-action="' + e + '">' + ge[0] + e + ge[1] + Je[0] + "</button>"), me = w.querySelector("[data-action]")), me && (0, Zr.addEvents)(me, {
           click: ur
-        }), Ye && (sr(), $e && (0, Zr.addEvents)(F, Ot), Ze && (0, Zr.addEvents)(F, Pt))), zt) {
+        }), Ye && (sr(), $e && (0, Zr.addEvents)(F, Ot), Ze && (0, Zr.addEvents)(F, Pt))), qt) {
           var t, n;
           if (ae) (0, Wr.setAttrs)(ae, {
             "aria-label": "Carousel Pagination"
-          }), ie = ae.children, (0, zr.forEach)(ie, function (e, t) {
+          }), ie = ae.children, (0, qr.forEach)(ie, function (e, t) {
             (0, Wr.setAttrs)(e, {
               "data-nav": t,
               tabindex: "-1",
@@ -1308,12 +1308,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
             r = '<div class="tns-nav" aria-label="Carousel Pagination">' + r + "</div>", w.insertAdjacentHTML(nn(M.navPosition), r), ae = w.querySelector(".tns-nav"), ie = ae.children;
           }
-          Cr(), b && (t = b.substring(0, b.length - 18).toLowerCase(), n = "transition: all " + Ie / 1e3 + "s", t && (n = "-" + t + "-" + n), (0, Pr.addCSSRule)(et, "[aria-controls^=" + Lt + "-item]", n, (0, Nr.getCssRulesLength)(et))), (0, Wr.setAttrs)(ie[ce], {
+          Cr(), b && (t = b.substring(0, b.length - 18).toLowerCase(), n = "transition: all " + Ie / 1e3 + "s", t && (n = "-" + t + "-" + n), (0, Pr.addCSSRule)(et, "[aria-controls^=" + Lt + "-item]", n, (0, zr.getCssRulesLength)(et))), (0, Wr.setAttrs)(ie[ce], {
             "aria-label": ve + (ce + 1) + he
           }), (0, Gr.removeAttrs)(ie[ce], "tabindex"), (0, Ir.addClass)(ie[ce], fe), (0, Zr.addEvents)(ae, Tt);
         }
 
-        qt && (K || $ && Z || (w.insertAdjacentHTML(nn(M.controlsPosition), '<div class="tns-controls" aria-label="Carousel Navigation" tabindex="0"><button type="button" data-controls="prev" tabindex="-1" aria-controls="' + Lt + '">' + Ge[0] + '</button><button type="button" data-controls="next" tabindex="-1" aria-controls="' + Lt + '">' + Ge[1] + "</button></div>"), K = w.querySelector(".tns-controls")), $ && Z || ($ = K.children[0], Z = K.children[1]), M.controlsContainer && (0, Wr.setAttrs)(K, {
+        Rt && (K || $ && Z || (w.insertAdjacentHTML(nn(M.controlsPosition), '<div class="tns-controls" aria-label="Carousel Navigation" tabindex="0"><button type="button" data-controls="prev" tabindex="-1" aria-controls="' + Lt + '">' + Ge[0] + '</button><button type="button" data-controls="next" tabindex="-1" aria-controls="' + Lt + '">' + Ge[1] + "</button></div>"), K = w.querySelector(".tns-controls")), $ && Z || ($ = K.children[0], Z = K.children[1]), M.controlsContainer && (0, Wr.setAttrs)(K, {
           "aria-label": "Carousel Navigation",
           tabindex: "0"
         }), (M.controlsContainer || M.prevButton && M.nextButton) && (0, Wr.setAttrs)([$, Z], {
@@ -1328,11 +1328,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
       function gn() {
         var e;
-        q && c && ((e = {})[c] = tr, (0, Zr.addEvents)(F, e)), Qe && (0, Zr.addEvents)(F, Nt, M.preventScrollOnTouch), Xe && (0, Zr.addEvents)(F, Rt), De && (0, Zr.addEvents)(x, Bt), "inner" === R ? Et.on("outerResized", function () {
+        R && c && ((e = {})[c] = tr, (0, Zr.addEvents)(F, e)), Qe && (0, Zr.addEvents)(F, zt, M.preventScrollOnTouch), Xe && (0, Zr.addEvents)(F, Nt), De && (0, Zr.addEvents)(x, Bt), "inner" === N ? Et.on("outerResized", function () {
           Sn(), Et.emit("innerLoaded", Er());
-        }) : (N || Te || xe || Ve || !D) && (0, Zr.addEvents)(m, {
+        }) : (z || Te || xe || Ve || !D) && (0, Zr.addEvents)(m, {
           resize: bn
-        }), Ve && ("outer" === R ? Et.on("innerLoaded", Bn) : wt || Bn()), xn(), wt ? kn() : _t && wn(), Et.on("indexChanged", Rn), "inner" === R && Et.emit("innerLoaded", Er()), "function" == typeof Ct && Ct(Er()), G = !0;
+        }), Ve && ("outer" === N ? Et.on("innerLoaded", Bn) : wt || Bn()), xn(), wt ? kn() : _t && wn(), Et.on("indexChanged", Nn), "inner" === N && Et.emit("innerLoaded", Er()), "function" == typeof Ct && Ct(Er()), G = !0;
       }
 
       function bn(e) {
@@ -1344,48 +1344,48 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       function Sn(e) {
         var t, n, r, a, o, i, s, l, u, c, d, f, v, h, p, m, y, g, b, S, C, E, j, L, w, k, A, _;
 
-        G && ("outer" === R && Et.emit("outerResized", Er(e)), W = tn(), n = z, r = !1, N && (En(), (t = n !== z) && Et.emit("newBreakpointStart", Er(e))), i = Re, s = wt, l = _t, u = De, c = We, d = Ue, f = Qe, v = Xe, h = Ye, p = $e, m = Ze, y = vt, t && (g = Te, b = Ve, S = Ge, C = Ne, E = Je, T || (j = Pe, L = Oe)), De = on("arrowKeys"), We = on("controls"), Ue = on("nav"), Qe = on("touch"), Ne = on("center"), Xe = on("mouseDrag"), Ye = on("autoplay"), $e = on("autoplayHoverPause"), Ze = on("autoplayResetOnVisibility"), t && (wt = on("disable"), Te = on("fixedWidth"), Ie = on("speed"), Ve = on("autoHeight"), Ge = on("controlsText"), Je = on("autoplayText"), Ke = on("autoplayTimeout"), T || (Oe = on("edgePadding"), Pe = on("gutter"))), Kt(wt), Be = rn(), D && !xe || wt || (Dn(), D || (br(), r = !0)), (Te || xe) && (st = Xn(), mt = ft()), (t || Te) && (Re = on("items"), qe = on("slideBy"), (o = Re !== i) && (Te || xe || (mt = ft()), Xt())), t && wt !== s && (wt ? kn : function () {
+        G && ("outer" === N && Et.emit("outerResized", Er(e)), W = tn(), n = q, r = !1, z && (En(), (t = n !== q) && Et.emit("newBreakpointStart", Er(e))), i = Ne, s = wt, l = _t, u = De, c = We, d = Ue, f = Qe, v = Xe, h = Ye, p = $e, m = Ze, y = vt, t && (g = Te, b = Ve, S = Ge, C = ze, E = Je, T || (j = Pe, L = Oe)), De = on("arrowKeys"), We = on("controls"), Ue = on("nav"), Qe = on("touch"), ze = on("center"), Xe = on("mouseDrag"), Ye = on("autoplay"), $e = on("autoplayHoverPause"), Ze = on("autoplayResetOnVisibility"), t && (wt = on("disable"), Te = on("fixedWidth"), Ie = on("speed"), Ve = on("autoHeight"), Ge = on("controlsText"), Je = on("autoplayText"), Ke = on("autoplayTimeout"), T || (Oe = on("edgePadding"), Pe = on("gutter"))), Kt(wt), Be = rn(), D && !xe || wt || (Dn(), D || (br(), r = !0)), (Te || xe) && (st = Xn(), mt = ft()), (t || Te) && (Ne = on("items"), Re = on("slideBy"), (o = Ne !== i) && (Te || xe || (mt = ft()), Xt())), t && wt !== s && (wt ? kn : function () {
           if (!kt) return;
           if (et.disabled = !1, F.className += jt, Kn(), He) for (var e = at; e--;) {
-            q && (0, Xr.showElement)(H[e]), (0, Xr.showElement)(H[ot - e - 1]);
+            R && (0, Xr.showElement)(H[e]), (0, Xr.showElement)(H[ot - e - 1]);
           }
-          if (!q) for (var t = vt, n = vt + V; t < n; t++) {
+          if (!R) for (var t = vt, n = vt + V; t < n; t++) {
             var r = H[t],
-                a = t < vt + Re ? O : B;
-            r.style.left = 100 * (t - vt) / Re + "%", (0, Ir.addClass)(r, a);
+                a = t < vt + Ne ? O : B;
+            r.style.left = 100 * (t - vt) / Ne + "%", (0, Ir.addClass)(r, a);
           }
           Ln(), kt = !1;
         })(), At && (t || Te || xe) && (_t = Cn()) !== l && (_t ? (Jn(Yn($t(0))), wn()) : (function () {
           if (!Mt) return;
           Oe && T && (I.style.margin = "");
           if (at) for (var e = "tns-transparent", t = at; t--;) {
-            q && (0, Fr.removeClass)(H[t], e), (0, Fr.removeClass)(H[ot - t - 1], e);
+            R && (0, Fr.removeClass)(H[t], e), (0, Fr.removeClass)(H[ot - t - 1], e);
           }
           Ln(), Mt = !1;
-        }(), r = !0)), Kt(wt || _t), Ye || ($e = Ze = !1), De !== u && (De ? (0, Zr.addEvents) : (0, ea.removeEvents))(x, Bt), We !== c && (We ? K ? (0, Xr.showElement)(K) : ($ && (0, Xr.showElement)($), Z && (0, Xr.showElement)(Z)) : K ? (0, Qr.hideElement)(K) : ($ && (0, Qr.hideElement)($), Z && (0, Qr.hideElement)(Z))), Ue !== d && (Ue ? ((0, Xr.showElement)(ae), Cr()) : (0, Qr.hideElement)(ae)), Qe !== f && (Qe ? (0, Zr.addEvents)(F, Nt, M.preventScrollOnTouch) : (0, ea.removeEvents)(F, Nt)), Xe !== v && (Xe ? (0, Zr.addEvents) : (0, ea.removeEvents))(F, Rt), Ye !== h && (Ye ? (me && (0, Xr.showElement)(me), Se || Ee || sr()) : (me && (0, Qr.hideElement)(me), Se && lr())), $e !== p && ($e ? (0, Zr.addEvents) : (0, ea.removeEvents))(F, Ot), Ze !== m && (Ze ? (0, Zr.addEvents) : (0, ea.removeEvents))(x, Pt), t ? (Te === g && Ne === C || (r = !0), Ve !== b && (Ve || (I.style.height = "")), We && Ge !== S && ($.innerHTML = Ge[0], Z.innerHTML = Ge[1]), me && Je !== E && (w = Ye ? 1 : 0, A = (k = me.innerHTML).length - E[w].length, k.substring(A) === E[w] && (me.innerHTML = k.substring(0, A) + Je[w]))) : Ne && (Te || xe) && (r = !0), (o || Te && !xe) && (se = Sr(), Cr()), (a = vt !== y) ? (Et.emit("indexChanged", Er()), r = !0) : o ? a || Rn() : (Te || xe) && (xn(), In(), An()), o && !q && function () {
-          for (var e = vt + Math.min(V, Re), t = ot; t--;) {
+        }(), r = !0)), Kt(wt || _t), Ye || ($e = Ze = !1), De !== u && (De ? (0, Zr.addEvents) : (0, ea.removeEvents))(x, Bt), We !== c && (We ? K ? (0, Xr.showElement)(K) : ($ && (0, Xr.showElement)($), Z && (0, Xr.showElement)(Z)) : K ? (0, Qr.hideElement)(K) : ($ && (0, Qr.hideElement)($), Z && (0, Qr.hideElement)(Z))), Ue !== d && (Ue ? ((0, Xr.showElement)(ae), Cr()) : (0, Qr.hideElement)(ae)), Qe !== f && (Qe ? (0, Zr.addEvents)(F, zt, M.preventScrollOnTouch) : (0, ea.removeEvents)(F, zt)), Xe !== v && (Xe ? (0, Zr.addEvents) : (0, ea.removeEvents))(F, Nt), Ye !== h && (Ye ? (me && (0, Xr.showElement)(me), Se || Ee || sr()) : (me && (0, Qr.hideElement)(me), Se && lr())), $e !== p && ($e ? (0, Zr.addEvents) : (0, ea.removeEvents))(F, Ot), Ze !== m && (Ze ? (0, Zr.addEvents) : (0, ea.removeEvents))(x, Pt), t ? (Te === g && ze === C || (r = !0), Ve !== b && (Ve || (I.style.height = "")), We && Ge !== S && ($.innerHTML = Ge[0], Z.innerHTML = Ge[1]), me && Je !== E && (w = Ye ? 1 : 0, A = (k = me.innerHTML).length - E[w].length, k.substring(A) === E[w] && (me.innerHTML = k.substring(0, A) + Je[w]))) : ze && (Te || xe) && (r = !0), (o || Te && !xe) && (se = Sr(), Cr()), (a = vt !== y) ? (Et.emit("indexChanged", Er()), r = !0) : o ? a || Nn() : (Te || xe) && (xn(), In(), An()), o && !R && function () {
+          for (var e = vt + Math.min(V, Ne), t = ot; t--;) {
             var n = H[t];
-            vt <= t && t < e ? ((0, Ir.addClass)(n, "tns-moving"), n.style.left = 100 * (t - vt) / Re + "%", (0, Ir.addClass)(n, O), (0, Fr.removeClass)(n, B)) : n.style.left && ((n.style.left = "", Ir.addClass)(n, B), (0, Fr.removeClass)(n, O)), (0, Fr.removeClass)(n, P);
+            vt <= t && t < e ? ((0, Ir.addClass)(n, "tns-moving"), n.style.left = 100 * (t - vt) / Ne + "%", (0, Ir.addClass)(n, O), (0, Fr.removeClass)(n, B)) : n.style.left && ((n.style.left = "", Ir.addClass)(n, B), (0, Fr.removeClass)(n, O)), (0, Fr.removeClass)(n, P);
           }
 
           setTimeout(function () {
-            (0, zr.forEach)(H, function (e) {
+            (0, qr.forEach)(H, function (e) {
               (0, Fr.removeClass)(e, "tns-moving");
             });
           }, 300);
-        }(), wt || _t || (t && !T && (Oe === L && Pe === j || (I.style.cssText = sn(Oe, Pe, Te, Ie, Ve)), D && (q && (F.style.width = ln(Te, Pe, Re)), _ = un(Te, Pe, Re) + cn(Pe), (0, Br.removeCSSRule)(et, (0, Nr.getCssRulesLength)(et) - 1), (0, Pr.addCSSRule)(et, "#" + Lt + " > .tns-item", _, (0, Nr.getCssRulesLength)(et)))), Ve && Bn(), r && (Kn(), ht = vt)), t && Et.emit("newBreakpointEnd", Er(e)));
+        }(), wt || _t || (t && !T && (Oe === L && Pe === j || (I.style.cssText = sn(Oe, Pe, Te, Ie, Ve)), D && (R && (F.style.width = ln(Te, Pe, Ne)), _ = un(Te, Pe, Ne) + cn(Pe), (0, Br.removeCSSRule)(et, (0, zr.getCssRulesLength)(et) - 1), (0, Pr.addCSSRule)(et, "#" + Lt + " > .tns-item", _, (0, zr.getCssRulesLength)(et)))), Ve && Bn(), r && (Kn(), ht = vt)), t && Et.emit("newBreakpointEnd", Er(e)));
       }
 
       function Cn() {
-        if (!Te && !xe) return V <= (Ne ? Re - (Re - 1) / 2 : Re);
+        if (!Te && !xe) return V <= (ze ? Ne - (Ne - 1) / 2 : Ne);
         var e = Te ? (Te + Pe) * V : _[V],
             t = Oe ? Be + 2 * Oe : Be + Pe;
-        return Ne && (t -= Te ? (Be - Te) / 2 : (Be - (_[vt + 1] - _[vt] - Pe)) / 2), e <= t;
+        return ze && (t -= Te ? (Be - Te) / 2 : (Be - (_[vt + 1] - _[vt] - Pe)) / 2), e <= t;
       }
 
       function En() {
-        for (var e in z = 0, N) {
-          (e = parseInt(e)) <= W && (z = e);
+        for (var e in q = 0, z) {
+          (e = parseInt(e)) <= W && (q = e);
         }
       }
 
@@ -1400,7 +1400,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       function wn() {
         if (!Mt) {
           if (Oe && (I.style.margin = "0px"), at) for (var e = "tns-transparent", t = at; t--;) {
-            q && (0, Ir.addClass)(H[t], e), (0, Ir.addClass)(H[ot - t - 1], e);
+            R && (0, Ir.addClass)(H[t], e), (0, Ir.addClass)(H[ot - t - 1], e);
           }
           jn(), Mt = !0;
         }
@@ -1409,9 +1409,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       function kn() {
         if (!kt) {
           if (et.disabled = !0, F.className = F.className.replace(jt.substring(1), ""), (0, Gr.removeAttrs)(F, ["style"]), He) for (var e = at; e--;) {
-            q && (0, Qr.hideElement)(H[e]), (0, Qr.hideElement)(H[ot - e - 1]);
+            R && (0, Qr.hideElement)(H[e]), (0, Qr.hideElement)(H[ot - e - 1]);
           }
-          if (D && q || (0, Gr.removeAttrs)(I, ["style"]), !q) for (var t = vt, n = vt + V; t < n; t++) {
+          if (D && R || (0, Gr.removeAttrs)(I, ["style"]), !R) for (var t = vt, n = vt + V; t < n; t++) {
             var r = H[t];
             (0, Gr.removeAttrs)(r, ["style"]), (0, Fr.removeClass)(r, O), (0, Fr.removeClass)(r, B);
           }
@@ -1441,9 +1441,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             o,
             i,
             s = vt;
-        return Ne || Oe ? (xe || Te) && (n = -(parseFloat(e) + Oe), r = n + Be + 2 * Oe) : xe && (n = _[vt], r = n + Be), xe ? _.forEach(function (e, t) {
-          t < ot && ((Ne || Oe) && e <= n + .5 && (s = t), .5 <= r - e && (a = t));
-        }) : (a = Te ? (t = Te + Pe, Ne || Oe ? (s = Math.floor(n / t), Math.ceil(r / t - 1)) : s + Math.ceil(Be / t) - 1) : Ne || Oe ? (o = Re - 1, a = Ne ? (s -= o / 2, vt + o / 2) : vt + o, Oe && (s -= i = Oe * Re / Be, a += i), s = Math.floor(s), Math.ceil(a)) : s + Re - 1, s = Math.max(s, 0), a = Math.min(a, ot - 1)), [s, a];
+        return ze || Oe ? (xe || Te) && (n = -(parseFloat(e) + Oe), r = n + Be + 2 * Oe) : xe && (n = _[vt], r = n + Be), xe ? _.forEach(function (e, t) {
+          t < ot && ((ze || Oe) && e <= n + .5 && (s = t), .5 <= r - e && (a = t));
+        }) : (a = Te ? (t = Te + Pe, ze || Oe ? (s = Math.floor(n / t), Math.ceil(r / t - 1)) : s + Math.ceil(Be / t) - 1) : ze || Oe ? (o = Ne - 1, a = ze ? (s -= o / 2, vt + o / 2) : vt + o, Oe && (s -= i = Oe * Ne / Be, a += i), s = Math.floor(s), Math.ceil(a)) : s + Ne - 1, s = Math.max(s, 0), a = Math.min(a, ot - 1)), [s, a];
       }
 
       function xn() {
@@ -1468,7 +1468,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         var r = [];
 
         for (n = n || "img"; e <= t;) {
-          (0, zr.forEach)(H[e].querySelectorAll(n), function (e) {
+          (0, qr.forEach)(H[e].querySelectorAll(n), function (e) {
             r.push(e);
           }), e++;
         }
@@ -1479,19 +1479,19 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       function Bn() {
         var e = Pn.apply(null, Mn());
         (0, jr.raf)(function () {
-          Nn(e, zn);
+          zn(e, qn);
         });
       }
 
-      function Nn(n, e) {
+      function zn(n, e) {
         return U ? e() : (n.forEach(function (e, t) {
           !tt && e.complete && On(e), (0, Dr.hasClass)(e, Gt) && n.splice(t, 1);
         }), n.length ? void (0, jr.raf)(function () {
-          Nn(n, e);
+          zn(n, e);
         }) : e());
       }
 
-      function Rn() {
+      function Nn() {
         xn(), In(), An(), Gn(), function () {
           {
             var e, t;
@@ -1505,7 +1505,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         }();
       }
 
-      function qn(e, t) {
+      function Rn(e, t) {
         for (var n = [], r = e, a = Math.min(e + t, ot); r < a; r++) {
           n.push(H[r].offsetHeight);
         }
@@ -1513,8 +1513,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         return Math.max.apply(null, n);
       }
 
-      function zn() {
-        var e = Ve ? qn(vt, Re) : qn(at, V),
+      function qn() {
+        var e = Ve ? Rn(vt, Ne) : Rn(at, V),
             t = L || I;
         t.style.height !== e && (t.style.height = e + "px");
       }
@@ -1524,7 +1524,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         var n = D ? "left" : "top",
             r = D ? "right" : "bottom",
             a = H[0].getBoundingClientRect()[n];
-        (0, zr.forEach)(H, function (e, t) {
+        (0, qr.forEach)(H, function (e, t) {
           t && _.push(e.getBoundingClientRect()[n] - a), t === ot - 1 && _.push(e.getBoundingClientRect()[r] - a);
         });
       }
@@ -1533,7 +1533,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         var e = Mn(),
             n = e[0],
             r = e[1];
-        (0, zr.forEach)(H, function (e, t) {
+        (0, qr.forEach)(H, function (e, t) {
           n <= t && t <= r ? (0, Hr.hasAttr)(e, "aria-hidden") && ((0, Gr.removeAttrs)(e, ["aria-hidden", "tabindex"]), (0, Ir.addClass)(e, Vt)) : (0, Hr.hasAttr)(e, "aria-hidden") || ((0, Wr.setAttrs)(e, {
             "aria-hidden": "true",
             tabindex: "-1"
@@ -1567,17 +1567,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       }
 
       function Qn(e) {
-        return null == e && (e = vt), xe ? (Be - (Oe ? Pe : 0) - (_[e + 1] - _[e] - Pe)) / 2 : Te ? (Be - Te) / 2 : (Re - 1) / 2;
+        return null == e && (e = vt), xe ? (Be - (Oe ? Pe : 0) - (_[e + 1] - _[e] - Pe)) / 2 : Te ? (Be - Te) / 2 : (Ne - 1) / 2;
       }
 
       function Xn() {
         var e = Be + (Oe ? Pe : 0) - (Te ? (Te + Pe) * ot : _[ot]);
-        return Ne && !He && (e = Te ? -(Te + Pe) * (ot - 1) - Qn() : Qn(ot - 1) - _[ot - 1]), 0 < e && (e = 0), e;
+        return ze && !He && (e = Te ? -(Te + Pe) * (ot - 1) - Qn() : Qn(ot - 1) - _[ot - 1]), 0 < e && (e = 0), e;
       }
 
       function Yn(e) {
         var t, n;
-        return null == e && (e = vt), D && !xe ? Te ? (t = -(Te + Pe) * e, Ne && (t += Qn())) : (n = i ? ot : Re, Ne && (e -= Qn()), t = 100 * -e / n) : (t = -_[e], Ne && xe && (t += Qn())), it && (t = Math.max(t, st)), t += !D || xe || Te ? "px" : "%";
+        return null == e && (e = vt), D && !xe ? Te ? (t = -(Te + Pe) * e, ze && (t += Qn())) : (n = i ? ot : Ne, ze && (e -= Qn()), t = 100 * -e / n) : (t = -_[e], ze && xe && (t += Qn())), it && (t = Math.max(t, st)), t += !D || xe || Te ? "px" : "%";
       }
 
       function Kn(e) {
@@ -1589,12 +1589,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       }
 
       function $n(e, t, n, r) {
-        var a = e + Re;
+        var a = e + Ne;
         He || (a = Math.min(a, ot));
 
         for (var o = e; o < a; o++) {
           var i = H[o];
-          r || (i.style.left = 100 * (o - vt) / Re + "%"), p && l && (i.style[l] = i.style[u] = p * (o - e) / 1e3 + "s"), (0, Fr.removeClass)(i, t), (0, Ir.addClass)(i, n), r && rt.push(i);
+          r || (i.style.left = 100 * (o - vt) / Ne + "%"), p && l && (i.style[l] = i.style[u] = p * (o - e) / 1e3 + "s"), (0, Fr.removeClass)(i, t), (0, Ir.addClass)(i, n), r && rt.push(i);
         }
       }
 
@@ -1607,13 +1607,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       }
 
       function tr(e) {
-        if (q || St) {
-          if (Et.emit("transitionEnd", Er(e)), !q && 0 < rt.length) for (var t = 0; t < rt.length; t++) {
+        if (R || St) {
+          if (Et.emit("transitionEnd", Er(e)), !R && 0 < rt.length) for (var t = 0; t < rt.length; t++) {
             var n = rt[t];
             n.style.left = "", u && l && (n.style[u] = "", n.style[l] = ""), (0, Fr.removeClass)(n, P), (0, Ir.addClass)(n, B);
           }
           var r;
-          (!e || !q && e.target.parentNode === F || e.target === F && er(e.propertyName) === er(ut)) && (lt || (r = vt, Xt(), vt !== r && (Et.emit("indexChanged", Er()), Kn())), "inner" === R && Et.emit("innerLoaded", Er()), St = !1, ht = vt);
+          (!e || !R && e.target.parentNode === F || e.target === F && er(e.propertyName) === er(ut)) && (lt || (r = vt, Xt(), vt !== r && (Et.emit("indexChanged", Er()), Kn())), "inner" === N && Et.emit("innerLoaded", Er()), St = !1, ht = vt);
         }
       }
 
@@ -1627,7 +1627,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
           var n,
               r = Zt(),
               a = 0;
-          "first" === e ? a = -r : "last" === e ? a = q ? V - Re - r : V - 1 - r : ("number" != typeof e && (e = parseInt(e)), isNaN(e) || (t || (e = Math.max(0, Math.min(V - 1, e))), a = e - r)), !q && a && Math.abs(a) < Re && (n = 0 < a ? 1 : -1, a += pt <= vt + a - V ? V * n : 2 * V * n * -1), vt += a, q && He && (vt < pt && (vt += V), mt < vt && (vt -= V)), Zt(vt) !== Zt(ht) && Zn(t);
+          "first" === e ? a = -r : "last" === e ? a = R ? V - Ne - r : V - 1 - r : ("number" != typeof e && (e = parseInt(e)), isNaN(e) || (t || (e = Math.max(0, Math.min(V - 1, e))), a = e - r)), !R && a && Math.abs(a) < Ne && (n = 0 < a ? 1 : -1, a += pt <= vt + a - V ? V * n : 2 * V * n * -1), vt += a, R && He && (vt < pt && (vt += V), mt < vt && (vt -= V)), Zt(vt) !== Zt(ht) && Zn(t);
         }
       }
 
@@ -1653,7 +1653,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
           if (vt === mt && 1 === t) return void nr("first", e);
         }
 
-        t && (vt += qe * t, xe && (vt = Math.floor(vt)), Zn(n || e && "keydown" === e.type ? e : null));
+        t && (vt += Re * t, xe && (vt = Math.floor(vt)), Zn(n || e && "keydown" === e.type ? e : null));
       }
 
       function ar() {
@@ -1705,7 +1705,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       }
 
       function pr() {
-        return (0, qr.getTouchDirection)((0, Rr.toDegree)(we.y - Le.y, we.x - Le.x), gt) === M.axis;
+        return (0, Rr.getTouchDirection)((0, Nr.toDegree)(we.y - Le.y, we.x - Le.x), gt) === M.axis;
       }
 
       function mr(e) {
@@ -1716,12 +1716,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
         Ye && Se && or(), Ae = !0, _e && ((0, Lr.caf)(_e), _e = null);
         var t = dr(e);
-        Et.emit(vr(e) ? "touchStart" : "dragStart", Er(e)), !vr(e) && 0 <= ["img", "a"].indexOf(Fn(fr(e))) && hr(e), we.x = Le.x = t.clientX, we.y = Le.y = t.clientY, q && (ke = parseFloat(F.style[ut].replace(ct, "")), Un(F, "0s"));
+        Et.emit(vr(e) ? "touchStart" : "dragStart", Er(e)), !vr(e) && 0 <= ["img", "a"].indexOf(Fn(fr(e))) && hr(e), we.x = Le.x = t.clientX, we.y = Le.y = t.clientY, R && (ke = parseFloat(F.style[ut].replace(ct, "")), Un(F, "0s"));
       }
 
       function yr(e) {
         var t;
-        Ae && (t = dr(e), we.x = t.clientX, we.y = t.clientY, q ? _e = _e || (0, jr.raf)(function () {
+        Ae && (t = dr(e), we.x = t.clientX, we.y = t.clientY, R ? _e = _e || (0, jr.raf)(function () {
           !function e(t) {
             if (!bt) return void (Ae = !1);
             (0, Lr.caf)(_e);
@@ -1739,7 +1739,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
               var n = ke,
                   r = Me(we, Le);
-              !D || Te || xe ? (n += r, n += "px") : (n += i ? r * Re * 100 / ((Be + Pe) * ot) : 100 * r / (Be + Pe), n += "%"), F.style[ut] = ct + n + dt;
+              !D || Te || xe ? (n += r, n += "px") : (n += i ? r * Ne * 100 / ((Be + Pe) * ot) : 100 * r / (Be + Pe), n += "%"), F.style[ut] = ct + n + dt;
             }
           }(e);
         }) : ("?" === bt && (bt = pr()), bt && (Qt = !0)), ("boolean" != typeof e.cancelable || e.cancelable) && Qt && e.preventDefault());
@@ -1747,15 +1747,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
       function gr(r) {
         var e, a, n;
-        Ae && (_e && ((0, Lr.caf)(_e), _e = null), q && Un(F, ""), Ae = !1, e = dr(r), we.x = e.clientX, we.y = e.clientY, a = Me(we, Le), Math.abs(a) && (vr(r) || (n = fr(r), (0, Zr.addEvents)(n, {
+        Ae && (_e && ((0, Lr.caf)(_e), _e = null), R && Un(F, ""), Ae = !1, e = dr(r), we.x = e.clientX, we.y = e.clientY, a = Me(we, Le), Math.abs(a) && (vr(r) || (n = fr(r), (0, Zr.addEvents)(n, {
           click: function e(t) {
             hr(t), (0, ea.removeEvents)(n, {
               click: e
             });
           }
-        })), q ? _e = (0, jr.raf)(function () {
+        })), R ? _e = (0, jr.raf)(function () {
           if (D && !xe) {
-            var e = -a * Re / (Be + Pe),
+            var e = -a * Ne / (Be + Pe),
                 e = 0 < a ? Math.floor(e) : Math.ceil(e);
             vt += e;
           } else {
@@ -1770,11 +1770,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       }
 
       function br() {
-        (L || I).style.height = _[vt + Re] - _[vt] + "px";
+        (L || I).style.height = _[vt + Ne] - _[vt] + "px";
       }
 
       function Sr() {
-        var e = Te ? (Te + Pe) * V / Be : V / Re;
+        var e = Te ? (Te + Pe) * V / Be : V / Ne;
         return Math.min(Math.ceil(e), V);
       }
 
@@ -1799,11 +1799,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
           navContainer: ae,
           navItems: ie,
           controlsContainer: K,
-          hasControls: qt,
+          hasControls: Rt,
           prevButton: $,
           nextButton: Z,
-          items: Re,
-          slideBy: qe,
+          items: Ne,
+          slideBy: Re,
           cloneCount: at,
           slideCount: V,
           slideCountNew: ot,
@@ -2083,8 +2083,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             mouseDrag: !0,
             nav: !0,
             controls: !1,
-            swipeAngle: !1,
-            speed: 400
+            swipeAngle: 30,
+            speed: 400,
+            axis: "horizontal"
           })), window.addEventListener("resize", function () {
             575 < window.innerWidth ? e && e.version && e.destroy() : e && e.version || (e = (0, a.tns)({
               container: "#product-gallery",
@@ -3543,8 +3544,1697 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
     return o;
   };
+});
+/* jquery.nicescroll v3.7.6 InuYaksa - MIT - https://nicescroll.areaaperta.com */
+
+!function (e) {
+  "function" == typeof define && define.amd ? define(["jquery"], e) : "object" == (typeof exports === "undefined" ? "undefined" : _typeof(exports)) ? module.exports = e(require("jquery")) : e(jQuery);
+}(function (e) {
+  "use strict";
+
+  var o = !1,
+      t = !1,
+      r = 0,
+      i = 2e3,
+      s = 0,
+      n = e,
+      l = document,
+      a = window,
+      c = n(a),
+      d = [],
+      u = a.requestAnimationFrame || a.webkitRequestAnimationFrame || a.mozRequestAnimationFrame || !1,
+      h = a.cancelAnimationFrame || a.webkitCancelAnimationFrame || a.mozCancelAnimationFrame || !1;
+  if (u) a.cancelAnimationFrame || (h = function h(e) {});else {
+    var p = 0;
+    u = function u(e, o) {
+      var t = new Date().getTime(),
+          r = Math.max(0, 16 - (t - p)),
+          i = a.setTimeout(function () {
+        e(t + r);
+      }, r);
+      return p = t + r, i;
+    }, h = function h(e) {
+      a.clearTimeout(e);
+    };
+  }
+
+  var m = a.MutationObserver || a.WebKitMutationObserver || !1,
+      f = Date.now || function () {
+    return new Date().getTime();
+  },
+      g = {
+    zindex: "auto",
+    cursoropacitymin: 0,
+    cursoropacitymax: 1,
+    cursorcolor: "#424242",
+    cursorwidth: "6px",
+    cursorborder: "1px solid #fff",
+    cursorborderradius: "5px",
+    scrollspeed: 40,
+    mousescrollstep: 27,
+    touchbehavior: !1,
+    emulatetouch: !1,
+    hwacceleration: !0,
+    usetransition: !0,
+    boxzoom: !1,
+    dblclickzoom: !0,
+    gesturezoom: !0,
+    grabcursorenabled: !0,
+    autohidemode: !0,
+    background: "",
+    iframeautoresize: !0,
+    cursorminheight: 32,
+    preservenativescrolling: !0,
+    railoffset: !1,
+    railhoffset: !1,
+    bouncescroll: !0,
+    spacebarenabled: !0,
+    railpadding: {
+      top: 0,
+      right: 0,
+      left: 0,
+      bottom: 0
+    },
+    disableoutline: !0,
+    horizrailenabled: !0,
+    railalign: "right",
+    railvalign: "bottom",
+    enabletranslate3d: !0,
+    enablemousewheel: !0,
+    enablekeyboard: !0,
+    smoothscroll: !0,
+    sensitiverail: !0,
+    enablemouselockapi: !0,
+    cursorfixedheight: !1,
+    directionlockdeadzone: 6,
+    hidecursordelay: 400,
+    nativeparentscrolling: !0,
+    enablescrollonselection: !0,
+    overflowx: !0,
+    overflowy: !0,
+    cursordragspeed: .3,
+    rtlmode: "auto",
+    cursordragontouch: !1,
+    oneaxismousemode: "auto",
+    scriptpath: function () {
+      var e = l.currentScript || function () {
+        var e = l.getElementsByTagName("script");
+        return !!e.length && e[e.length - 1];
+      }(),
+          o = e ? e.src.split("?")[0] : "";
+
+      return o.split("/").length > 0 ? o.split("/").slice(0, -1).join("/") + "/" : "";
+    }(),
+    preventmultitouchscrolling: !0,
+    disablemutationobserver: !1,
+    enableobserver: !0,
+    scrollbarid: !1
+  },
+      v = !1,
+      w = function w() {
+    if (v) return v;
+    var e = l.createElement("DIV"),
+        o = e.style,
+        t = navigator.userAgent,
+        r = navigator.platform,
+        i = {};
+    return i.haspointerlock = "pointerLockElement" in l || "webkitPointerLockElement" in l || "mozPointerLockElement" in l, i.isopera = "opera" in a, i.isopera12 = i.isopera && "getUserMedia" in navigator, i.isoperamini = "[object OperaMini]" === Object.prototype.toString.call(a.operamini), i.isie = "all" in l && "attachEvent" in e && !i.isopera, i.isieold = i.isie && !("msInterpolationMode" in o), i.isie7 = i.isie && !i.isieold && (!("documentMode" in l) || 7 === l.documentMode), i.isie8 = i.isie && "documentMode" in l && 8 === l.documentMode, i.isie9 = i.isie && "performance" in a && 9 === l.documentMode, i.isie10 = i.isie && "performance" in a && 10 === l.documentMode, i.isie11 = "msRequestFullscreen" in e && l.documentMode >= 11, i.ismsedge = "msCredentials" in a, i.ismozilla = "MozAppearance" in o, i.iswebkit = !i.ismsedge && "WebkitAppearance" in o, i.ischrome = i.iswebkit && "chrome" in a, i.ischrome38 = i.ischrome && "touchAction" in o, i.ischrome22 = !i.ischrome38 && i.ischrome && i.haspointerlock, i.ischrome26 = !i.ischrome38 && i.ischrome && "transition" in o, i.cantouch = "ontouchstart" in l.documentElement || "ontouchstart" in a, i.hasw3ctouch = (a.PointerEvent || !1) && (navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0), i.hasmstouch = !i.hasw3ctouch && (a.MSPointerEvent || !1), i.ismac = /^mac$/i.test(r), i.isios = i.cantouch && /iphone|ipad|ipod/i.test(r), i.isios4 = i.isios && !("seal" in Object), i.isios7 = i.isios && "webkitHidden" in l, i.isios8 = i.isios && "hidden" in l, i.isios10 = i.isios && a.Proxy, i.isandroid = /android/i.test(t), i.haseventlistener = "addEventListener" in e, i.trstyle = !1, i.hastransform = !1, i.hastranslate3d = !1, i.transitionstyle = !1, i.hastransition = !1, i.transitionend = !1, i.trstyle = "transform", i.hastransform = "transform" in o || function () {
+      for (var e = ["msTransform", "webkitTransform", "MozTransform", "OTransform"], t = 0, r = e.length; t < r; t++) {
+        if (void 0 !== o[e[t]]) {
+          i.trstyle = e[t];
+          break;
+        }
+      }
+
+      i.hastransform = !!i.trstyle;
+    }(), i.hastransform && (o[i.trstyle] = "translate3d(1px,2px,3px)", i.hastranslate3d = /translate3d/.test(o[i.trstyle])), i.transitionstyle = "transition", i.prefixstyle = "", i.transitionend = "transitionend", i.hastransition = "transition" in o || function () {
+      i.transitionend = !1;
+
+      for (var e = ["webkitTransition", "msTransition", "MozTransition", "OTransition", "OTransition", "KhtmlTransition"], t = ["-webkit-", "-ms-", "-moz-", "-o-", "-o", "-khtml-"], r = ["webkitTransitionEnd", "msTransitionEnd", "transitionend", "otransitionend", "oTransitionEnd", "KhtmlTransitionEnd"], s = 0, n = e.length; s < n; s++) {
+        if (e[s] in o) {
+          i.transitionstyle = e[s], i.prefixstyle = t[s], i.transitionend = r[s];
+          break;
+        }
+      }
+
+      i.ischrome26 && (i.prefixstyle = t[1]), i.hastransition = i.transitionstyle;
+    }(), i.cursorgrabvalue = function () {
+      var e = ["grab", "-webkit-grab", "-moz-grab"];
+      (i.ischrome && !i.ischrome38 || i.isie) && (e = []);
+
+      for (var t = 0, r = e.length; t < r; t++) {
+        var s = e[t];
+        if (o.cursor = s, o.cursor == s) return s;
+      }
+
+      return "url(https://cdnjs.cloudflare.com/ajax/libs/slider-pro/1.3.0/css/images/openhand.cur),n-resize";
+    }(), i.hasmousecapture = "setCapture" in e, i.hasMutationObserver = !1 !== m, e = null, v = i, i;
+  },
+      b = function b(e, p) {
+    function v() {
+      var e = T.doc.css(P.trstyle);
+      return !(!e || "matrix" != e.substr(0, 6)) && e.replace(/^.*\((.*)\)$/g, "$1").replace(/px/g, "").split(/, +/);
+    }
+
+    function b() {
+      var e = T.win;
+      if ("zIndex" in e) return e.zIndex();
+
+      for (; e.length > 0;) {
+        if (9 == e[0].nodeType) return !1;
+        var o = e.css("zIndex");
+        if (!isNaN(o) && 0 !== o) return parseInt(o);
+        e = e.parent();
+      }
+
+      return !1;
+    }
+
+    function x(e, o, t) {
+      var r = e.css(o),
+          i = parseFloat(r);
+
+      if (isNaN(i)) {
+        var s = 3 == (i = I[r] || 0) ? t ? T.win.outerHeight() - T.win.innerHeight() : T.win.outerWidth() - T.win.innerWidth() : 1;
+        return T.isie8 && i && (i += 1), s ? i : 0;
+      }
+
+      return i;
+    }
+
+    function S(e, o, t, r) {
+      T._bind(e, o, function (r) {
+        var i = {
+          original: r = r || a.event,
+          target: r.target || r.srcElement,
+          type: "wheel",
+          deltaMode: "MozMousePixelScroll" == r.type ? 0 : 1,
+          deltaX: 0,
+          deltaZ: 0,
+          preventDefault: function preventDefault() {
+            return r.preventDefault ? r.preventDefault() : r.returnValue = !1, !1;
+          },
+          stopImmediatePropagation: function stopImmediatePropagation() {
+            r.stopImmediatePropagation ? r.stopImmediatePropagation() : r.cancelBubble = !0;
+          }
+        };
+        return "mousewheel" == o ? (r.wheelDeltaX && (i.deltaX = -.025 * r.wheelDeltaX), r.wheelDeltaY && (i.deltaY = -.025 * r.wheelDeltaY), !i.deltaY && !i.deltaX && (i.deltaY = -.025 * r.wheelDelta)) : i.deltaY = r.detail, t.call(e, i);
+      }, r);
+    }
+
+    function z(e, o, t, r) {
+      T.scrollrunning || (T.newscrolly = T.getScrollTop(), T.newscrollx = T.getScrollLeft(), D = f());
+      var i = f() - D;
+
+      if (D = f(), i > 350 ? A = 1 : A += (2 - A) / 10, e = e * A | 0, o = o * A | 0, e) {
+        if (r) if (e < 0) {
+          if (T.getScrollLeft() >= T.page.maxw) return !0;
+        } else if (T.getScrollLeft() <= 0) return !0;
+        var s = e > 0 ? 1 : -1;
+        X !== s && (T.scrollmom && T.scrollmom.stop(), T.newscrollx = T.getScrollLeft(), X = s), T.lastdeltax -= e;
+      }
+
+      if (o) {
+        if (function () {
+          var e = T.getScrollTop();
+
+          if (o < 0) {
+            if (e >= T.page.maxh) return !0;
+          } else if (e <= 0) return !0;
+        }()) {
+          if (M.nativeparentscrolling && t && !T.ispage && !T.zoomactive) return !0;
+          var n = T.view.h >> 1;
+          T.newscrolly < -n ? (T.newscrolly = -n, o = -1) : T.newscrolly > T.page.maxh + n ? (T.newscrolly = T.page.maxh + n, o = 1) : o = 0;
+        }
+
+        var l = o > 0 ? 1 : -1;
+        B !== l && (T.scrollmom && T.scrollmom.stop(), T.newscrolly = T.getScrollTop(), B = l), T.lastdeltay -= o;
+      }
+
+      (o || e) && T.synched("relativexy", function () {
+        var e = T.lastdeltay + T.newscrolly;
+        T.lastdeltay = 0;
+        var o = T.lastdeltax + T.newscrollx;
+        T.lastdeltax = 0, T.rail.drag || T.doScrollPos(o, e);
+      });
+    }
+
+    function k(e, o, t) {
+      var r, i;
+      return !(t || !q) || (0 === e.deltaMode ? (r = -e.deltaX * (M.mousescrollstep / 54) | 0, i = -e.deltaY * (M.mousescrollstep / 54) | 0) : 1 === e.deltaMode && (r = -e.deltaX * M.mousescrollstep * 50 / 80 | 0, i = -e.deltaY * M.mousescrollstep * 50 / 80 | 0), o && M.oneaxismousemode && 0 === r && i && (r = i, i = 0, t && (r < 0 ? T.getScrollLeft() >= T.page.maxw : T.getScrollLeft() <= 0) && (i = r, r = 0)), T.isrtlmode && (r = -r), z(r, i, t, !0) ? void (t && (q = !0)) : (q = !1, e.stopImmediatePropagation(), e.preventDefault()));
+    }
+
+    var T = this;
+    this.version = "3.7.6", this.name = "nicescroll", this.me = p;
+    var E = n("body"),
+        M = this.opt = {
+      doc: E,
+      win: !1
+    };
+    if (n.extend(M, g), M.snapbackspeed = 80, e) for (var L in M) {
+      void 0 !== e[L] && (M[L] = e[L]);
+    }
+
+    if (M.disablemutationobserver && (m = !1), this.doc = M.doc, this.iddoc = this.doc && this.doc[0] ? this.doc[0].id || "" : "", this.ispage = /^BODY|HTML/.test(M.win ? M.win[0].nodeName : this.doc[0].nodeName), this.haswrapper = !1 !== M.win, this.win = M.win || (this.ispage ? c : this.doc), this.docscroll = this.ispage && !this.haswrapper ? c : this.win, this.body = E, this.viewport = !1, this.isfixed = !1, this.iframe = !1, this.isiframe = "IFRAME" == this.doc[0].nodeName && "IFRAME" == this.win[0].nodeName, this.istextarea = "TEXTAREA" == this.win[0].nodeName, this.forcescreen = !1, this.canshowonmouseevent = "scroll" != M.autohidemode, this.onmousedown = !1, this.onmouseup = !1, this.onmousemove = !1, this.onmousewheel = !1, this.onkeypress = !1, this.ongesturezoom = !1, this.onclick = !1, this.onscrollstart = !1, this.onscrollend = !1, this.onscrollcancel = !1, this.onzoomin = !1, this.onzoomout = !1, this.view = !1, this.page = !1, this.scroll = {
+      x: 0,
+      y: 0
+    }, this.scrollratio = {
+      x: 0,
+      y: 0
+    }, this.cursorheight = 20, this.scrollvaluemax = 0, "auto" == M.rtlmode) {
+      var C = this.win[0] == a ? this.body : this.win,
+          N = C.css("writing-mode") || C.css("-webkit-writing-mode") || C.css("-ms-writing-mode") || C.css("-moz-writing-mode");
+      "horizontal-tb" == N || "lr-tb" == N || "" === N ? (this.isrtlmode = "rtl" == C.css("direction"), this.isvertical = !1) : (this.isrtlmode = "vertical-rl" == N || "tb" == N || "tb-rl" == N || "rl-tb" == N, this.isvertical = "vertical-rl" == N || "tb" == N || "tb-rl" == N);
+    } else this.isrtlmode = !0 === M.rtlmode, this.isvertical = !1;
+
+    if (this.scrollrunning = !1, this.scrollmom = !1, this.observer = !1, this.observerremover = !1, this.observerbody = !1, !1 !== M.scrollbarid) this.id = M.scrollbarid;else do {
+      this.id = "ascrail" + i++;
+    } while (l.getElementById(this.id));
+    this.rail = !1, this.cursor = !1, this.cursorfreezed = !1, this.selectiondrag = !1, this.zoom = !1, this.zoomactive = !1, this.hasfocus = !1, this.hasmousefocus = !1, this.railslocked = !1, this.locked = !1, this.hidden = !1, this.cursoractive = !0, this.wheelprevented = !1, this.overflowx = M.overflowx, this.overflowy = M.overflowy, this.nativescrollingarea = !1, this.checkarea = 0, this.events = [], this.saved = {}, this.delaylist = {}, this.synclist = {}, this.lastdeltax = 0, this.lastdeltay = 0, this.detected = w();
+    var P = n.extend({}, this.detected);
+    this.canhwscroll = P.hastransform && M.hwacceleration, this.ishwscroll = this.canhwscroll && T.haswrapper, this.isrtlmode ? this.isvertical ? this.hasreversehr = !(P.iswebkit || P.isie || P.isie11) : this.hasreversehr = !(P.iswebkit || P.isie && !P.isie10 && !P.isie11) : this.hasreversehr = !1, this.istouchcapable = !1, P.cantouch || !P.hasw3ctouch && !P.hasmstouch ? !P.cantouch || P.isios || P.isandroid || !P.iswebkit && !P.ismozilla || (this.istouchcapable = !0) : this.istouchcapable = !0, M.enablemouselockapi || (P.hasmousecapture = !1, P.haspointerlock = !1), this.debounced = function (e, o, t) {
+      T && (T.delaylist[e] || !1 || (T.delaylist[e] = {
+        h: u(function () {
+          T.delaylist[e].fn.call(T), T.delaylist[e] = !1;
+        }, t)
+      }, o.call(T)), T.delaylist[e].fn = o);
+    }, this.synched = function (e, o) {
+      T.synclist[e] ? T.synclist[e] = o : (T.synclist[e] = o, u(function () {
+        T && (T.synclist[e] && T.synclist[e].call(T), T.synclist[e] = null);
+      }));
+    }, this.unsynched = function (e) {
+      T.synclist[e] && (T.synclist[e] = !1);
+    }, this.css = function (e, o) {
+      for (var t in o) {
+        T.saved.css.push([e, t, e.css(t)]), e.css(t, o[t]);
+      }
+    }, this.scrollTop = function (e) {
+      return void 0 === e ? T.getScrollTop() : T.setScrollTop(e);
+    }, this.scrollLeft = function (e) {
+      return void 0 === e ? T.getScrollLeft() : T.setScrollLeft(e);
+    };
+
+    var R = function R(e, o, t, r, i, s, n) {
+      this.st = e, this.ed = o, this.spd = t, this.p1 = r || 0, this.p2 = i || 1, this.p3 = s || 0, this.p4 = n || 1, this.ts = f(), this.df = o - e;
+    };
+
+    if (R.prototype = {
+      B2: function B2(e) {
+        return 3 * (1 - e) * (1 - e) * e;
+      },
+      B3: function B3(e) {
+        return 3 * (1 - e) * e * e;
+      },
+      B4: function B4(e) {
+        return e * e * e;
+      },
+      getPos: function getPos() {
+        return (f() - this.ts) / this.spd;
+      },
+      getNow: function getNow() {
+        var e = (f() - this.ts) / this.spd,
+            o = this.B2(e) + this.B3(e) + this.B4(e);
+        return e >= 1 ? this.ed : this.st + this.df * o | 0;
+      },
+      update: function update(e, o) {
+        return this.st = this.getNow(), this.ed = e, this.spd = o, this.ts = f(), this.df = this.ed - this.st, this;
+      }
+    }, this.ishwscroll) {
+      this.doc.translate = {
+        x: 0,
+        y: 0,
+        tx: "0px",
+        ty: "0px"
+      }, P.hastranslate3d && P.isios && this.doc.css("-webkit-backface-visibility", "hidden"), this.getScrollTop = function (e) {
+        if (!e) {
+          var o = v();
+          if (o) return 16 == o.length ? -o[13] : -o[5];
+          if (T.timerscroll && T.timerscroll.bz) return T.timerscroll.bz.getNow();
+        }
+
+        return T.doc.translate.y;
+      }, this.getScrollLeft = function (e) {
+        if (!e) {
+          var o = v();
+          if (o) return 16 == o.length ? -o[12] : -o[4];
+          if (T.timerscroll && T.timerscroll.bh) return T.timerscroll.bh.getNow();
+        }
+
+        return T.doc.translate.x;
+      }, this.notifyScrollEvent = function (e) {
+        var o = l.createEvent("UIEvents");
+        o.initUIEvent("scroll", !1, !1, a, 1), o.niceevent = !0, e.dispatchEvent(o);
+      };
+
+      var _ = this.isrtlmode ? 1 : -1;
+
+      P.hastranslate3d && M.enabletranslate3d ? (this.setScrollTop = function (e, o) {
+        T.doc.translate.y = e, T.doc.translate.ty = -1 * e + "px", T.doc.css(P.trstyle, "translate3d(" + T.doc.translate.tx + "," + T.doc.translate.ty + ",0)"), o || T.notifyScrollEvent(T.win[0]);
+      }, this.setScrollLeft = function (e, o) {
+        T.doc.translate.x = e, T.doc.translate.tx = e * _ + "px", T.doc.css(P.trstyle, "translate3d(" + T.doc.translate.tx + "," + T.doc.translate.ty + ",0)"), o || T.notifyScrollEvent(T.win[0]);
+      }) : (this.setScrollTop = function (e, o) {
+        T.doc.translate.y = e, T.doc.translate.ty = -1 * e + "px", T.doc.css(P.trstyle, "translate(" + T.doc.translate.tx + "," + T.doc.translate.ty + ")"), o || T.notifyScrollEvent(T.win[0]);
+      }, this.setScrollLeft = function (e, o) {
+        T.doc.translate.x = e, T.doc.translate.tx = e * _ + "px", T.doc.css(P.trstyle, "translate(" + T.doc.translate.tx + "," + T.doc.translate.ty + ")"), o || T.notifyScrollEvent(T.win[0]);
+      });
+    } else this.getScrollTop = function () {
+      return T.docscroll.scrollTop();
+    }, this.setScrollTop = function (e) {
+      T.docscroll.scrollTop(e);
+    }, this.getScrollLeft = function () {
+      return T.hasreversehr ? T.detected.ismozilla ? T.page.maxw - Math.abs(T.docscroll.scrollLeft()) : T.page.maxw - T.docscroll.scrollLeft() : T.docscroll.scrollLeft();
+    }, this.setScrollLeft = function (e) {
+      return setTimeout(function () {
+        if (T) return T.hasreversehr && (e = T.detected.ismozilla ? -(T.page.maxw - e) : T.page.maxw - e), T.docscroll.scrollLeft(e);
+      }, 1);
+    };
+
+    this.getTarget = function (e) {
+      return !!e && (e.target ? e.target : !!e.srcElement && e.srcElement);
+    }, this.hasParent = function (e, o) {
+      if (!e) return !1;
+
+      for (var t = e.target || e.srcElement || e || !1; t && t.id != o;) {
+        t = t.parentNode || !1;
+      }
+
+      return !1 !== t;
+    };
+    var I = {
+      thin: 1,
+      medium: 3,
+      thick: 5
+    };
+    this.getDocumentScrollOffset = function () {
+      return {
+        top: a.pageYOffset || l.documentElement.scrollTop,
+        left: a.pageXOffset || l.documentElement.scrollLeft
+      };
+    }, this.getOffset = function () {
+      if (T.isfixed) {
+        var e = T.win.offset(),
+            o = T.getDocumentScrollOffset();
+        return e.top -= o.top, e.left -= o.left, e;
+      }
+
+      var t = T.win.offset();
+      if (!T.viewport) return t;
+      var r = T.viewport.offset();
+      return {
+        top: t.top - r.top,
+        left: t.left - r.left
+      };
+    }, this.updateScrollBar = function (e) {
+      var o, t;
+      if (T.ishwscroll) T.rail.css({
+        height: T.win.innerHeight() - (M.railpadding.top + M.railpadding.bottom)
+      }), T.railh && T.railh.css({
+        width: T.win.innerWidth() - (M.railpadding.left + M.railpadding.right)
+      });else {
+        var r = T.getOffset();
+
+        if (o = {
+          top: r.top,
+          left: r.left - (M.railpadding.left + M.railpadding.right)
+        }, o.top += x(T.win, "border-top-width", !0), o.left += T.rail.align ? T.win.outerWidth() - x(T.win, "border-right-width") - T.rail.width : x(T.win, "border-left-width"), (t = M.railoffset) && (t.top && (o.top += t.top), t.left && (o.left += t.left)), T.railslocked || T.rail.css({
+          top: o.top,
+          left: o.left,
+          height: (e ? e.h : T.win.innerHeight()) - (M.railpadding.top + M.railpadding.bottom)
+        }), T.zoom && T.zoom.css({
+          top: o.top + 1,
+          left: 1 == T.rail.align ? o.left - 20 : o.left + T.rail.width + 4
+        }), T.railh && !T.railslocked) {
+          o = {
+            top: r.top,
+            left: r.left
+          }, (t = M.railhoffset) && (t.top && (o.top += t.top), t.left && (o.left += t.left));
+          var i = T.railh.align ? o.top + x(T.win, "border-top-width", !0) + T.win.innerHeight() - T.railh.height : o.top + x(T.win, "border-top-width", !0),
+              s = o.left + x(T.win, "border-left-width");
+          T.railh.css({
+            top: i - (M.railpadding.top + M.railpadding.bottom),
+            left: s,
+            width: T.railh.width
+          });
+        }
+      }
+    }, this.doRailClick = function (e, o, t) {
+      var r, i, s, n;
+      T.railslocked || (T.cancelEvent(e), "pageY" in e || (e.pageX = e.clientX + l.documentElement.scrollLeft, e.pageY = e.clientY + l.documentElement.scrollTop), o ? (r = t ? T.doScrollLeft : T.doScrollTop, s = t ? (e.pageX - T.railh.offset().left - T.cursorwidth / 2) * T.scrollratio.x : (e.pageY - T.rail.offset().top - T.cursorheight / 2) * T.scrollratio.y, T.unsynched("relativexy"), r(0 | s)) : (r = t ? T.doScrollLeftBy : T.doScrollBy, s = t ? T.scroll.x : T.scroll.y, n = t ? e.pageX - T.railh.offset().left : e.pageY - T.rail.offset().top, i = t ? T.view.w : T.view.h, r(s >= n ? i : -i)));
+    }, T.newscrolly = T.newscrollx = 0, T.hasanimationframe = "requestAnimationFrame" in a, T.hascancelanimationframe = "cancelAnimationFrame" in a, T.hasborderbox = !1, this.init = function () {
+      if (T.saved.css = [], P.isoperamini) return !0;
+      if (P.isandroid && !("hidden" in l)) return !0;
+      M.emulatetouch = M.emulatetouch || M.touchbehavior, T.hasborderbox = a.getComputedStyle && "border-box" === a.getComputedStyle(l.body)["box-sizing"];
+      var e = {
+        "overflow-y": "hidden"
+      };
+
+      if ((P.isie11 || P.isie10) && (e["-ms-overflow-style"] = "none"), T.ishwscroll && (this.doc.css(P.transitionstyle, P.prefixstyle + "transform 0ms ease-out"), P.transitionend && T.bind(T.doc, P.transitionend, T.onScrollTransitionEnd, !1)), T.zindex = "auto", T.ispage || "auto" != M.zindex ? T.zindex = M.zindex : T.zindex = b() || "auto", !T.ispage && "auto" != T.zindex && T.zindex > s && (s = T.zindex), T.isie && 0 === T.zindex && "auto" == M.zindex && (T.zindex = "auto"), !T.ispage || !P.isieold) {
+        var i = T.docscroll;
+        T.ispage && (i = T.haswrapper ? T.win : T.doc), T.css(i, e), T.ispage && (P.isie11 || P.isie) && T.css(n("html"), e), !P.isios || T.ispage || T.haswrapper || T.css(E, {
+          "-webkit-overflow-scrolling": "touch"
+        });
+        var d = n(l.createElement("div"));
+        d.css({
+          position: "relative",
+          top: 0,
+          "float": "right",
+          width: M.cursorwidth,
+          height: 0,
+          "background-color": M.cursorcolor,
+          border: M.cursorborder,
+          "background-clip": "padding-box",
+          "-webkit-border-radius": M.cursorborderradius,
+          "-moz-border-radius": M.cursorborderradius,
+          "border-radius": M.cursorborderradius
+        }), d.addClass("nicescroll-cursors"), T.cursor = d;
+        var u = n(l.createElement("div"));
+        u.attr("id", T.id), u.addClass("nicescroll-rails nicescroll-rails-vr");
+        var h,
+            p,
+            f = ["left", "right", "top", "bottom"];
+
+        for (var g in f) {
+          p = f[g], (h = M.railpadding[p] || 0) && u.css("padding-" + p, h + "px");
+        }
+
+        u.append(d), u.width = Math.max(parseFloat(M.cursorwidth), d.outerWidth()), u.css({
+          width: u.width + "px",
+          zIndex: T.zindex,
+          background: M.background,
+          cursor: "default"
+        }), u.visibility = !0, u.scrollable = !0, u.align = "left" == M.railalign ? 0 : 1, T.rail = u, T.rail.drag = !1;
+        var v = !1;
+        !M.boxzoom || T.ispage || P.isieold || (v = l.createElement("div"), T.bind(v, "click", T.doZoom), T.bind(v, "mouseenter", function () {
+          T.zoom.css("opacity", M.cursoropacitymax);
+        }), T.bind(v, "mouseleave", function () {
+          T.zoom.css("opacity", M.cursoropacitymin);
+        }), T.zoom = n(v), T.zoom.css({
+          cursor: "pointer",
+          zIndex: T.zindex,
+          backgroundImage: "url(" + M.scriptpath + "zoomico.png)",
+          height: 18,
+          width: 18,
+          backgroundPosition: "0 0"
+        }), M.dblclickzoom && T.bind(T.win, "dblclick", T.doZoom), P.cantouch && M.gesturezoom && (T.ongesturezoom = function (e) {
+          return e.scale > 1.5 && T.doZoomIn(e), e.scale < .8 && T.doZoomOut(e), T.cancelEvent(e);
+        }, T.bind(T.win, "gestureend", T.ongesturezoom))), T.railh = !1;
+        var w;
+        if (M.horizrailenabled && (T.css(i, {
+          overflowX: "hidden"
+        }), (d = n(l.createElement("div"))).css({
+          position: "absolute",
+          top: 0,
+          height: M.cursorwidth,
+          width: 0,
+          backgroundColor: M.cursorcolor,
+          border: M.cursorborder,
+          backgroundClip: "padding-box",
+          "-webkit-border-radius": M.cursorborderradius,
+          "-moz-border-radius": M.cursorborderradius,
+          "border-radius": M.cursorborderradius
+        }), P.isieold && d.css("overflow", "hidden"), d.addClass("nicescroll-cursors"), T.cursorh = d, (w = n(l.createElement("div"))).attr("id", T.id + "-hr"), w.addClass("nicescroll-rails nicescroll-rails-hr"), w.height = Math.max(parseFloat(M.cursorwidth), d.outerHeight()), w.css({
+          height: w.height + "px",
+          zIndex: T.zindex,
+          background: M.background
+        }), w.append(d), w.visibility = !0, w.scrollable = !0, w.align = "top" == M.railvalign ? 0 : 1, T.railh = w, T.railh.drag = !1), T.ispage) u.css({
+          position: "fixed",
+          top: 0,
+          height: "100%"
+        }), u.css(u.align ? {
+          right: 0
+        } : {
+          left: 0
+        }), T.body.append(u), T.railh && (w.css({
+          position: "fixed",
+          left: 0,
+          width: "100%"
+        }), w.css(w.align ? {
+          bottom: 0
+        } : {
+          top: 0
+        }), T.body.append(w));else {
+          if (T.ishwscroll) {
+            "static" == T.win.css("position") && T.css(T.win, {
+              position: "relative"
+            });
+            var x = "HTML" == T.win[0].nodeName ? T.body : T.win;
+            n(x).scrollTop(0).scrollLeft(0), T.zoom && (T.zoom.css({
+              position: "absolute",
+              top: 1,
+              right: 0,
+              "margin-right": u.width + 4
+            }), x.append(T.zoom)), u.css({
+              position: "absolute",
+              top: 0
+            }), u.css(u.align ? {
+              right: 0
+            } : {
+              left: 0
+            }), x.append(u), w && (w.css({
+              position: "absolute",
+              left: 0,
+              bottom: 0
+            }), w.css(w.align ? {
+              bottom: 0
+            } : {
+              top: 0
+            }), x.append(w));
+          } else {
+            T.isfixed = "fixed" == T.win.css("position");
+            var S = T.isfixed ? "fixed" : "absolute";
+            T.isfixed || (T.viewport = T.getViewport(T.win[0])), T.viewport && (T.body = T.viewport, /fixed|absolute/.test(T.viewport.css("position")) || T.css(T.viewport, {
+              position: "relative"
+            })), u.css({
+              position: S
+            }), T.zoom && T.zoom.css({
+              position: S
+            }), T.updateScrollBar(), T.body.append(u), T.zoom && T.body.append(T.zoom), T.railh && (w.css({
+              position: S
+            }), T.body.append(w));
+          }
+
+          P.isios && T.css(T.win, {
+            "-webkit-tap-highlight-color": "rgba(0,0,0,0)",
+            "-webkit-touch-callout": "none"
+          }), M.disableoutline && (P.isie && T.win.attr("hideFocus", "true"), P.iswebkit && T.win.css("outline", "none"));
+        }
+
+        if (!1 === M.autohidemode ? (T.autohidedom = !1, T.rail.css({
+          opacity: M.cursoropacitymax
+        }), T.railh && T.railh.css({
+          opacity: M.cursoropacitymax
+        })) : !0 === M.autohidemode || "leave" === M.autohidemode ? (T.autohidedom = n().add(T.rail), P.isie8 && (T.autohidedom = T.autohidedom.add(T.cursor)), T.railh && (T.autohidedom = T.autohidedom.add(T.railh)), T.railh && P.isie8 && (T.autohidedom = T.autohidedom.add(T.cursorh))) : "scroll" == M.autohidemode ? (T.autohidedom = n().add(T.rail), T.railh && (T.autohidedom = T.autohidedom.add(T.railh))) : "cursor" == M.autohidemode ? (T.autohidedom = n().add(T.cursor), T.railh && (T.autohidedom = T.autohidedom.add(T.cursorh))) : "hidden" == M.autohidemode && (T.autohidedom = !1, T.hide(), T.railslocked = !1), P.cantouch || T.istouchcapable || M.emulatetouch || P.hasmstouch) {
+          T.scrollmom = new y(T);
+          T.ontouchstart = function (e) {
+            if (T.locked) return !1;
+            if (e.pointerType && ("mouse" === e.pointerType || e.pointerType === e.MSPOINTER_TYPE_MOUSE)) return !1;
+
+            if (T.hasmoving = !1, T.scrollmom.timer && (T.triggerScrollEnd(), T.scrollmom.stop()), !T.railslocked) {
+              var o = T.getTarget(e);
+              if (o && /INPUT/i.test(o.nodeName) && /range/i.test(o.type)) return T.stopPropagation(e);
+              var t = "mousedown" === e.type;
+
+              if (!("clientX" in e) && "changedTouches" in e && (e.clientX = e.changedTouches[0].clientX, e.clientY = e.changedTouches[0].clientY), T.forcescreen) {
+                var r = e;
+                (e = {
+                  original: e.original ? e.original : e
+                }).clientX = r.screenX, e.clientY = r.screenY;
+              }
+
+              if (T.rail.drag = {
+                x: e.clientX,
+                y: e.clientY,
+                sx: T.scroll.x,
+                sy: T.scroll.y,
+                st: T.getScrollTop(),
+                sl: T.getScrollLeft(),
+                pt: 2,
+                dl: !1,
+                tg: o
+              }, T.ispage || !M.directionlockdeadzone) T.rail.drag.dl = "f";else {
+                var i = {
+                  w: c.width(),
+                  h: c.height()
+                },
+                    s = T.getContentSize(),
+                    l = s.h - i.h,
+                    a = s.w - i.w;
+                T.rail.scrollable && !T.railh.scrollable ? T.rail.drag.ck = l > 0 && "v" : !T.rail.scrollable && T.railh.scrollable ? T.rail.drag.ck = a > 0 && "h" : T.rail.drag.ck = !1;
+              }
+
+              if (M.emulatetouch && T.isiframe && P.isie) {
+                var d = T.win.position();
+                T.rail.drag.x += d.left, T.rail.drag.y += d.top;
+              }
+
+              if (T.hasmoving = !1, T.lastmouseup = !1, T.scrollmom.reset(e.clientX, e.clientY), o && t) {
+                if (!/INPUT|SELECT|BUTTON|TEXTAREA/i.test(o.nodeName)) return P.hasmousecapture && o.setCapture(), M.emulatetouch ? (o.onclick && !o._onclick && (o._onclick = o.onclick, o.onclick = function (e) {
+                  if (T.hasmoving) return !1;
+
+                  o._onclick.call(this, e);
+                }), T.cancelEvent(e)) : T.stopPropagation(e);
+                /SUBMIT|CANCEL|BUTTON/i.test(n(o).attr("type")) && (T.preventclick = {
+                  tg: o,
+                  click: !1
+                });
+              }
+            }
+          }, T.ontouchend = function (e) {
+            if (!T.rail.drag) return !0;
+
+            if (2 == T.rail.drag.pt) {
+              if (e.pointerType && ("mouse" === e.pointerType || e.pointerType === e.MSPOINTER_TYPE_MOUSE)) return !1;
+              T.rail.drag = !1;
+              var o = "mouseup" === e.type;
+              if (T.hasmoving && (T.scrollmom.doMomentum(), T.lastmouseup = !0, T.hideCursor(), P.hasmousecapture && l.releaseCapture(), o)) return T.cancelEvent(e);
+            } else if (1 == T.rail.drag.pt) return T.onmouseup(e);
+          };
+          var z = M.emulatetouch && T.isiframe && !P.hasmousecapture,
+              k = .3 * M.directionlockdeadzone | 0;
+          T.ontouchmove = function (e, o) {
+            if (!T.rail.drag) return !0;
+            if (e.targetTouches && M.preventmultitouchscrolling && e.targetTouches.length > 1) return !0;
+            if (e.pointerType && ("mouse" === e.pointerType || e.pointerType === e.MSPOINTER_TYPE_MOUSE)) return !0;
+
+            if (2 == T.rail.drag.pt) {
+              "changedTouches" in e && (e.clientX = e.changedTouches[0].clientX, e.clientY = e.changedTouches[0].clientY);
+              var t, r;
+
+              if (r = t = 0, z && !o) {
+                var i = T.win.position();
+                r = -i.left, t = -i.top;
+              }
+
+              var s = e.clientY + t,
+                  n = s - T.rail.drag.y,
+                  a = e.clientX + r,
+                  c = a - T.rail.drag.x,
+                  d = T.rail.drag.st - n;
+              if (T.ishwscroll && M.bouncescroll) d < 0 ? d = Math.round(d / 2) : d > T.page.maxh && (d = T.page.maxh + Math.round((d - T.page.maxh) / 2));else if (d < 0 ? (d = 0, s = 0) : d > T.page.maxh && (d = T.page.maxh, s = 0), 0 === s && !T.hasmoving) return T.ispage || (T.rail.drag = !1), !0;
+              var u = T.getScrollLeft();
+
+              if (T.railh && T.railh.scrollable && (u = T.isrtlmode ? c - T.rail.drag.sl : T.rail.drag.sl - c, T.ishwscroll && M.bouncescroll ? u < 0 ? u = Math.round(u / 2) : u > T.page.maxw && (u = T.page.maxw + Math.round((u - T.page.maxw) / 2)) : (u < 0 && (u = 0, a = 0), u > T.page.maxw && (u = T.page.maxw, a = 0))), !T.hasmoving) {
+                if (T.rail.drag.y === e.clientY && T.rail.drag.x === e.clientX) return T.cancelEvent(e);
+                var h = Math.abs(n),
+                    p = Math.abs(c),
+                    m = M.directionlockdeadzone;
+                if (T.rail.drag.ck ? "v" == T.rail.drag.ck ? p > m && h <= k ? T.rail.drag = !1 : h > m && (T.rail.drag.dl = "v") : "h" == T.rail.drag.ck && (h > m && p <= k ? T.rail.drag = !1 : p > m && (T.rail.drag.dl = "h")) : h > m && p > m ? T.rail.drag.dl = "f" : h > m ? T.rail.drag.dl = p > k ? "f" : "v" : p > m && (T.rail.drag.dl = h > k ? "f" : "h"), !T.rail.drag.dl) return T.cancelEvent(e);
+                T.triggerScrollStart(e.clientX, e.clientY, 0, 0, 0), T.hasmoving = !0;
+              }
+
+              return T.preventclick && !T.preventclick.click && (T.preventclick.click = T.preventclick.tg.onclick || !1, T.preventclick.tg.onclick = T.onpreventclick), T.rail.drag.dl && ("v" == T.rail.drag.dl ? u = T.rail.drag.sl : "h" == T.rail.drag.dl && (d = T.rail.drag.st)), T.synched("touchmove", function () {
+                T.rail.drag && 2 == T.rail.drag.pt && (T.prepareTransition && T.resetTransition(), T.rail.scrollable && T.setScrollTop(d), T.scrollmom.update(a, s), T.railh && T.railh.scrollable ? (T.setScrollLeft(u), T.showCursor(d, u)) : T.showCursor(d), P.isie10 && l.selection.clear());
+              }), T.cancelEvent(e);
+            }
+
+            return 1 == T.rail.drag.pt ? T.onmousemove(e) : void 0;
+          }, T.ontouchstartCursor = function (e, o) {
+            if (!T.rail.drag || 3 == T.rail.drag.pt) {
+              if (T.locked) return T.cancelEvent(e);
+              T.cancelScroll(), T.rail.drag = {
+                x: e.touches[0].clientX,
+                y: e.touches[0].clientY,
+                sx: T.scroll.x,
+                sy: T.scroll.y,
+                pt: 3,
+                hr: !!o
+              };
+              var t = T.getTarget(e);
+              return !T.ispage && P.hasmousecapture && t.setCapture(), T.isiframe && !P.hasmousecapture && (T.saved.csspointerevents = T.doc.css("pointer-events"), T.css(T.doc, {
+                "pointer-events": "none"
+              })), T.cancelEvent(e);
+            }
+          }, T.ontouchendCursor = function (e) {
+            if (T.rail.drag) {
+              if (P.hasmousecapture && l.releaseCapture(), T.isiframe && !P.hasmousecapture && T.doc.css("pointer-events", T.saved.csspointerevents), 3 != T.rail.drag.pt) return;
+              return T.rail.drag = !1, T.cancelEvent(e);
+            }
+          }, T.ontouchmoveCursor = function (e) {
+            if (T.rail.drag) {
+              if (3 != T.rail.drag.pt) return;
+
+              if (T.cursorfreezed = !0, T.rail.drag.hr) {
+                T.scroll.x = T.rail.drag.sx + (e.touches[0].clientX - T.rail.drag.x), T.scroll.x < 0 && (T.scroll.x = 0);
+                var o = T.scrollvaluemaxw;
+                T.scroll.x > o && (T.scroll.x = o);
+              } else {
+                T.scroll.y = T.rail.drag.sy + (e.touches[0].clientY - T.rail.drag.y), T.scroll.y < 0 && (T.scroll.y = 0);
+                var t = T.scrollvaluemax;
+                T.scroll.y > t && (T.scroll.y = t);
+              }
+
+              return T.synched("touchmove", function () {
+                T.rail.drag && 3 == T.rail.drag.pt && (T.showCursor(), T.rail.drag.hr ? T.doScrollLeft(Math.round(T.scroll.x * T.scrollratio.x), M.cursordragspeed) : T.doScrollTop(Math.round(T.scroll.y * T.scrollratio.y), M.cursordragspeed));
+              }), T.cancelEvent(e);
+            }
+          };
+        }
+
+        if (T.onmousedown = function (e, o) {
+          if (!T.rail.drag || 1 == T.rail.drag.pt) {
+            if (T.railslocked) return T.cancelEvent(e);
+            T.cancelScroll(), T.rail.drag = {
+              x: e.clientX,
+              y: e.clientY,
+              sx: T.scroll.x,
+              sy: T.scroll.y,
+              pt: 1,
+              hr: o || !1
+            };
+            var t = T.getTarget(e);
+            return P.hasmousecapture && t.setCapture(), T.isiframe && !P.hasmousecapture && (T.saved.csspointerevents = T.doc.css("pointer-events"), T.css(T.doc, {
+              "pointer-events": "none"
+            })), T.hasmoving = !1, T.cancelEvent(e);
+          }
+        }, T.onmouseup = function (e) {
+          if (T.rail.drag) return 1 != T.rail.drag.pt || (P.hasmousecapture && l.releaseCapture(), T.isiframe && !P.hasmousecapture && T.doc.css("pointer-events", T.saved.csspointerevents), T.rail.drag = !1, T.cursorfreezed = !1, T.hasmoving && T.triggerScrollEnd(), T.cancelEvent(e));
+        }, T.onmousemove = function (e) {
+          if (T.rail.drag) {
+            if (1 !== T.rail.drag.pt) return;
+            if (P.ischrome && 0 === e.which) return T.onmouseup(e);
+
+            if (T.cursorfreezed = !0, T.hasmoving || T.triggerScrollStart(e.clientX, e.clientY, 0, 0, 0), T.hasmoving = !0, T.rail.drag.hr) {
+              T.scroll.x = T.rail.drag.sx + (e.clientX - T.rail.drag.x), T.scroll.x < 0 && (T.scroll.x = 0);
+              var o = T.scrollvaluemaxw;
+              T.scroll.x > o && (T.scroll.x = o);
+            } else {
+              T.scroll.y = T.rail.drag.sy + (e.clientY - T.rail.drag.y), T.scroll.y < 0 && (T.scroll.y = 0);
+              var t = T.scrollvaluemax;
+              T.scroll.y > t && (T.scroll.y = t);
+            }
+
+            return T.synched("mousemove", function () {
+              T.cursorfreezed && (T.showCursor(), T.rail.drag.hr ? T.scrollLeft(Math.round(T.scroll.x * T.scrollratio.x)) : T.scrollTop(Math.round(T.scroll.y * T.scrollratio.y)));
+            }), T.cancelEvent(e);
+          }
+
+          T.checkarea = 0;
+        }, P.cantouch || M.emulatetouch) T.onpreventclick = function (e) {
+          if (T.preventclick) return T.preventclick.tg.onclick = T.preventclick.click, T.preventclick = !1, T.cancelEvent(e);
+        }, T.onclick = !P.isios && function (e) {
+          return !T.lastmouseup || (T.lastmouseup = !1, T.cancelEvent(e));
+        }, M.grabcursorenabled && P.cursorgrabvalue && (T.css(T.ispage ? T.doc : T.win, {
+          cursor: P.cursorgrabvalue
+        }), T.css(T.rail, {
+          cursor: P.cursorgrabvalue
+        }));else {
+          var L = function L(e) {
+            if (T.selectiondrag) {
+              if (e) {
+                var o = T.win.outerHeight(),
+                    t = e.pageY - T.selectiondrag.top;
+                t > 0 && t < o && (t = 0), t >= o && (t -= o), T.selectiondrag.df = t;
+              }
+
+              if (0 !== T.selectiondrag.df) {
+                var r = -2 * T.selectiondrag.df / 6 | 0;
+                T.doScrollBy(r), T.debounced("doselectionscroll", function () {
+                  L();
+                }, 50);
+              }
+            }
+          };
+
+          T.hasTextSelected = "getSelection" in l ? function () {
+            return l.getSelection().rangeCount > 0;
+          } : "selection" in l ? function () {
+            return "None" != l.selection.type;
+          } : function () {
+            return !1;
+          }, T.onselectionstart = function (e) {
+            T.ispage || (T.selectiondrag = T.win.offset());
+          }, T.onselectionend = function (e) {
+            T.selectiondrag = !1;
+          }, T.onselectiondrag = function (e) {
+            T.selectiondrag && T.hasTextSelected() && T.debounced("selectionscroll", function () {
+              L(e);
+            }, 250);
+          };
+        }
+
+        if (P.hasw3ctouch ? (T.css(T.ispage ? n("html") : T.win, {
+          "touch-action": "none"
+        }), T.css(T.rail, {
+          "touch-action": "none"
+        }), T.css(T.cursor, {
+          "touch-action": "none"
+        }), T.bind(T.win, "pointerdown", T.ontouchstart), T.bind(l, "pointerup", T.ontouchend), T.delegate(l, "pointermove", T.ontouchmove)) : P.hasmstouch ? (T.css(T.ispage ? n("html") : T.win, {
+          "-ms-touch-action": "none"
+        }), T.css(T.rail, {
+          "-ms-touch-action": "none"
+        }), T.css(T.cursor, {
+          "-ms-touch-action": "none"
+        }), T.bind(T.win, "MSPointerDown", T.ontouchstart), T.bind(l, "MSPointerUp", T.ontouchend), T.delegate(l, "MSPointerMove", T.ontouchmove), T.bind(T.cursor, "MSGestureHold", function (e) {
+          e.preventDefault();
+        }), T.bind(T.cursor, "contextmenu", function (e) {
+          e.preventDefault();
+        })) : P.cantouch && (T.bind(T.win, "touchstart", T.ontouchstart, !1, !0), T.bind(l, "touchend", T.ontouchend, !1, !0), T.bind(l, "touchcancel", T.ontouchend, !1, !0), T.delegate(l, "touchmove", T.ontouchmove, !1, !0)), M.emulatetouch && (T.bind(T.win, "mousedown", T.ontouchstart, !1, !0), T.bind(l, "mouseup", T.ontouchend, !1, !0), T.bind(l, "mousemove", T.ontouchmove, !1, !0)), (M.cursordragontouch || !P.cantouch && !M.emulatetouch) && (T.rail.css({
+          cursor: "default"
+        }), T.railh && T.railh.css({
+          cursor: "default"
+        }), T.jqbind(T.rail, "mouseenter", function () {
+          if (!T.ispage && !T.win.is(":visible")) return !1;
+          T.canshowonmouseevent && T.showCursor(), T.rail.active = !0;
+        }), T.jqbind(T.rail, "mouseleave", function () {
+          T.rail.active = !1, T.rail.drag || T.hideCursor();
+        }), M.sensitiverail && (T.bind(T.rail, "click", function (e) {
+          T.doRailClick(e, !1, !1);
+        }), T.bind(T.rail, "dblclick", function (e) {
+          T.doRailClick(e, !0, !1);
+        }), T.bind(T.cursor, "click", function (e) {
+          T.cancelEvent(e);
+        }), T.bind(T.cursor, "dblclick", function (e) {
+          T.cancelEvent(e);
+        })), T.railh && (T.jqbind(T.railh, "mouseenter", function () {
+          if (!T.ispage && !T.win.is(":visible")) return !1;
+          T.canshowonmouseevent && T.showCursor(), T.rail.active = !0;
+        }), T.jqbind(T.railh, "mouseleave", function () {
+          T.rail.active = !1, T.rail.drag || T.hideCursor();
+        }), M.sensitiverail && (T.bind(T.railh, "click", function (e) {
+          T.doRailClick(e, !1, !0);
+        }), T.bind(T.railh, "dblclick", function (e) {
+          T.doRailClick(e, !0, !0);
+        }), T.bind(T.cursorh, "click", function (e) {
+          T.cancelEvent(e);
+        }), T.bind(T.cursorh, "dblclick", function (e) {
+          T.cancelEvent(e);
+        })))), M.cursordragontouch && (this.istouchcapable || P.cantouch) && (T.bind(T.cursor, "touchstart", T.ontouchstartCursor), T.bind(T.cursor, "touchmove", T.ontouchmoveCursor), T.bind(T.cursor, "touchend", T.ontouchendCursor), T.cursorh && T.bind(T.cursorh, "touchstart", function (e) {
+          T.ontouchstartCursor(e, !0);
+        }), T.cursorh && T.bind(T.cursorh, "touchmove", T.ontouchmoveCursor), T.cursorh && T.bind(T.cursorh, "touchend", T.ontouchendCursor)), M.emulatetouch || P.isandroid || P.isios ? (T.bind(P.hasmousecapture ? T.win : l, "mouseup", T.ontouchend), T.onclick && T.bind(l, "click", T.onclick), M.cursordragontouch ? (T.bind(T.cursor, "mousedown", T.onmousedown), T.bind(T.cursor, "mouseup", T.onmouseup), T.cursorh && T.bind(T.cursorh, "mousedown", function (e) {
+          T.onmousedown(e, !0);
+        }), T.cursorh && T.bind(T.cursorh, "mouseup", T.onmouseup)) : (T.bind(T.rail, "mousedown", function (e) {
+          e.preventDefault();
+        }), T.railh && T.bind(T.railh, "mousedown", function (e) {
+          e.preventDefault();
+        }))) : (T.bind(P.hasmousecapture ? T.win : l, "mouseup", T.onmouseup), T.bind(l, "mousemove", T.onmousemove), T.onclick && T.bind(l, "click", T.onclick), T.bind(T.cursor, "mousedown", T.onmousedown), T.bind(T.cursor, "mouseup", T.onmouseup), T.railh && (T.bind(T.cursorh, "mousedown", function (e) {
+          T.onmousedown(e, !0);
+        }), T.bind(T.cursorh, "mouseup", T.onmouseup)), !T.ispage && M.enablescrollonselection && (T.bind(T.win[0], "mousedown", T.onselectionstart), T.bind(l, "mouseup", T.onselectionend), T.bind(T.cursor, "mouseup", T.onselectionend), T.cursorh && T.bind(T.cursorh, "mouseup", T.onselectionend), T.bind(l, "mousemove", T.onselectiondrag)), T.zoom && (T.jqbind(T.zoom, "mouseenter", function () {
+          T.canshowonmouseevent && T.showCursor(), T.rail.active = !0;
+        }), T.jqbind(T.zoom, "mouseleave", function () {
+          T.rail.active = !1, T.rail.drag || T.hideCursor();
+        }))), M.enablemousewheel && (T.isiframe || T.mousewheel(P.isie && T.ispage ? l : T.win, T.onmousewheel), T.mousewheel(T.rail, T.onmousewheel), T.railh && T.mousewheel(T.railh, T.onmousewheelhr)), T.ispage || P.cantouch || /HTML|^BODY/.test(T.win[0].nodeName) || (T.win.attr("tabindex") || T.win.attr({
+          tabindex: ++r
+        }), T.bind(T.win, "focus", function (e) {
+          o = T.getTarget(e).id || T.getTarget(e) || !1, T.hasfocus = !0, T.canshowonmouseevent && T.noticeCursor();
+        }), T.bind(T.win, "blur", function (e) {
+          o = !1, T.hasfocus = !1;
+        }), T.bind(T.win, "mouseenter", function (e) {
+          t = T.getTarget(e).id || T.getTarget(e) || !1, T.hasmousefocus = !0, T.canshowonmouseevent && T.noticeCursor();
+        }), T.bind(T.win, "mouseleave", function (e) {
+          t = !1, T.hasmousefocus = !1, T.rail.drag || T.hideCursor();
+        })), T.onkeypress = function (e) {
+          if (T.railslocked && 0 === T.page.maxh) return !0;
+          e = e || a.event;
+          var r = T.getTarget(e);
+          if (r && /INPUT|TEXTAREA|SELECT|OPTION/.test(r.nodeName) && (!(r.getAttribute("type") || r.type || !1) || !/submit|button|cancel/i.tp)) return !0;
+          if (n(r).attr("contenteditable")) return !0;
+
+          if (T.hasfocus || T.hasmousefocus && !o || T.ispage && !o && !t) {
+            var i = e.keyCode;
+            if (T.railslocked && 27 != i) return T.cancelEvent(e);
+            var s = e.ctrlKey || !1,
+                l = e.shiftKey || !1,
+                c = !1;
+
+            switch (i) {
+              case 38:
+              case 63233:
+                T.doScrollBy(72), c = !0;
+                break;
+
+              case 40:
+              case 63235:
+                T.doScrollBy(-72), c = !0;
+                break;
+
+              case 37:
+              case 63232:
+                T.railh && (s ? T.doScrollLeft(0) : T.doScrollLeftBy(72), c = !0);
+                break;
+
+              case 39:
+              case 63234:
+                T.railh && (s ? T.doScrollLeft(T.page.maxw) : T.doScrollLeftBy(-72), c = !0);
+                break;
+
+              case 33:
+              case 63276:
+                T.doScrollBy(T.view.h), c = !0;
+                break;
+
+              case 34:
+              case 63277:
+                T.doScrollBy(-T.view.h), c = !0;
+                break;
+
+              case 36:
+              case 63273:
+                T.railh && s ? T.doScrollPos(0, 0) : T.doScrollTo(0), c = !0;
+                break;
+
+              case 35:
+              case 63275:
+                T.railh && s ? T.doScrollPos(T.page.maxw, T.page.maxh) : T.doScrollTo(T.page.maxh), c = !0;
+                break;
+
+              case 32:
+                M.spacebarenabled && (l ? T.doScrollBy(T.view.h) : T.doScrollBy(-T.view.h), c = !0);
+                break;
+
+              case 27:
+                T.zoomactive && (T.doZoom(), c = !0);
+            }
+
+            if (c) return T.cancelEvent(e);
+          }
+        }, M.enablekeyboard && T.bind(l, P.isopera && !P.isopera12 ? "keypress" : "keydown", T.onkeypress), T.bind(l, "keydown", function (e) {
+          (e.ctrlKey || !1) && (T.wheelprevented = !0);
+        }), T.bind(l, "keyup", function (e) {
+          e.ctrlKey || !1 || (T.wheelprevented = !1);
+        }), T.bind(a, "blur", function (e) {
+          T.wheelprevented = !1;
+        }), T.bind(a, "resize", T.onscreenresize), T.bind(a, "orientationchange", T.onscreenresize), T.bind(a, "load", T.lazyResize), P.ischrome && !T.ispage && !T.haswrapper) {
+          var C = T.win.attr("style"),
+              N = parseFloat(T.win.css("width")) + 1;
+          T.win.css("width", N), T.synched("chromefix", function () {
+            T.win.attr("style", C);
+          });
+        }
+
+        if (T.onAttributeChange = function (e) {
+          T.lazyResize(T.isieold ? 250 : 30);
+        }, M.enableobserver && (T.isie11 || !1 === m || (T.observerbody = new m(function (e) {
+          if (e.forEach(function (e) {
+            if ("attributes" == e.type) return E.hasClass("modal-open") && E.hasClass("modal-dialog") && !n.contains(n(".modal-dialog")[0], T.doc[0]) ? T.hide() : T.show();
+          }), T.me.clientWidth != T.page.width || T.me.clientHeight != T.page.height) return T.lazyResize(30);
+        }), T.observerbody.observe(l.body, {
+          childList: !0,
+          subtree: !0,
+          characterData: !1,
+          attributes: !0,
+          attributeFilter: ["class"]
+        })), !T.ispage && !T.haswrapper)) {
+          var R = T.win[0];
+          !1 !== m ? (T.observer = new m(function (e) {
+            e.forEach(T.onAttributeChange);
+          }), T.observer.observe(R, {
+            childList: !0,
+            characterData: !1,
+            attributes: !0,
+            subtree: !1
+          }), T.observerremover = new m(function (e) {
+            e.forEach(function (e) {
+              if (e.removedNodes.length > 0) for (var o in e.removedNodes) {
+                if (T && e.removedNodes[o] === R) return T.remove();
+              }
+            });
+          }), T.observerremover.observe(R.parentNode, {
+            childList: !0,
+            characterData: !1,
+            attributes: !1,
+            subtree: !1
+          })) : (T.bind(R, P.isie && !P.isie9 ? "propertychange" : "DOMAttrModified", T.onAttributeChange), P.isie9 && R.attachEvent("onpropertychange", T.onAttributeChange), T.bind(R, "DOMNodeRemoved", function (e) {
+            e.target === R && T.remove();
+          }));
+        }
+
+        !T.ispage && M.boxzoom && T.bind(a, "resize", T.resizeZoom), T.istextarea && (T.bind(T.win, "keydown", T.lazyResize), T.bind(T.win, "mouseup", T.lazyResize)), T.lazyResize(30);
+      }
+
+      if ("IFRAME" == this.doc[0].nodeName) {
+        var _ = function _() {
+          T.iframexd = !1;
+          var o;
+
+          try {
+            (o = "contentDocument" in this ? this.contentDocument : this.contentWindow._doc).domain;
+          } catch (e) {
+            T.iframexd = !0, o = !1;
+          }
+
+          if (T.iframexd) return "console" in a && console.log("NiceScroll error: policy restriced iframe"), !0;
+
+          if (T.forcescreen = !0, T.isiframe && (T.iframe = {
+            doc: n(o),
+            html: T.doc.contents().find("html")[0],
+            body: T.doc.contents().find("body")[0]
+          }, T.getContentSize = function () {
+            return {
+              w: Math.max(T.iframe.html.scrollWidth, T.iframe.body.scrollWidth),
+              h: Math.max(T.iframe.html.scrollHeight, T.iframe.body.scrollHeight)
+            };
+          }, T.docscroll = n(T.iframe.body)), !P.isios && M.iframeautoresize && !T.isiframe) {
+            T.win.scrollTop(0), T.doc.height("");
+            var t = Math.max(o.getElementsByTagName("html")[0].scrollHeight, o.body.scrollHeight);
+            T.doc.height(t);
+          }
+
+          T.lazyResize(30), T.css(n(T.iframe.body), e), P.isios && T.haswrapper && T.css(n(o.body), {
+            "-webkit-transform": "translate3d(0,0,0)"
+          }), "contentWindow" in this ? T.bind(this.contentWindow, "scroll", T.onscroll) : T.bind(o, "scroll", T.onscroll), M.enablemousewheel && T.mousewheel(o, T.onmousewheel), M.enablekeyboard && T.bind(o, P.isopera ? "keypress" : "keydown", T.onkeypress), P.cantouch ? (T.bind(o, "touchstart", T.ontouchstart), T.bind(o, "touchmove", T.ontouchmove)) : M.emulatetouch && (T.bind(o, "mousedown", T.ontouchstart), T.bind(o, "mousemove", function (e) {
+            return T.ontouchmove(e, !0);
+          }), M.grabcursorenabled && P.cursorgrabvalue && T.css(n(o.body), {
+            cursor: P.cursorgrabvalue
+          })), T.bind(o, "mouseup", T.ontouchend), T.zoom && (M.dblclickzoom && T.bind(o, "dblclick", T.doZoom), T.ongesturezoom && T.bind(o, "gestureend", T.ongesturezoom));
+        };
+
+        this.doc[0].readyState && "complete" === this.doc[0].readyState && setTimeout(function () {
+          _.call(T.doc[0], !1);
+        }, 500), T.bind(this.doc, "load", _);
+      }
+    }, this.showCursor = function (e, o) {
+      if (T.cursortimeout && (clearTimeout(T.cursortimeout), T.cursortimeout = 0), T.rail) {
+        if (T.autohidedom && (T.autohidedom.stop().css({
+          opacity: M.cursoropacitymax
+        }), T.cursoractive = !0), T.rail.drag && 1 == T.rail.drag.pt || (void 0 !== e && !1 !== e && (T.scroll.y = e / T.scrollratio.y | 0), void 0 !== o && (T.scroll.x = o / T.scrollratio.x | 0)), T.cursor.css({
+          height: T.cursorheight,
+          top: T.scroll.y
+        }), T.cursorh) {
+          var t = T.hasreversehr ? T.scrollvaluemaxw - T.scroll.x : T.scroll.x;
+          T.cursorh.css({
+            width: T.cursorwidth,
+            left: !T.rail.align && T.rail.visibility ? t + T.rail.width : t
+          }), T.cursoractive = !0;
+        }
+
+        T.zoom && T.zoom.stop().css({
+          opacity: M.cursoropacitymax
+        });
+      }
+    }, this.hideCursor = function (e) {
+      T.cursortimeout || T.rail && T.autohidedom && (T.hasmousefocus && "leave" === M.autohidemode || (T.cursortimeout = setTimeout(function () {
+        T.rail.active && T.showonmouseevent || (T.autohidedom.stop().animate({
+          opacity: M.cursoropacitymin
+        }), T.zoom && T.zoom.stop().animate({
+          opacity: M.cursoropacitymin
+        }), T.cursoractive = !1), T.cursortimeout = 0;
+      }, e || M.hidecursordelay)));
+    }, this.noticeCursor = function (e, o, t) {
+      T.showCursor(o, t), T.rail.active || T.hideCursor(e);
+    }, this.getContentSize = T.ispage ? function () {
+      return {
+        w: Math.max(l.body.scrollWidth, l.documentElement.scrollWidth),
+        h: Math.max(l.body.scrollHeight, l.documentElement.scrollHeight)
+      };
+    } : T.haswrapper ? function () {
+      return {
+        w: T.doc[0].offsetWidth,
+        h: T.doc[0].offsetHeight
+      };
+    } : function () {
+      return {
+        w: T.docscroll[0].scrollWidth,
+        h: T.docscroll[0].scrollHeight
+      };
+    }, this.onResize = function (e, o) {
+      if (!T || !T.win) return !1;
+      var t = T.page.maxh,
+          r = T.page.maxw,
+          i = T.view.h,
+          s = T.view.w;
+
+      if (T.view = {
+        w: T.ispage ? T.win.width() : T.win[0].clientWidth,
+        h: T.ispage ? T.win.height() : T.win[0].clientHeight
+      }, T.page = o || T.getContentSize(), T.page.maxh = Math.max(0, T.page.h - T.view.h), T.page.maxw = Math.max(0, T.page.w - T.view.w), T.page.maxh == t && T.page.maxw == r && T.view.w == s && T.view.h == i) {
+        if (T.ispage) return T;
+        var n = T.win.offset();
+
+        if (T.lastposition) {
+          var l = T.lastposition;
+          if (l.top == n.top && l.left == n.left) return T;
+        }
+
+        T.lastposition = n;
+      }
+
+      return 0 === T.page.maxh ? (T.hideRail(), T.scrollvaluemax = 0, T.scroll.y = 0, T.scrollratio.y = 0, T.cursorheight = 0, T.setScrollTop(0), T.rail && (T.rail.scrollable = !1)) : (T.page.maxh -= M.railpadding.top + M.railpadding.bottom, T.rail.scrollable = !0), 0 === T.page.maxw ? (T.hideRailHr(), T.scrollvaluemaxw = 0, T.scroll.x = 0, T.scrollratio.x = 0, T.cursorwidth = 0, T.setScrollLeft(0), T.railh && (T.railh.scrollable = !1)) : (T.page.maxw -= M.railpadding.left + M.railpadding.right, T.railh && (T.railh.scrollable = M.horizrailenabled)), T.railslocked = T.locked || 0 === T.page.maxh && 0 === T.page.maxw, T.railslocked ? (T.ispage || T.updateScrollBar(T.view), !1) : (T.hidden || (T.rail.visibility || T.showRail(), T.railh && !T.railh.visibility && T.showRailHr()), T.istextarea && T.win.css("resize") && "none" != T.win.css("resize") && (T.view.h -= 20), T.cursorheight = Math.min(T.view.h, Math.round(T.view.h * (T.view.h / T.page.h))), T.cursorheight = M.cursorfixedheight ? M.cursorfixedheight : Math.max(M.cursorminheight, T.cursorheight), T.cursorwidth = Math.min(T.view.w, Math.round(T.view.w * (T.view.w / T.page.w))), T.cursorwidth = M.cursorfixedheight ? M.cursorfixedheight : Math.max(M.cursorminheight, T.cursorwidth), T.scrollvaluemax = T.view.h - T.cursorheight - (M.railpadding.top + M.railpadding.bottom), T.hasborderbox || (T.scrollvaluemax -= T.cursor[0].offsetHeight - T.cursor[0].clientHeight), T.railh && (T.railh.width = T.page.maxh > 0 ? T.view.w - T.rail.width : T.view.w, T.scrollvaluemaxw = T.railh.width - T.cursorwidth - (M.railpadding.left + M.railpadding.right)), T.ispage || T.updateScrollBar(T.view), T.scrollratio = {
+        x: T.page.maxw / T.scrollvaluemaxw,
+        y: T.page.maxh / T.scrollvaluemax
+      }, T.getScrollTop() > T.page.maxh ? T.doScrollTop(T.page.maxh) : (T.scroll.y = T.getScrollTop() / T.scrollratio.y | 0, T.scroll.x = T.getScrollLeft() / T.scrollratio.x | 0, T.cursoractive && T.noticeCursor()), T.scroll.y && 0 === T.getScrollTop() && T.doScrollTo(T.scroll.y * T.scrollratio.y | 0), T);
+    }, this.resize = T.onResize;
+    var O = 0;
+    this.onscreenresize = function (e) {
+      clearTimeout(O);
+      var o = !T.ispage && !T.haswrapper;
+      o && T.hideRails(), O = setTimeout(function () {
+        T && (o && T.showRails(), T.resize()), O = 0;
+      }, 120);
+    }, this.lazyResize = function (e) {
+      return clearTimeout(O), e = isNaN(e) ? 240 : e, O = setTimeout(function () {
+        T && T.resize(), O = 0;
+      }, e), T;
+    }, this.jqbind = function (e, o, t) {
+      T.events.push({
+        e: e,
+        n: o,
+        f: t,
+        q: !0
+      }), n(e).on(o, t);
+    }, this.mousewheel = function (e, o, t) {
+      var r = "jquery" in e ? e[0] : e;
+      if ("onwheel" in l.createElement("div")) T._bind(r, "wheel", o, t || !1);else {
+        var i = void 0 !== l.onmousewheel ? "mousewheel" : "DOMMouseScroll";
+        S(r, i, o, t || !1), "DOMMouseScroll" == i && S(r, "MozMousePixelScroll", o, t || !1);
+      }
+    };
+    var Y = !1;
+
+    if (P.haseventlistener) {
+      try {
+        var H = Object.defineProperty({}, "passive", {
+          get: function get() {
+            Y = !0;
+          }
+        });
+        a.addEventListener("test", null, H);
+      } catch (e) {}
+
+      this.stopPropagation = function (e) {
+        return !!e && ((e = e.original ? e.original : e).stopPropagation(), !1);
+      }, this.cancelEvent = function (e) {
+        return e.cancelable && e.preventDefault(), e.stopImmediatePropagation(), e.preventManipulation && e.preventManipulation(), !1;
+      };
+    } else Event.prototype.preventDefault = function () {
+      this.returnValue = !1;
+    }, Event.prototype.stopPropagation = function () {
+      this.cancelBubble = !0;
+    }, a.constructor.prototype.addEventListener = l.constructor.prototype.addEventListener = Element.prototype.addEventListener = function (e, o, t) {
+      this.attachEvent("on" + e, o);
+    }, a.constructor.prototype.removeEventListener = l.constructor.prototype.removeEventListener = Element.prototype.removeEventListener = function (e, o, t) {
+      this.detachEvent("on" + e, o);
+    }, this.cancelEvent = function (e) {
+      return (e = e || a.event) && (e.cancelBubble = !0, e.cancel = !0, e.returnValue = !1), !1;
+    }, this.stopPropagation = function (e) {
+      return (e = e || a.event) && (e.cancelBubble = !0), !1;
+    };
+
+    this.delegate = function (e, o, t, r, i) {
+      var s = d[o] || !1;
+      s || (s = {
+        a: [],
+        l: [],
+        f: function f(e) {
+          for (var o = s.l, t = !1, r = o.length - 1; r >= 0; r--) {
+            if (!1 === (t = o[r].call(e.target, e))) return !1;
+          }
+
+          return t;
+        }
+      }, T.bind(e, o, s.f, r, i), d[o] = s), T.ispage ? (s.a = [T.id].concat(s.a), s.l = [t].concat(s.l)) : (s.a.push(T.id), s.l.push(t));
+    }, this.undelegate = function (e, o, t, r, i) {
+      var s = d[o] || !1;
+      if (s && s.l) for (var n = 0, l = s.l.length; n < l; n++) {
+        s.a[n] === T.id && (s.a.splice(n), s.l.splice(n), 0 === s.a.length && (T._unbind(e, o, s.l.f), d[o] = null));
+      }
+    }, this.bind = function (e, o, t, r, i) {
+      var s = "jquery" in e ? e[0] : e;
+
+      T._bind(s, o, t, r || !1, i || !1);
+    }, this._bind = function (e, o, t, r, i) {
+      T.events.push({
+        e: e,
+        n: o,
+        f: t,
+        b: r,
+        q: !1
+      }), Y && i ? e.addEventListener(o, t, {
+        passive: !1,
+        capture: r
+      }) : e.addEventListener(o, t, r || !1);
+    }, this._unbind = function (e, o, t, r) {
+      d[o] ? T.undelegate(e, o, t, r) : e.removeEventListener(o, t, r);
+    }, this.unbindAll = function () {
+      for (var e = 0; e < T.events.length; e++) {
+        var o = T.events[e];
+        o.q ? o.e.unbind(o.n, o.f) : T._unbind(o.e, o.n, o.f, o.b);
+      }
+    }, this.showRails = function () {
+      return T.showRail().showRailHr();
+    }, this.showRail = function () {
+      return 0 === T.page.maxh || !T.ispage && "none" == T.win.css("display") || (T.rail.visibility = !0, T.rail.css("display", "block")), T;
+    }, this.showRailHr = function () {
+      return T.railh && (0 === T.page.maxw || !T.ispage && "none" == T.win.css("display") || (T.railh.visibility = !0, T.railh.css("display", "block"))), T;
+    }, this.hideRails = function () {
+      return T.hideRail().hideRailHr();
+    }, this.hideRail = function () {
+      return T.rail.visibility = !1, T.rail.css("display", "none"), T;
+    }, this.hideRailHr = function () {
+      return T.railh && (T.railh.visibility = !1, T.railh.css("display", "none")), T;
+    }, this.show = function () {
+      return T.hidden = !1, T.railslocked = !1, T.showRails();
+    }, this.hide = function () {
+      return T.hidden = !0, T.railslocked = !0, T.hideRails();
+    }, this.toggle = function () {
+      return T.hidden ? T.show() : T.hide();
+    }, this.remove = function () {
+      T.stop(), T.cursortimeout && clearTimeout(T.cursortimeout);
+
+      for (var e in T.delaylist) {
+        T.delaylist[e] && h(T.delaylist[e].h);
+      }
+
+      T.doZoomOut(), T.unbindAll(), P.isie9 && T.win[0].detachEvent("onpropertychange", T.onAttributeChange), !1 !== T.observer && T.observer.disconnect(), !1 !== T.observerremover && T.observerremover.disconnect(), !1 !== T.observerbody && T.observerbody.disconnect(), T.events = null, T.cursor && T.cursor.remove(), T.cursorh && T.cursorh.remove(), T.rail && T.rail.remove(), T.railh && T.railh.remove(), T.zoom && T.zoom.remove();
+
+      for (var o = 0; o < T.saved.css.length; o++) {
+        var t = T.saved.css[o];
+        t[0].css(t[1], void 0 === t[2] ? "" : t[2]);
+      }
+
+      T.saved = !1, T.me.data("__nicescroll", "");
+      var r = n.nicescroll;
+      r.each(function (e) {
+        if (this && this.id === T.id) {
+          delete r[e];
+
+          for (var o = ++e; o < r.length; o++, e++) {
+            r[e] = r[o];
+          }
+
+          --r.length && delete r[r.length];
+        }
+      });
+
+      for (var i in T) {
+        T[i] = null, delete T[i];
+      }
+
+      T = null;
+    }, this.scrollstart = function (e) {
+      return this.onscrollstart = e, T;
+    }, this.scrollend = function (e) {
+      return this.onscrollend = e, T;
+    }, this.scrollcancel = function (e) {
+      return this.onscrollcancel = e, T;
+    }, this.zoomin = function (e) {
+      return this.onzoomin = e, T;
+    }, this.zoomout = function (e) {
+      return this.onzoomout = e, T;
+    }, this.isScrollable = function (e) {
+      var o = e.target ? e.target : e;
+      if ("OPTION" == o.nodeName) return !0;
+
+      for (; o && 1 == o.nodeType && o !== this.me[0] && !/^BODY|HTML/.test(o.nodeName);) {
+        var t = n(o),
+            r = t.css("overflowY") || t.css("overflowX") || t.css("overflow") || "";
+        if (/scroll|auto/.test(r)) return o.clientHeight != o.scrollHeight;
+        o = !!o.parentNode && o.parentNode;
+      }
+
+      return !1;
+    }, this.getViewport = function (e) {
+      for (var o = !(!e || !e.parentNode) && e.parentNode; o && 1 == o.nodeType && !/^BODY|HTML/.test(o.nodeName);) {
+        var t = n(o);
+        if (/fixed|absolute/.test(t.css("position"))) return t;
+        var r = t.css("overflowY") || t.css("overflowX") || t.css("overflow") || "";
+        if (/scroll|auto/.test(r) && o.clientHeight != o.scrollHeight) return t;
+        if (t.getNiceScroll().length > 0) return t;
+        o = !!o.parentNode && o.parentNode;
+      }
+
+      return !1;
+    }, this.triggerScrollStart = function (e, o, t, r, i) {
+      if (T.onscrollstart) {
+        var s = {
+          type: "scrollstart",
+          current: {
+            x: e,
+            y: o
+          },
+          request: {
+            x: t,
+            y: r
+          },
+          end: {
+            x: T.newscrollx,
+            y: T.newscrolly
+          },
+          speed: i
+        };
+        T.onscrollstart.call(T, s);
+      }
+    }, this.triggerScrollEnd = function () {
+      if (T.onscrollend) {
+        var e = T.getScrollLeft(),
+            o = T.getScrollTop(),
+            t = {
+          type: "scrollend",
+          current: {
+            x: e,
+            y: o
+          },
+          end: {
+            x: e,
+            y: o
+          }
+        };
+        T.onscrollend.call(T, t);
+      }
+    };
+    var B = 0,
+        X = 0,
+        D = 0,
+        A = 1,
+        q = !1;
+    if (this.onmousewheel = function (e) {
+      if (T.wheelprevented || T.locked) return !1;
+      if (T.railslocked) return T.debounced("checkunlock", T.resize, 250), !1;
+      if (T.rail.drag) return T.cancelEvent(e);
+      if ("auto" === M.oneaxismousemode && 0 !== e.deltaX && (M.oneaxismousemode = !1), M.oneaxismousemode && 0 === e.deltaX && !T.rail.scrollable) return !T.railh || !T.railh.scrollable || T.onmousewheelhr(e);
+      var o = f(),
+          t = !1;
+      if (M.preservenativescrolling && T.checkarea + 600 < o && (T.nativescrollingarea = T.isScrollable(e), t = !0), T.checkarea = o, T.nativescrollingarea) return !0;
+      var r = k(e, !1, t);
+      return r && (T.checkarea = 0), r;
+    }, this.onmousewheelhr = function (e) {
+      if (!T.wheelprevented) {
+        if (T.railslocked || !T.railh.scrollable) return !0;
+        if (T.rail.drag) return T.cancelEvent(e);
+        var o = f(),
+            t = !1;
+        return M.preservenativescrolling && T.checkarea + 600 < o && (T.nativescrollingarea = T.isScrollable(e), t = !0), T.checkarea = o, !!T.nativescrollingarea || (T.railslocked ? T.cancelEvent(e) : k(e, !0, t));
+      }
+    }, this.stop = function () {
+      return T.cancelScroll(), T.scrollmon && T.scrollmon.stop(), T.cursorfreezed = !1, T.scroll.y = Math.round(T.getScrollTop() * (1 / T.scrollratio.y)), T.noticeCursor(), T;
+    }, this.getTransitionSpeed = function (e) {
+      return 80 + e / 72 * M.scrollspeed | 0;
+    }, M.smoothscroll) {
+      if (T.ishwscroll && P.hastransition && M.usetransition && M.smoothscroll) {
+        var j = "";
+        this.resetTransition = function () {
+          j = "", T.doc.css(P.prefixstyle + "transition-duration", "0ms");
+        }, this.prepareTransition = function (e, o) {
+          var t = o ? e : T.getTransitionSpeed(e),
+              r = t + "ms";
+          return j !== r && (j = r, T.doc.css(P.prefixstyle + "transition-duration", r)), t;
+        }, this.doScrollLeft = function (e, o) {
+          var t = T.scrollrunning ? T.newscrolly : T.getScrollTop();
+          T.doScrollPos(e, t, o);
+        }, this.doScrollTop = function (e, o) {
+          var t = T.scrollrunning ? T.newscrollx : T.getScrollLeft();
+          T.doScrollPos(t, e, o);
+        }, this.cursorupdate = {
+          running: !1,
+          start: function start() {
+            var e = this;
+
+            if (!e.running) {
+              e.running = !0;
+
+              var o = function o() {
+                e.running && u(o), T.showCursor(T.getScrollTop(), T.getScrollLeft()), T.notifyScrollEvent(T.win[0]);
+              };
+
+              u(o);
+            }
+          },
+          stop: function stop() {
+            this.running = !1;
+          }
+        }, this.doScrollPos = function (e, o, t) {
+          var r = T.getScrollTop(),
+              i = T.getScrollLeft();
+          if (((T.newscrolly - r) * (o - r) < 0 || (T.newscrollx - i) * (e - i) < 0) && T.cancelScroll(), M.bouncescroll ? (o < 0 ? o = o / 2 | 0 : o > T.page.maxh && (o = T.page.maxh + (o - T.page.maxh) / 2 | 0), e < 0 ? e = e / 2 | 0 : e > T.page.maxw && (e = T.page.maxw + (e - T.page.maxw) / 2 | 0)) : (o < 0 ? o = 0 : o > T.page.maxh && (o = T.page.maxh), e < 0 ? e = 0 : e > T.page.maxw && (e = T.page.maxw)), T.scrollrunning && e == T.newscrollx && o == T.newscrolly) return !1;
+          T.newscrolly = o, T.newscrollx = e;
+          var s = T.getScrollTop(),
+              n = T.getScrollLeft(),
+              l = {};
+          l.x = e - n, l.y = o - s;
+          var a = 0 | Math.sqrt(l.x * l.x + l.y * l.y),
+              c = T.prepareTransition(a);
+          T.scrollrunning || (T.scrollrunning = !0, T.triggerScrollStart(n, s, e, o, c), T.cursorupdate.start()), T.scrollendtrapped = !0, P.transitionend || (T.scrollendtrapped && clearTimeout(T.scrollendtrapped), T.scrollendtrapped = setTimeout(T.onScrollTransitionEnd, c)), T.setScrollTop(T.newscrolly), T.setScrollLeft(T.newscrollx);
+        }, this.cancelScroll = function () {
+          if (!T.scrollendtrapped) return !0;
+          var e = T.getScrollTop(),
+              o = T.getScrollLeft();
+          return T.scrollrunning = !1, P.transitionend || clearTimeout(P.transitionend), T.scrollendtrapped = !1, T.resetTransition(), T.setScrollTop(e), T.railh && T.setScrollLeft(o), T.timerscroll && T.timerscroll.tm && clearInterval(T.timerscroll.tm), T.timerscroll = !1, T.cursorfreezed = !1, T.cursorupdate.stop(), T.showCursor(e, o), T;
+        }, this.onScrollTransitionEnd = function () {
+          if (T.scrollendtrapped) {
+            var e = T.getScrollTop(),
+                o = T.getScrollLeft();
+            if (e < 0 ? e = 0 : e > T.page.maxh && (e = T.page.maxh), o < 0 ? o = 0 : o > T.page.maxw && (o = T.page.maxw), e != T.newscrolly || o != T.newscrollx) return T.doScrollPos(o, e, M.snapbackspeed);
+            T.scrollrunning && T.triggerScrollEnd(), T.scrollrunning = !1, T.scrollendtrapped = !1, T.resetTransition(), T.timerscroll = !1, T.setScrollTop(e), T.railh && T.setScrollLeft(o), T.cursorupdate.stop(), T.noticeCursor(!1, e, o), T.cursorfreezed = !1;
+          }
+        };
+      } else this.doScrollLeft = function (e, o) {
+        var t = T.scrollrunning ? T.newscrolly : T.getScrollTop();
+        T.doScrollPos(e, t, o);
+      }, this.doScrollTop = function (e, o) {
+        var t = T.scrollrunning ? T.newscrollx : T.getScrollLeft();
+        T.doScrollPos(t, e, o);
+      }, this.doScrollPos = function (e, o, t) {
+        var r = T.getScrollTop(),
+            i = T.getScrollLeft();
+        ((T.newscrolly - r) * (o - r) < 0 || (T.newscrollx - i) * (e - i) < 0) && T.cancelScroll();
+        var s = !1;
+        if (T.bouncescroll && T.rail.visibility || (o < 0 ? (o = 0, s = !0) : o > T.page.maxh && (o = T.page.maxh, s = !0)), T.bouncescroll && T.railh.visibility || (e < 0 ? (e = 0, s = !0) : e > T.page.maxw && (e = T.page.maxw, s = !0)), T.scrollrunning && T.newscrolly === o && T.newscrollx === e) return !0;
+        T.newscrolly = o, T.newscrollx = e, T.dst = {}, T.dst.x = e - i, T.dst.y = o - r, T.dst.px = i, T.dst.py = r;
+        var n = 0 | Math.sqrt(T.dst.x * T.dst.x + T.dst.y * T.dst.y),
+            l = T.getTransitionSpeed(n);
+        T.bzscroll = {};
+        var a = s ? 1 : .58;
+        T.bzscroll.x = new R(i, T.newscrollx, l, 0, 0, a, 1), T.bzscroll.y = new R(r, T.newscrolly, l, 0, 0, a, 1);
+        f();
+
+        var c = function c() {
+          if (T.scrollrunning) {
+            var e = T.bzscroll.y.getPos();
+            T.setScrollLeft(T.bzscroll.x.getNow()), T.setScrollTop(T.bzscroll.y.getNow()), e <= 1 ? T.timer = u(c) : (T.scrollrunning = !1, T.timer = 0, T.triggerScrollEnd());
+          }
+        };
+
+        T.scrollrunning || (T.triggerScrollStart(i, r, e, o, l), T.scrollrunning = !0, T.timer = u(c));
+      }, this.cancelScroll = function () {
+        return T.timer && h(T.timer), T.timer = 0, T.bzscroll = !1, T.scrollrunning = !1, T;
+      };
+    } else this.doScrollLeft = function (e, o) {
+      var t = T.getScrollTop();
+      T.doScrollPos(e, t, o);
+    }, this.doScrollTop = function (e, o) {
+      var t = T.getScrollLeft();
+      T.doScrollPos(t, e, o);
+    }, this.doScrollPos = function (e, o, t) {
+      var r = e > T.page.maxw ? T.page.maxw : e;
+      r < 0 && (r = 0);
+      var i = o > T.page.maxh ? T.page.maxh : o;
+      i < 0 && (i = 0), T.synched("scroll", function () {
+        T.setScrollTop(i), T.setScrollLeft(r);
+      });
+    }, this.cancelScroll = function () {};
+    this.doScrollBy = function (e, o) {
+      z(0, e);
+    }, this.doScrollLeftBy = function (e, o) {
+      z(e, 0);
+    }, this.doScrollTo = function (e, o) {
+      var t = o ? Math.round(e * T.scrollratio.y) : e;
+      t < 0 ? t = 0 : t > T.page.maxh && (t = T.page.maxh), T.cursorfreezed = !1, T.doScrollTop(e);
+    }, this.checkContentSize = function () {
+      var e = T.getContentSize();
+      e.h == T.page.h && e.w == T.page.w || T.resize(!1, e);
+    }, T.onscroll = function (e) {
+      T.rail.drag || T.cursorfreezed || T.synched("scroll", function () {
+        T.scroll.y = Math.round(T.getScrollTop() / T.scrollratio.y), T.railh && (T.scroll.x = Math.round(T.getScrollLeft() / T.scrollratio.x)), T.noticeCursor();
+      });
+    }, T.bind(T.docscroll, "scroll", T.onscroll), this.doZoomIn = function (e) {
+      if (!T.zoomactive) {
+        T.zoomactive = !0, T.zoomrestore = {
+          style: {}
+        };
+        var o = ["position", "top", "left", "zIndex", "backgroundColor", "marginTop", "marginBottom", "marginLeft", "marginRight"],
+            t = T.win[0].style;
+
+        for (var r in o) {
+          var i = o[r];
+          T.zoomrestore.style[i] = void 0 !== t[i] ? t[i] : "";
+        }
+
+        T.zoomrestore.style.width = T.win.css("width"), T.zoomrestore.style.height = T.win.css("height"), T.zoomrestore.padding = {
+          w: T.win.outerWidth() - T.win.width(),
+          h: T.win.outerHeight() - T.win.height()
+        }, P.isios4 && (T.zoomrestore.scrollTop = c.scrollTop(), c.scrollTop(0)), T.win.css({
+          position: P.isios4 ? "absolute" : "fixed",
+          top: 0,
+          left: 0,
+          zIndex: s + 100,
+          margin: 0
+        });
+        var n = T.win.css("backgroundColor");
+        return ("" === n || /transparent|rgba\(0, 0, 0, 0\)|rgba\(0,0,0,0\)/.test(n)) && T.win.css("backgroundColor", "#fff"), T.rail.css({
+          zIndex: s + 101
+        }), T.zoom.css({
+          zIndex: s + 102
+        }), T.zoom.css("backgroundPosition", "0 -18px"), T.resizeZoom(), T.onzoomin && T.onzoomin.call(T), T.cancelEvent(e);
+      }
+    }, this.doZoomOut = function (e) {
+      if (T.zoomactive) return T.zoomactive = !1, T.win.css("margin", ""), T.win.css(T.zoomrestore.style), P.isios4 && c.scrollTop(T.zoomrestore.scrollTop), T.rail.css({
+        "z-index": T.zindex
+      }), T.zoom.css({
+        "z-index": T.zindex
+      }), T.zoomrestore = !1, T.zoom.css("backgroundPosition", "0 0"), T.onResize(), T.onzoomout && T.onzoomout.call(T), T.cancelEvent(e);
+    }, this.doZoom = function (e) {
+      return T.zoomactive ? T.doZoomOut(e) : T.doZoomIn(e);
+    }, this.resizeZoom = function () {
+      if (T.zoomactive) {
+        var e = T.getScrollTop();
+        T.win.css({
+          width: c.width() - T.zoomrestore.padding.w + "px",
+          height: c.height() - T.zoomrestore.padding.h + "px"
+        }), T.onResize(), T.setScrollTop(Math.min(T.page.maxh, e));
+      }
+    }, this.init(), n.nicescroll.push(this);
+  },
+      y = function y(e) {
+    var o = this;
+    this.nc = e, this.lastx = 0, this.lasty = 0, this.speedx = 0, this.speedy = 0, this.lasttime = 0, this.steptime = 0, this.snapx = !1, this.snapy = !1, this.demulx = 0, this.demuly = 0, this.lastscrollx = -1, this.lastscrolly = -1, this.chkx = 0, this.chky = 0, this.timer = 0, this.reset = function (e, t) {
+      o.stop(), o.steptime = 0, o.lasttime = f(), o.speedx = 0, o.speedy = 0, o.lastx = e, o.lasty = t, o.lastscrollx = -1, o.lastscrolly = -1;
+    }, this.update = function (e, t) {
+      var r = f();
+      o.steptime = r - o.lasttime, o.lasttime = r;
+      var i = t - o.lasty,
+          s = e - o.lastx,
+          n = o.nc.getScrollTop() + i,
+          l = o.nc.getScrollLeft() + s;
+      o.snapx = l < 0 || l > o.nc.page.maxw, o.snapy = n < 0 || n > o.nc.page.maxh, o.speedx = s, o.speedy = i, o.lastx = e, o.lasty = t;
+    }, this.stop = function () {
+      o.nc.unsynched("domomentum2d"), o.timer && clearTimeout(o.timer), o.timer = 0, o.lastscrollx = -1, o.lastscrolly = -1;
+    }, this.doSnapy = function (e, t) {
+      var r = !1;
+      t < 0 ? (t = 0, r = !0) : t > o.nc.page.maxh && (t = o.nc.page.maxh, r = !0), e < 0 ? (e = 0, r = !0) : e > o.nc.page.maxw && (e = o.nc.page.maxw, r = !0), r ? o.nc.doScrollPos(e, t, o.nc.opt.snapbackspeed) : o.nc.triggerScrollEnd();
+    }, this.doMomentum = function (e) {
+      var t = f(),
+          r = e ? t + e : o.lasttime,
+          i = o.nc.getScrollLeft(),
+          s = o.nc.getScrollTop(),
+          n = o.nc.page.maxh,
+          l = o.nc.page.maxw;
+      o.speedx = l > 0 ? Math.min(60, o.speedx) : 0, o.speedy = n > 0 ? Math.min(60, o.speedy) : 0;
+      var a = r && t - r <= 60;
+      (s < 0 || s > n || i < 0 || i > l) && (a = !1);
+      var c = !(!o.speedy || !a) && o.speedy,
+          d = !(!o.speedx || !a) && o.speedx;
+
+      if (c || d) {
+        var u = Math.max(16, o.steptime);
+
+        if (u > 50) {
+          var h = u / 50;
+          o.speedx *= h, o.speedy *= h, u = 50;
+        }
+
+        o.demulxy = 0, o.lastscrollx = o.nc.getScrollLeft(), o.chkx = o.lastscrollx, o.lastscrolly = o.nc.getScrollTop(), o.chky = o.lastscrolly;
+
+        var p = o.lastscrollx,
+            m = o.lastscrolly,
+            g = function g() {
+          var e = f() - t > 600 ? .04 : .02;
+          o.speedx && (p = Math.floor(o.lastscrollx - o.speedx * (1 - o.demulxy)), o.lastscrollx = p, (p < 0 || p > l) && (e = .1)), o.speedy && (m = Math.floor(o.lastscrolly - o.speedy * (1 - o.demulxy)), o.lastscrolly = m, (m < 0 || m > n) && (e = .1)), o.demulxy = Math.min(1, o.demulxy + e), o.nc.synched("domomentum2d", function () {
+            if (o.speedx) {
+              o.nc.getScrollLeft();
+              o.chkx = p, o.nc.setScrollLeft(p);
+            }
+
+            if (o.speedy) {
+              o.nc.getScrollTop();
+              o.chky = m, o.nc.setScrollTop(m);
+            }
+
+            o.timer || (o.nc.hideCursor(), o.doSnapy(p, m));
+          }), o.demulxy < 1 ? o.timer = setTimeout(g, u) : (o.stop(), o.nc.hideCursor(), o.doSnapy(p, m));
+        };
+
+        g();
+      } else o.doSnapy(o.nc.getScrollLeft(), o.nc.getScrollTop());
+    };
+  },
+      x = e.fn.scrollTop;
+
+  e.cssHooks.pageYOffset = {
+    get: function get(e, o, t) {
+      var r = n.data(e, "__nicescroll") || !1;
+      return r && r.ishwscroll ? r.getScrollTop() : x.call(e);
+    },
+    set: function set(e, o) {
+      var t = n.data(e, "__nicescroll") || !1;
+      return t && t.ishwscroll ? t.setScrollTop(parseInt(o)) : x.call(e, o), this;
+    }
+  }, e.fn.scrollTop = function (e) {
+    if (void 0 === e) {
+      var o = !!this[0] && (n.data(this[0], "__nicescroll") || !1);
+      return o && o.ishwscroll ? o.getScrollTop() : x.call(this);
+    }
+
+    return this.each(function () {
+      var o = n.data(this, "__nicescroll") || !1;
+      o && o.ishwscroll ? o.setScrollTop(parseInt(e)) : x.call(n(this), e);
+    });
+  };
+  var S = e.fn.scrollLeft;
+  n.cssHooks.pageXOffset = {
+    get: function get(e, o, t) {
+      var r = n.data(e, "__nicescroll") || !1;
+      return r && r.ishwscroll ? r.getScrollLeft() : S.call(e);
+    },
+    set: function set(e, o) {
+      var t = n.data(e, "__nicescroll") || !1;
+      return t && t.ishwscroll ? t.setScrollLeft(parseInt(o)) : S.call(e, o), this;
+    }
+  }, e.fn.scrollLeft = function (e) {
+    if (void 0 === e) {
+      var o = !!this[0] && (n.data(this[0], "__nicescroll") || !1);
+      return o && o.ishwscroll ? o.getScrollLeft() : S.call(this);
+    }
+
+    return this.each(function () {
+      var o = n.data(this, "__nicescroll") || !1;
+      o && o.ishwscroll ? o.setScrollLeft(parseInt(e)) : S.call(n(this), e);
+    });
+  };
+
+  var z = function z(e) {
+    var o = this;
+    if (this.length = 0, this.name = "nicescrollarray", this.each = function (e) {
+      return n.each(o, e), o;
+    }, this.push = function (e) {
+      o[o.length] = e, o.length++;
+    }, this.eq = function (e) {
+      return o[e];
+    }, e) for (var t = 0; t < e.length; t++) {
+      var r = n.data(e[t], "__nicescroll") || !1;
+      r && (this[this.length] = r, this.length++);
+    }
+    return this;
+  };
+
+  !function (e, o, t) {
+    for (var r = 0, i = o.length; r < i; r++) {
+      t(e, o[r]);
+    }
+  }(z.prototype, ["show", "hide", "toggle", "onResize", "resize", "remove", "stop", "doScrollPos"], function (e, o) {
+    e[o] = function () {
+      var e = arguments;
+      return this.each(function () {
+        this[o].apply(this, e);
+      });
+    };
+  }), e.fn.getNiceScroll = function (e) {
+    return void 0 === e ? new z(this) : this[e] && n.data(this[e], "__nicescroll") || !1;
+  }, (e.expr.pseudos || e.expr[":"]).nicescroll = function (e) {
+    return void 0 !== n.data(e, "__nicescroll");
+  }, n.fn.niceScroll = function (e, o) {
+    void 0 !== o || "object" != _typeof(e) || "jquery" in e || (o = e, e = !1);
+    var t = new z();
+    return this.each(function () {
+      var r = n(this),
+          i = n.extend({}, o);
+
+      if (e) {
+        var s = n(e);
+        i.doc = s.length > 1 ? n(e, r) : s, i.win = r;
+      }
+
+      !("doc" in i) || "win" in i || (i.win = r);
+      var l = r.data("__nicescroll") || !1;
+      l || (i.doc = i.doc || r, l = new b(i, r), r.data("__nicescroll", l)), t.push(l);
+    }), 1 === t.length ? t[0] : t;
+  }, a.NiceScroll = {
+    getjQuery: function getjQuery() {
+      return e;
+    }
+  }, n.nicescroll || (n.nicescroll = new z(), n.nicescroll.options = g);
 }); // components
 
+$(document).ready(function () {
+  $(".basket_list").niceScroll({
+    cursorwidth: "8px",
+    cursorborderradius: "5px",
+    cursorcolor: "#8D8F9A"
+  });
+  $(".summary-cart__products-wrapper").niceScroll({
+    cursorwidth: "8px",
+    cursorborderradius: "5px",
+    cursorcolor: "#8D8F9A"
+  });
+});
 $(document).ready(function () {
   function testWebP(callback) {
     var webP = new Image();
@@ -3571,6 +5261,21 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
+  $('.nav__item').on('mouseenter', function () {
+    $(body).addClass('lock');
+    $(this).children('.popup').addClass('open');
+    $(body).css({
+      'padding-right': '17px'
+    });
+  }).on('mouseleave', function () {
+    $(body).removeClass('lock');
+    $(body).css({
+      'padding-right': '0'
+    });
+    $(this).children('.popup').removeClass('open');
+  });
+});
+$(document).ready(function () {
   $('.tabs-triggers__item').click(function (e) {
     e.preventDefault();
     var tabsid = $(this).closest('.tabs').attr("id");
@@ -3583,6 +5288,8 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $('#sizeTabsSub .tabs-triggers__item:first').click();
+  $('#mobileMenuTabs .tabs-triggers__item').removeClass('tabs-triggers__item--active');
+  $('#mobileMenuTabs .tabs-content__item').removeClass('tabs-content__item--active');
 });
 $(document).ready(function () {
   $('.accordion__title').click(function (event) {
@@ -3921,15 +5628,47 @@ $(document).ready(function () {
 
   select();
 });
-var navOffset = $('.site_header__bottom').offset().top;
-$(window).scroll(function () {
-  var scrolled = $(this).scrollTop();
+$(document).ready(function () {
+  var workEmail = $('.email');
+  var validateText = $(".input-group__valide-text");
+  $(workEmail).on('change', function () {
+    var workEmailProp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var input = $(this).val();
 
-  if (scrolled > navOffset) {
-    $('.site_wrap').addClass('nav-fixed');
-  } else if (scrolled < navOffset) {
-    $('.site_wrap').removeClass('nav-fixed');
-  }
+    if (workEmailProp.test(input) == false) {
+      console.log($(this).parent());
+      $(this).parent().removeClass('_valid');
+      $(this).parent().addClass('_invalid');
+      $(this).parent().children('.input-group__valide-text').slideDown(300).text("Что-то пошло не так");
+    } else {
+      $(this).parent().removeClass('_invalid');
+      $(this).parent().addClass('_valid');
+      $(this).parent().children('.input-group__valide-text').slideDown(300).text("Успешно");
+    }
+  }); // workEmail.onchange = () => {
+  //     var workEmailProp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  //     var input = workEmail.value;
+  //     console.log(workEmail);
+  //     if (workEmailProp.test(input) == false) {
+  //         console.log(workEmail.child(validateText));
+  //         console.log("Something is wrong");
+  //     }
+  //     else {
+  //         console.log("All is good");
+  //     }
+  // };
+});
+$(document).ready(function () {
+  var navOffset = $('.site_header__bottom').offset().top;
+  $(window).scroll(function () {
+    var scrolled = $(this).scrollTop();
+
+    if (scrolled > navOffset) {
+      $('.site_wrap').addClass('nav-fixed');
+    } else if (scrolled < navOffset) {
+      $('.site_wrap').removeClass('nav-fixed');
+    }
+  });
 });
 $(document).ready(function () {
   $('.slider_popular-goods').slick({
@@ -3975,37 +5714,35 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 1
   });
-  $('.summary-cart__products').slick({
+  $('.instagram__cards').slick({
     autoplay: false,
-    infinite: false,
-    slidesToShow: 2,
+    infinite: true,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    vertical: true,
-    verticalSwiping: true,
-    arrows: false,
-    dots: true,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><i class="arrow-slider-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="arrow-slider-right"></i></button>',
     responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 3,
+        arrows: false
+      }
+    }, {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        rows: 2,
+        slidesPerRow: 2,
+        arrows: false
       }
     }]
-  }); // высота точек слайдера каталога на странице оформления заказа
-
-  mediaQueryMdMax = window.matchMedia('(max-width: 767px)');
-  $(function () {
-    if ($('.summary-cart__product').length > 0) {
-      var slidesNumber = $('.summary-cart__product').length;
-
-      if (mediaQueryMdMax.matches) {
-        var dotsHeight = 100 / slidesNumber;
-        $('.summary-cart__products .slick-dots li').height(dotsHeight + '%');
-      } else {
-        var _dotsHeight = 100 / (slidesNumber - 1);
-
-        $('.summary-cart__products .slick-dots li').height(_dotsHeight + '%');
-      }
-    }
   });
 });
 $(document).ready(function () {

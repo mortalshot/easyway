@@ -49,37 +49,38 @@ $(document).ready(function () {
         slidesToShow: 1,
     })
 
-    $('.summary-cart__products').slick({
+    $('.instagram__cards').slick({
         autoplay: false,
-        infinite: false,
-        slidesToShow: 2,
+        infinite: true,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        vertical: true,
-        verticalSwiping: true,
-        arrows: false,
-        dots: true,
+        arrows: true,
+        dots: false,
+        prevArrow: '<button type="button" class="slick-prev"><i class="arrow-slider-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="arrow-slider-right"></i></button>',
         responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 3,
+                    arrows: false,
                 }
-            }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    rows: 2,
+                    slidesPerRow: 2,
+                    arrows: false,
+                }
+            },
         ]
     })
-    // высота точек слайдера каталога на странице оформления заказа
-    mediaQueryMdMax = window.matchMedia('(max-width: 767px)');
-    $(function () {
-        if ($('.summary-cart__product').length > 0) {
-            let slidesNumber = $('.summary-cart__product').length;
-
-            if (mediaQueryMdMax.matches) {
-                let dotsHeight = 100 / (slidesNumber);
-                $('.summary-cart__products .slick-dots li').height(dotsHeight + '%');
-            } else {
-                let dotsHeight = 100 / (slidesNumber - 1);
-                $('.summary-cart__products .slick-dots li').height(dotsHeight + '%');
-            }
-        }
-    });
 })

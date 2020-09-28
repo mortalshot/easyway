@@ -30,6 +30,10 @@
 		justify-content: space-between;
 		margin: 0 -24px -30px;
 
+		@media screen and (max-width: 575px) {
+			margin: 0 -3px -28px;
+		}
+
 		&.m-0 {
 			margin: 0 !important;
 		}
@@ -52,6 +56,7 @@
 		@media screen and (max-width: 575px) {
 			flex: 1 1 100%;
 			margin-bottom: 28px;
+			padding: 0 3px;
 		}
 
 		&.mb-0 {
@@ -121,10 +126,18 @@
 		&__field {
 			padding: 5px;
 			color: $blackPrimary;
+
+			@media screen and (max-width: 575px) {
+				padding: 5px 0;
+			}
 		}
 
 		&__title {
 			left: 5px;
+
+			@media screen and (max-width: 575px) {
+				left: 0;
+			}
 		}
 	}
 

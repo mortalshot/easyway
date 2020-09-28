@@ -1,9 +1,16 @@
 .page-categories {
-	&__breadcrumbs {
+    &__breadcrumbs {
         margin: 25px 0;
-        
+
         @media screen and (max-width: 575px) {
             margin: 16px 0;
         }
-	}
+    }
+
+    #sideCategories-accordion {
+        @media screen and (min-width: 768px) {
+            position: sticky;
+            top: 80px;
+        }
+    }
 }
