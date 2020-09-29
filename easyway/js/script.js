@@ -195,10 +195,15 @@ $(document).ready(function () {
 		}
 	});
 })
-$(document).ready(function() {
-    $('.site_header__burger').click(function(event) {
+$(document).ready(function () {
+    $('.site_header__burger').click(function (event) {
         $('.site_header__burger, .side-categories__wrapper').toggleClass('active');
         $('body').toggleClass('lock');
+
+        setTimeout(() => {
+            $('#headerMobileCategoriesTabs .side-categories__tabs-title').removeClass('tabs-triggers__item--active');
+            $('#headerMobileCategoriesTabs .side-categories__tabs-content-item').removeClass('tabs-content__item--active');
+        }, 300);
     })
 })
 $(document).ready(function () {
@@ -225,11 +230,21 @@ $(document).ready(function () {
     });
 
     $('.tabs-triggers__item:first').click();
+
+
+    $('.side-categories__tabs-content-close').click(function (e) {
+        e.preventDefault();
+        $(this).parent().removeClass('tabs-content__item--active');
+        $('.side-categories__tabs-title').removeClass('tabs-triggers__item--active');
+    })
 });
 $(document).ready(function () {
     $('#sizeTabsSub .tabs-triggers__item:first').click();
     $('#mobileMenuTabs .tabs-triggers__item').removeClass('tabs-triggers__item--active');
     $('#mobileMenuTabs .tabs-content__item').removeClass('tabs-content__item--active');
+
+    $('#headerMobileCategoriesTabs .side-categories__tabs-title').removeClass('tabs-triggers__item--active');
+    $('#headerMobileCategoriesTabs .side-categories__tabs-content-item').removeClass('tabs-content__item--active');
 }); 
 $(document).ready(function () {
     $('.accordion__title').click(function (event) {
@@ -572,22 +587,6 @@ $(document).ready(function () {
             $(this).parent().children('.input-group__valide-text').slideDown(300).text("Успешно");
         }
     })
-
-
-    // workEmail.onchange = () => {
-    //     var workEmailProp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    //     var input = workEmail.value;
-
-    //     console.log(workEmail);
-
-    //     if (workEmailProp.test(input) == false) {
-    //         console.log(workEmail.child(validateText));
-    //         console.log("Something is wrong");
-    //     }
-    //     else {
-    //         console.log("All is good");
-    //     }
-    // };
 })
 $(document).ready(function () {
     const navOffset = $('.site_header__bottom').offset().top;

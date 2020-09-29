@@ -11,4 +11,11 @@ $(document).ready(function () {
     });
 
     $('.tabs-triggers__item:first').click();
+
+
+    $('.side-categories__tabs-content-close').click(function (e) {
+        e.preventDefault();
+        $(this).parent().removeClass('tabs-content__item--active');
+        $('.side-categories__tabs-title').removeClass('tabs-triggers__item--active');
+    })
 });

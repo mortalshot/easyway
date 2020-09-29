@@ -18,20 +18,4 @@ $(document).ready(function () {
             $(this).parent().children('.input-group__valide-text').slideDown(300).text("Успешно");
         }
     })
-
-
-    // workEmail.onchange = () => {
-    //     var workEmailProp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    //     var input = workEmail.value;
-
-    //     console.log(workEmail);
-
-    //     if (workEmailProp.test(input) == false) {
-    //         console.log(workEmail.child(validateText));
-    //         console.log("Something is wrong");
-    //     }
-    //     else {
-    //         console.log("All is good");
-    //     }
-    // };
 })
