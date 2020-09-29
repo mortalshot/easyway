@@ -3381,18 +3381,54 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-  $('.nav__item').on('mouseenter', function () {
-    $(body).addClass('lock');
-    $(this).children('.popup').addClass('open');
-    $(body).css({
-      'padding-right': '17px'
-    });
+  var submenu = $('.nav__submenu');
+
+  submenuClass = function submenuClass() {
+    for (var i = 0; i < submenu.length; i++) {
+      var submenuItem = submenu[i].previousElementSibling.closest('.nav__item');
+      $(submenuItem).addClass('nav__item--submenu');
+    }
+  };
+
+  submenuClass();
+  var timeout = 300;
+  var unlock = true;
+  $('.nav__item--submenu').on('mouseenter', function () {
+    if (unlock) {
+      $(body).addClass('lock');
+      $(body).css({
+        'padding-right': '17px'
+      });
+      $(this).children('.nav__submenu').addClass('open').slideDown(300);
+      $(this).children('.nav__submenu').css({
+        'padding-right': '17px'
+      });
+
+      if ($('.site_wrap').hasClass('nav-fixed')) {
+        $('.site_header__bottom').css({
+          'padding-right': '17px'
+        });
+      }
+
+      unlock = false;
+      setTimeout(function () {
+        unlock = true;
+      }, timeout);
+    }
   }).on('mouseleave', function () {
-    $(body).removeClass('lock');
-    $(body).css({
-      'padding-right': '0'
-    });
-    $(this).children('.popup').removeClass('open');
+    if (unlock) {
+      $(body).removeClass('lock');
+      $(body).css({
+        'padding-right': '0'
+      });
+      $('.site_header__bottom').css({
+        'padding-right': '0'
+      });
+      $('.nav__submenu').removeClass('open').slideUp(300);
+      $(this).children('.nav__submenu').css({
+        'padding-right': '0'
+      });
+    }
   });
 });
 $(document).ready(function () {
@@ -3412,6 +3448,7 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
+  $('#sizeTabsMain .table-size__trigger-item:first').click();
   $('#sizeTabsSub .tabs-triggers__item:first').click();
   $('#mobileMenuTabs .tabs-triggers__item').removeClass('tabs-triggers__item--active');
   $('#mobileMenuTabs .tabs-content__item').removeClass('tabs-content__item--active');

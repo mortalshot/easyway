@@ -294,19 +294,27 @@
 </div>
 <!-- /Basket -->
 <!-- Basket -->
-<div id="product-basket-empty" class="popup">
-    <div class="basket_inner">
-        <button class="basket_close">
-            <i class="icon-close"></i>
-        </button>
-        <div class="basket_content">
+<div id="product-basket-empty" class="popup popup--basket">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="popup__close close-popup">
+                <svg width="14" height="14" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.865 0.134993C11.685 -0.0449976 11.3934 -0.0449976 11.2134 0.134993L6 5.34844L0.786552 0.134993C0.606562 -0.0449976 0.314972 -0.0449976 0.134993 0.134993C-0.0449861 0.314983 -0.0449976 0.606574 0.134993 0.786553L5.34844 6L0.134993 11.2134C-0.0449976 11.3934 -0.0449976 11.685 0.134993 11.865C0.314983 12.045 0.606573 12.045 0.786552 11.865L6 6.65156L11.2134 11.865C11.3934 12.045 11.685 12.045 11.865 11.865C12.045 11.685 12.045 11.3934 11.865 11.2134L6.65156 6L11.865 0.786553C12.045 0.606562 12.045 0.314972 11.865 0.134993Z"
+                        fill="#43464E" />
+                </svg>
+            </a>
             <div class="basket_head">
                 <div class="basket_title">
                     Корзина
                 </div>
             </div>
             <div class="basket_body">
-                empty
+                <div class="basket__empty-img">
+                    <img src="img/cart/1.svg" alt="">
+                </div>
+                <div class="basket__empty-title">Ваша корзина пустая</div>
+                <div class="basket__empty-text">Вы еще не добавили ни один товар в корзину</div>
             </div>
             <div class="basket_bottom">
                 <div class="basket_quantity">

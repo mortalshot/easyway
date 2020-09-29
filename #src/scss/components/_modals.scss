@@ -269,4 +269,114 @@
             }
         }
     }
+
+    &--basket {
+        &.open {
+            .popup__content {
+                transform: perspective(0) translate(0, 0) rotateX(0deg);
+
+                @media screen and (max-width: 767px) {
+                    overflow-x: hidden;
+                }
+            }
+        }
+
+        .close-popup {
+            top: 32px;
+            right: 33px;
+
+            @media screen and (max-width: 575px) {
+                right: 16px;
+            }
+        }
+
+        .popup__body {
+            padding: 0;
+            justify-content: flex-end;
+            min-height: inherit;
+
+            @media screen and (max-width: 575px) {
+                margin-top: 48px;
+            }
+        }
+
+        .popup__content {
+            background: #fff;
+            max-width: 474px;
+            padding: 24px 24px 32px;
+            min-height: 100vh;
+            transform: translate(100%, 0);
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 575px) {
+                padding: 24px 16px 32px;
+                min-height: calc(100vh - 48px);
+            }
+
+            .basket {
+                &_head {
+                    padding: 0;
+                }
+
+                &_title {
+                    margin-bottom: 0;
+                }
+
+                &_body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    max-height: 620px;
+                }
+
+                &_bottom {
+                    flex: inherit;
+                    padding: 0;
+                }
+
+                &__empty {
+                    &-img {
+                        margin-bottom: 47px;
+
+                        @media screen and (max-width: 575px) {
+                            margin-bottom: 26px;
+                            max-width: 220px;
+                        }
+
+                        img {
+                            display: block;
+                            max-width: 100%;
+                        }
+                    }
+
+                    &-title {
+                        font-size: 36px;
+                        line-height: 48px;
+                        margin-bottom: 18px;
+                        color: $blackSecondary;
+
+                        @media screen and (max-width: $size-layout-desktop + "px") {
+                            font-size: calc(33px + 3 * ((100vw - 320px) / (#{$size-layout-desktop} - 320)));
+                            line-height: calc(48 / 36);
+                        }
+                        @media screen and (max-width: 575px) {
+                            margin-bottom: 8px;
+                        }
+                    }
+
+                    &-text {
+                        color: $blackSecondary;
+
+                        @media screen and (max-width: $size-layout-desktop + "px") {
+                            font-size: calc(15px + 1 * ((100vw - 320px) / (#{$size-layout-desktop} - 320)));
+                            line-height: calc(22 / 16);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
