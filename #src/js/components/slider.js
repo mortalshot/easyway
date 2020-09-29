@@ -82,5 +82,23 @@ $(document).ready(function () {
                 }
             },
         ]
+    });
+
+    $('#product-gallery').slick({
+        autoplay: false,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        mobileFirst: true,
+        variableWidth: false,
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: "unslick"
+            }
+        ]
     })
 })

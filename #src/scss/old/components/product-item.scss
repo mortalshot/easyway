@@ -5,11 +5,18 @@
 		align-items: flex-start;
 		max-width: calc(50vw + 650px);
 		padding-right: 30px;
+
+		@media screen and (max-width: 575px) {
+			display: block;
+			padding-right: 0;
+		}
 	}
 
 	&_left {
-		position: relative;
-		flex: 1 1 auto;
+		@media screen and (min-width: 576px) {
+			position: relative;
+			flex: 1 1 auto;
+		}
 	}
 
 	&_right {
@@ -219,11 +226,6 @@
 	}
 
 	@media (max-width: $screen-xs) {
-		&_inner {
-			flex-direction: column;
-			max-width: 100%;
-			padding-right: 0;
-		}
 
 		&_right {
 			position: relative;
