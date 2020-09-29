@@ -1,4 +1,11 @@
 .product-gallery {
+	position: relative;
+
+	.product-card_wishlist {
+		top: 20px;
+		right: 30px;
+	}
+
 	&_list {
 		@media screen and (min-width: 576px) {
 			display: flex;

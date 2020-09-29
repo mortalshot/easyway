@@ -31,6 +31,9 @@
                             <img src="img/products/product6.jpg" alt="product">
                         </div>
                     </div>
+                    <a role="button" class="product-card_wishlist">
+                        <i class="icon-wishlist"></i>
+                    </a>
                 </div>
                 <div class="product-item_discount visible-mobile">
                     -50%
@@ -479,10 +482,12 @@
     <!-- /Product -->
 
     @@include('html-components/_popular-goods.html', {
-    "class": "",
+    "class": "sec-popular-goods--product",
     })
 
-    @@include('html-components/_sec-subscribe.html')
+    @@include('html-components/_sec-subscribe.html', {
+        "class": "sec-subscribe--product",
+    })
 
 </main>
 <!-- /Main content -->

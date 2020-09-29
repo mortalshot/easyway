@@ -79,4 +79,27 @@
 			}
 		}
 	}
+
+	&--product {
+		.sec-subscribe_inner {
+			@media screen and (max-width: 767px) {
+				border-top: 0;
+				padding-top: 0;
+			}
+		}
+	}
+	&--article {
+		.sec-subscribe_inner {
+			@media screen and (max-width: 575px) {
+				padding-top: 0;
+			}
+		}
+	}
+	&--about {
+		.sec-subscribe_inner {
+			@media screen and (max-width: 575px) {
+				padding-top: 30px;
+			}
+		}
+	}
 }
