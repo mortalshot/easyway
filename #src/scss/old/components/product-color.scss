@@ -1,9 +1,5 @@
 .product-color {
-	display: flex;
-	align-items: center;
-	
 	&--small {
-		
 		.product-color_item {
 			width: 16px;
 			height: 16px;
@@ -18,11 +14,9 @@
 	}
 	
 	&_title {
-		margin-right: 38px;
-
-		@media screen and (max-width: 450px) {
-			display: none;
-		}
+		margin-bottom: 11px;
+		font-size: 14px;
+		line-height: 18px;
 	}
 	
 	&_mobile-title {
@@ -38,8 +32,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 27px;
-		height: 27px;
+		width: 32px;
+		height: 32px;
 		margin: 0 8px;
 		transition: padding .1s;
 		

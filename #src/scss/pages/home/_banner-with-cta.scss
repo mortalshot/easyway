@@ -1,5 +1,5 @@
 .banner-with-cta {
-	margin-top: 64px;
+	margin-top: 37px;
 
 	@media screen and (max-width: 1200px) {
 		background-position: 30% center !important;
@@ -127,6 +127,11 @@
 	}
 
 	&--second {
+		margin-top: 64px;
+		
+		@media screen and (max-width: 991px) {
+			margin-top: 40;
+		}
 		@media screen and (max-width: 767px) {
 			background-position: 35% center !important;
 		}

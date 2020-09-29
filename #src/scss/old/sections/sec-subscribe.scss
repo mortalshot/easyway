@@ -66,4 +66,17 @@
 		margin: 30px auto;
 		text-align: center;
 	}
+
+	&.ptb-64 {
+		.sec-subscribe_inner {
+			padding: 64px 0;
+
+			@media screen and (max-width: 767px) {
+				padding: 40px 0;
+			}
+			@media screen and (max-width: 575px) {
+				padding-top: 0;
+			}
+		}
+	}
 }

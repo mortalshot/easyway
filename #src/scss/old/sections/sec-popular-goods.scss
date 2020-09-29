@@ -2,7 +2,7 @@
 	padding: 40px 0;
 
 	&_title {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 		text-align: center;
 		font-weight: 600;
 		letter-spacing: -1.5px;
@@ -47,8 +47,14 @@
 	}
 
 	&--home {
-		padding: 39px 0px 27px 0px;
+		padding: 64px 0px 27px 0px;
 
+		@media screen and (max-width: 991px) {
+			padding: 40px 0 0;
+		}
+		@media screen and (max-width: 767px) {
+			padding-bottom: 0;
+		}
 		@media screen and (max-width: 575px) {
 			padding: 33px 0 0 0;
 
@@ -71,6 +77,12 @@
 			.product-card .product-card_img {
 				padding-bottom: 137%;
 			}
+		}
+	}
+
+	&--home-2 {
+		@media screen and (max-width: 991px) {
+			padding-top: 14px;
 		}
 	}
 

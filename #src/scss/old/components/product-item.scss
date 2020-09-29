@@ -32,7 +32,7 @@
 	}
 
 	&_info {
-		margin-bottom: 55px;
+		margin-bottom: 45px;
 	}
 
 	&_more-info {
@@ -43,7 +43,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		margin-bottom: 31px;
+		margin-bottom: 21px;
 	}
 
 	&_title {
@@ -53,6 +53,10 @@
 		font-weight: 500;
 		font-size: 24px;
 		line-height: 32px;
+
+		@media screen and (max-width: 575px) {
+			margin-bottom: 5px;
+		}
 	}
 
 	&_rating {
@@ -68,6 +72,10 @@
 		font-size: 18px;
 		line-height: 21px;
 
+		@media screen and (max-width: 575px) {
+			margin-bottom: 14px;
+		}
+
 		&__old {
 			margin-right: 10px;
 			color: $redPrimary;
@@ -79,12 +87,15 @@
 	}
 
 	&_size {
-		margin-bottom: 23px;
+		margin-bottom: 26px;
 	}
 
 	&_color {
-		margin-bottom: 50px;
-		min-height: 40px;
+		margin-bottom: 13px;
+
+		@media screen and (max-width: 575px) {
+			margin-bottom: 11px;
+		}
 	}
 
 	&_action {
@@ -94,8 +105,8 @@
 		margin-bottom: 24px;
 
 		&__btn {
-			margin-left: 6px;
-			width: 262px;
+			margin-left: 24px;
+			width: 100%;
 		}
 
 		&__favorite {
@@ -241,7 +252,7 @@
 		}
 
 		&_info {
-			margin-bottom: 24px;
+			margin-bottom: 43px;
 		}
 
 		&_more-info {
@@ -250,10 +261,6 @@
 
 		&_size {
 			margin-bottom: 20px;
-		}
-
-		&_color {
-			margin-bottom: 40px;
 		}
 
 		&_action {

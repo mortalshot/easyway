@@ -69,7 +69,7 @@
 	</section>
 
 	@@include('html-components/_popular-goods.html', {
-	"class": "sec-popular-goods--home"
+	"class": "sec-popular-goods--home sec-popular-goods--home-2"
 	})
 
 	<section class="banner-with-cta" style="background: url(img/banner/2.png) no-repeat center/cover">
@@ -159,7 +159,9 @@
 		</div>
 	</section>
 
-	@@include('html-components/_sec-subscribe.html')
+	@@include('html-components/_sec-subscribe.html', {
+		class: "ptb-64"
+	})
 </main>
 
 @@include('html-components/_footer.html')

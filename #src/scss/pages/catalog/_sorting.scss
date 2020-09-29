@@ -81,9 +81,13 @@
 		top: 100%;
 
 		@media screen and (max-width: 575px) {
-			right: auto;
-			left: 0;
 			transform: translate(0, 10px);
+		}
+	}
+
+	.custom-select__trigger {
+		@media screen and (max-width: 768px) {
+			text-transform: uppercase;
 		}
 	}
 }

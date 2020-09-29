@@ -8,6 +8,13 @@
 		padding: 40px 0 32px;
 	}
 
+	&__side-wrapper {
+		@media screen and (min-width: 992px) {
+			position: sticky;
+			top: 105px;
+		}
+	}
+
 	.catalog__top {
 		@media screen and (min-width: 768px) {
 			padding: 27px 2px 28px 25px;

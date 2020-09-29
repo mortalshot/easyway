@@ -1,18 +1,18 @@
 .product-size {
-	display: flex;
-	align-items: center;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		margin-bottom: 13px;
+	}
 
 	&_title {
-		margin-right: 19px;
-
-		@media screen and (max-width: 450px) {
-			display: none;
-		}
+		font-size: 14px;
+		line-height: 18px;
 	}
 
 	&_list {
 		display: flex;
-		margin: 0 -8px;
+		flex-wrap: wrap;
 	}
 
 	&_item {
@@ -20,9 +20,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 27px;
-		height: 27px;
-		margin: 0 8px;
+		width: 62px;
+		height: 48px;
+		margin: 0 15.6px 8px 0;
 		padding: 0;
 		color: $blackSecondary;
 		font-weight: 500;
@@ -32,15 +32,24 @@
 		border: 1px solid $grayDark;
 		border-radius: 0;
 		cursor: pointer;
-
+		&:last-child {
+			margin-right: 0;
+		}
 		&:focus,
 		&:active {
 			outline: none;
 		}
-
 		&:hover,
 		&.is-active {
 			border: 2px solid $blackSecondary;
+		}
+
+		@media screen and (max-width: 991px) {
+			width: 55px;
+		}
+		@media screen and (max-width: 767px) {
+			width: 42px;
+			height: 42px;
 		}
 
 		&.is-disabled {
@@ -56,38 +65,41 @@
 			&:after {
 				content: "";
 				position: absolute;
-				width: 50px;
+				width: 100px;
 				height: 2px;
 				background-color: $grayDark;
 			}
 
 			&:before {
-				top: 11px;
-				left: -13px;
-				transform: rotate(45deg);
+				top: 15px;
+				left: -30px;
+				transform: rotate(38deg);
+
+				@media screen and (max-width: 991px) {
+					top: 24px;
+					left: -21px;
+					transform: rotate(41deg);
+				}
+				@media screen and (max-width: 767px) {
+					transform: rotate(45deg);
+					top: 28px;
+				}
 			}
 
 			&:after {
-				top: 11px;
-				left: -12px;
-				transform: rotate(-45deg);
-			}
-		}
+				top: 16px;
+				left: -13px;
+				transform: rotate(-38deg);
 
-		@media screen and (max-width: $screen-xs) {
-			width: 35px;
-			height: 35px;
-			margin: 0 5px;
-
-			&.is-disabled {
-				&:before {
-					top: 16px;
-					left: -8px;
-				}
-
-				&:after {
+				@media screen and (max-width: 991px) {
 					top: 14px;
-					left: -7px;
+					left: -13px;
+					transform: rotate(-41deg);
+				}
+				@media screen and (max-width: 767px) {
+					transform: rotate(-45deg);
+					top: 13px;
+					left: -23px;
 				}
 			}
 		}
@@ -95,30 +107,5 @@
 
 	&_link-table {
 		margin-left: auto;
-
-		@media screen and (max-width: 767px) {
-			font-size: 0;
-			line-height: 1;
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-			width: 27px;
-			height: 27px;
-			border: 1px solid $grayDark;
-			margin-left: 16px;
-
-			&::after {
-				content: "";
-				display: block;
-				width: 20px;
-				height: 4px;
-				background: #fff url(../img/icons/points-table.svg) no-repeat center;
-			}
-		}
-		@media screen and (max-width: 575px) {
-			width: 35px;
-			height: 35px;
-			margin-left: 10px;
-		}
 	}
 }
