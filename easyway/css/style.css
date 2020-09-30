@@ -1666,8 +1666,9 @@ a {
 
 .submenu-offer .banner-square__btn {
   width: 162px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
+  letter-spacing: -0.3px;
 }
 
 .nav-fixed .site_header__bottom {
@@ -2565,9 +2566,6 @@ input[type=number] {
 }
 
 .product-item_right {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9237,6 +9235,12 @@ input[type=number] {
     opacity: 1;
     pointer-events: inherit;
     visibility: visible;
+  }
+
+  .product-item_right {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
   }
 
   .product-item_action__favorite {

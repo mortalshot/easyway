@@ -20,8 +20,6 @@
 	}
 
 	&_right {
-		position: sticky;
-		top: 0;
 		display: flex;
 		flex-direction: column;
 		flex: 2 0 480px;
@@ -29,6 +27,11 @@
 		margin-top: 5px;
 		padding-left: 30px;
 		padding-bottom: 2px;
+
+		@media screen and (min-width: 992px) {
+			position: sticky;
+			top: 90px;
+		}
 	}
 
 	&_info {
