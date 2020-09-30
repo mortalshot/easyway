@@ -1,0 +1,781 @@
+@@include('html-components/_header.html')
+
+<main class="site-main page-categories">
+	<div class="container">
+		<div class="page-categories__breadcrumbs breadcrumbs">
+			<div class="breadcrumbs__list">
+				<a href="/" class="breadcrumbs__link breadcrumbs__link--back">
+					Главная
+				</a>
+				<span class="breadcrumbs__link is-active">
+					Избранное
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<aside class="site-main__side side-categories">
+				<div class="side-categories__item">
+					<h3 class="side-categories__title title-h3">Избранное</h3>
+				</div>
+			</aside>
+
+			<div class="site-main__content catalog">
+				<div class="catalog__top">
+					<div class="catalog__top-wrapper">
+						<div class="catalog__filter-wrapper">
+							<a href="#catalog-filter" class="catalog__filter-btn popup-link">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.25 8.5H10.372C10.0631 7.62611 9.22966 7 8.25 7C7.27034 7 6.43691 7.62611 6.12803 8.5H4.75C4.33579 8.5 4 8.83579 4 9.25C4 9.66421 4.33579 10 4.75 10H6.12803C6.43691 10.8739 7.27034 11.5 8.25 11.5C9.22966 11.5 10.0631 10.8739 10.372 10H19.25C19.6642 10 20 9.66421 20 9.25C20 8.83579 19.6642 8.5 19.25 8.5Z" fill="#1D1F22"/>
+									<path d="M4.75 14.5C4.33579 14.5 4 14.8358 4 15.25C4 15.6642 4.33579 16 4.75 16H13.128C13.4369 16.8739 14.2703 17.5 15.25 17.5C16.2297 17.5 17.0631 16.8739 17.372 16H19.25C19.6642 16 20 15.6642 20 15.25C20 14.8358 19.6642 14.5 19.25 14.5H17.372C17.0631 13.6261 16.2297 13 15.25 13C14.2703 13 13.4369 13.6261 13.128 14.5H4.75Z" fill="#1D1F22"/>
+									</svg>
+								<span>Фильтры</span>
+							</a>
+							<div class="catalog__filter-selected">цвет: <span>фиолетовый</span></div>
+							<div class="catalog__filter-selected">цена: <span>$200 - 400</span></div>
+							<div class="catalog__filter-selected">материал: <span>хлопок</span></div>
+						</div>
+						<div class="catalog__sorting sorting">
+							<div class="sorting__label">Сортировка</div>
+							<form action="">
+								<div class="sorting__custom-select-wrapper custom-select-wrapper custom-select-wrapper--right">
+
+									<div class="custom-select">
+										<div class="custom-select__trigger"><span>ПО УВЕЛИЧЕНИЮ ЦЕНЫ</span>
+											<div class="arrow"></div>
+										</div>
+										<div class="custom-select__custom-options custom-options">
+											<span class="custom-options__option"
+												data-value="ПО УВЕЛИЧЕНИЮ ЦЕНЫ selected">ПО УВЕЛИЧЕНИЮ ЦЕНЫ</span>
+											<span class="custom-options__option"
+												data-value="ПО УМЕНЬШЕНИЮ ЦЕНЫ">ПО УМЕНЬШЕНИЮ ЦЕНЫ</span>
+											<span class="custom-options__option"
+												data-value="ПО ПОПУЛЯРНОСТИ">ПО ПОПУЛЯРНОСТИ</span>
+											<span class="custom-options__option"
+												data-value="ПО НОВИЗНЕ">ПО НОВИЗНЕ</span>
+										</div>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__content">
+					<div class="catalog__products">
+						<div class="product-card">
+							<div class="product-card_head">
+								<a role="button" class="product-card_wishlist">
+									<i class="icon-wishlist"></i>
+								</a>
+								<a href="/product.html" class="product-card_img">
+									<img class="product-card__img product-card__img--1" src="img/products/product-card.jpg" alt="product-card">
+									<img class="product-card__img product-card__img--2" src="img/products/product-card2.jpg" alt="product-card">
+									<div class="product-item_discount">
+										-50%
+									</div>
+								</a>
+								<div class="product-card_action">
+									<a role="button" class="product-card_order">
+										+ Добавить в корзину
+									</a>
+									<div class="product-card_size">
+										<a role="button" class="product-card_size__item basket-btn">
+											xs
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											s
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											m
+										</a>
+										<a role="button" class="product-card_size__item basket-btn is-disabled">
+											l
+										</a>
+										<a role="button" class="product-card_size__item basket-btn is-disabled">
+											xl
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-card_info">
+								<div class="product-card_color product-color product-color--small">
+									<div class="product-color_list">
+										<a role="button" class="product-color_item is-active">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+									</div>
+								</div>
+								<a href="/product.html" class="product-card_title title-h5">
+									Платье-рубашка Vila в полоску
+								</a>
+								<div class="product-card_price">
+									<div class="product-card_price__current">
+										$ 50.00
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card_head">
+								<a role="button" class="product-card_wishlist">
+									<i class="icon-wishlist"></i>
+								</a>
+								<a href="/product.html" class="product-card_img">
+									<img class="product-card__img product-card__img--1" src="img/products/product-card2.jpg" alt="product-card">
+									<img class="product-card__img product-card__img--2" src="img/products/product-card.jpg" alt="product-card">
+								</a>
+								<div class="product-card_action">
+									<a role="button" class="product-card_order">
+										+ Добавить в корзину
+									</a>
+									<div class="product-card_size">
+										<a role="button" class="product-card_size__item basket-btn is-disabled">
+											xs
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											s
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											m
+										</a>
+										<a role="button" class="product-card_size__item basket-btn is-disabled">
+											l
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											xl
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-card_info">
+								<div class="product-card_color product-color product-color--small">
+									<div class="product-color_list">
+										<a role="button" class="product-color_item is-active">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+									</div>
+								</div>
+								<a href="/product.html" class="product-card_title title-h5">
+									Платье-рубашка Vila в полоску
+								</a>
+								<div class="product-card_price">
+									<div class="product-card_price__current">
+										$ 50.00
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card_head">
+								<a role="button" class="product-card_wishlist">
+									<i class="icon-wishlist"></i>
+								</a>
+								<a href="/product.html" class="product-card_img">
+									<img class="product-card__img product-card__img--1" src="img/products/product-card3.jpg" alt="product-card">
+									<img class="product-card__img product-card__img--2" src="img/products/product-card.jpg" alt="product-card">
+									<div class="product-item_discount product-item_discount--new">
+										Новинка
+									</div>
+								</a>
+								<div class="product-card_action">
+									<a role="button" class="product-card_order">
+										+ Добавить в корзину
+									</a>
+									<div class="product-card_size">
+										<a role="button" class="product-card_size__item basket-btn">
+											xs
+										</a>
+										<a role="button" class="product-card_size__item basket-btn is-disabled">
+											s
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											m
+										</a>
+										<a role="button" class="product-card_size__item basket-btn is-disabled">
+											l
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											xl
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-card_info">
+								<div class="product-card_color product-color product-color--small">
+									<div class="product-color_list">
+										<a role="button" class="product-color_item is-active">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+									</div>
+								</div>
+								<a href="/product.html" class="product-card_title title-h5">
+									Платье-рубашка Vila в полоску
+								</a>
+								<div class="product-card_price">
+									<div class="product-card_price__current">
+										$ 50.00
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card_head">
+								<a role="button" class="product-card_wishlist">
+									<i class="icon-wishlist"></i>
+								</a>
+								<a href="/product.html" class="product-card_img">
+									<img class="product-card__img product-card__img--1" src="img/products/product-card4.jpg" alt="product-card">
+									<img class="product-card__img product-card__img--2" src="img/products/product-card.jpg" alt="product-card">
+								</a>
+								<div class="product-card_action">
+									<a role="button" class="product-card_order">
+										+ Добавить в корзину
+									</a>
+									<div class="product-card_size">
+										<a role="button" class="product-card_size__item basket-btn">
+											xs
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											s
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											m
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											l
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											xl
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-card_info">
+								<div class="product-card_color product-color product-color--small">
+									<div class="product-color_list">
+										<a role="button" class="product-color_item is-active">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+									</div>
+								</div>
+								<a href="/product.html" class="product-card_title title-h5">
+									Платье-рубашка Vila в полоску
+								</a>
+								<div class="product-card_price">
+									<div class="product-card_price__current">
+										$ 50.00
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card_head">
+								<a role="button" class="product-card_wishlist">
+									<i class="icon-wishlist"></i>
+								</a>
+								<a href="/product.html" class="product-card_img">
+									<img class="product-card__img product-card__img--1" src="img/products/product-card.jpg" alt="product-card">
+									<img class="product-card__img product-card__img--2" src="img/products/product-card2.jpg" alt="product-card">
+								</a>
+								<div class="product-card_action">
+									<a role="button" class="product-card_order">
+										+ Добавить в корзину
+									</a>
+									<div class="product-card_size">
+										<a role="button" class="product-card_size__item basket-btn">
+											xs
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											s
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											m
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											l
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											xl
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-card_info">
+								<div class="product-card_color product-color product-color--small">
+									<div class="product-color_list">
+										<a role="button" class="product-color_item is-active">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+									</div>
+								</div>
+								<a href="/product.html" class="product-card_title title-h5">
+									Платье-рубашка Vila в полоску
+								</a>
+								<div class="product-card_price">
+									<div class="product-card_price__current">
+										$ 50.00
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card_head">
+								<a role="button" class="product-card_wishlist">
+									<i class="icon-wishlist"></i>
+								</a>
+								<a href="/product.html" class="product-card_img">
+									<img class="product-card__img product-card__img--1" src="img/products/product-card2.jpg" alt="product-card">
+									<img class="product-card__img product-card__img--2" src="img/products/product-card.jpg" alt="product-card">
+								</a>
+								<div class="product-card_action">
+									<a role="button" class="product-card_order">
+										+ Добавить в корзину
+									</a>
+									<div class="product-card_size">
+										<a role="button" class="product-card_size__item basket-btn">
+											xs
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											s
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											m
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											l
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											xl
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-card_info">
+								<div class="product-card_color product-color product-color--small">
+									<div class="product-color_list">
+										<a role="button" class="product-color_item is-active">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+									</div>
+								</div>
+								<a href="/product.html" class="product-card_title title-h5">
+									Платье-рубашка Vila в полоску
+								</a>
+								<div class="product-card_price">
+									<div class="product-card_price__current">
+										$ 50.00
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card_head">
+								<a role="button" class="product-card_wishlist">
+									<i class="icon-wishlist"></i>
+								</a>
+								<a href="/product.html" class="product-card_img">
+									<img class="product-card__img product-card__img--1" src="img/products/product-card3.jpg" alt="product-card">
+									<img class="product-card__img product-card__img--2" src="img/products/product-card.jpg" alt="product-card">
+								</a>
+								<div class="product-card_action">
+									<a role="button" class="product-card_order">
+										+ Добавить в корзину
+									</a>
+									<div class="product-card_size">
+										<a role="button" class="product-card_size__item basket-btn">
+											xs
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											s
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											m
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											l
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											xl
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-card_info">
+								<div class="product-card_color product-color product-color--small">
+									<div class="product-color_list">
+										<a role="button" class="product-color_item is-active">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+									</div>
+								</div>
+								<a href="/product.html" class="product-card_title title-h5">
+									Платье-рубашка Vila в полоску
+								</a>
+								<div class="product-card_price">
+									<div class="product-card_price__current">
+										$ 50.00
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card_head">
+								<a role="button" class="product-card_wishlist">
+									<i class="icon-wishlist"></i>
+								</a>
+								<a href="/product.html" class="product-card_img">
+									<img class="product-card__img product-card__img--1" src="img/products/product-card4.jpg" alt="product-card">
+									<img class="product-card__img product-card__img--2" src="img/products/product-card.jpg" alt="product-card">
+								</a>
+								<div class="product-card_action">
+									<a role="button" class="product-card_order">
+										+ Добавить в корзину
+									</a>
+									<div class="product-card_size">
+										<a role="button" class="product-card_size__item basket-btn">
+											xs
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											s
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											m
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											l
+										</a>
+										<a role="button" class="product-card_size__item basket-btn">
+											xl
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-card_info">
+								<div class="product-card_color product-color product-color--small">
+									<div class="product-color_list">
+										<a role="button" class="product-color_item is-active">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #EDCBB9"></span>
+										</a>
+										<a role="button" class="product-color_item">
+											<span class="product-color_item__value"
+												style="background-color: #ABD9D8"></span>
+										</a>
+									</div>
+								</div>
+								<a href="/product.html" class="product-card_title title-h5">
+									Платье-рубашка Vila в полоску
+								</a>
+								<div class="product-card_price">
+									<div class="product-card_price__current">
+										$ 50.00
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__bottom">
+					<div class="catalog__bottom-row row">
+						<div class="pagination">
+							<ul class="page-numbers">
+								<li><a href="" class="page-numbers page-numbers--prev">
+										<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M24.727 15.273h-16v1.454h16v-1.454z" fill="#43464E" />
+											<path
+												d="M12.085 20.364l1.006-.913L9.283 16l3.808-3.451-1.006-.913L7.273 16l4.812 4.364z"
+												fill="#43464E" /></svg>
+									</a></li>
+								<li><a href="" class="page-numbers active">1</a></li>
+								<li><a href="" class="page-numbers">2</a></li>
+								<li><a href="" class="page-numbers">3</a></li>
+								<li><a href="" class="page-numbers">4</a></li>
+								<li><a href="" class="page-numbers page-numbers--next">
+										<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.273 16.727h16v-1.454h-16v1.454z" fill="#43464E" />
+											<path
+												d="M19.915 11.636l-1.006.913L22.717 16l-3.808 3.451 1.006.913L24.727 16l-4.812-4.364z"
+												fill="#43464E" /></svg>
+									</a></li>
+							</ul>
+
+						</div>
+
+						<div class="catalog__show-more show-more" data-da="popup__content--filter, 1, 767">
+							<div class="show-more__label">Показывать на странице:</div>
+							<div class="custom-select-wrapper">
+								<div class="custom-select">
+									<div class="custom-select__trigger"><span>20 товаров</span>
+										<div class="arrow"></div>
+									</div>
+									<div class="custom-select__custom-options custom-options">
+										<span class="custom-options__option" data-value="10 товаров">10 товаров</span>
+										<span class="custom-options__option selected" data-value="20 товаров">20
+											товаров</span>
+										<span class="custom-options__option" data-value="50 товаров">50 товаров</span>
+										<span class="custom-options__option" data-value="75 товаров">75 товаров</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="catalog-filter" class="popup popup--filter">
+					<div class="popup__body popup__body--with-buttons">
+						<div class="popup__content popup__content--filter">
+							<h6 class="title-h6 title-h6--767">Фильтры</h6>
+							<a href="" class="popup__close close-popup">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.865 0.134993C11.685 -0.0449976 11.3934 -0.0449976 11.2134 0.134993L6 5.34844L0.786552 0.134993C0.606562 -0.0449976 0.314972 -0.0449976 0.134993 0.134993C-0.0449861 0.314983 -0.0449976 0.606574 0.134993 0.786553L5.34844 6L0.134993 11.2134C-0.0449976 11.3934 -0.0449976 11.685 0.134993 11.865C0.314983 12.045 0.606573 12.045 0.786552 11.865L6 6.65156L11.2134 11.865C11.3934 12.045 11.685 12.045 11.865 11.865C12.045 11.685 12.045 11.3934 11.865 11.2134L6.65156 6L11.865 0.786553C12.045 0.606562 12.045 0.314972 11.865 0.134993Z"
+										fill="white" />
+								</svg>
+							</a>
+							<div class="catalog__filter filter-catalog">
+								<div class="filter-catalog__item">
+									<h6 class="title-h6 accordion__title">Коллекция</h6>
+									<div class="accordion__text">
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="summer-fly" class="input-wrapper__input">
+											<label for="summer-fly" class="input-wrapper__label">Summer Fly</label>
+										</div>
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="body" class="input-wrapper__input">
+											<label for="body" class="input-wrapper__label">Body</label>
+										</div>
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="ModernStyle" class="input-wrapper__input">
+											<label for="ModernStyle" class="input-wrapper__label">Modern Style</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="filter-catalog__item filter-catalog__item--color">
+									<h6 class="title-h6 accordion__title">Цвет</h6>
+									<div class="accordion__text">
+										<div class="product-color_list">
+											<a role="button" class="product-color_item">
+												<span class="product-color_item__value"
+													style="background-color: #EDCBB9"></span>
+											</a>
+											<a role="button" class="product-color_item">
+												<span class="product-color_item__value"
+													style="background-color: #ABD9D8"></span>
+											</a>
+											<a role="button" class="product-color_item">
+												<span class="product-color_item__value"
+													style="background-color: #EDCBB9"></span>
+											</a>
+											<a role="button" class="product-color_item">
+												<span class="product-color_item__value"
+													style="background-color: #ABD9D8"></span>
+											</a>
+											<a role="button" class="product-color_item">
+												<span class="product-color_item__value"
+													style="background-color: #EDCBB9"></span>
+											</a>
+											<a role="button" class="product-color_item">
+												<span class="product-color_item__value"
+													style="background-color: #ABD9D8"></span>
+											</a>
+										</div>
+										<a href="" class="btn-txt">Смотреть все цвета</a>
+									</div>
+								</div>
+
+								<div class="filter-catalog__item filter-catalog__item--size">
+									<h6 class="title-h6 accordion__title">Размер</h6>
+									<div class="accordion__text">
+										<div class="input-wrapper__list">
+											<div class="input-wrapper input-wrapper--check">
+												<input type="checkbox" id="SizeXXS" class="input-wrapper__input">
+												<label for="SizeXXS" class="input-wrapper__label">Size 2 (XXS)</label>
+											</div>
+											<div class="input-wrapper input-wrapper--check">
+												<input type="checkbox" id="SizeXS" class="input-wrapper__input">
+												<label for="SizeXS" class="input-wrapper__label">Size 4-6 (XS)</label>
+											</div>
+											<div class="input-wrapper input-wrapper--check">
+												<input type="checkbox" id="SizeS" class="input-wrapper__input">
+												<label for="SizeS" class="input-wrapper__label">Size 8-10 (S)</label>
+											</div>
+											<div class="input-wrapper input-wrapper--check">
+												<input type="checkbox" id="SizeM" class="input-wrapper__input">
+												<label for="SizeM" class="input-wrapper__label">Size 12-14 (M)</label>
+											</div>
+											<div class="input-wrapper input-wrapper--check">
+												<input type="checkbox" id="SizeL" class="input-wrapper__input">
+												<label for="SizeL" class="input-wrapper__label">Size 16-18 (L)</label>
+											</div>
+											<div class="input-wrapper input-wrapper--check">
+												<input type="checkbox" id="SizeXL" class="input-wrapper__input">
+												<label for="SizeXL" class="input-wrapper__label">Size 20-22 (XL)</label>
+											</div>
+											<div class="input-wrapper input-wrapper--check">
+												<input type="checkbox" id="SizeXXL" class="input-wrapper__input">
+												<label for="SizeXXL" class="input-wrapper__label">Size 24-26 (XXL)</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="filter-catalog__item">
+									<h6 class="title-h6 accordion__title">Материал</h6>
+									<div class="accordion__text">
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="Cotton1" class="input-wrapper__input">
+											<label for="Cotton1" class="input-wrapper__label">Cotton</label>
+										</div>
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="Wool1" class="input-wrapper__input">
+											<label for="Wool1" class="input-wrapper__label">Wool</label>
+										</div>
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="Silk1" class="input-wrapper__input">
+											<label for="Silk1" class="input-wrapper__label">Silk</label>
+										</div>
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="Wool2" class="input-wrapper__input">
+											<label for="Wool2" class="input-wrapper__label">Wool</label>
+										</div>
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="Mixed1" class="input-wrapper__input">
+											<label for="Mixed1" class="input-wrapper__label">Mixed</label>
+										</div>
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="Cotton2" class="input-wrapper__input">
+											<label for="Cotton2" class="input-wrapper__label">Cotton</label>
+										</div>
+										<div class="input-wrapper input-wrapper--check">
+											<input type="checkbox" id="Mixed2" class="input-wrapper__input">
+											<label for="Mixed2" class="input-wrapper__label">Mixed</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter-catalog__buttons" data-da="popup__body--with-buttons, last, 767">
+									<button class="filter-catalog__btn btn-dark">
+										применить
+									</button>
+									<button class="filter-catalog__btn btn-gray">
+										Очистить все
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</main>
+
+@@include('html-components/_footer.html')

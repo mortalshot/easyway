@@ -77,7 +77,6 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     rows: 2,
-                    slidesPerRow: 2,
                     arrows: false,
                 }
             },

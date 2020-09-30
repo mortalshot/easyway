@@ -3391,47 +3391,37 @@ $(document).ready(function () {
   };
 
   submenuClass();
-  var timeout = 300;
-  var unlock = true;
+  var lockPaddingValue = window.innerWidth - document.querySelector('.site-main').offsetWidth + 'px';
+  $('.nav__submenu').css({
+    'padding-right': lockPaddingValue
+  });
   $('.nav__item--submenu').on('mouseenter', function () {
-    if (unlock) {
-      $(body).addClass('lock');
-      $(body).css({
-        'padding-right': '17px'
-      });
-      $(this).children('.nav__submenu').addClass('open');
-      $(this).children('.nav__submenu').css({
-        'padding-right': '17px'
-      });
-      $('.nav__submenu').css({
-        'padding-right': '17px'
-      });
+    $(body).addClass('lock');
+    $(body).css({
+      'padding-right': lockPaddingValue
+    });
+    $(this).children('.nav__submenu').addClass('open');
+    $('.nav__submenu').css({
+      'padding-right': lockPaddingValue
+    });
 
-      if ($('.site_wrap').hasClass('nav-fixed')) {
-        $('.site_header__bottom').css({
-          'padding-right': '17px'
-        });
-      }
-
-      unlock = false;
-      setTimeout(function () {
-        unlock = true;
-      }, timeout);
+    if ($('.site_wrap').hasClass('nav-fixed')) {
+      $('.site_header__bottom').css({
+        'padding-right': lockPaddingValue
+      });
     }
   }).on('mouseleave', function () {
-    if (unlock) {
-      $(body).removeClass('lock');
-      $(body).css({
-        'padding-right': '0'
-      });
-      $('.site_header__bottom').css({
-        'padding-right': '0'
-      });
-      $(this).children('.nav__submenu').removeClass('open');
-      $(this).children('.nav__submenu').css({
-        'padding-right': '0'
-      });
-    }
+    $(body).removeClass('lock');
+    $(body).css({
+      'padding-right': '0'
+    });
+    $('.site_header__bottom').css({
+      'padding-right': '0'
+    });
+    $(this).children('.nav__submenu').removeClass('open');
+    $('.nav__submenu').css({
+      'padding-right': '0'
+    });
   });
 });
 $(document).ready(function () {
@@ -3897,7 +3887,6 @@ $(document).ready(function () {
       settings: {
         slidesToShow: 2,
         rows: 2,
-        slidesPerRow: 2,
         arrows: false
       }
     }]
