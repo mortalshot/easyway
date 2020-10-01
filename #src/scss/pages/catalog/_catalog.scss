@@ -89,8 +89,11 @@
 			display: none;
 		}
 
-		span {
-			text-decoration: underline;
+		.custom-select__trigger {
+			span {
+				text-decoration: underline;
+				font-weight: 400;
+			}
 		}
 	}
 

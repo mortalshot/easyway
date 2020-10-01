@@ -5575,8 +5575,9 @@ input[type=number] {
   margin-right: 0;
 }
 
-.catalog__filter-selected span {
+.catalog__filter-selected .custom-select__trigger span {
   text-decoration: underline;
+  font-weight: 400;
 }
 
 .catalog__close {
