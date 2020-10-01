@@ -10,6 +10,7 @@
 @@include('components/webp.js')
 @@include('components/menu.js')
 @@include('components/submenu-dropdown.js')
+@@include('components/search-field.js')
 @@include('components/tabs.js')
 @@include('components/tabs-click.js')
 @@include('components/accordion.js')

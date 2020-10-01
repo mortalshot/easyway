@@ -12,6 +12,7 @@ $(document).ready(function () {
         });
 
         function selectToggle() {
+            $('.custom-select').not($(this)).removeClass('open')
             this.classList.toggle('open');
         }
 

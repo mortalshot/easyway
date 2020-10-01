@@ -22,6 +22,8 @@
 	}
 
 	&__bottom {
+		position: relative;
+
 		.site_header__inner {
 			align-items: center;
 			height: 80px;
@@ -37,6 +39,10 @@
 		.site_header__right {
 			flex: auto;
 		}
+	}
+
+	&__nav {
+		transition: 0.3s ease all 0s;
 	}
 
 	&__burger {
@@ -94,9 +100,8 @@
 	}
 
 	&__right {
-		justify-content: space-between;
-		position: relative;
 		z-index: 5;
+		justify-content: flex-end;
 	}
 
 	&__info {
@@ -140,7 +145,9 @@
 	}
 
 	&__search-wrapper {
-		flex: 1 1 auto;
+		@media screen and (min-width: 768px) {
+			flex: 1 1 auto;
+		}
 	}
 
 	&__search {
@@ -193,7 +200,7 @@
 				height: 48px;
 			}
 
-			&__wrapper{
+			&__wrapper {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
@@ -223,11 +230,11 @@
 				line-height: 22px;
 				transition: 0.3s ease all 0s;
 				letter-spacing: 0px;
-	
+
 				&::before {
 					display: none;
 				}
-	
+
 				&::after {
 					width: 32px;
 					height: 32px;
@@ -235,14 +242,14 @@
 					transform: translate(0, -50%) rotate(0);
 					right: 16px;
 				}
-	
+
 				&.active {
 					background-color: $grayLight;
-	
+
 					&::after {
 						transform: translate(0, -50%) rotate(90deg);
 					}
-	
+
 					& + .accordion__text {
 						border-bottom: 1px solid $grayLight;
 					}
@@ -366,7 +373,6 @@
 				padding: 48px 16px 0px;
 				opacity: 0;
 				pointer-events: none;
-
 
 				&.tabs-content__item--active {
 					right: 0;

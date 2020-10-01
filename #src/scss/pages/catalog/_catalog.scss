@@ -72,6 +72,9 @@
 		letter-spacing: 1px;
 		margin-right: 35px;
 		color: $blackSecondary;
+		display: flex;
+		align-items: center;
+
 		&:last-child {
 			margin-right: 0;
 		}
@@ -82,7 +85,7 @@
 		@media screen and (max-width: 1200px) {
 			margin-right: 15px;
 		}
-		@media screen and (max-width: 1050px) {
+		@media screen and (max-width: 1150px) {
 			display: none;
 		}
 
