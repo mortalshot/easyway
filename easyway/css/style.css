@@ -1570,7 +1570,7 @@ a {
   left: 0;
   right: 0;
   padding: 59px 0px 51px 0px;
-  z-index: 2;
+  z-index: 3;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
