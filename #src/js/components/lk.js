@@ -58,4 +58,14 @@ $(document).ready(function () {
         e.preventDefault();
         var review = $(this).closest('.lk-reviews-item').fadeOut(400, function() { $(this).remove(); });
     })
+
+    // input
+    $(".input-group__field").focus(function () {
+        $(this).closest('.input-group').children('.input-group__title').css({ 'top': '-16px', 'font-size': '12px' });
+    });
+    $(".input-group__field").focusout(function () {
+        if ($(this).val() == '') {
+            $(this).closest('.input-group').children('.input-group__title').css({ 'top': '6px', 'font-size': '16px' });
+        }
+    });
 });

@@ -3428,9 +3428,9 @@ $(document).ready(function () {
   mediaQueryMdMax = window.matchMedia('(max-width: 767px)');
   $('.search').click(function (e) {
     e.stopPropagation();
-    $(this).addClass('search--active');
 
     if (mediaQueryMdMax.matches) {
+      $(this).addClass('search--active');
       $('.site_header__nav').css({
         opacity: '0',
         'visibility': 'hidden',
@@ -3440,9 +3440,8 @@ $(document).ready(function () {
     }
   });
   $(body).click(function (e) {
-    $('.search').removeClass('search--active');
-
     if (mediaQueryMdMax.matches) {
+      $('.search').removeClass('search--active');
       $('.site_header__nav').css({
         opacity: '1',
         'visibility': 'visible',
@@ -3988,6 +3987,21 @@ $(document).ready(function () {
     var review = $(this).closest('.lk-reviews-item').fadeOut(400, function () {
       $(this).remove();
     });
+  }); // input
+
+  $(".input-group__field").focus(function () {
+    $(this).closest('.input-group').children('.input-group__title').css({
+      'top': '-16px',
+      'font-size': '12px'
+    });
+  });
+  $(".input-group__field").focusout(function () {
+    if ($(this).val() == '') {
+      $(this).closest('.input-group').children('.input-group__title').css({
+        'top': '6px',
+        'font-size': '16px'
+      });
+    }
   });
 });
 $(document).ready(function () {

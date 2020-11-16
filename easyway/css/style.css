@@ -5879,6 +5879,68 @@ input[type=number] {
   margin-bottom: 0;
 }
 
+.filter-catalog .input-wrapper.input-wrapper--radio {
+  width: 27px;
+  height: 27px;
+  margin: 0px 11px 0px 0px;
+  padding: 0;
+}
+
+.filter-catalog .input-wrapper.input-wrapper--radio .input-wrapper__label {
+  width: 27px;
+  height: 27px;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 1;
+}
+
+.filter-catalog .input-wrapper.input-wrapper--radio .input-wrapper__label::before {
+  display: block;
+  width: 22px;
+  height: 22px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: transparent;
+  background-color: inherit;
+  z-index: 1;
+}
+
+.filter-catalog .input-wrapper.input-wrapper--radio .input-wrapper__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-color: transparent;
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
+  border: 2px solid transparent;
+}
+
+.filter-catalog .input-wrapper--radio .input-wrapper__input + label:before {
+  border-radius: 0;
+  border: 0;
+}
+
+.filter-catalog .input-wrapper--radio .input-wrapper__input:checked + label:before {
+  border-width: 0px;
+}
+
+.filter-catalog .input-wrapper--radio .input-wrapper__input:checked + label:after {
+  background-color: #fff;
+  border-color: #43464E;
+}
+
 .home-first {
   position: relative;
 }
@@ -5981,6 +6043,7 @@ input[type=number] {
   -o-transition: 0.3s ease all 0s;
   transition: 0.3s ease all 0s;
   padding: 0 10px;
+  background: #F1F2F3;
   cursor: pointer;
 }
 
@@ -8443,6 +8506,10 @@ input[type=number] {
   border-top: 1px solid #fff;
 }
 
+.summary-cart__promocode .input-group__field {
+  padding-right: 81px;
+}
+
 .summary-cart__btn-txt {
   font-size: 16px;
   line-height: 22px;
@@ -10504,7 +10571,7 @@ input[type=number] {
   }
 
   .filter-catalog__item .title-h6::after {
-    right: 30px;
+    right: 29px;
   }
 
   .filter-catalog__item .product-color_list {

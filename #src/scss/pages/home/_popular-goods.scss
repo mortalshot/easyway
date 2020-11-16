@@ -11,7 +11,9 @@
 		align-items: center;
 		transition: 0.3s ease all 0s;
 		padding: 0 10px;
+		background: $grayLight;
 		cursor: pointer;
+
 		&:hover {
 			background: $blackPrimary;
 		}

@@ -1,4 +1,3 @@
-
 .filter-catalog {
 	&__item {
 		@media screen and (min-width: 768px) {
@@ -27,7 +26,7 @@
 					right: 24px;
 				}
 				&::after {
-					right: 30px;
+					right: 29px;
 				}
 			}
 		}
@@ -118,7 +117,7 @@
 
 			.btn-txt {
 				letter-spacing: 0;
-				
+
 				@media screen and (max-width: 767px) {
 					display: inline-block;
 					margin-bottom: 17px;
@@ -132,9 +131,9 @@
 				.input-wrapper__list {
 					display: flex;
 					flex-wrap: wrap;
-					margin:  0 0;
+					margin: 0 0;
 				}
-				
+
 				.input-wrapper {
 					flex: 1 0 50%;
 					padding: 0 0;
@@ -148,7 +147,7 @@
 		bottom: 0;
 		background: #fff;
 		width: 100%;
-		
+
 		@media screen and (min-width: 768px) {
 			padding: 25px 0;
 		}
@@ -181,6 +180,66 @@
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	.input-wrapper.input-wrapper--radio {
+		width: 27px;
+		height: 27px;
+		margin: 0px 11px 0px 0px;
+		padding: 0;
+
+		.input-wrapper__label {
+			width: 27px;
+			height: 27px;
+			padding: 0;
+			margin: 0;
+			font-size: 0;
+			line-height: 1;
+
+			&::before {
+				display: block;
+				width: 22px;
+				height: 22px;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background: transparent;
+				background-color: inherit;
+				z-index: 1;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: block;
+				width: 27px;
+				height: 27px;
+				background-color: transparent;
+				transition: 0.3s ease all 0s;
+				border: 2px solid transparent;
+			}
+		}
+	}
+
+	.input-wrapper--radio {
+		.input-wrapper__input + label:before {
+			border-radius: 0;
+			border: 0;
+		}
+
+		.input-wrapper__input:checked {
+			& + label:before {
+				border-width: 0px;
+			}
+			
+			& + label:after {
+				background-color: $bgWhite;
+				border-color: $blackSecondary;
+			}
 		}
 	}
 }
